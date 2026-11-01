@@ -1,11 +1,15 @@
 import type { LinkDeviceResponse, MeResponse } from '@cheapa/core';
 import { BadRequestException, Controller, Get, HttpCode, Post } from '@nestjs/common';
 import { CurrentIdentity, DeviceOrUser, type Identity } from '../auth/auth.decorators.js';
+import { AnalyticsService } from '../analytics/analytics.service.js';
 import { IdentityService } from '../auth/identity.service.js';
 
 @Controller('me')
 export class UsersController {
-  constructor(private readonly identities: IdentityService) {}
+  constructor(
+    private readonly identities: IdentityService,
+    private readonly analytics: AnalyticsService,
+  ) {}
 
   /** The signed-in user (if any) and the calling device (if sent). */
   @Get()
@@ -36,6 +40,7 @@ export class UsersController {
     if (!user) throw new BadRequestException('Sign in first');
     if (!device) throw new BadRequestException('Send X-Cheapa-Device');
     await this.identities.linkDevice(device.id, user.id);
+    this.analytics.alias(user.id, device.id);
     return { deviceId: device.id, userId: user.id };
   }
 }

@@ -7,20 +7,32 @@ export const REDIS_QUEUE = Symbol('REDIS_QUEUE');
 /** allkeys-lru instance: caches only. */
 export const REDIS_CACHE = Symbol('REDIS_CACHE');
 
+/** How long boot waits for Redis before serving anyway (degraded, reported by /health). */
+const BOOT_CONNECT_WAIT_MS = 3_000;
+
 /**
  * Connect before the app starts serving so /health and the first requests don't race
- * the handshake. A Redis that is down at boot doesn't crash the API: it keeps retrying
- * in the background and /health reports it.
+ * the handshake. A Redis that is down at boot must not block startup: ioredis retries
+ * forever, so connect() never settles while it's down. Wait at most BOOT_CONNECT_WAIT_MS,
+ * then serve; the client keeps retrying in the background and /health reports it.
  */
 async function connect(url: string, name: string): Promise<Redis> {
   const client = new Redis(url, {
     connectionName: name,
     lazyConnect: true,
+    connectTimeout: 2_000,
     maxRetriesPerRequest: 2,
     enableOfflineQueue: false,
   });
   client.on('error', () => undefined); // surfaced through /health; avoids unhandled 'error' events
-  await client.connect().catch(() => undefined);
+  let timer: NodeJS.Timeout | undefined;
+  await Promise.race([
+    client.connect().catch(() => undefined),
+    new Promise<void>((resolve) => {
+      timer = setTimeout(resolve, BOOT_CONNECT_WAIT_MS);
+    }),
+  ]);
+  clearTimeout(timer);
   return client;
 }
 

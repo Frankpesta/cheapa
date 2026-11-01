@@ -22,7 +22,7 @@ beforeAll(async () => {
     RATE_LIMIT_IMAGE_PER_DEVICE_HOUR: String(DEVICE_LIMIT),
     RATE_LIMIT_IMAGE_PER_IP_HOUR: String(IP_LIMIT),
   });
-}, 240_000);
+});
 
 afterAll(async () => {
   await h?.stop();
@@ -252,13 +252,19 @@ describe('products', () => {
 
 describe('GET /health when a dependency is down', () => {
   it('returns 503 degraded and names the failing check', async () => {
-    await h.redisCache.stop();
-    const res = await inject({ method: 'GET', url: '/health' });
-    expect(res.statusCode).toBe(503);
-    const body = HealthResponse.parse(res.json());
-    expect(body.status).toBe('degraded');
-    expect(body.checks.redisCache.ok).toBe(false);
-    expect(body.checks.catalogDb.ok).toBe(true);
+    // A second app whose cache Redis points at a closed port: same effect as the
+    // server being down, without stopping the shared container.
+    const down = await startHarness({ REDIS_CACHE_URL: 'redis://127.0.0.1:1' });
+    try {
+      const res = await down.app.inject({ method: 'GET', url: '/health' });
+      expect(res.statusCode).toBe(503);
+      const body = HealthResponse.parse(res.json());
+      expect(body.status).toBe('degraded');
+      expect(body.checks.redisCache.ok).toBe(false);
+      expect(body.checks.catalogDb.ok).toBe(true);
+    } finally {
+      await down.stop();
+    }
   });
 });
 

@@ -110,6 +110,11 @@ services:
       CLERK_JWT_KEY: ${CLERK_JWT_KEY:-}
       CLERK_AUTHORIZED_PARTIES: ${CLERK_AUTHORIZED_PARTIES:-}
       CLERK_WEBHOOK_SECRET: ${CLERK_WEBHOOK_SECRET:-}
+      SENTRY_DSN_API: ${SENTRY_DSN_API:-}
+      SENTRY_ENVIRONMENT: ${SENTRY_ENVIRONMENT:-}
+      SENTRY_TRACES_SAMPLE_RATE: ${SENTRY_TRACES_SAMPLE_RATE:-0.1}
+      POSTHOG_API_KEY: ${POSTHOG_API_KEY:-}
+      POSTHOG_HOST: ${POSTHOG_HOST:-https://eu.i.posthog.com}
     ports:
       - '127.0.0.1:${API_PORT:-8080}:8080'
     depends_on: &api-deps
@@ -122,7 +127,7 @@ services:
     profiles: ['app']
     image: cheapa-api:local
     restart: unless-stopped
-    command: ['node', 'dist/main.jobs.js']
+    command: ['node', '--import', './dist/instrument.js', 'dist/main.jobs.js']
     environment: *api-env
     healthcheck: { disable: true }
     depends_on:

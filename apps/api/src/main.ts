@@ -1,3 +1,5 @@
+// instrument must be first: Sentry hooks modules as they load.
+import './instrument.js';
 import 'reflect-metadata';
 import { createApp } from './bootstrap.js';
 import { loadApiEnv } from './config/env.js';

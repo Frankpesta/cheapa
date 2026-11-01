@@ -38,6 +38,14 @@ export const apiEnvSchema = baseEnv
     /** Allowed "azp" claims (web origins). Empty = don't check (native apps send none). */
     CLERK_AUTHORIZED_PARTIES: envList.default([]),
     CLERK_WEBHOOK_SECRET: z.string().startsWith('whsec_').optional(),
+    // Observability (01-foundation.md 1.7). Both optional: unset = disabled.
+    /** Read by instrument.ts before the app boots; listed here so it's validated too. */
+    SENTRY_DSN_API: z.url().optional(),
+    SENTRY_ENVIRONMENT: z.string().optional(),
+    SENTRY_TRACES_SAMPLE_RATE: z.coerce.number().min(0).max(1).default(0.1),
+    POSTHOG_API_KEY: z.string().startsWith('phc_').optional(),
+    /** EU cloud by default (data residency, 11-compliance-and-ops.md 11.2). */
+    POSTHOG_HOST: z.url().default('https://eu.i.posthog.com'),
   })
   .superRefine((env, ctx) => {
     if (env.NODE_ENV !== 'production') return;

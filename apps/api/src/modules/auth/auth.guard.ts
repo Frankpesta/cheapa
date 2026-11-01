@@ -8,6 +8,7 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
+import * as Sentry from '@sentry/nestjs';
 import type { FastifyRequest } from 'fastify';
 import { z } from 'zod';
 import { ACCESS_KEY, type AccessLevel, type Identity, ROLES_KEY } from './auth.decorators.js';
@@ -63,6 +64,8 @@ export class AuthGuard implements CanActivate {
       );
     }
 
+    // Pseudonymous ids only: never email or phone (01-foundation.md 1.7).
+    if (identity.user) Sentry.getIsolationScope().setUser({ id: identity.user.id });
     if (identity.user) request.log = request.log.child({ userId: identity.user.id });
     else if (identity.device) request.log = request.log.child({ deviceId: identity.device.id });
 

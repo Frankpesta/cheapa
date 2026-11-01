@@ -113,20 +113,22 @@ Money columns are `bigint` kobo read as JS numbers (Postgres `integer` tops out 
 Both on free tiers, both in their **EU data regions** (Sentry `de.sentry.io`, PostHog `eu.i.posthog.com`), one project per app (`api`, `worker`, `mobile`, `web`) so quotas and alerts stay separate.
 
 **Sentry (errors + light tracing)**
-- `apps/api`: `@sentry/nestjs`. `instrument.ts` imported first in both `main.ts` and `main.jobs.ts`; `SentryModule.forRoot()` + `SentryGlobalFilter`. Tag every event with `requestId`, `jobId`, `storeId` where present.
-- `apps/worker`: `@sentry/node`; capture failed BullMQ jobs (after final retry) with queue, job id and `storeId`. `Blocked` and `RobotsDisallowed` are expected states, not errors: they go to the alert channel, not Sentry.
+- `apps/api`: `@sentry/nestjs` (v11). `instrument.ts` is loaded with `node --import` in the image and is also the first import of `main.ts` / `main.jobs.ts` (safe to load twice); `SentryModule.forRoot()` + `SentryGlobalFilter` (5xx only; HttpExceptions aren't reported). Every event carries `requestId` (same as logs and `x-request-id`) and the user id when signed in; `jobId` / `storeId` once jobs exist.
+- `apps/worker` (lands with 02, see BACKLOG): `@sentry/node`; capture failed BullMQ jobs (after final retry) with queue, job id and `storeId`. `Blocked` and `RobotsDisallowed` are expected states, not errors: they go to the alert channel, not Sentry.
 - Mobile (`@sentry/react-native` with the Expo plugin, source maps uploaded in EAS Build) and web (`@sentry/nextjs`) are wired in their phases (`06`, `07`).
-- Privacy settings, same everywhere: `sendDefaultPii: false`; no request bodies, no `Authorization`/cookie headers, no query strings on `/search/*`; a `beforeSend` scrubber drops anything that looks like a phone number or email and strips `data`/`extra` fields holding buffers. No Session Replay. `tracesSampleRate` 0.1 (raise only while debugging latency).
+- Privacy settings, same everywhere. Sentry 11 has no `sendDefaultPii`; instead `dataCollection` turns off user info, cookies, all HTTP bodies, query params, DB query data, queue args and stack-frame variables, and allows only safe request headers. Then the shared scrubber in `@cheapa/core` (`privacy.ts`) runs on every event (`beforeSend`), span (`beforeSendSpan`; spans stream by default and `beforeSendTransaction` is ignored) and breadcrumb: no bodies, cookies, auth or device headers, no query strings on `/search/*`, user id only, and emails, phone numbers, bearer tokens and keys redacted, including in stack-frame source lines. No Session Replay. `tracesSampleRate` 0.1 (raise only while debugging latency).
 - `release` = git SHA, `environment` = `production` / `development`.
 
 **PostHog (product analytics)**
-- `apps/api`: a small `AnalyticsModule` wrapping `posthog-node` (batched, flushed on shutdown, `disableGeoip: false` for city-level only). Server-side events are the source of truth for things the client can't see reliably: `search_served` (source, latencyMs, cacheHit, productCount, visionProvider, lowConfidence), `click_redirected` (storeId, affiliate yes/no), `watch_created`, `alert_sent` (channel), `account_deleted`.
+- `apps/api`: a small `AnalyticsModule` wrapping `posthog-node` (batched, flushed on shutdown, `disableGeoip: true`: the server's IP says nothing about the shopper, and forwarding the shopper's IP would be personal data). A no-op without `POSTHOG_API_KEY`. Properties go through `scrubAnalyticsProps` (flat primitives only; no hashes, query or other free text). Server-side events are the source of truth for things the client can't see reliably: `search_served` (source, latencyMs, cacheHit, productCount, visionProvider, lowConfidence), `click_redirected` (storeId, affiliate yes/no), `watch_created`, `alert_sent` (channel), `account_deleted`.
 - `distinct_id` = user id when signed in, else the anonymous device id. On `POST /me/link-device`, call `alias` so pre-sign-in events join the user.
 - Event properties never include the image, its hash, the raw query text, phone or email. Search queries are reported as category/brand only.
 - Mobile and web client events are listed in `06-mobile-app.md` 6.6 and `07-web-app.md`.
 - Feature flags (PostHog) are allowed for UI experiments only; **never** for anything that changes result order (rule 7).
 
 Env vars (add to `.env.example`): `SENTRY_DSN_API`, `SENTRY_DSN_WORKER`, `SENTRY_ENVIRONMENT`, `SENTRY_TRACES_SAMPLE_RATE`, `SENTRY_AUTH_TOKEN` (CI source-map upload only), `POSTHOG_API_KEY`, `POSTHOG_HOST`, plus `EXPO_PUBLIC_SENTRY_DSN`, `EXPO_PUBLIC_POSTHOG_KEY`, `NEXT_PUBLIC_SENTRY_DSN`, `NEXT_PUBLIC_POSTHOG_KEY` for the clients.
+
+**Logs:** each process has one pino instance (Fastify and nestjs-pino share it) writing through a redacting stream: every finished line passes through `redactText` before it is written, whichever logger produced it.
 
 **Acceptance:** a test route throws and the event appears in Sentry with `requestId` and no body or auth header; a failed worker job appears with `storeId`; a `search_served` event appears in PostHog with no query text or hash; a unit test feeds the scrubber a phone number, email and image buffer and asserts all are removed.
 

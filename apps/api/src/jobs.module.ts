@@ -1,10 +1,12 @@
 import { type DynamicModule, Module } from '@nestjs/common';
+import { SentryModule } from '@sentry/nestjs/setup';
 import { LoggerModule } from 'nestjs-pino';
-import { loggerOptions } from './common/logger.js';
+import { createLogger } from './common/logger.js';
 import { ConfigModule } from './config/config.module.js';
 import type { ApiEnv } from './config/env.js';
 import { DatabaseModule } from './infra/database.module.js';
 import { RedisModule } from './infra/redis.module.js';
+import { AnalyticsModule } from './modules/analytics/analytics.module.js';
 
 /**
  * Background process (main.jobs.ts): price-event consumer, notify/clicks queues,
@@ -16,10 +18,12 @@ export class JobsModule {
     return {
       module: JobsModule,
       imports: [
+        SentryModule.forRoot(),
         ConfigModule.forRoot(env),
-        LoggerModule.forRoot({ pinoHttp: loggerOptions(env, 'api-jobs') }),
+        LoggerModule.forRoot({ pinoHttp: { logger: createLogger(env, 'api-jobs') } }),
         DatabaseModule,
         RedisModule,
+        AnalyticsModule,
       ],
     };
   }

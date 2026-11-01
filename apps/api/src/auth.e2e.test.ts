@@ -14,7 +14,7 @@ const ORIGIN = 'http://localhost:3000';
 
 beforeAll(async () => {
   h = await startHarness();
-}, 240_000);
+});
 
 afterAll(async () => {
   await h?.stop();

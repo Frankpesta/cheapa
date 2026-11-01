@@ -8,8 +8,8 @@
     "build": "tsc -p tsconfig.build.json",
     "dev": "tsx watch --conditions=@cheapa/source --env-file-if-exists=../../.env src/main.ts",
     "dev:jobs": "tsx watch --conditions=@cheapa/source --env-file-if-exists=../../.env src/main.jobs.ts",
-    "start": "node dist/main.js",
-    "start:jobs": "node dist/main.jobs.js",
+    "start": "node --import ./dist/instrument.js dist/main.js",
+    "start:jobs": "node --import ./dist/instrument.js dist/main.jobs.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests"
@@ -22,6 +22,8 @@
     "@nestjs/common": "catalog:",
     "@nestjs/core": "catalog:",
     "@nestjs/platform-fastify": "catalog:",
+    "@sentry/nestjs": "catalog:",
+    "@sentry/node": "catalog:",
     "drizzle-orm": "catalog:",
     "fastify": "catalog:",
     "ioredis": "catalog:",
@@ -29,6 +31,7 @@
     "pg": "catalog:",
     "pino": "catalog:",
     "pino-http": "catalog:",
+    "posthog-node": "catalog:",
     "reflect-metadata": "catalog:",
     "rxjs": "catalog:",
     "zod": "catalog:"

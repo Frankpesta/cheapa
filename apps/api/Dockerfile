@@ -33,4 +33,5 @@ USER node
 EXPOSE 8080
 HEALTHCHECK --interval=10s --timeout=3s --start-period=10s --retries=5 \
   CMD node -e "fetch('http://127.0.0.1:'+(process.env.API_PORT||8080)+'/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
-CMD ["node", "dist/main.js"]
+# --import loads Sentry before any other module so http/fastify/pg are instrumented.
+CMD ["node", "--import", "./dist/instrument.js", "dist/main.js"]

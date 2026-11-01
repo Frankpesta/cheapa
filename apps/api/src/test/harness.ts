@@ -1,15 +1,19 @@
 /**
- * E2E harness: throwaway Postgres (pgvector) + two Redis containers, migrated
- * catalog, and the real createApp(). Requests go through fastify.inject (no network).
+ * E2E harness: fresh catalog + users databases cloned from the migrated templates
+ * made once by global-setup.ts, two private Redis DB numbers, and the real createApp().
+ * Requests go through fastify.inject (no network). Costs milliseconds, not containers.
  */
-import { createCatalogDb, runCatalogMigrations, type CatalogConnection } from '@cheapa/db/catalog';
-import { createUsersDb, runUsersMigrations, type UsersConnection } from '@cheapa/db/users';
+import { createCatalogDb, type CatalogConnection } from '@cheapa/db/catalog';
+import { createUsersDb, type UsersConnection } from '@cheapa/db/users';
+import type { Type } from '@nestjs/common';
 import type { NestFastifyApplication } from '@nestjs/platform-fastify';
-import { PostgreSqlContainer, type StartedPostgreSqlContainer } from '@testcontainers/postgresql';
+import { Redis } from 'ioredis';
+import { randomUUID } from 'node:crypto';
 import pg from 'pg';
-import { GenericContainer, type StartedTestContainer, Wait } from 'testcontainers';
+import { inject } from 'vitest';
 import { createApp } from '../bootstrap.js';
 import { type ApiEnv, loadApiEnv } from '../config/env.js';
+import { CATALOG_TEMPLATE, USERS_TEMPLATE } from './global-setup.js';
 import { createTestSigner, type TestSigner } from './tokens.js';
 
 export interface Harness {
@@ -17,36 +21,33 @@ export interface Harness {
   catalog: CatalogConnection;
   users: UsersConnection;
   signer: TestSigner;
-  redisCache: StartedTestContainer;
   env: ApiEnv;
   stop: () => Promise<void>;
 }
 
-const redis = () =>
-  new GenericContainer('redis:7.4.8-alpine')
-    .withCommand(['redis-server', '--maxmemory-policy', 'noeviction'])
-    .withExposedPorts(6379)
-    .withWaitStrategy(Wait.forLogMessage('Ready to accept connections'))
-    .start();
+export async function startHarness(
+  overrides: Record<string, string> = {},
+  extraModules: Type[] = [],
+): Promise<Harness> {
+  const adminUri = inject('pgAdminUri');
+  const dbUri = (name: string) => Object.assign(new URL(adminUri), { pathname: `/${name}` }).toString();
+  const prefix = `t_${randomUUID().replaceAll('-', '').slice(0, 12)}`;
+  const catalogDb = `${prefix}_catalog`;
+  const usersDb = `${prefix}_users`;
+  await withAdmin(adminUri, async (admin) => {
+    await cloneDatabase(admin, catalogDb, CATALOG_TEMPLATE);
+    await cloneDatabase(admin, usersDb, USERS_TEMPLATE);
+  });
 
-export async function startHarness(overrides: Record<string, string> = {}): Promise<Harness> {
-  const [postgres, redisQueue, redisCache] = await Promise.all([
-    new PostgreSqlContainer('pgvector/pgvector:0.8.3-pg16').start(),
-    redis(),
-    redis(),
-  ]);
-  await prepareDatabases(postgres);
+  const [queueDb, cacheDb] = await claimRedisDbs(inject('redisUrl'));
   const signer = createTestSigner();
-
-  const base = new URL(postgres.getConnectionUri());
-  const dbUrl = (name: string) => Object.assign(new URL(base), { pathname: `/${name}` }).toString();
   const env = loadApiEnv({
     NODE_ENV: 'test',
     LOG_LEVEL: 'error',
-    CATALOG_DATABASE_URL: dbUrl(postgres.getDatabase()),
-    USERS_DATABASE_URL: dbUrl('cheapa_users'),
-    REDIS_QUEUE_URL: `redis://${redisQueue.getHost()}:${redisQueue.getMappedPort(6379)}`,
-    REDIS_CACHE_URL: `redis://${redisCache.getHost()}:${redisCache.getMappedPort(6379)}`,
+    CATALOG_DATABASE_URL: dbUri(catalogDb),
+    USERS_DATABASE_URL: dbUri(usersDb),
+    REDIS_QUEUE_URL: `${inject('redisUrl')}/${queueDb}`,
+    REDIS_CACHE_URL: `${inject('redisUrl')}/${cacheDb}`,
     // As it would appear in .env: one line with literal \n sequences.
     CLERK_JWT_KEY: signer.publicKeyPem.replaceAll('\n', '\\n'),
     CLERK_AUTHORIZED_PARTIES: 'http://localhost:3000',
@@ -54,11 +55,8 @@ export async function startHarness(overrides: Record<string, string> = {}): Prom
   });
 
   const catalog = createCatalogDb(env.CATALOG_DATABASE_URL, { max: 2 });
-  await runCatalogMigrations(catalog.db);
   const users = createUsersDb(env.USERS_DATABASE_URL, { max: 2 });
-  await runUsersMigrations(users.db);
-
-  const app = await createApp(env);
+  const app = await createApp(env, extraModules);
   await app.init();
   await app.getHttpAdapter().getInstance().ready();
 
@@ -67,23 +65,58 @@ export async function startHarness(overrides: Record<string, string> = {}): Prom
     catalog,
     users,
     signer,
-    redisCache,
     env,
     stop: async () => {
       await app.close();
-      await catalog.close();
-      await users.close();
-      await Promise.allSettled([postgres.stop(), redisQueue.stop(), redisCache.stop()]);
+      await Promise.allSettled([catalog.close(), users.close()]);
+      await withAdmin(adminUri, async (admin) => {
+        await admin.query(`drop database if exists ${catalogDb} with (force)`);
+        await admin.query(`drop database if exists ${usersDb} with (force)`);
+      });
     },
   };
 }
 
-async function prepareDatabases(postgres: StartedPostgreSqlContainer): Promise<void> {
-  const admin = new pg.Client({ connectionString: postgres.getConnectionUri() });
+async function withAdmin(uri: string, run: (admin: pg.Client) => Promise<void>): Promise<void> {
+  const admin = new pg.Client({ connectionString: uri });
   await admin.connect();
-  await admin.query('create extension if not exists vector; create extension if not exists pg_trgm;');
-  await admin.query('create database cheapa_users');
-  await admin.end();
+  try {
+    await run(admin);
+  } finally {
+    await admin.end();
+  }
+}
+
+/** CREATE DATABASE ... TEMPLATE, retrying if another file is cloning the same template. */
+async function cloneDatabase(admin: pg.Client, name: string, template: string): Promise<void> {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      await admin.query(`create database ${name} template ${template}`);
+      return;
+    } catch (error) {
+      const busy = error instanceof Error && /being accessed by other users/.test(error.message);
+      if (!busy || attempt >= 20) throw error;
+      await new Promise((resolve) => setTimeout(resolve, 100 * attempt));
+    }
+  }
+}
+
+/** Two Redis DB numbers (1–15) private to this file; DB 0 holds the counter. */
+async function claimRedisDbs(url: string): Promise<[number, number]> {
+  const redis = new Redis(url, { lazyConnect: true });
+  await redis.connect();
+  try {
+    const slot = (await redis.incr('test:slot')) - 1;
+    const queueDb = 1 + ((slot * 2) % 14);
+    const cacheDb = queueDb + 1;
+    for (const db of [queueDb, cacheDb]) {
+      await redis.select(db);
+      await redis.flushdb();
+    }
+    return [queueDb, cacheDb];
+  } finally {
+    redis.disconnect();
+  }
 }
 
 /** Smallest valid PNG (1x1), optionally padded to an exact byte size. */

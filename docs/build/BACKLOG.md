@@ -9,3 +9,5 @@ TODOs allowed in shipped paths must be logged here with file path and reason.
 | 2026-11-01 | `infra/docker-compose.yml` | `api`, `api-jobs`, `worker` services | Added with 1.5 (API) and 02 (worker) |
 | 2026-11-01 | `apps/worker` scheduler | Daily job calling `select ensure_price_history_partitions(3)` | Worker scheduler lands in 02 §2.3; migration pre-creates 4 months, so the first gap would be 2027-03 |
 | 2026-11-01 | monitoring (11.3) | Alert when next month's `price_history` partition is missing | Monitoring lands with 02 §2.5 |
+| 2026-11-01 | `apps/worker` | Sentry (`@sentry/node`, shared scrubber from `@cheapa/core`) and failed-job capture with `storeId`/`jobId` | Worker entry point lands in 02 §2.3 |
+| 2026-11-01 | CI (1.8) | Create Sentry release + upload API source maps on `main` (`SENTRY_AUTH_TOKEN`) | CI is section 1.8 |

@@ -1,10 +1,14 @@
 /**
- * Integration tests against a throwaway pgvector container (needs Docker).
+ * Integration tests against a pgvector container (needs Docker).
  * Covers 01-foundation.md 1.4 acceptance: migrations run clean, seed inserts
  * 3 stores + 10 listings, cosine query on image_vec returns ordered results.
+ *
+ * Locally the container is reused across runs (startup costs ~20 s on Docker Desktop);
+ * every run gets a brand-new database in it, dropped at the end. CI gets a fresh container.
  */
 import { PostgreSqlContainer, type StartedPostgreSqlContainer } from '@testcontainers/postgresql';
 import { count, eq, sql } from 'drizzle-orm';
+import { randomUUID } from 'node:crypto';
 import pg from 'pg';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { createCatalogDb, runCatalogMigrations, type CatalogConnection } from './client.js';
@@ -13,24 +17,66 @@ import { nearestByImage } from './queries.js';
 import { listings, stores } from './schema.js';
 import { designVector, SEED_LISTINGS, seedCatalog } from './seed-data.js';
 
+const reuse = process.env.CI !== 'true';
+if (reuse) process.env.TESTCONTAINERS_REUSE_ENABLE ??= 'true';
+
+const dbName = `dbtest_${randomUUID().replaceAll('-', '').slice(0, 12)}`;
 let container: StartedPostgreSqlContainer;
 let conn: CatalogConnection;
 
-beforeAll(async () => {
-  container = await new PostgreSqlContainer('pgvector/pgvector:0.8.3-pg16').start();
-  // Extensions need superuser, as in infra/postgres/init/01-databases.sh.
-  const admin = new pg.Client({ connectionString: container.getConnectionUri() });
-  await admin.connect();
-  await admin.query('create extension if not exists vector; create extension if not exists pg_trgm;');
-  await admin.end();
+async function admin<T>(uri: string, run: (client: pg.Client) => Promise<T>): Promise<T> {
+  const client = new pg.Client({ connectionString: uri });
+  await client.connect();
+  try {
+    return await run(client);
+  } finally {
+    await client.end();
+  }
+}
 
-  conn = createCatalogDb(container.getConnectionUri(), { max: 2 });
+beforeAll(async () => {
+  const definition = new PostgreSqlContainer('pgvector/pgvector:0.8.3-pg16')
+    .withLabels({ 'cheapa.test': 'db-integration' })
+    .withCommand([
+      'postgres',
+      '-c',
+      'fsync=off',
+      '-c',
+      'synchronous_commit=off',
+      '-c',
+      'full_page_writes=off',
+    ]);
+  container = await (reuse ? definition.withReuse() : definition).start();
+
+  const adminUri = container.getConnectionUri();
+  const dbUri = Object.assign(new URL(adminUri), { pathname: `/${dbName}` }).toString();
+  await admin(adminUri, async (c) => {
+    // Clear databases left by runs that were interrupted before afterAll.
+    const { rows } = await c.query<{ datname: string }>(
+      `select datname from pg_database where datname like 'dbtest\\_%'`,
+    );
+    for (const { datname } of rows) await c.query(`drop database if exists "${datname}" with (force)`);
+    await c.query(`create database ${dbName}`);
+  });
+  // Extensions need superuser, as in infra/postgres/init/01-databases.sh.
+  await admin(dbUri, (c) =>
+    c.query('create extension if not exists vector; create extension if not exists pg_trgm;'),
+  );
+
+  conn = createCatalogDb(dbUri, { max: 2 });
   await runCatalogMigrations(conn.db);
 }, 180_000);
 
 afterAll(async () => {
   await conn?.close();
-  await container?.stop();
+  if (!container) return;
+  if (reuse) {
+    await admin(container.getConnectionUri(), (c) =>
+      c.query(`drop database if exists ${dbName} with (force)`),
+    );
+  } else {
+    await container.stop();
+  }
 });
 
 describe('migrations', () => {
