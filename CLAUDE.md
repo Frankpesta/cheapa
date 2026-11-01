@@ -2,6 +2,8 @@
 
 You are working on **Cheapa**: snap or share a product photo, see every Nigerian online listing for it, cheapest first.
 
+**Primary focus: fashion and beauty for young Nigerian women** (clothing, shoes, bags and accessories, hair, beauty). Electronics are secondary. Results show the exact item cheapest first, then cheaper lookalikes. Read `docs/build/13-fashion-and-beauty.md` before any normalization, matching, search or results work.
+
 Read the relevant `docs/build/*.md` file before any task. If the task conflicts with these rules, stop and ask.
 
 ## Repo layout
