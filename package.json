@@ -17,7 +17,12 @@
     "db:generate": "turbo run db:generate",
     "db:migrate": "turbo run db:migrate",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "infra:up": "docker compose -f infra/docker-compose.yml --env-file .env up -d --wait",
+    "infra:down": "docker compose -f infra/docker-compose.yml --env-file .env down",
+    "infra:reset": "docker compose -f infra/docker-compose.yml --env-file .env down -v",
+    "infra:logs": "docker compose -f infra/docker-compose.yml --env-file .env logs -f",
+    "infra:check": "bash infra/check.sh"
   },
   "prettier": "@cheapa/config/prettier",
   "devDependencies": {
