@@ -1,0 +1,33 @@
+{
+  "name": "@cheapa/adapters",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Source adapters, one folder per store or platform",
+  "type": "module",
+  "exports": {
+    ".": {
+      "@cheapa/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@cheapa/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@cheapa/config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

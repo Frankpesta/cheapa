@@ -1,0 +1,33 @@
+{
+  "name": "@cheapa/db",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Drizzle schemas and migrations for the catalog and users databases",
+  "type": "module",
+  "exports": {
+    ".": {
+      "@cheapa/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@cheapa/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@cheapa/config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

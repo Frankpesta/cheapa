@@ -1,0 +1,28 @@
+{
+  "name": "cheapa",
+  "private": true,
+  "description": "Snap or share a product photo, see every Nigerian online listing for it, cheapest first.",
+  "type": "module",
+  "packageManager": "pnpm@12.16.1",
+  "engines": {
+    "node": ">=26.0.0",
+    "pnpm": ">=12.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "db:generate": "turbo run db:generate",
+    "db:migrate": "turbo run db:migrate",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "prettier": "@cheapa/config/prettier",
+  "devDependencies": {
+    "@cheapa/config": "workspace:*",
+    "prettier": "catalog:",
+    "turbo": "catalog:"
+  }
+}

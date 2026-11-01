@@ -1,0 +1,26 @@
+{
+  "name": "@cheapa/worker",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Crawl and process workers (BullMQ consumers)",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@cheapa/core": "workspace:*",
+    "@cheapa/db": "workspace:*",
+    "@cheapa/adapters": "workspace:*",
+    "@cheapa/ml": "workspace:*"
+  },
+  "devDependencies": {
+    "@cheapa/config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

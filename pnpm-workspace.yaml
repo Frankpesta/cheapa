@@ -1,0 +1,22 @@
+packages:
+  - apps/*
+  - packages/*
+
+# One version of each shared tool across the repo. Reference with "catalog:".
+catalog:
+  '@eslint/js': 10.0.1
+  '@types/node': 26.6.6
+  eslint: 10.14.0
+  eslint-config-prettier: 10.1.8
+  globals: 17.14.0
+  prettier: 3.9.10
+  turbo: 2.11.10
+  # typescript-eslint 8.x supports TypeScript < 6.1; move to 7.x when it does (see BACKLOG.md).
+  typescript: 6.0.3
+  typescript-eslint: 8.72.1
+  vitest: 5.0.5
+
+engineStrict: true
+
+minimumReleaseAgeExclude:
+  - globals@17.14.0

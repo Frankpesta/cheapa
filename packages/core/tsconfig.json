@@ -1,0 +1,8 @@
+{
+  "extends": "@cheapa/config/tsconfig.node.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "noEmit": true
+  },
+  "include": ["src", "*.config.ts"]
+}

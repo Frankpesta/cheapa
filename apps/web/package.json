@@ -1,0 +1,6 @@
+{
+  "name": "@cheapa/web",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Cheapa Next.js web app (scaffolded in 07-web-app.md)"
+}

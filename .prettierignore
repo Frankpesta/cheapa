@@ -1,0 +1,7 @@
+pnpm-lock.yaml
+dist/
+coverage/
+.turbo/
+# Hand-authored plan and design docs: never auto-format
+docs/
+CLAUDE.md
