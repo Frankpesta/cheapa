@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Product prices</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0A7A3A;text-decoration:none}a:hover{color:#075E2C}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:'Geist Mono',monospace}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.round{width:44px;height:44px;border-radius:50%;background:#FFFFFF;color:#0E1A13;display:flex;align-items:center;justify-content:center;border:1px solid #E3E6DD;cursor:pointer}
+.seg{height:30px;padding:0 12px;border-radius:15px;border:0;background:transparent;font-family:'Geist Mono',monospace;font-size:12px;font-weight:500;color:#55615A;cursor:pointer}
+.seg.on{background:#0E1A13;color:#FFFFFF}
+.srow{display:flex;align-items:center;gap:10px;height:46px;border-bottom:1px dashed #D5DACF;font-size:14px}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F5EF; color: #0E1A13; font-family: 'Geist', system-ui, sans-serif; position: relative; overflow: hidden">
+  <div style="height: 250px; background: #E6EEDB; position: relative; display: flex; align-items: center; justify-content: center">
+    <div style="width: 96px; height: 180px; border-radius: 22px; background: #1B1F1C; transform: rotate(-6deg); box-shadow: 0 24px 40px rgba(14,26,19,0.25); position: relative; margin-top: 30px">
+      <div style="position: absolute; left: 10px; top: 10px; width: 40px; height: 40px; border-radius: 12px; background: #101311; border: 2px solid #3A423C"></div>
+      <div style="position: absolute; left: 18px; top: 18px; width: 9px; height: 9px; border-radius: 50%; border: 2px solid #48544C"></div>
+      <div style="position: absolute; left: 32px; top: 28px; width: 9px; height: 9px; border-radius: 50%; border: 2px solid #48544C"></div>
+    </div>
+    <div style="position: absolute; top: 54px; left: 16px; right: 16px; display: flex; justify-content: space-between">
+      <a href="Results.dc.html" class="round" aria-label="Back">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+      </a>
+      <button type="button" class="round" aria-label="Share product">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>
+      </button>
+    </div>
+    <span class="mono" style="position: absolute; bottom: 12px; right: 16px; font-size: 10px; color: #3A5A2E">IMAGE FROM SLOT</span>
+  </div>
+
+  <div style="padding: 16px 20px 0; display: flex; flex-direction: column; gap: 14px">
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <span class="mono" style="font-size: 11px; letter-spacing: 1px; color: #55615A">TECNO · PHONES</span>
+      <h1 class="disp" style="margin: 0; font-size: 28px; line-height: 1.05; font-weight: 800; letter-spacing: -0.6px">Camon 30 · 8GB / 256GB</h1>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 10px; background: #FFFFFF; border: 1px solid #E3E6DD; border-radius: 16px; padding: 12px">
+      <div style="width: 36px; height: 36px; border-radius: 10px; background: #E7F5C2; color: #2F4A06; display: flex; align-items: center; justify-content: center">
+        <svg class="ic" viewBox="0 0 24 24" style="width: 20px; height: 20px; stroke-width: 2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>
+      </div>
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 15px; font-weight: 600">Good time to buy</span>
+        <span style="font-size: 13px; color: #55615A">Lowest new price we've seen in 30 days</span>
+      </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #E3E6DD; border-radius: 18px; padding: 14px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <span style="font-size: 14px; font-weight: 600">Cheapest new price</span>
+        <div style="display: flex; gap: 2px; background: #F4F5EF; border-radius: 16px; padding: 2px">
+          <button type="button" class="{{s7}}" onClick="{{p7}}">7D</button>
+          <button type="button" class="{{s30}}" onClick="{{p30}}">30D</button>
+          <button type="button" class="{{s90}}" onClick="{{p90}}">90D</button>
+        </div>
+      </div>
+      <svg viewBox="0 0 310 104" style="width: 100%; height: 104px; margin-top: 10px; display: block" role="img" aria-label="Cheapest new price trend, now at its lowest">
+        <line x1="0" y1="96" x2="310" y2="96" stroke="#E3E6DD" stroke-width="1"></line>
+        <line x1="0" y1="50" x2="310" y2="50" stroke="#EEF0EA" stroke-width="1" stroke-dasharray="3 4"></line>
+        <polyline points="{{pts}}" fill="none" stroke="#0E1A13" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"></polyline>
+        <circle cx="304" cy="{{lastY}}" r="5" fill="#C6F432" stroke="#0E1A13" stroke-width="2"></circle>
+      </svg>
+      <div style="display: flex; justify-content: space-between; margin-top: 6px">
+        <span class="mono" style="font-size: 11px; color: #55615A">high {{hi}}</span>
+        <span class="mono" style="font-size: 11px; color: #0E1A13">now ₦318,500</span>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column">
+      <div class="srow"><span style="font-weight: 600; flex-grow: 1">Slot</span><span class="mono" style="font-size: 11px; color: #55615A">1h ago</span><span class="disp" style="font-size: 16px; font-weight: 800; width: 92px; text-align: right">₦318,500</span></div>
+      <div class="srow"><span style="font-weight: 600; flex-grow: 1">Jumia</span><span class="mono" style="font-size: 11px; color: #55615A">40m ago</span><span class="disp" style="font-size: 16px; font-weight: 700; width: 92px; text-align: right">₦324,900</span></div>
+      <div class="srow" style="border-bottom: 0"><span style="font-weight: 600; flex-grow: 1">Konga</span><span class="mono" style="font-size: 11px; color: #55615A">3h ago</span><span class="disp" style="font-size: 16px; font-weight: 700; width: 92px; text-align: right">₦331,000</span></div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; background: #FFFFFF; border-top: 1px solid #E3E6DD; padding: 12px 16px 30px; display: flex; gap: 10px">
+    <a href="WatchSheet.dc.html" aria-label="Watch this price" style="width: 56px; height: 56px; border-radius: 18px; border: 1.5px solid #0E1A13; color: #0E1A13; display: flex; align-items: center; justify-content: center">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+    </a>
+    <a href="#buy" style="flex-grow: 1; height: 56px; border-radius: 18px; background: #C6F432; color: #0E1A13; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; font-size: 16px; font-weight: 600">
+      <span>Buy at Slot</span>
+      <span style="display: flex; align-items: center; gap: 6px"><span class="disp" style="font-weight: 800; font-size: 18px">₦318,500</span><svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg></span>
+    </a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { range: '30' };
+  }
+  renderVals() {
+    const series = {
+      '7': [334, 334, 331, 329, 329, 324.9, 318.5],
+      '30': [359, 355, 355, 352, 349, 349, 344, 346, 342, 339, 339, 341, 336, 334, 331, 329, 324.9, 318.5],
+      '90': [372, 369, 365, 368, 362, 359, 361, 355, 352, 349, 352, 344, 339, 341, 336, 331, 329, 318.5]
+    };
+    const d = series[this.state.range];
+    const max = Math.max.apply(null, d);
+    const min = 310;
+    const step = 304 / (d.length - 1);
+    const y = (v) => Math.round(8 + (max - v) / (max - min) * 84);
+    const pts = d.map((v, i) => Math.round(i * step) + ',' + y(v)).join(' ');
+    const seg = (r) => this.state.range === r ? 'seg on' : 'seg';
+    return {
+      pts: pts,
+      lastY: y(d[d.length - 1]),
+      hi: '₦' + Math.round(max * 1000).toLocaleString('en-NG'),
+      s7: seg('7'), s30: seg('30'), s90: seg('90'),
+      p7: () => this.setState({ range: '7' }),
+      p30: () => this.setState({ range: '30' }),
+      p90: () => this.setState({ range: '90' })
+    };
+  }
+}
+</script>
+</body>
+</html>

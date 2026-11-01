@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Choose your city</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0A7A3A;text-decoration:none}a:hover{color:#075E2C}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:'Geist Mono',monospace}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.city{height:52px;border-radius:14px;border:1.5px solid #E3E6DD;background:#FFFFFF;font-family:'Geist',sans-serif;font-size:15px;font-weight:500;color:#0E1A13;display:flex;align-items:center;justify-content:space-between;padding:0 14px;cursor:pointer;width:100%;box-sizing:border-box}
+.city.on{border-color:#0E1A13;background:#0E1A13;color:#FFFFFF}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F5EF; color: #0E1A13; font-family: 'Geist', system-ui, sans-serif; display: flex; flex-direction: column; padding: 62px 24px 36px; overflow: hidden">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <a href="Onboarding2.dc.html" aria-label="Back" style="width: 44px; height: 44px; margin-left: -10px; display: flex; align-items: center; justify-content: center; color: #0E1A13">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+    </a>
+    <span class="mono" style="font-size: 12px; color: #55615A">3 OF 3</span>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 12px">
+    <h1 class="disp" style="margin: 0; font-size: 36px; line-height: 1.05; font-weight: 800; letter-spacing: -1px">Where should we deliver to?</h1>
+    <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3A463F">We show sellers that deliver to you first. You can change this anytime.</p>
+  </div>
+
+  <label for="citysearch" style="margin-top: 22px; height: 52px; border-radius: 14px; background: #FFFFFF; border: 1.5px solid #E3E6DD; display: flex; align-items: center; gap: 10px; padding: 0 14px; color: #55615A">
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="citysearch" type="text" placeholder="Search city or town" style="border: 0; outline: none; background: transparent; font-family: 'Geist', sans-serif; font-size: 15px; color: #0E1A13; flex-grow: 1">
+  </label>
+
+  <button type="button" style="margin-top: 12px; height: 48px; border-radius: 14px; border: 0; background: transparent; display: flex; align-items: center; gap: 10px; padding: 0 4px; font-family: 'Geist', sans-serif; font-size: 15px; font-weight: 600; color: #0A7A3A; cursor: pointer">
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    Use my current location
+  </button>
+
+  <div class="mono" style="font-size: 11px; letter-spacing: 1px; color: #55615A; margin: 10px 0 10px">POPULAR</div>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+    <sc-for list="{{cities}}" as="c" hint-placeholder-count="8">
+      <button type="button" class="{{c.cls}}" onClick="{{c.pick}}">
+        <span>{{c.name}}</span>
+        <sc-if value="{{c.on}}" hint-placeholder-val="{{false}}">
+          <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px; color: #C6F432; stroke-width: 2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>
+        </sc-if>
+      </button>
+    </sc-for>
+  </div>
+
+  <div style="flex-grow: 1"></div>
+
+  <div style="display: flex; gap: 6px; margin: 0 0 20px">
+    <div style="width: 6px; height: 6px; border-radius: 3px; background: #C9CFC4"></div>
+    <div style="width: 6px; height: 6px; border-radius: 3px; background: #C9CFC4"></div>
+    <div style="width: 24px; height: 6px; border-radius: 3px; background: #0E1A13"></div>
+  </div>
+
+  <a href="Home.dc.html" style="height: 58px; border-radius: 18px; background: #0E1A13; color: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 17px; font-weight: 600">
+    Start saving in {{selectedName}}
+    <svg class="ic" viewBox="0 0 24 24" style="color: #C6F432" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+  </a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { picked: 'Lagos' };
+  }
+  renderVals() {
+    const names = ['Lagos', 'Abuja', 'Port Harcourt', 'Ibadan', 'Kano', 'Benin City', 'Enugu', 'Akure'];
+    const cities = names.map((n) => ({
+      name: n,
+      on: this.state.picked === n,
+      cls: this.state.picked === n ? 'city on' : 'city',
+      pick: () => this.setState({ picked: n })
+    }));
+    return { cities: cities, selectedName: this.state.picked };
+  }
+}
+</script>
+</body>
+</html>

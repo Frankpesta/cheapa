@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cheapa welcome</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0A7A3A;text-decoration:none}a:hover{color:#075E2C}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:'Geist Mono',monospace}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #0E1A13; color: #F4F5EF; font-family: 'Geist', system-ui, sans-serif; display: flex; flex-direction: column; padding: 62px 24px 36px; position: relative; overflow: hidden">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <div style="display: flex; align-items: center; gap: 8px">
+      <div style="width: 30px; height: 30px; border-radius: 9px; background: {{accent}}; display: flex; align-items: center; justify-content: center; color: #0E1A13">
+        <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px; stroke-width: 2.4" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>
+      </div>
+      <span class="disp" style="font-size: 24px; font-weight: 800; letter-spacing: -0.5px">cheapa</span>
+    </div>
+    <a href="SignIn.dc.html" style="color: #C9D2CB; font-size: 15px; font-weight: 500; padding: 12px 4px">Sign in</a>
+  </div>
+
+  <div style="flex-grow: 1; display: flex; align-items: center; justify-content: center; position: relative">
+    <div style="position: absolute; width: 300px; height: 300px; border-radius: 50%; border: 1px dashed #2D3D33; top: 50%; left: 50%; transform: translate(-50%, -50%)"></div>
+    <div style="width: 150px; height: 196px; border-radius: 22px; background: #1B2B21; border: 1px solid #2D3D33; position: absolute; left: 8px; top: 64px; transform: rotate(-8deg); box-sizing: border-box; padding: 14px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; align-items: center; gap: 6px">
+        <div style="width: 18px; height: 18px; border-radius: 50%; background: #3B4D41"></div>
+        <div style="height: 6px; width: 54px; border-radius: 3px; background: #3B4D41"></div>
+      </div>
+      <div style="flex-grow: 1; border-radius: 12px; background: #24362A; display: flex; align-items: center; justify-content: center">
+        <div style="width: 44px; height: 80px; border-radius: 10px; border: 2px solid #8FA394; position: relative">
+          <div style="position: absolute; top: 6px; right: 6px; width: 14px; height: 14px; border-radius: 4px; border: 2px solid #8FA394"></div>
+        </div>
+      </div>
+      <div class="mono" style="font-size: 10px; color: #8FA394">DM for price</div>
+    </div>
+    <div style="width: 236px; border-radius: 22px; background: #F4F5EF; color: #0E1A13; position: absolute; right: 0px; top: 142px; box-sizing: border-box; padding: 16px; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 24px 48px rgba(0,0,0,0.35)">
+      <div class="mono" style="font-size: 10px; letter-spacing: 1px; color: #55615A">5 STORES CHECKED</div>
+      <div style="display: flex; justify-content: space-between; align-items: center; background: {{accent}}; border-radius: 12px; padding: 10px 12px">
+        <span style="font-size: 13px; font-weight: 600">Slot</span>
+        <span class="disp" style="font-size: 18px; font-weight: 800">₦318,500</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 12px">
+        <span style="font-size: 13px; color: #3A463F">Jumia</span>
+        <span class="disp" style="font-size: 15px; font-weight: 700">₦324,900</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 12px; border-top: 1px dashed #D5DACF">
+        <span style="font-size: 13px; color: #3A463F">Konga</span>
+        <span class="disp" style="font-size: 15px; font-weight: 700">₦331,000</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 14px">
+    <h1 class="disp" style="margin: 0; font-size: 44px; line-height: 1.02; font-weight: 800; letter-spacing: -1.5px">Snap am.<br>See who sell am <span style="color: {{accent}}">cheapest.</span></h1>
+    <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #C9D2CB">Photo any product, or share a screenshot. We check Nigerian stores and show you the lowest price.</p>
+  </div>
+
+  <div style="display: flex; gap: 6px; margin: 28px 0 20px">
+    <div style="width: 24px; height: 6px; border-radius: 3px; background: {{accent}}"></div>
+    <div style="width: 6px; height: 6px; border-radius: 3px; background: #3B4D41"></div>
+    <div style="width: 6px; height: 6px; border-radius: 3px; background: #3B4D41"></div>
+  </div>
+
+  <a href="Onboarding2.dc.html" style="height: 58px; border-radius: 18px; background: {{accent}}; color: #0E1A13; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 17px; font-weight: 600">
+    Get started
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+  </a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C6F432","options":["#C6F432","#7CF2A6","#FFD23F"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#C6F432' };
+  }
+}
+</script>
+</body>
+</html>

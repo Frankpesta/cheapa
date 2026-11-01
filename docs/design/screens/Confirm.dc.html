@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Confirm the variant</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0A7A3A;text-decoration:none}a:hover{color:#075E2C}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:'Geist Mono',monospace}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.opt{width:100%;box-sizing:border-box;display:flex;align-items:center;gap:14px;padding:14px;border-radius:18px;border:1.5px solid #E3E6DD;background:#FFFFFF;cursor:pointer;font-family:'Geist',sans-serif;color:#0E1A13;text-align:left}
+.opt.on{border:2px solid #0E1A13;background:#F8FBEE}
+.radio{width:22px;height:22px;border-radius:50%;border:2px solid #C9CFC4;box-sizing:border-box;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.radio.on{border-color:#0E1A13}
+.dot{width:10px;height:10px;border-radius:50%;background:#0E1A13}
+.ghost{height:14px;border-radius:7px;background:#E3E6DD}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F5EF; color: #0E1A13; font-family: 'Geist', system-ui, sans-serif; position: relative; overflow: hidden">
+  <div aria-hidden="true" style="padding: 66px 16px 0; display: flex; flex-direction: column; gap: 12px">
+    <div style="height: 76px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E6DD"></div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+      <div style="height: 92px; border-radius: 18px; background: #C6F432"></div>
+      <div style="height: 92px; border-radius: 18px; background: #0E1A13"></div>
+    </div>
+    <div style="height: 66px; border-radius: 16px; background: #FFFFFF"></div>
+    <div style="height: 66px; border-radius: 16px; background: #FFFFFF"></div>
+    <div style="height: 66px; border-radius: 16px; background: #FFFFFF"></div>
+  </div>
+  <div style="position: absolute; inset: 0; background: rgba(14,26,19,0.55)"></div>
+
+  <div role="dialog" aria-label="Which one did you see" style="position: absolute; left: 0; right: 0; bottom: 0; background: #F4F5EF; border-radius: 30px 30px 0 0; padding: 12px 20px 34px; box-sizing: border-box; display: flex; flex-direction: column">
+    <div style="width: 40px; height: 5px; border-radius: 3px; background: #C9CFC4; margin: 0 auto 18px"></div>
+    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <span class="mono" style="font-size: 11px; letter-spacing: 1px; color: #55615A">QUICK CHECK</span>
+        <h1 class="disp" style="margin: 0; font-size: 28px; line-height: 1.05; font-weight: 800; letter-spacing: -0.6px">Which Camon 30 did you see?</h1>
+      </div>
+      <a href="Results.dc.html" aria-label="Close" style="width: 40px; height: 40px; border-radius: 50%; background: #E3E6DD; color: #0E1A13; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+        <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </a>
+    </div>
+    <p style="margin: 8px 0 18px; font-size: 15px; line-height: 1.5; color: #3A463F">Storage changes the price a lot, so we check before comparing.</p>
+
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <sc-for list="{{opts}}" as="o" hint-placeholder-count="3">
+        <button type="button" class="{{o.cls}}" onClick="{{o.pick}}">
+          <span class="{{o.rcls}}"><sc-if value="{{o.on}}" hint-placeholder-val="{{false}}"><span class="dot"></span></sc-if></span>
+          <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 3px">
+            <span style="font-size: 16px; font-weight: 600">{{o.name}}</span>
+            <span style="font-size: 13px; color: #55615A">{{o.sub}}</span>
+          </span>
+          <span style="display: flex; flex-direction: column; align-items: flex-end; gap: 2px">
+            <span class="mono" style="font-size: 10px; color: #55615A">FROM</span>
+            <span class="disp" style="font-size: 18px; font-weight: 800">{{o.price}}</span>
+          </span>
+        </button>
+      </sc-for>
+    </div>
+
+    <a href="Results.dc.html" style="margin-top: 20px; height: 56px; border-radius: 18px; background: #0E1A13; color: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 16px; font-weight: 600">
+      Compare {{chosen}} prices
+      <svg class="ic" viewBox="0 0 24 24" style="color: #C6F432" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+    </a>
+    <a href="NotFound.dc.html" style="margin-top: 8px; height: 48px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600">None of these, let me type it</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { picked: '256' };
+  }
+  renderVals() {
+    const list = [
+      { id: '128', name: '8GB / 128GB', sub: '6 listings · 4 stores', price: '₦279,000' },
+      { id: '256', name: '8GB / 256GB', sub: '7 listings · 5 stores', price: '₦318,500' },
+      { id: '512', name: '12GB / 512GB', sub: '2 listings · 2 stores', price: '₦392,000' }
+    ];
+    const opts = list.map((o) => {
+      const on = this.state.picked === o.id;
+      return { name: o.name, sub: o.sub, price: o.price, on: on, cls: on ? 'opt on' : 'opt', rcls: on ? 'radio on' : 'radio', pick: () => this.setState({ picked: o.id }) };
+    });
+    const chosen = list.find((o) => o.id === this.state.picked);
+    return { opts: opts, chosen: chosen ? chosen.name.split(' / ')[1] : '' };
+  }
+}
+</script>
+</body>
+</html>

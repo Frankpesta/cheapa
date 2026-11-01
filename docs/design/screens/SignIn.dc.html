@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sign in to Cheapa</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0A7A3A;text-decoration:none}a:hover{color:#075E2C}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:'Geist Mono',monospace}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.ben{display:flex;align-items:center;gap:12px;font-size:15px;color:#E4EAE5}
+.bic{width:34px;height:34px;border-radius:10px;background:#1B2B21;color:#C6F432;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #0E1A13; color: #F4F5EF; font-family: 'Geist', system-ui, sans-serif; position: relative; overflow: hidden">
+  <div style="padding: 58px 24px 0; display: flex; flex-direction: column; gap: 18px">
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <div style="display: flex; align-items: center; gap: 8px">
+        <div style="width: 30px; height: 30px; border-radius: 9px; background: #C6F432; display: flex; align-items: center; justify-content: center; color: #0E1A13">
+          <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px; stroke-width: 2.4" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>
+        </div>
+        <span class="disp" style="font-size: 22px; font-weight: 800">cheapa</span>
+      </div>
+      <a href="Home.dc.html" style="color: #C9D2CB; font-size: 15px; font-weight: 500; padding: 12px 4px">Not now</a>
+    </div>
+    <h1 class="disp" style="margin: 8px 0 0; font-size: 36px; line-height: 1.05; font-weight: 800; letter-spacing: -1px">Sign in so we can<br>shout when prices drop.</h1>
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div class="ben"><span class="bic"><svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>Price-drop alerts on items you watch</div>
+      <div class="ben"><span class="bic"><svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Your history on every device</div>
+      <div class="ben"><span class="bic"><svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg></span>Searching stays free, no account needed</div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; background: #F4F5EF; color: #0E1A13; border-radius: 30px 30px 0 0; padding: 24px 24px 34px; display: flex; flex-direction: column; gap: 12px">
+    <label for="phone" style="font-size: 13px; font-weight: 600">Phone number</label>
+    <div style="height: 56px; border-radius: 16px; background: #FFFFFF; border: 1.5px solid #0E1A13; display: flex; align-items: center; overflow: hidden">
+      <span class="mono" style="height: 100%; display: flex; align-items: center; padding: 0 14px; border-right: 1px solid #E3E6DD; font-size: 15px; color: #0E1A13">+234</span>
+      <input id="phone" type="tel" placeholder="801 234 5678" style="border: 0; outline: none; background: transparent; font-family: 'Geist', sans-serif; font-size: 17px; padding: 0 14px; flex-grow: 1; min-width: 0; color: #0E1A13">
+    </div>
+    <a href="Watches.dc.html" style="height: 56px; border-radius: 18px; background: #C6F432; color: #0E1A13; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600">Send me a code</a>
+    <div style="display: flex; align-items: center; gap: 12px; margin: 4px 0">
+      <div style="flex-grow: 1; height: 1px; background: #D5DACF"></div>
+      <span style="font-size: 13px; color: #55615A">or</span>
+      <div style="flex-grow: 1; height: 1px; background: #D5DACF"></div>
+    </div>
+    <a href="Watches.dc.html" style="height: 56px; border-radius: 18px; border: 1.5px solid #D5DACF; background: #FFFFFF; color: #0E1A13; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600">Continue with Google</a>
+    <p style="margin: 6px 0 0; font-size: 12px; line-height: 1.5; color: #55615A; text-align: center">By continuing you agree to our <a href="#terms">Terms</a> and <a href="#privacy">Privacy policy</a>. We never sell your data.</p>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Search results</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0A7A3A;text-decoration:none}a:hover{color:#075E2C}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:'Geist Mono',monospace}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.chip{height:38px;padding:0 14px;border-radius:19px;border:1.5px solid #D5DACF;background:#FFFFFF;font-family:'Geist',sans-serif;font-size:14px;font-weight:500;color:#0E1A13;cursor:pointer;display:flex;align-items:center;gap:6px}
+.chip.on{background:#0E1A13;border-color:#0E1A13;color:#FFFFFF}
+.lrow{display:flex;align-items:center;gap:12px;padding:12px;background:#FFFFFF;border:1px solid #E3E6DD;border-radius:16px;color:#0E1A13}
+.lrow.best{border:2px solid #0E1A13}
+.av{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:16px;flex-shrink:0}
+.pill{font-size:11px;font-weight:600;padding:2px 7px;border-radius:6px}
+.p-new{background:#E7F5C2;color:#2F4A06}
+.p-used{background:#E4ECF7;color:#1E3A66}
+.f-warn{font-size:11px;font-weight:600;padding:2px 7px;border-radius:6px;background:#FFE9DC;color:#9A3412}
+.f-live{font-size:11px;font-weight:600;padding:2px 7px;border-radius:6px;background:#EEE6F3;color:#4B2A6B}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F5EF; color: #0E1A13; font-family: 'Geist', system-ui, sans-serif; display: flex; flex-direction: column; padding: 54px 16px 0; overflow: hidden; position: relative">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <a href="Home.dc.html" aria-label="Back" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #0E1A13">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></svg>
+    </a>
+    <span style="font-size: 16px; font-weight: 600">7 listings · 5 stores</span>
+    <button type="button" aria-label="Share results" style="width: 44px; height: 44px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; color: #0E1A13; cursor: pointer">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>
+    </button>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 12px; margin-top: 8px; background: #FFFFFF; border: 1px solid #E3E6DD; border-radius: 18px; padding: 10px">
+    <div style="width: 54px; height: 54px; border-radius: 14px; background: #E6EEDB; display: flex; align-items: center; justify-content: center; color: #3A5A2E; flex-shrink: 0">
+      <svg class="ic" viewBox="0 0 24 24" style="width: 28px; height: 28px" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+    </div>
+    <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0">
+      <span class="mono" style="font-size: 10px; letter-spacing: 1px; color: #55615A">LOOKS LIKE</span>
+      <span class="disp" style="font-size: 18px; font-weight: 800; letter-spacing: -0.3px">Tecno Camon 30</span>
+      <span style="font-size: 13px; color: #3A463F">8GB / 256GB</span>
+    </div>
+    <a href="Confirm.dc.html" style="display: flex; align-items: center; gap: 4px; font-size: 14px; font-weight: 600; padding: 10px 6px">
+      <svg class="ic" viewBox="0 0 24 24" style="width: 16px; height: 16px" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg>
+      Not it?
+    </a>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 10px">
+    <a href="Product.dc.html" style="background: #C6F432; color: #0E1A13; border-radius: 18px; padding: 14px; display: flex; flex-direction: column; gap: 4px">
+      <span class="mono" style="font-size: 10px; letter-spacing: 1px">CHEAPEST NEW</span>
+      <span class="disp" style="font-size: 26px; font-weight: 800; letter-spacing: -0.8px">₦318,500</span>
+      <span style="font-size: 13px; font-weight: 500">at Slot · ₦41k below avg</span>
+    </a>
+    <a href="Product.dc.html" style="background: #0E1A13; color: #F4F5EF; border-radius: 18px; padding: 14px; display: flex; flex-direction: column; gap: 4px">
+      <span class="mono" style="font-size: 10px; letter-spacing: 1px; color: #A9B6AD">USED FROM</span>
+      <span class="disp" style="font-size: 26px; font-weight: 800; letter-spacing: -0.8px">₦265,000</span>
+      <span style="font-size: 13px; color: #C9D2CB">UK used · Jiji</span>
+    </a>
+  </div>
+
+  <div style="display: flex; gap: 8px; margin-top: 14px; align-items: center">
+    <button type="button" class="{{cAll}}" onClick="{{showAll}}">All <span class="mono" style="font-size: 12px; opacity: 0.7">7</span></button>
+    <button type="button" class="{{cNew}}" onClick="{{showNew}}">New <span class="mono" style="font-size: 12px; opacity: 0.7">5</span></button>
+    <button type="button" class="{{cUsed}}" onClick="{{showUsed}}">Used <span class="mono" style="font-size: 12px; opacity: 0.7">2</span></button>
+    <div style="flex-grow: 1"></div>
+    <button type="button" aria-label="Filters" class="chip" style="width: 38px; padding: 0; justify-content: center">
+      <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px" aria-hidden="true"><path d="M4 6h16"/><path d="M7 12h10"/><path d="M10 18h4"/></svg>
+    </button>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 12px">
+    <sc-for list="{{rows}}" as="r" hint-placeholder-count="5">
+      <a href="Product.dc.html" class="{{r.cls}}">
+        <div class="av" style="{{r.avStyle}}">{{r.init}}</div>
+        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px; min-width: 0">
+          <div style="display: flex; align-items: center; gap: 6px">
+            <span style="font-size: 15px; font-weight: 600">{{r.store}}</span>
+            <span class="{{r.condCls}}">{{r.cond}}</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 6px">
+            <span class="mono" style="font-size: 11px; color: #55615A">{{r.seen}}</span>
+            <sc-if value="{{r.hasFlag}}" hint-placeholder-val="{{false}}"><span class="{{r.flagCls}}">{{r.flag}}</span></sc-if>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 2px">
+          <span class="disp" style="font-size: 18px; font-weight: 800; letter-spacing: -0.3px">{{r.price}}</span>
+          <sc-if value="{{r.hasOld}}" hint-placeholder-val="{{false}}"><span style="font-size: 12px; color: #6B776F; text-decoration: line-through">{{r.old}}</span></sc-if>
+        </div>
+      </a>
+    </sc-for>
+  </div>
+
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 24px 16px 30px; background: linear-gradient(rgba(244,245,239,0), #F4F5EF 40%)">
+    <a href="WatchSheet.dc.html" style="height: 54px; border-radius: 16px; background: #0E1A13; color: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 16px; font-weight: 600">
+      <svg class="ic" viewBox="0 0 24 24" style="color: #C6F432" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+      Tell me when it drops
+    </a>
+    <p style="margin: 10px 0 0; font-size: 11px; color: #55615A; text-align: center">Sorted by price; flagged listings sit last. We may earn a commission, never at the cost of order.</p>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { f: 'all' };
+  }
+  renderVals() {
+    const all = [
+      { store: 'Jiji · Ikeja', init: 'Ji', avStyle: { background: '#E6EEDB', color: '#2F4A06' }, kind: 'used', seen: 'seen 5h ago', price: '₦265,000', old: '', flag: '' },
+      { store: 'Slot', init: 'S', avStyle: { background: '#0E1A13', color: '#C6F432' }, kind: 'new', seen: 'seen 1h ago', price: '₦318,500', old: '', flag: 'Cheapest new', flagCls: 'pill p-new', best: true },
+      { store: 'Jumia', init: 'J', avStyle: { background: '#FCE7D6', color: '#7A3A0E' }, kind: 'new', seen: 'seen 40m ago', price: '₦324,900', old: '₦359,000', flag: '' },
+      { store: 'Konga', init: 'K', avStyle: { background: '#F1E3F3', color: '#5A2A66' }, kind: 'new', seen: 'seen 3h ago', price: '₦331,000', old: '', flag: '' },
+      { store: 'Pointek', init: 'P', avStyle: { background: '#DDE6EE', color: '#1E3A66' }, kind: 'new', seen: 'live now', price: '₦335,000', old: '', flag: 'Live', flagCls: 'f-live' },
+      { store: '3CHUB', init: '3C', avStyle: { background: '#F3EDD3', color: '#5C4A0A' }, kind: 'new', seen: 'seen 6h ago', price: '₦342,000', old: '', flag: '' },
+      { store: 'Jiji · Yaba', init: 'Ji', avStyle: { background: '#E6EEDB', color: '#2F4A06' }, kind: 'used', seen: 'seen 1d ago', price: '₦139,000', old: '', flag: 'Check seller', flagCls: 'f-warn' }
+    ];
+    const f = this.state.f;
+    const rows = all
+      .filter((r) => f === 'all' || r.kind === f)
+      .map((r) => ({
+        store: r.store, init: r.init, avStyle: r.avStyle, seen: r.seen, price: r.price, old: r.old,
+        hasOld: r.old !== '', flag: r.flag, hasFlag: r.flag !== '', flagCls: r.flagCls || '',
+        cond: r.kind === 'new' ? 'New' : 'UK used',
+        condCls: r.kind === 'new' ? 'pill p-new' : 'pill p-used',
+        cls: r.best ? 'lrow best' : 'lrow'
+      }));
+    return {
+      rows: rows,
+      cAll: f === 'all' ? 'chip on' : 'chip',
+      cNew: f === 'new' ? 'chip on' : 'chip',
+      cUsed: f === 'used' ? 'chip on' : 'chip',
+      showAll: () => this.setState({ f: 'all' }),
+      showNew: () => this.setState({ f: 'new' }),
+      showUsed: () => this.setState({ f: 'used' })
+    };
+  }
+}
+</script>
+</body>
+</html>

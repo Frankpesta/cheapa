@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cheapa home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0A7A3A;text-decoration:none}a:hover{color:#075E2C}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:'Geist Mono',monospace}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.tab{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;font-weight:500;color:#5E6A62;width:60px;padding-top:4px}
+.tab.on{color:#0E1A13;font-weight:600}
+.row{display:flex;align-items:center;gap:12px;background:#FFFFFF;border:1px solid #E3E6DD;border-radius:16px;padding:10px 12px 10px 10px;color:#0E1A13}
+.thumb{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.drop{font-family:'Geist Mono',monospace;font-size:11px;font-weight:500;background:#FFE9DC;color:#9A3412;padding:3px 7px;border-radius:6px}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F5EF; color: #0E1A13; font-family: 'Geist', system-ui, sans-serif; position: relative; overflow: hidden">
+  <div style="padding: 58px 20px 0; display: flex; flex-direction: column; gap: 16px">
+    <div style="display: flex; align-items: center; justify-content: space-between">
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <span style="font-size: 14px; color: #55615A">Good evening, Franklin</span>
+        <button type="button" style="border: 0; background: transparent; padding: 0; display: flex; align-items: center; gap: 4px; font-family: 'Geist', sans-serif; font-size: 15px; font-weight: 600; color: #0E1A13; cursor: pointer">
+          <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px; color: #0A7A3A" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Delivering to Lagos
+          <svg class="ic" viewBox="0 0 24 24" style="width: 16px; height: 16px" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </div>
+      <a href="Profile.dc.html" aria-label="Profile" style="width: 44px; height: 44px; border-radius: 50%; background: #0E1A13; color: #C6F432; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 17px">F</a>
+    </div>
+
+    <div style="background: #0E1A13; color: #F4F5EF; border-radius: 26px; padding: 22px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden">
+      <div style="position: absolute; right: -40px; top: -40px; width: 170px; height: 170px; border-radius: 50%; border: 1px dashed #2D3D33"></div>
+      <div style="position: absolute; right: 18px; top: 18px; width: 64px; height: 64px; border-radius: 18px; background: #1B2B21; display: flex; align-items: center; justify-content: center; color: #C6F432; transform: rotate(8deg)">
+        <svg class="ic" viewBox="0 0 24 24" style="width: 30px; height: 30px; stroke-width: 2" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>
+      </div>
+      <h1 class="disp" style="margin: 0; font-size: 30px; line-height: 1.05; font-weight: 800; letter-spacing: -0.8px; max-width: 220px">Wetin you wan buy? Snap am.</h1>
+      <div style="display: flex; gap: 10px">
+        <a href="Camera.dc.html" style="flex-grow: 1; height: 52px; border-radius: 16px; background: #C6F432; color: #0E1A13; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 16px; font-weight: 600">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          Snap a product
+        </a>
+        <a href="Searching.dc.html" aria-label="Pick from gallery" style="width: 52px; height: 52px; border-radius: 16px; border: 1.5px solid #3B4D41; color: #F4F5EF; display: flex; align-items: center; justify-content: center">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <a href="Results.dc.html" style="height: 52px; border-radius: 16px; background: #FFFFFF; border: 1px solid #E3E6DD; display: flex; align-items: center; gap: 10px; padding: 0 16px; color: #5E6A62; font-size: 15px">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      Or type it: "iPhone 15 Pro 256GB"
+    </a>
+
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; align-items: baseline; justify-content: space-between">
+        <h2 class="disp" style="margin: 0; font-size: 19px; font-weight: 700">Recent</h2>
+        <a href="History.dc.html" style="font-size: 14px; font-weight: 500; padding: 8px 0">See all</a>
+      </div>
+      <div style="display: flex; gap: 10px">
+        <a href="Results.dc.html" style="width: 108px; display: flex; flex-direction: column; gap: 6px; color: #0E1A13">
+          <div style="height: 76px; border-radius: 14px; background: #E6EEDB; display: flex; align-items: center; justify-content: center">
+            <svg class="ic" viewBox="0 0 24 24" style="width: 30px; height: 30px; color: #3A5A2E" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+          </div>
+          <span style="font-size: 12px; font-weight: 600; line-height: 1.3">Tecno Camon 30</span>
+          <span class="disp" style="font-size: 13px; font-weight: 700; color: #0A7A3A">from ₦318,500</span>
+        </a>
+        <a href="Results.dc.html" style="width: 108px; display: flex; flex-direction: column; gap: 6px; color: #0E1A13">
+          <div style="height: 76px; border-radius: 14px; background: #F3E3D3; display: flex; align-items: center; justify-content: center">
+            <svg class="ic" viewBox="0 0 24 24" style="width: 30px; height: 30px; color: #7A4A22" aria-hidden="true"><path d="M3 18v-5a9 9 0 0 1 18 0v5"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></svg>
+          </div>
+          <span style="font-size: 12px; font-weight: 600; line-height: 1.3">Oraimo FreePods</span>
+          <span class="disp" style="font-size: 13px; font-weight: 700; color: #0A7A3A">from ₦24,900</span>
+        </a>
+        <a href="Results.dc.html" style="width: 108px; display: flex; flex-direction: column; gap: 6px; color: #0E1A13">
+          <div style="height: 76px; border-radius: 14px; background: #DDE6EE; display: flex; align-items: center; justify-content: center">
+            <svg class="ic" viewBox="0 0 24 24" style="width: 30px; height: 30px; color: #2E4A66" aria-hidden="true"><path d="M3 17c4 0 5-6 9-6 2 0 3 1 5 1h4v5z"/><path d="M3 17v3h18v-3"/></svg>
+          </div>
+          <span style="font-size: 12px; font-weight: 600; line-height: 1.3">White sneakers</span>
+          <span class="disp" style="font-size: 13px; font-weight: 700; color: #0A7A3A">from ₦18,000</span>
+        </a>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <h2 class="disp" style="margin: 0; font-size: 19px; font-weight: 700">Real price drops today</h2>
+        <span class="mono" style="font-size: 11px; color: #55615A">VS 30-DAY AVG</span>
+      </div>
+      <a href="Product.dc.html" class="row">
+        <div class="thumb" style="background: #EEE6F3; color: #5A3A7A"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="13" rx="2"/><path d="M8 21h8"/></svg></div>
+        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 3px; min-width: 0">
+          <span style="font-size: 14px; font-weight: 600">Hisense 43" Smart TV</span>
+          <span style="font-size: 12px; color: #55615A">Konga · seen 2h ago</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px">
+          <span class="disp" style="font-size: 16px; font-weight: 800">₦289,000</span>
+          <span class="drop">−14%</span>
+        </div>
+      </a>
+      <a href="Product.dc.html" class="row">
+        <div class="thumb" style="background: #E6EEDB; color: #3A5A2E"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l-1 7H7z"/><path d="M7 10v4a5 5 0 0 0 10 0v-4"/><path d="M12 19v2"/></svg></div>
+        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 3px; min-width: 0">
+          <span style="font-size: 14px; font-weight: 600">Binatone blender 1.5L</span>
+          <span style="font-size: 12px; color: #55615A">Jumia · seen 40m ago</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px">
+          <span class="disp" style="font-size: 16px; font-weight: 800">₦41,500</span>
+          <span class="drop">−11%</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <nav style="position: absolute; left: 0; right: 0; bottom: 0; height: 88px; background: #FFFFFF; border-top: 1px solid #E3E6DD; display: flex; justify-content: space-around; align-items: flex-start; padding: 8px 8px 0; box-sizing: border-box">
+    <a href="Home.dc.html" class="tab on">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+      Home
+    </a>
+    <a href="Watches.dc.html" class="tab">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+      Watches
+    </a>
+    <a href="Camera.dc.html" aria-label="Snap a product" style="width: 62px; height: 62px; margin-top: -26px; border-radius: 20px; background: #C6F432; color: #0E1A13; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px #F4F5EF, 0 10px 24px rgba(14,26,19,0.25)">
+      <svg class="ic" viewBox="0 0 24 24" style="width: 28px; height: 28px; stroke-width: 2" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+    </a>
+    <a href="History.dc.html" class="tab">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      History
+    </a>
+    <a href="Profile.dc.html" class="tab">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+      Me
+    </a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

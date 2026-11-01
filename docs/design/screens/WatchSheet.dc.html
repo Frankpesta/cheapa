@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Watch this price</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0A7A3A;text-decoration:none}a:hover{color:#075E2C}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:'Geist Mono',monospace}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.q{flex:1;height:44px;border-radius:14px;border:1.5px solid #D5DACF;background:#FFFFFF;font-family:'Geist Mono',monospace;font-size:14px;font-weight:500;color:#0E1A13;cursor:pointer}
+.q.on{background:#0E1A13;border-color:#0E1A13;color:#C6F432}
+.ch{display:flex;align-items:center;gap:12px;height:54px;border-bottom:1px dashed #D5DACF}
+.tg{width:48px;height:28px;border-radius:14px;border:0;padding:3px;box-sizing:border-box;display:flex;cursor:pointer}
+.knob{width:22px;height:22px;border-radius:50%;background:#FFFFFF;box-shadow:0 1px 3px rgba(0,0,0,0.2)}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #E6EEDB; color: #0E1A13; font-family: 'Geist', system-ui, sans-serif; position: relative; overflow: hidden">
+  <div aria-hidden="true" style="height: 250px; display: flex; align-items: center; justify-content: center">
+    <div style="width: 96px; height: 180px; border-radius: 22px; background: #1B1F1C; transform: rotate(-6deg); margin-top: 30px"></div>
+  </div>
+  <div style="position: absolute; inset: 0; background: rgba(14,26,19,0.55)"></div>
+
+  <div role="dialog" aria-label="Watch this price" style="position: absolute; left: 0; right: 0; bottom: 0; top: 130px; background: #F4F5EF; border-radius: 30px 30px 0 0; padding: 12px 20px 34px; box-sizing: border-box; display: flex; flex-direction: column">
+    <div style="width: 40px; height: 5px; border-radius: 3px; background: #C9CFC4; margin: 0 auto 18px"></div>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start">
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <span class="mono" style="font-size: 11px; letter-spacing: 1px; color: #55615A">WATCH PRICE</span>
+        <h1 class="disp" style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.5px">Camon 30 · 256GB</h1>
+        <span style="font-size: 14px; color: #3A463F">Cheapest new now <b>₦318,500</b> at Slot</span>
+      </div>
+      <a href="Product.dc.html" aria-label="Close" style="width: 40px; height: 40px; border-radius: 50%; background: #E3E6DD; color: #0E1A13; display: flex; align-items: center; justify-content: center">
+        <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </a>
+    </div>
+
+    <div style="margin-top: 20px; background: #0E1A13; color: #F4F5EF; border-radius: 22px; padding: 18px; display: flex; flex-direction: column; gap: 6px; align-items: center">
+      <span style="font-size: 13px; color: #C9D2CB">Alert me when it drops to</span>
+      <div style="display: flex; align-items: center; gap: 18px">
+        <button type="button" aria-label="Lower target" onClick="{{dec}}" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid #3B4D41; background: transparent; color: #F4F5EF; font-size: 22px; cursor: pointer">−</button>
+        <span class="disp" style="font-size: 40px; font-weight: 800; letter-spacing: -1px; color: #C6F432; min-width: 190px; text-align: center">{{target}}</span>
+        <button type="button" aria-label="Raise target" onClick="{{inc}}" style="width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid #3B4D41; background: transparent; color: #F4F5EF; font-size: 22px; cursor: pointer">+</button>
+      </div>
+      <span class="mono" style="font-size: 12px; color: #A9B6AD">{{pctText}} below today</span>
+    </div>
+
+    <div style="display: flex; gap: 8px; margin-top: 12px">
+      <button type="button" class="{{q5}}" onClick="{{s5}}">−5%</button>
+      <button type="button" class="{{q10}}" onClick="{{s10}}">−10%</button>
+      <button type="button" class="{{q15}}" onClick="{{s15}}">−15%</button>
+      <button type="button" class="{{qAny}}" onClick="{{sAny}}">Any drop</button>
+    </div>
+
+    <div style="margin-top: 16px; display: flex; flex-direction: column">
+      <div class="ch">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+        <span style="flex-grow: 1; font-size: 15px; font-weight: 500">Push notification</span>
+        <button type="button" class="tg" aria-label="Push notification on" style="background: #0E1A13; justify-content: flex-end"><span class="knob"></span></button>
+      </div>
+      <div class="ch">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span style="flex-grow: 1; font-size: 15px; font-weight: 500">Email</span>
+        <button type="button" class="tg" aria-label="Email off" style="background: #D5DACF; justify-content: flex-start"><span class="knob"></span></button>
+      </div>
+      <div class="ch" style="border-bottom: 0">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>
+        <span style="flex-grow: 1; font-size: 15px; font-weight: 500">WhatsApp</span>
+        <span style="font-size: 11px; font-weight: 600; background: #FFF1C2; color: #6B4A00; padding: 4px 8px; border-radius: 6px">Premium</span>
+      </div>
+    </div>
+
+    <div style="flex-grow: 1"></div>
+    <a href="Watches.dc.html" style="height: 56px; border-radius: 18px; background: #C6F432; color: #0E1A13; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 16px; font-weight: 600">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+      Start watching
+    </a>
+    <p style="margin: 10px 0 0; font-size: 12px; color: #55615A; text-align: center">Free plan: 5 watches. You're using 2.</p>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { pct: 5 };
+  }
+  renderVals() {
+    const now = 318500;
+    const pct = this.state.pct;
+    const t = Math.round(now * (1 - pct / 100) / 500) * 500;
+    const fmt = (n) => '₦' + n.toLocaleString('en-NG');
+    const q = (p) => pct === p ? 'q on' : 'q';
+    return {
+      target: pct === 0 ? 'Any drop' : fmt(t),
+      pctText: pct === 0 ? 'Any amount' : pct + '%',
+      q5: q(5), q10: q(10), q15: q(15), qAny: q(0),
+      s5: () => this.setState({ pct: 5 }),
+      s10: () => this.setState({ pct: 10 }),
+      s15: () => this.setState({ pct: 15 }),
+      sAny: () => this.setState({ pct: 0 }),
+      dec: () => this.setState({ pct: Math.min(40, pct + 1) }),
+      inc: () => this.setState({ pct: Math.max(0, pct - 1) })
+    };
+  }
+}
+</script>
+</body>
+</html>

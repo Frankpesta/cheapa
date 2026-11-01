@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Profile and settings</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0A7A3A;text-decoration:none}a:hover{color:#075E2C}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:'Geist Mono',monospace}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.tab{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;font-weight:500;color:#5E6A62;width:60px;padding-top:4px}
+.tab.on{color:#0E1A13;font-weight:600}
+.grp{background:#FFFFFF;border:1px solid #E3E6DD;border-radius:18px;padding:0 14px}
+.it{display:flex;align-items:center;gap:12px;height:52px;border-bottom:1px solid #EEF0EA;color:#0E1A13;font-size:15px;font-weight:500;width:100%;background:transparent;border-left:0;border-right:0;border-top:0;font-family:'Geist',sans-serif;padding:0;cursor:pointer;text-align:left}
+.val{font-size:14px;color:#55615A;font-weight:400}
+.tg{width:48px;height:28px;border-radius:14px;padding:3px;box-sizing:border-box;display:flex;flex-shrink:0}
+.knob{width:22px;height:22px;border-radius:50%;background:#FFFFFF;box-shadow:0 1px 3px rgba(0,0,0,0.2)}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F5EF; color: #0E1A13; font-family: 'Geist', system-ui, sans-serif; position: relative; overflow: hidden">
+  <div style="padding: 62px 20px 0; display: flex; flex-direction: column; gap: 12px">
+    <div style="display: flex; align-items: center; gap: 14px">
+      <div class="disp" style="width: 56px; height: 56px; border-radius: 50%; background: #0E1A13; color: #C6F432; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 24px">F</div>
+      <div style="display: flex; flex-direction: column; gap: 2px; flex-grow: 1">
+        <span class="disp" style="font-size: 22px; font-weight: 800">Franklin</span>
+        <span style="font-size: 13px; color: #55615A">Signed in with Google · Free plan</span>
+      </div>
+    </div>
+
+    <div style="background: #0E1A13; color: #F4F5EF; border-radius: 20px; padding: 16px; display: flex; align-items: center; gap: 14px; position: relative; overflow: hidden">
+      <div style="position: absolute; right: -30px; bottom: -40px; width: 120px; height: 120px; border-radius: 50%; border: 1px dashed #3B4D41"></div>
+      <div style="display: flex; flex-direction: column; gap: 4px; flex-grow: 1">
+        <span class="mono" style="font-size: 10px; letter-spacing: 1px; color: #C6F432">CHEAPA PREMIUM</span>
+        <span style="font-size: 15px; font-weight: 600">Unlimited watches + WhatsApp alerts</span>
+        <span style="font-size: 13px; color: #C9D2CB">[YOUR PRICE] / month</span>
+      </div>
+      <a href="#premium" style="height: 40px; padding: 0 14px; border-radius: 12px; background: #C6F432; color: #0E1A13; display: flex; align-items: center; font-size: 14px; font-weight: 600">Upgrade</a>
+    </div>
+
+    <div class="grp">
+      <button type="button" class="it">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span style="flex-grow: 1">Delivery city</span><span class="val">Lagos</span>
+        <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px; color: #8A958D" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+      <button type="button" class="it" onClick="{{tNew}}" aria-pressed="{{newOnly}}">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>
+        <span style="flex-grow: 1">Show new items only</span>
+        <span class="tg" style="{{newStyle}}"><span class="knob"></span></span>
+      </button>
+      <button type="button" class="it" onClick="{{tSaver}}" aria-pressed="{{saver}}" style="border-bottom: 0">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><path d="M12 19.5h.01"/></svg>
+        <span style="flex-grow: 1">Data saver</span>
+        <span class="tg" style="{{saverStyle}}"><span class="knob"></span></span>
+      </button>
+    </div>
+
+    <div class="grp">
+      <button type="button" class="it">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+        <span style="flex-grow: 1">Notifications</span><span class="val">Push</span>
+        <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px; color: #8A958D" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+      <button type="button" class="it">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h18l-2-5H5z"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg>
+        <span style="flex-grow: 1">Stores we check</span><span class="val">14</span>
+        <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px; color: #8A958D" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+      <button type="button" class="it">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg>
+        <span style="flex-grow: 1">Privacy and my data</span>
+        <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px; color: #8A958D" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+      <button type="button" class="it" style="border-bottom: 0">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>
+        <span style="flex-grow: 1">How Cheapa makes money</span>
+        <svg class="ic" viewBox="0 0 24 24" style="width: 18px; height: 18px; color: #8A958D" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+    </div>
+
+    <a href="Welcome.dc.html" style="height: 48px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600; color: #9A3412">Sign out</a>
+  </div>
+
+  <nav style="position: absolute; left: 0; right: 0; bottom: 0; height: 88px; background: #FFFFFF; border-top: 1px solid #E3E6DD; display: flex; justify-content: space-around; align-items: flex-start; padding: 8px 8px 0; box-sizing: border-box">
+    <a href="Home.dc.html" class="tab">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+      Home
+    </a>
+    <a href="Watches.dc.html" class="tab">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+      Watches
+    </a>
+    <a href="Camera.dc.html" aria-label="Snap a product" style="width: 62px; height: 62px; margin-top: -26px; border-radius: 20px; background: #C6F432; color: #0E1A13; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px #F4F5EF, 0 10px 24px rgba(14,26,19,0.25)">
+      <svg class="ic" viewBox="0 0 24 24" style="width: 28px; height: 28px; stroke-width: 2" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+    </a>
+    <a href="History.dc.html" class="tab">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      History
+    </a>
+    <a href="Profile.dc.html" class="tab on">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+      Me
+    </a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { newOnly: false, saver: true };
+  }
+  renderVals() {
+    const st = (on) => on ? { background: '#0E1A13', justifyContent: 'flex-end' } : { background: '#D5DACF', justifyContent: 'flex-start' };
+    return {
+      newOnly: String(this.state.newOnly),
+      saver: String(this.state.saver),
+      newStyle: st(this.state.newOnly),
+      saverStyle: st(this.state.saver),
+      tNew: () => this.setState({ newOnly: !this.state.newOnly }),
+      tSaver: () => this.setState({ saver: !this.state.saver })
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Snap a product</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#C6F432;text-decoration:none}
+.disp{font-family:'Bricolage Grotesque',sans-serif}
+.mono{font-family:'Geist Mono',monospace}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.corner{position:absolute;width:38px;height:38px;border-color:#C6F432;border-style:solid;border-width:0}
+.round{width:44px;height:44px;border-radius:50%;background:rgba(14,26,19,0.55);color:#FFFFFF;display:flex;align-items:center;justify-content:center;border:0;cursor:pointer}
+.mode{height:36px;padding:0 14px;border-radius:18px;border:0;font-family:'Geist',sans-serif;font-size:13px;font-weight:600;cursor:pointer;background:transparent;color:#C9D2CB}
+.mode.on{background:#FFFFFF;color:#0E1A13}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #121A15; color: #FFFFFF; font-family: 'Geist', system-ui, sans-serif; position: relative; overflow: hidden">
+  <div style="position: absolute; inset: 0; background: #2A332C">
+    <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 360px; background: #3A3127"></div>
+    <div style="position: absolute; left: 0; right: 0; top: 484px; height: 1px; background: #4A4034"></div>
+    <div style="position: absolute; left: 88px; top: 250px; width: 214px; height: 260px; border-radius: 30px; background: #1B1F1C; transform: rotate(-6deg); box-shadow: 0 30px 50px rgba(0,0,0,0.45)">
+      <div style="position: absolute; left: 10px; top: 10px; right: 10px; bottom: 10px; border-radius: 22px; background: #252B27"></div>
+      <div style="position: absolute; left: 22px; top: 22px; width: 62px; height: 62px; border-radius: 18px; background: #101311; border: 2px solid #3A423C"></div>
+      <div style="position: absolute; left: 36px; top: 36px; width: 14px; height: 14px; border-radius: 50%; background: #2E3A33; border: 2px solid #48544C"></div>
+      <div style="position: absolute; left: 58px; top: 50px; width: 14px; height: 14px; border-radius: 50%; background: #2E3A33; border: 2px solid #48544C"></div>
+      <div class="disp" style="position: absolute; right: 22px; bottom: 26px; font-size: 13px; font-weight: 700; color: #6B776F; letter-spacing: 1px">TECNO</div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; right: 0; top: 0; height: 150px; background: linear-gradient(rgba(10,15,12,0.75), rgba(10,15,12,0))"></div>
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 280px; background: linear-gradient(rgba(10,15,12,0), rgba(10,15,12,0.92) 45%)"></div>
+
+  <div style="position: absolute; top: 58px; left: 20px; right: 20px; display: flex; justify-content: space-between; align-items: center">
+    <a href="Home.dc.html" class="round" aria-label="Close camera">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </a>
+    <div style="display: flex; gap: 4px; background: rgba(14,26,19,0.55); padding: 4px; border-radius: 22px">
+      <button type="button" class="{{modeProduct}}" onClick="{{pickProduct}}">Product</button>
+      <button type="button" class="{{modeShot}}" onClick="{{pickShot}}">Screenshot</button>
+    </div>
+    <button type="button" class="round" aria-label="Flash">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+    </button>
+  </div>
+
+  <div style="position: absolute; left: 55px; top: 200px; width: 280px; height: 360px">
+    <div class="corner" style="left: 0; top: 0; border-left-width: 4px; border-top-width: 4px; border-top-left-radius: 22px"></div>
+    <div class="corner" style="right: 0; top: 0; border-right-width: 4px; border-top-width: 4px; border-top-right-radius: 22px"></div>
+    <div class="corner" style="left: 0; bottom: 0; border-left-width: 4px; border-bottom-width: 4px; border-bottom-left-radius: 22px"></div>
+    <div class="corner" style="right: 0; bottom: 0; border-right-width: 4px; border-bottom-width: 4px; border-bottom-right-radius: 22px"></div>
+  </div>
+
+  <div style="position: absolute; top: 160px; left: 0; right: 0; display: flex; justify-content: center">
+    <div style="background: rgba(14,26,19,0.7); border-radius: 12px; padding: 8px 14px; font-size: 13px; font-weight: 500; display: flex; align-items: center; gap: 8px">
+      <span style="width: 8px; height: 8px; border-radius: 50%; background: #C6F432"></span>
+      {{hint}}
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; right: 0; bottom: 40px; display: flex; flex-direction: column; align-items: center; gap: 22px">
+    <div style="display: flex; align-items: center; justify-content: space-between; width: 300px">
+      <a href="Searching.dc.html" aria-label="Pick from gallery" style="width: 52px; height: 52px; border-radius: 14px; background: #E6EEDB; border: 2px solid #FFFFFF; display: flex; align-items: center; justify-content: center; color: #3A5A2E">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg>
+      </a>
+      <a href="Searching.dc.html" aria-label="Take photo and search" style="width: 84px; height: 84px; border-radius: 50%; border: 4px solid #FFFFFF; display: flex; align-items: center; justify-content: center; box-sizing: border-box">
+        <span style="width: 66px; height: 66px; border-radius: 50%; background: #C6F432; display: flex; align-items: center; justify-content: center; color: #0E1A13">
+          <svg class="ic" viewBox="0 0 24 24" style="width: 28px; height: 28px; stroke-width: 2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </span>
+      </a>
+      <a href="Results.dc.html" aria-label="Type instead" style="width: 52px; height: 52px; border-radius: 50%; background: rgba(255,255,255,0.14); color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 17px">Aa</a>
+    </div>
+    <span style="font-size: 13px; color: #C9D2CB">Tip: include the brand name or box label if you can</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { mode: 'product' };
+  }
+  renderVals() {
+    const p = this.state.mode === 'product';
+    return {
+      modeProduct: p ? 'mode on' : 'mode',
+      modeShot: p ? 'mode' : 'mode on',
+      hint: p ? 'Fill the frame with the product' : 'Pick a screenshot from your gallery',
+      pickProduct: () => this.setState({ mode: 'product' }),
+      pickShot: () => this.setState({ mode: 'shot' })
+    };
+  }
+}
+</script>
+</body>
+</html>
