@@ -2,6 +2,7 @@ import { type PriceHistoryResponse, PriceHistoryQuery, type ProductResponse } fr
 import { Controller, Get, NotFoundException, Param, Query } from '@nestjs/common';
 import { z } from 'zod';
 import { ZodPipe } from '../../common/zod.pipe.js';
+import { Public } from '../auth/auth.decorators.js';
 import { ProductsService } from './products.service.js';
 
 const Slug = z
@@ -9,6 +10,7 @@ const Slug = z
   .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'invalid slug')
   .max(200);
 
+@Public()
 @Controller('products')
 export class ProductsController {
   constructor(private readonly products: ProductsService) {}

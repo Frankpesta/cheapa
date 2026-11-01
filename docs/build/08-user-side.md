@@ -87,7 +87,9 @@ Money is integer kobo throughout. Uploaded images are never stored; `imageHash` 
 - **Signed-in:** Clerk session token in `Authorization: Bearer`. `ClerkAuthGuard` verifies it with `@clerk/backend` `verifyToken` using `CLERK_JWT_KEY` (networkless) and upserts `users` just-in-time on first request.
 - **Linking:** `POST /me/link-device` after sign-in sets `devices.userId`, reassigns that device's anonymous `searches` to the user, and calls PostHog `alias(deviceId → userId)`.
 - **Webhook:** `POST /webhooks/clerk` (svix signature check with `CLERK_WEBHOOK_SECRET`) handles `user.updated` (email/phone sync) and `user.deleted` (runs 8.10).
-- **Roles:** `role = 'admin'` gates `/admin/*` routes via `@Roles('admin')`; set from Clerk `publicMetadata.role` on upsert.
+- **Roles:** `role = 'admin'` gates `/admin/*` routes via `@Roles('admin')`. The role comes from a custom session-token claim: in the Clerk dashboard (Sessions → Customize session token) add `{"role": "{{user.public_metadata.role}}"}`, then set `public_metadata.role = "admin"` on staff accounts. Unknown values are ignored.
+- **Access levels:** every route requires a signed-in user unless marked `@Public()` (health, search, products) or `@DeviceOrUser()` (`/me`, history). A Bearer token that fails verification is 401 even on public routes. Without `CLERK_JWT_KEY` (local, before keys exist) Bearer requests get 503 and everything signed-out still works.
+- **Profile data:** email is copied from Clerk once, when the user row is created. The phone number is **not** copied: it's stored only with explicit WhatsApp opt-in (11.2).
 
 Endpoints (all zod-validated):
 

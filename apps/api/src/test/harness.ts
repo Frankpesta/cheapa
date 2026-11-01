@@ -3,16 +3,20 @@
  * catalog, and the real createApp(). Requests go through fastify.inject (no network).
  */
 import { createCatalogDb, runCatalogMigrations, type CatalogConnection } from '@cheapa/db/catalog';
+import { createUsersDb, runUsersMigrations, type UsersConnection } from '@cheapa/db/users';
 import type { NestFastifyApplication } from '@nestjs/platform-fastify';
 import { PostgreSqlContainer, type StartedPostgreSqlContainer } from '@testcontainers/postgresql';
 import pg from 'pg';
 import { GenericContainer, type StartedTestContainer, Wait } from 'testcontainers';
 import { createApp } from '../bootstrap.js';
 import { type ApiEnv, loadApiEnv } from '../config/env.js';
+import { createTestSigner, type TestSigner } from './tokens.js';
 
 export interface Harness {
   app: NestFastifyApplication;
   catalog: CatalogConnection;
+  users: UsersConnection;
+  signer: TestSigner;
   redisCache: StartedTestContainer;
   env: ApiEnv;
   stop: () => Promise<void>;
@@ -32,6 +36,7 @@ export async function startHarness(overrides: Record<string, string> = {}): Prom
     redis(),
   ]);
   await prepareDatabases(postgres);
+  const signer = createTestSigner();
 
   const base = new URL(postgres.getConnectionUri());
   const dbUrl = (name: string) => Object.assign(new URL(base), { pathname: `/${name}` }).toString();
@@ -42,11 +47,16 @@ export async function startHarness(overrides: Record<string, string> = {}): Prom
     USERS_DATABASE_URL: dbUrl('cheapa_users'),
     REDIS_QUEUE_URL: `redis://${redisQueue.getHost()}:${redisQueue.getMappedPort(6379)}`,
     REDIS_CACHE_URL: `redis://${redisCache.getHost()}:${redisCache.getMappedPort(6379)}`,
+    // As it would appear in .env: one line with literal \n sequences.
+    CLERK_JWT_KEY: signer.publicKeyPem.replaceAll('\n', '\\n'),
+    CLERK_AUTHORIZED_PARTIES: 'http://localhost:3000',
     ...overrides,
   });
 
   const catalog = createCatalogDb(env.CATALOG_DATABASE_URL, { max: 2 });
   await runCatalogMigrations(catalog.db);
+  const users = createUsersDb(env.USERS_DATABASE_URL, { max: 2 });
+  await runUsersMigrations(users.db);
 
   const app = await createApp(env);
   await app.init();
@@ -55,11 +65,14 @@ export async function startHarness(overrides: Record<string, string> = {}): Prom
   return {
     app,
     catalog,
+    users,
+    signer,
     redisCache,
     env,
     stop: async () => {
       await app.close();
       await catalog.close();
+      await users.close();
       await Promise.allSettled([postgres.stop(), redisQueue.stop(), redisCache.stop()]);
     },
   };

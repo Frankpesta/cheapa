@@ -9,6 +9,11 @@
       "@cheapa/source": "./src/catalog/index.ts",
       "types": "./dist/catalog/index.d.ts",
       "default": "./dist/catalog/index.js"
+    },
+    "./users": {
+      "@cheapa/source": "./src/users/index.ts",
+      "types": "./dist/users/index.d.ts",
+      "default": "./dist/users/index.js"
     }
   },
   "files": [
@@ -20,10 +25,11 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests",
-    "db:generate": "drizzle-kit generate --config drizzle.catalog.config.ts",
-    "db:migrate": "tsx --conditions=@cheapa/source src/catalog/migrate.ts",
+    "db:generate": "drizzle-kit generate --config drizzle.catalog.config.ts && drizzle-kit generate --config drizzle.users.config.ts",
+    "db:migrate": "tsx --conditions=@cheapa/source src/migrate.ts",
     "db:seed": "tsx --conditions=@cheapa/source src/catalog/seed.ts",
-    "db:studio": "drizzle-kit studio --config drizzle.catalog.config.ts"
+    "db:studio": "drizzle-kit studio --config drizzle.catalog.config.ts",
+    "db:studio:users": "drizzle-kit studio --config drizzle.users.config.ts"
   },
   "dependencies": {
     "@cheapa/core": "workspace:*",

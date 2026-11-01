@@ -17,6 +17,7 @@
   "dependencies": {
     "@cheapa/core": "workspace:*",
     "@cheapa/db": "workspace:*",
+    "@clerk/backend": "catalog:",
     "@fastify/multipart": "catalog:",
     "@nestjs/common": "catalog:",
     "@nestjs/core": "catalog:",

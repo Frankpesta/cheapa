@@ -1,11 +1,12 @@
 import type { HealthResponse } from '@cheapa/core';
 import type { CatalogConnection } from '@cheapa/db/catalog';
+import type { UsersConnection } from '@cheapa/db/users';
 import { Controller, Get, HttpCode, Inject, Res } from '@nestjs/common';
 import type { FastifyReply } from 'fastify';
 import type { Redis } from 'ioredis';
-import type pg from 'pg';
 import { API_ENV, type ApiEnv } from '../../config/env.js';
-import { CATALOG_DB, USERS_POOL } from '../../infra/database.module.js';
+import { Public } from '../auth/auth.decorators.js';
+import { CATALOG_DB, USERS_DB } from '../../infra/database.module.js';
 import { REDIS_CACHE, REDIS_QUEUE } from '../../infra/redis.module.js';
 
 const TIMEOUT_MS = 2_000;
@@ -27,11 +28,12 @@ async function probe(run: () => Promise<unknown>): Promise<HealthResponse['check
   }
 }
 
+@Public()
 @Controller('health')
 export class HealthController {
   constructor(
     @Inject(CATALOG_DB) private readonly catalog: CatalogConnection,
-    @Inject(USERS_POOL) private readonly users: pg.Pool,
+    @Inject(USERS_DB) private readonly users: UsersConnection,
     @Inject(REDIS_QUEUE) private readonly redisQueue: Redis,
     @Inject(REDIS_CACHE) private readonly redisCache: Redis,
     @Inject(API_ENV) private readonly env: ApiEnv,
@@ -43,7 +45,7 @@ export class HealthController {
   async check(@Res({ passthrough: true }) reply: FastifyReply): Promise<HealthResponse> {
     const [catalogDb, usersDb, redisQueue, redisCache] = await Promise.all([
       probe(() => this.catalog.pool.query('select 1')),
-      probe(() => this.users.query('select 1')),
+      probe(() => this.users.pool.query('select 1')),
       probe(() => this.redisQueue.ping()),
       probe(() => this.redisCache.ping()),
     ]);

@@ -4,6 +4,7 @@ packages:
 
 # One version of each shared tool across the repo. Reference with "catalog:".
 catalog:
+  '@clerk/backend': 3.26.5
   '@eslint/js': 10.0.1
   '@fastify/multipart': 10.1.6
   '@nestjs/common': 12.3.2

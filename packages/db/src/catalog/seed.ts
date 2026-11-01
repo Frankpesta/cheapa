@@ -1,5 +1,5 @@
 // pnpm db:seed — local development only: 3 stores, 10 fake listings, synthetic vectors.
-import { loadCatalogCliEnv } from './cli-env.js';
+import { loadCatalogCliEnv } from '../cli-env.js';
 import { createCatalogDb } from './client.js';
 import { nearestByImage } from './queries.js';
 import { designVector, seedCatalog } from './seed-data.js';

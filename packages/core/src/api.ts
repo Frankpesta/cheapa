@@ -155,9 +155,41 @@ export const PriceHistoryResponse = z.object({
 export type PriceHistoryResponse = z.infer<typeof PriceHistoryResponse>;
 
 // ---------------------------------------------------------------------------
+// Me (08-user-side.md 8.3)
+// ---------------------------------------------------------------------------
+
+export const MeUser = z.object({
+  id: z.uuid(),
+  email: z.string().nullable(),
+  city: z.string().nullable(),
+  whatsappOptIn: z.boolean(),
+  plan: z.enum(['free', 'premium']),
+  role: z.enum(['user', 'admin']),
+});
+
+export const MeDevice = z.object({
+  id: z.uuid(),
+  anonId: z.uuid(),
+  platform: z.enum(['android', 'ios', 'web']).nullable(),
+  /** True once POST /me/link-device has attached it to a user. */
+  linked: z.boolean(),
+});
+
+/** GET /me: the signed-in user and/or the calling device. At least one is present. */
+export const MeResponse = z.object({ user: MeUser.nullable(), device: MeDevice.nullable() });
+export type MeResponse = z.infer<typeof MeResponse>;
+
+export const LinkDeviceResponse = z.object({ deviceId: z.uuid(), userId: z.uuid() });
+export type LinkDeviceResponse = z.infer<typeof LinkDeviceResponse>;
+
+// ---------------------------------------------------------------------------
 // Headers
 // ---------------------------------------------------------------------------
 
 /** Anonymous device id header (08-user-side.md 8.3). */
 export const DEVICE_HEADER = 'x-cheapa-device';
+/** Optional: 'android' | 'ios' | 'web', recorded on the device row. */
+export const PLATFORM_HEADER = 'x-cheapa-platform';
+/** Optional: app version string, recorded on the device row. */
+export const APP_VERSION_HEADER = 'x-cheapa-app-version';
 export const REQUEST_ID_HEADER = 'x-request-id';

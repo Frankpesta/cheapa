@@ -2,6 +2,7 @@ import { ImageSearchFields, type SearchResponse, TextSearchRequest } from '@chea
 import { Body, Controller, HttpCode, Post, Req, UseGuards } from '@nestjs/common';
 import type { FastifyRequest } from 'fastify';
 import { ZodPipe } from '../../common/zod.pipe.js';
+import { Public } from '../auth/auth.decorators.js';
 import { RateLimit, RateLimitGuard } from '../rate-limit/rate-limit.guard.js';
 import { readImageUpload } from './image-upload.js';
 
@@ -9,6 +10,7 @@ import { readImageUpload } from './image-upload.js';
  * Search routes (05-visual-search.md 5.3). Phase 0 stub: validates input and
  * returns a typed empty result. The visual/read paths land in phase 05.
  */
+@Public()
 @Controller('search')
 export class SearchController {
   @Post('image')
