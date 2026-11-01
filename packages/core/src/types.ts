@@ -8,7 +8,8 @@ import { isKobo } from './money.js';
 export const StoreTier = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5)]);
 export type StoreTier = z.infer<typeof StoreTier>;
 
-export const StorePlatform = z.enum([
+/** Tuple (not z.enum().options) so Drizzle pgEnum keeps the literal types. */
+export const STORE_PLATFORMS = [
   'custom',
   'woocommerce',
   'shopify',
@@ -17,10 +18,13 @@ export const StorePlatform = z.enum([
   'magento',
   'affiliate',
   'vendor',
-]);
+] as const;
+export const StorePlatform = z.enum(STORE_PLATFORMS);
 export type StorePlatform = z.infer<typeof StorePlatform>;
 
-export const StoreStatus = z.enum(['active', 'paused', 'blocked', 'candidate', 'rejected']);
+/** Tuple (not z.enum().options) so Drizzle pgEnum keeps the literal types. */
+export const STORE_STATUSES = ['active', 'paused', 'blocked', 'candidate', 'rejected'] as const;
+export const StoreStatus = z.enum(STORE_STATUSES);
 export type StoreStatus = z.infer<typeof StoreStatus>;
 
 // ---------------------------------------------------------------------------
@@ -31,7 +35,9 @@ export type StoreStatus = z.infer<typeof StoreStatus>;
  * "Foreign Used" / "UK used" / "London used" = uk_used; "Local Used", thrift and
  * okrika clothing = used.
  */
-export const Condition = z.enum(['new', 'used', 'uk_used', 'refurbished', 'unknown']);
+/** Tuple (not z.enum().options) so Drizzle pgEnum keeps the literal types. */
+export const CONDITIONS = ['new', 'used', 'uk_used', 'refurbished', 'unknown'] as const;
+export const Condition = z.enum(CONDITIONS);
 export type Condition = z.infer<typeof Condition>;
 
 /** Who a fashion item is for. Different audiences are never the same canonical product. */
@@ -49,7 +55,8 @@ const positiveInt = z.number().int().positive();
 const label = z.string().min(1);
 
 /** Top-level grouping that picks the matching rules (13-fashion-and-beauty.md 13.1, 13.4). */
-export const Department = z.enum([
+/** Tuple (not z.enum().options) so Drizzle pgEnum keeps the literal types. */
+export const DEPARTMENTS = [
   'clothing',
   'shoes',
   'bags_accessories',
@@ -57,7 +64,8 @@ export const Department = z.enum([
   'beauty',
   'electronics',
   'other',
-]);
+] as const;
+export const Department = z.enum(DEPARTMENTS);
 export type Department = z.infer<typeof Department>;
 
 /** Wigs, bundles, closures, frontals, braids. Length, texture, density, lace and fibre are hard. */
@@ -123,7 +131,9 @@ export const Kobo = z.number().refine(isKobo, 'must be a non-negative integer ko
 const PositiveKobo = Kobo.refine((v) => v > 0, 'must be greater than zero');
 
 /** How the price was shown: "₦ 8,940" exact, "From ₦ 13,340" from, "₦ X - ₦ Y" range. */
-export const PriceKind = z.enum(['exact', 'from', 'range']);
+/** Tuple (not z.enum().options) so Drizzle pgEnum keeps the literal types. */
+export const PRICE_KINDS = ['exact', 'from', 'range'] as const;
+export const PriceKind = z.enum(PRICE_KINDS);
 export type PriceKind = z.infer<typeof PriceKind>;
 
 // ---------------------------------------------------------------------------

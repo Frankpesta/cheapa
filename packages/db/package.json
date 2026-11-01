@@ -5,28 +5,39 @@
   "description": "Drizzle schemas and migrations for the catalog and users databases",
   "type": "module",
   "exports": {
-    ".": {
-      "@cheapa/source": "./src/index.ts",
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+    "./catalog": {
+      "@cheapa/source": "./src/catalog/index.ts",
+      "types": "./dist/catalog/index.d.ts",
+      "default": "./dist/catalog/index.js"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "migrations"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "vitest run --passWithNoTests"
+    "test": "vitest run --passWithNoTests",
+    "db:generate": "drizzle-kit generate --config drizzle.catalog.config.ts",
+    "db:migrate": "tsx --conditions=@cheapa/source src/catalog/migrate.ts",
+    "db:seed": "tsx --conditions=@cheapa/source src/catalog/seed.ts",
+    "db:studio": "drizzle-kit studio --config drizzle.catalog.config.ts"
   },
   "dependencies": {
-    "@cheapa/core": "workspace:*"
+    "@cheapa/core": "workspace:*",
+    "drizzle-orm": "catalog:",
+    "pg": "catalog:"
   },
   "devDependencies": {
     "@cheapa/config": "workspace:*",
+    "@testcontainers/postgresql": "catalog:",
     "@types/node": "catalog:",
+    "@types/pg": "catalog:",
+    "drizzle-kit": "catalog:",
     "eslint": "catalog:",
+    "tsx": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   }

@@ -5,11 +5,17 @@ packages:
 # One version of each shared tool across the repo. Reference with "catalog:".
 catalog:
   '@eslint/js': 10.0.1
+  '@testcontainers/postgresql': 12.2.1
   '@types/node': 26.6.6
+  '@types/pg': 8.23.1
+  drizzle-kit: 0.31.11
+  drizzle-orm: 0.45.4
   eslint: 10.14.0
   eslint-config-prettier: 10.1.8
   globals: 17.14.0
+  pg: 8.23.1
   prettier: 3.9.10
+  tsx: 4.23.15
   turbo: 2.11.10
   # typescript-eslint 8.x supports TypeScript < 6.1; move to 7.x when it does (see BACKLOG.md).
   typescript: 6.0.3
@@ -21,3 +27,10 @@ engineStrict: true
 
 minimumReleaseAgeExclude:
   - globals@17.14.0
+
+# Dependency install scripts, reviewed one by one (pnpm blocks unreviewed ones).
+allowBuilds:
+  esbuild: true # verifies its platform binary; harmless
+  cpu-features: false # optional native addon (ssh2 via testcontainers); not needed
+  ssh2: false # optional native crypto; pure-JS fallback is fine for tests
+  protobufjs: false # postinstall only prints a notice

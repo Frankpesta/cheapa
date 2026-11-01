@@ -22,7 +22,8 @@
     "infra:down": "docker compose -f infra/docker-compose.yml --env-file .env down",
     "infra:reset": "docker compose -f infra/docker-compose.yml --env-file .env down -v",
     "infra:logs": "docker compose -f infra/docker-compose.yml --env-file .env logs -f",
-    "infra:check": "bash infra/check.sh"
+    "infra:check": "bash infra/check.sh",
+    "db:seed": "turbo run db:seed"
   },
   "prettier": "@cheapa/config/prettier",
   "devDependencies": {

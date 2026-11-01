@@ -24,9 +24,15 @@
       "persistent": true
     },
     "db:generate": {
+      "dependsOn": ["^build"],
       "cache": false
     },
     "db:migrate": {
+      "dependsOn": ["^build"],
+      "cache": false
+    },
+    "db:seed": {
+      "dependsOn": ["db:migrate"],
       "cache": false
     }
   }
