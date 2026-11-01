@@ -35,9 +35,9 @@ Modules (`apps/api/src/modules/`):
 
 Framework rules:
 - `@nestjs/platform-fastify`; multipart via `@fastify/multipart` with `request.file()` → `toBuffer()` (5 MB limit). **Uploads stay in memory; never `saveRequestFiles`, never temp files.**
-- Validation with zod through `nestjs-zod` (`ZodValidationPipe` global, DTOs from zod schemas). No `class-validator`.
+- Validation with zod through `ZodPipe` (`apps/api/src/common/zod.pipe.ts`), schemas shared from `@cheapa/core`. No `class-validator`.
 - Logging with `nestjs-pino`; request id on every log line; request bodies never logged.
-- Config via `@nestjs/config` wrapping the zod env loader from `@cheapa/core`.
+- Config via the typed `API_ENV` provider (`apps/api/src/config`), loaded once with the zod env loader from `@cheapa/core`.
 - Two Drizzle clients injected by token: `CATALOG_DB` and `USERS_DB`. A module only imports the token it is allowed to use (table above). A lint rule (`no-restricted-imports`) blocks `@cheapa/db/users` from `apps/worker` and `packages/adapters`.
 - Errors to Sentry via `@sentry/nestjs` and product events to PostHog via the `AnalyticsModule` (`01-foundation.md` 1.7). Both processes (`api`, `api-jobs`) initialise Sentry; failed `notify`/`clicks` jobs are reported after their final retry.
 - Rate limiting: the existing Redis token-bucket guard (`01-foundation.md` 1.5), keyed by user or device first, IP as a high backstop.

@@ -88,7 +88,8 @@ Money columns are `bigint` kobo read as JS numbers (Postgres `integer` tops out 
 
 ## 1.5 API skeleton (`apps/api`)
 
-- NestJS on `@nestjs/platform-fastify`. Global `ZodValidationPipe` (`nestjs-zod`), `nestjs-pino` logger, request id (`genReqId` + `X-Request-Id` header), CORS for the web origin, `@nestjs/config` backed by the zod env loader.
+- NestJS 12 on `@nestjs/platform-fastify`. Per-argument `ZodPipe` (in-house; `nestjs-zod` doesn't support NestJS 12 yet) with shared schemas from `@cheapa/core/api`, `nestjs-pino` reusing Fastify's pino logger, request id (`genReqId` honours a sane incoming `X-Request-Id`, echoed on every response), CORS for the web origin, typed env provider (`API_ENV`) from the zod env loader.
+- Docker image `apps/api/Dockerfile` (Debian slim, not Alpine: onnxruntime-node needs glibc) runs both `api` and `api-jobs`; Compose `app` profile (`pnpm infra:up:app`).
 - Two entry points from day one: `src/main.ts` (HTTP) and `src/main.jobs.ts` (application context, no HTTP; empty for now).
 - Drizzle providers `CATALOG_DB` and `USERS_DB` in a global `DatabaseModule`.
 - Modules stubbed: `health` (`GET /health`), `search` (`POST /search/image`, `POST /search/text`), `products` (`GET /products/:slug`, `GET /products/:id/history`).

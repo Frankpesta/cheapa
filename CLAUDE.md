@@ -58,7 +58,7 @@ Two Redis instances, never mixed up:
 ## Conventions
 
 - API: NestJS on `@nestjs/platform-fastify`. One module per domain (`apps/api/src/modules/*`); HTTP in `main.ts`, background consumers in `main.jobs.ts`. Auth via Clerk (`@clerk/backend` JWT guard) plus the `X-Cheapa-Device` anonymous id.
-- Validation: `zod` at every boundary (HTTP input, adapter output, env). In NestJS use `nestjs-zod`; no `class-validator`.
+- Validation: `zod` at every boundary (HTTP input, adapter output, env). In NestJS use `ZodPipe` (`apps/api/src/common/zod.pipe.ts`) with schemas from `@cheapa/core`; no `class-validator`. HTTP request/response shapes live in `@cheapa/core` (`api.ts`) so mobile and web share them.
 - Logging: `pino` (`nestjs-pino` in the API), structured JSON, include `storeId` / `jobId` / `requestId`. Never log request bodies.
 - HTTP: `undici` fetch + `cheerio` for HTML. Use Playwright **only** when a page truly needs JS; flag it in the source doc.
 - Errors: Sentry everywhere (`@sentry/nestjs` in `apps/api`, `@sentry/node` in `apps/worker`, `@sentry/react-native`, `@sentry/nextjs`). Product analytics: PostHog (`posthog-node` server-side, `posthog-react-native`, `posthog-js`). Neither ever receives image bytes, request bodies, phone numbers or emails: identify by user id or anonymous device id only. Both use their EU data regions.

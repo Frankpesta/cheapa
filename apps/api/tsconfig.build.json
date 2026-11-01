@@ -2,7 +2,9 @@
   "extends": "@cheapa/config/tsconfig.node.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "dist"
+    "outDir": "dist",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["src"],
   "exclude": ["src/**/*.test.ts", "src/**/__fixtures__/**"]

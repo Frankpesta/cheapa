@@ -6,6 +6,10 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx watch --conditions=@cheapa/source --env-file-if-exists=../../.env src/main.ts",
+    "dev:jobs": "tsx watch --conditions=@cheapa/source --env-file-if-exists=../../.env src/main.jobs.ts",
+    "start": "node dist/main.js",
+    "start:jobs": "node dist/main.jobs.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests"
@@ -13,14 +17,34 @@
   "dependencies": {
     "@cheapa/core": "workspace:*",
     "@cheapa/db": "workspace:*",
-    "@cheapa/adapters": "workspace:*",
-    "@cheapa/ml": "workspace:*"
+    "@fastify/multipart": "catalog:",
+    "@nestjs/common": "catalog:",
+    "@nestjs/core": "catalog:",
+    "@nestjs/platform-fastify": "catalog:",
+    "drizzle-orm": "catalog:",
+    "fastify": "catalog:",
+    "ioredis": "catalog:",
+    "nestjs-pino": "catalog:",
+    "pg": "catalog:",
+    "pino": "catalog:",
+    "pino-http": "catalog:",
+    "reflect-metadata": "catalog:",
+    "rxjs": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@cheapa/config": "workspace:*",
+    "@nestjs/testing": "catalog:",
+    "@swc/core": "catalog:",
+    "@testcontainers/postgresql": "catalog:",
     "@types/node": "catalog:",
+    "@types/pg": "catalog:",
     "eslint": "catalog:",
+    "pino-pretty": "catalog:",
+    "testcontainers": "catalog:",
+    "tsx": "catalog:",
     "typescript": "catalog:",
+    "unplugin-swc": "catalog:",
     "vitest": "catalog:"
   }
 }

@@ -19,11 +19,12 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "infra:up": "docker compose -f infra/docker-compose.yml --env-file .env up -d --wait",
-    "infra:down": "docker compose -f infra/docker-compose.yml --env-file .env down",
-    "infra:reset": "docker compose -f infra/docker-compose.yml --env-file .env down -v",
+    "infra:down": "docker compose -f infra/docker-compose.yml --env-file .env --profile app down",
+    "infra:reset": "docker compose -f infra/docker-compose.yml --env-file .env --profile app down -v",
     "infra:logs": "docker compose -f infra/docker-compose.yml --env-file .env logs -f",
     "infra:check": "bash infra/check.sh",
-    "db:seed": "turbo run db:seed"
+    "db:seed": "turbo run db:seed",
+    "infra:up:app": "docker compose -f infra/docker-compose.yml --env-file .env --profile app up -d --build --wait"
   },
   "prettier": "@cheapa/config/prettier",
   "devDependencies": {
