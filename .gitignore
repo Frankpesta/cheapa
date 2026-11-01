@@ -1,7 +1,8 @@
 node_modules/
 .pnpm-store/
 dist/
-build/
+# Build output lives in dist/ (packages), .next/ (web) and .expo/ (mobile). Do NOT add a bare
+# "build/" rule: it would also ignore docs/build/.
 .next/
 .expo/
 .turbo/
