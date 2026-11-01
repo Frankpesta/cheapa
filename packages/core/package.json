@@ -20,6 +20,9 @@
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests"
   },
+  "dependencies": {
+    "zod": "catalog:"
+  },
   "devDependencies": {
     "@cheapa/config": "workspace:*",
     "@types/node": "catalog:",
