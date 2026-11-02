@@ -32,12 +32,15 @@
   },
   "dependencies": {
     "@cheapa/core": "workspace:*",
+    "ioredis": "catalog:",
+    "robots-parser": "3.0.1",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@cheapa/config": "workspace:*",
     "@types/node": "catalog:",
     "eslint": "catalog:",
+    "testcontainers": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   }

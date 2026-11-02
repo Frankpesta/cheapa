@@ -433,6 +433,12 @@ importers:
       '@cheapa/core':
         specifier: workspace:*
         version: link:../core
+      ioredis:
+        specifier: 'catalog:'
+        version: 6.0.0(supports-color@8.1.1)
+      robots-parser:
+        specifier: 3.0.1
+        version: 3.0.1
       zod:
         specifier: 'catalog:'
         version: 4.6.7
@@ -446,6 +452,9 @@ importers:
       eslint:
         specifier: 'catalog:'
         version: 10.14.0(supports-color@8.1.1)
+      testcontainers:
+        specifier: 'catalog:'
+        version: 12.2.1(supports-color@8.1.1)
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -2928,6 +2937,10 @@ packages:
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
 
+  robots-parser@3.0.1:
+    resolution: {integrity: sha512-s+pyvQeIKIZ0dx5iJiQk1tPLJAWln39+MI5jtM8wnyws+G5azk+dMnMX0qfbqNetKKNgcWWOdi0sfm+FbQbgdQ==}
+    engines: {node: '>=10.0.0'}
+
   rolldown@1.2.16:
     resolution: {integrity: sha512-bWvlMpFKiTfDKfnK7FC2MPgPeWCf/Kpwsq49ApdW+FQaBZb6O6dZ4MAPbPUjp7hYQrw/RobqCzn64BRrQecGHw==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -5366,6 +5379,8 @@ snapshots:
   reusify@1.1.0: {}
 
   rfdc@1.4.1: {}
+
+  robots-parser@3.0.1: {}
 
   rolldown@1.2.16:
     dependencies:

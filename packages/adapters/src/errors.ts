@@ -38,3 +38,24 @@ export class ParseError extends AdapterError {
     super(`${adapterId}: ${message}`, options);
   }
 }
+
+/** Body larger than the client's cap (5 MB). Retrying won't help. */
+export class ResponseTooLarge extends AdapterError {
+  constructor(
+    readonly url: string,
+    readonly limitBytes: number,
+  ) {
+    super(`response from ${url} exceeds ${limitBytes} bytes`);
+  }
+}
+
+/** Still failing after the client's retries (5xx), or too many redirects. */
+export class HttpError extends AdapterError {
+  constructor(
+    readonly url: string,
+    readonly status: number,
+    message = `HTTP ${status} from ${url}`,
+  ) {
+    super(message);
+  }
+}
