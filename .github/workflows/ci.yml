@@ -1,0 +1,87 @@
+# CI (01-foundation.md 1.8): install, typecheck, lint, test on every push and PR.
+# On main, also create a Sentry release and upload source maps for api and worker.
+name: ci
+
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+permissions:
+  contents: read
+
+env:
+  CI: 'true'
+  TURBO_TELEMETRY_DISABLED: '1'
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+
+      # Version comes from "packageManager" in package.json.
+      - uses: pnpm/action-setup@v6
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Turbo cache
+        uses: actions/cache@v6
+        with:
+          path: .turbo/cache
+          key: turbo-${{ runner.os }}-${{ github.sha }}
+          restore-keys: turbo-${{ runner.os }}-
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm format:check
+
+      # Tests start one Postgres (pgvector) + one Redis via Testcontainers on the runner's
+      # Docker. CI=true makes them fresh per run and stopped at the end.
+      - run: pnpm turbo run typecheck lint test
+
+  sentry-release:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    needs: check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+      SENTRY_ORG: ${{ vars.SENTRY_ORG }}
+      SENTRY_PROJECT_API: ${{ vars.SENTRY_PROJECT_API || 'api' }}
+      SENTRY_PROJECT_WORKER: ${{ vars.SENTRY_PROJECT_WORKER || 'worker' }}
+    steps:
+      - name: Skip when Sentry is not configured
+        if: env.SENTRY_AUTH_TOKEN == '' || env.SENTRY_ORG == ''
+        run: echo "::notice::SENTRY_AUTH_TOKEN secret or SENTRY_ORG variable not set; skipping Sentry release."
+
+      - if: env.SENTRY_AUTH_TOKEN != '' && env.SENTRY_ORG != ''
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # set-commits needs history
+
+      - if: env.SENTRY_AUTH_TOKEN != '' && env.SENTRY_ORG != ''
+        uses: pnpm/action-setup@v6
+
+      - if: env.SENTRY_AUTH_TOKEN != '' && env.SENTRY_ORG != ''
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - if: env.SENTRY_AUTH_TOKEN != '' && env.SENTRY_ORG != ''
+        run: pnpm install --frozen-lockfile
+
+      - if: env.SENTRY_AUTH_TOKEN != '' && env.SENTRY_ORG != ''
+        run: pnpm turbo run build --filter=@cheapa/api... --filter=@cheapa/worker...
+
+      # Release name = commit SHA = APP_VERSION the deployed process must report.
+      - if: env.SENTRY_AUTH_TOKEN != '' && env.SENTRY_ORG != ''
+        run: bash scripts/ci/sentry-release.sh "${{ github.sha }}"

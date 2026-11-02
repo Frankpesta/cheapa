@@ -10,4 +10,4 @@ TODOs allowed in shipped paths must be logged here with file path and reason.
 | 2026-11-01 | `apps/worker` scheduler | Daily job calling `select ensure_price_history_partitions(3)` | Worker scheduler lands in 02 §2.3; migration pre-creates 4 months, so the first gap would be 2027-03 |
 | 2026-11-01 | monitoring (11.3) | Alert when next month's `price_history` partition is missing | Monitoring lands with 02 §2.5 |
 | 2026-11-01 | `apps/worker` | Sentry (`@sentry/node`, shared scrubber from `@cheapa/core`) and failed-job capture with `storeId`/`jobId` | Worker entry point lands in 02 §2.3 |
-| 2026-11-01 | CI (1.8) | Create Sentry release + upload API source maps on `main` (`SENTRY_AUTH_TOKEN`) | CI is section 1.8 |
+| 2026-11-02 | deploy pipeline | Deploy the `main` build whose source maps CI uploaded (debug ids are injected into `dist/` by `scripts/ci/sentry-release.sh`) and set `APP_VERSION=<commit sha>` on `api`, `api-jobs` and `worker` | Hosting and deploy deferred; the Docker image builds its own `dist/` without debug ids |

@@ -20,6 +20,16 @@ pnpm build
 pnpm format
 ```
 
+## CI
+
+GitHub Actions (`.github/workflows/ci.yml`) runs on every push and PR: install, `format:check`,
+then `turbo run typecheck lint test` (tests start Postgres and Redis through Testcontainers on the
+runner's Docker). On pushes to `main` it also creates a Sentry release named after the commit SHA
+and uploads `api` and `worker` source maps (`scripts/ci/sentry-release.sh`). To turn that on, add
+the repo secret `SENTRY_AUTH_TOKEN` and the repo variable `SENTRY_ORG` (optional:
+`SENTRY_PROJECT_API`, `SENTRY_PROJECT_WORKER`, default `api` / `worker`). Without them the job is
+skipped with a notice.
+
 ## Layout
 
 | Path                | What                                                         |
