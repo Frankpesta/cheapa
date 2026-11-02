@@ -27,6 +27,32 @@ export const STORE_STATUSES = ['active', 'paused', 'blocked', 'candidate', 'reje
 export const StoreStatus = z.enum(STORE_STATUSES);
 export type StoreStatus = z.infer<typeof StoreStatus>;
 
+/** Hard ceiling on requests per second to one domain (02-crawler-core.md 2.2). */
+export const MAX_RPS = 3;
+
+/** Per-store crawl rules (`stores.crawl_policy`). */
+export const CrawlPolicy = z.object({
+  /** robots.txt reviewed and allows the paths we crawl. */
+  robotsOk: z.boolean(),
+  /** Requests per second for this domain; the HTTP client never goes above MAX_RPS. */
+  maxRps: z.number().positive().max(MAX_RPS),
+  notes: z.string().optional(),
+});
+export type CrawlPolicy = z.infer<typeof CrawlPolicy>;
+
+/** The store facts an adapter is allowed to see (no credentials, no user data). */
+export const StoreRef = z.object({
+  id: z.uuid(),
+  name: z.string().min(1),
+  /** Bare host, no scheme: "www.jumia.com.ng". */
+  domain: z.string().min(1),
+  platform: StorePlatform,
+  tier: StoreTier,
+  status: StoreStatus,
+  crawlPolicy: CrawlPolicy,
+});
+export type StoreRef = z.infer<typeof StoreRef>;
+
 // ---------------------------------------------------------------------------
 // Listing attributes
 // ---------------------------------------------------------------------------

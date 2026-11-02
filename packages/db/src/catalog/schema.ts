@@ -5,7 +5,7 @@
  *
  * Money columns are bigint kobo read as JS numbers (safe to ₦90 trillion).
  */
-import type { Variant } from '@cheapa/core';
+import type { CrawlPolicy, Variant } from '@cheapa/core';
 import { sql, type SQL } from 'drizzle-orm';
 import {
   bigint,
@@ -47,13 +47,6 @@ const updatedAt = () =>
     .notNull()
     .defaultNow()
     .$onUpdate(() => new Date());
-
-export interface CrawlPolicy {
-  robotsOk: boolean;
-  /** Requests per second for this domain; the HTTP client caps it at 3. */
-  maxRps: number;
-  notes?: string;
-}
 
 export interface StoreAffiliate {
   network: string;

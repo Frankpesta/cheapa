@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { NormalizedListing, RawListing, type RawListingInput } from './types.js';
+import { CrawlPolicy, MAX_RPS, NormalizedListing, RawListing, type RawListingInput } from './types.js';
 
 const base: RawListingInput = {
   externalId: 'DO123MW',
@@ -124,5 +124,13 @@ describe('NormalizedListing', () => {
       extractionConfidence: 0.7,
     });
     expect(ok.success).toBe(true);
+  });
+});
+
+describe('CrawlPolicy', () => {
+  it('caps maxRps at MAX_RPS and requires it to be positive', () => {
+    expect(CrawlPolicy.parse({ robotsOk: true, maxRps: 3 })).toEqual({ robotsOk: true, maxRps: 3 });
+    expect(CrawlPolicy.safeParse({ robotsOk: true, maxRps: MAX_RPS + 1 }).success).toBe(false);
+    expect(CrawlPolicy.safeParse({ robotsOk: true, maxRps: 0 }).success).toBe(false);
   });
 });

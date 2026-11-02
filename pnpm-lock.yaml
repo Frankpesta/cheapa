@@ -433,6 +433,9 @@ importers:
       '@cheapa/core':
         specifier: workspace:*
         version: link:../core
+      zod:
+        specifier: 'catalog:'
+        version: 4.6.7
     devDependencies:
       '@cheapa/config':
         specifier: workspace:*

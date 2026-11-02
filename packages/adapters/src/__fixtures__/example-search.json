@@ -1,0 +1,32 @@
+{
+  "page": 1,
+  "totalPages": 3,
+  "products": [
+    {
+      "sku": "EX-1001",
+      "name": "Women's Satin Slip Midi Dress - Wine",
+      "url": "/satin-slip-midi-dress-wine-1001.html",
+      "price": "₦ 12,500",
+      "oldPrice": "₦ 18,000",
+      "available": true,
+      "image": "https://img.example.ng/p/1001.jpg",
+      "brand": "Generic",
+      "sizes": ["S", "M", "L"]
+    },
+    {
+      "sku": "EX-1002",
+      "name": "Human Hair Bone Straight Wig 20 Inches 13x4 HD Lace",
+      "url": "/bone-straight-wig-20-1002.html",
+      "price": "From ₦ 145,000",
+      "available": true,
+      "image": "https://img.example.ng/p/1002.jpg"
+    },
+    {
+      "sku": "EX-1003",
+      "name": "Broken Row With No Price",
+      "url": "/broken-1003.html",
+      "price": "Call for price",
+      "available": false
+    }
+  ]
+}
