@@ -134,6 +134,29 @@ services:
       <<: *api-deps
       api: { condition: service_started }
 
+  # Crawl + process workers (02-crawler-core.md 2.3). Catalog DB and queue Redis only:
+  # never the users database or the cache Redis (CLAUDE.md rule 2).
+  worker:
+    profiles: ['app']
+    build: { context: .., dockerfile: apps/worker/Dockerfile }
+    image: cheapa-worker:local
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      APP_VERSION: ${APP_VERSION:-local}
+      CATALOG_DATABASE_URL: postgres://cheapa_catalog:${CATALOG_DB_PASSWORD}@postgres:5432/cheapa_catalog
+      REDIS_QUEUE_URL: redis://redis-queue:6379
+      WORKER_CONCURRENCY_DISCOVER: ${WORKER_CONCURRENCY_DISCOVER:-2}
+      WORKER_CONCURRENCY_FETCH: ${WORKER_CONCURRENCY_FETCH:-6}
+      WORKER_CONCURRENCY_PROCESS: ${WORKER_CONCURRENCY_PROCESS:-4}
+      SENTRY_DSN_WORKER: ${SENTRY_DSN_WORKER:-}
+      SENTRY_ENVIRONMENT: ${SENTRY_ENVIRONMENT:-}
+      SENTRY_TRACES_SAMPLE_RATE: ${SENTRY_TRACES_SAMPLE_RATE:-0.1}
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis-queue: { condition: service_healthy }
+
 volumes:
   postgres-data:
   redis-queue-data:

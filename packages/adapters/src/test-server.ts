@@ -1,4 +1,4 @@
-/** A real local HTTP server for PoliteHttp tests: routes by path, records every hit. */
+/** A real local HTTP server for HTTP-level tests: routes by path, records every hit. Tests only. */
 import { createServer, type IncomingHttpHeaders, type ServerResponse } from 'node:http';
 import type { AddressInfo } from 'node:net';
 

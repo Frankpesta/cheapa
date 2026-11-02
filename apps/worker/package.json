@@ -6,20 +6,34 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx watch --conditions=@cheapa/source --env-file-if-exists=../../.env src/main.ts",
+    "start": "node --import ./dist/instrument.js dist/main.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
+    "@cheapa/adapters": "workspace:*",
     "@cheapa/core": "workspace:*",
     "@cheapa/db": "workspace:*",
-    "@cheapa/adapters": "workspace:*",
-    "@cheapa/ml": "workspace:*"
+    "@cheapa/ml": "workspace:*",
+    "@sentry/node": "catalog:",
+    "bullmq": "catalog:",
+    "drizzle-orm": "catalog:",
+    "ioredis": "catalog:",
+    "pg": "catalog:",
+    "pino": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@cheapa/config": "workspace:*",
+    "@testcontainers/postgresql": "catalog:",
     "@types/node": "catalog:",
+    "@types/pg": "catalog:",
     "eslint": "catalog:",
+    "pino-pretty": "catalog:",
+    "testcontainers": "catalog:",
+    "tsx": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   }

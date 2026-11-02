@@ -2,7 +2,7 @@ import { Redis } from 'ioredis';
 import { readFileSync } from 'node:fs';
 import { afterEach, describe, expect, inject, it } from 'vitest';
 import { Blocked, HttpError, ResponseTooLarge, RobotsDisallowed } from '../errors.js';
-import { send, startServer, type Route, type TestServer } from '../test/server.js';
+import { send, startServer, type Route, type TestServer } from '../test-server.js';
 import { CHEAPA_USER_AGENT, PoliteHttp, type PoliteHttpOptions } from './client.js';
 import { RedisDomainLimiter, type RateLimiter } from './limiter.js';
 import { RobotsCache } from './robots.js';

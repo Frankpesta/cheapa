@@ -17,6 +17,7 @@ catalog:
   '@testcontainers/postgresql': 12.2.1
   '@types/node': 26.6.6
   '@types/pg': 8.23.1
+  bullmq: 6.3.19
   drizzle-kit: 0.31.11
   drizzle-orm: 0.45.4
   eslint-config-prettier: 10.1.8
@@ -55,3 +56,4 @@ allowBuilds:
   cpu-features: false # optional native addon (ssh2 via testcontainers); not needed
   ssh2: false # optional native crypto; pure-JS fallback is fine for tests
   protobufjs: false # postinstall only prints a notice
+  msgpackr-extract: false # optional native msgpack (bullmq); pure-JS fallback is fine
