@@ -16,6 +16,7 @@ Snap or share a product photo, see every Nigerian online listing for it, cheapes
 ```sh
 pnpm install
 pnpm turbo run typecheck lint test   # definition of done
+pnpm test:down                       # remove throwaway test containers when finished
 pnpm build
 pnpm format
 ```

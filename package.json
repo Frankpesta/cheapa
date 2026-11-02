@@ -23,6 +23,7 @@
     "infra:reset": "docker compose -f infra/docker-compose.yml --env-file .env --profile app down -v",
     "infra:logs": "docker compose -f infra/docker-compose.yml --env-file .env logs -f",
     "infra:check": "bash infra/check.sh",
+    "test:down": "node scripts/test-down.mjs",
     "db:seed": "turbo run db:seed",
     "infra:up:app": "docker compose -f infra/docker-compose.yml --env-file .env --profile app up -d --build --wait"
   },
