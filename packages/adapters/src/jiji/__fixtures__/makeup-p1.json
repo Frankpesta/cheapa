@@ -1,1369 +1,1429 @@
 {
-  "adverts_list": {
-    "mode_default": "gallery",
-    "count": 849,
-    "adverts": [
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 1,
-        "details": "",
-        "guid": "ppdzKWDvPyKX02gBLDXFevTK",
-        "id": 56019269,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210371508_MzAwLTUzMy1kMjc5Y2VmYTY2.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210371508_MzAwLTUzMy1kMjc5Y2VmYTY2.webp",
-            "center": null,
-            "size": [300, 533]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 100000,
-          "view": "₦ 100,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 100,000",
-        "region": "Lagos State • Abule Egba",
-        "region_id": 1195,
-        "region_item_text": "Lagos, Abule Egba",
-        "region_name": "Abule Egba",
-        "region_parent_name": "Lagos State",
-        "region_slug": "abule-egba",
-        "short_description": "",
-        "slug": "custmectic",
-        "status": "active",
-        "title": "Custmectic",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/lagos-abule-egba/makeup/custmectic-ppdzKWDvPyKX02gBLDXFevTK.html",
-        "user_id": 1068
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 3,
-        "details": "",
-        "guid": "8JDucfeh0cWlKhyKq7Ykdww6",
-        "id": 56010724,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210332887_MzAwLTQwMS1kNjgyMWUwNTYy.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210332887_MzAwLTQwMS1kNjgyMWUwNTYy.webp",
-            "center": null,
-            "size": [300, 401]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 15000,
-          "view": "₦ 15,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 15,000",
-        "region": "Lagos State • Alimosho",
-        "region_id": 124,
-        "region_item_text": "Lagos, Alimosho",
-        "region_name": "Alimosho",
-        "region_parent_name": "Lagos State",
-        "region_slug": "alimosho",
-        "short_description": "",
-        "slug": "5-in-1-dappen-dish",
-        "status": "active",
-        "title": "5 IN 1 Dappen Dish",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/alimosho/makeup/5-in-1-dappen-dish-8JDucfeh0cWlKhyKq7Ykdww6.html",
-        "user_id": 1069
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 2,
-        "details": "",
-        "guid": "meguJCq0oELh1UTId9DtgErA",
-        "id": 56010060,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210330561_MzAwLTQwMC0wZWJiMzE2ODcx.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210330561_MzAwLTQwMC0wZWJiMzE2ODcx.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 300,
-          "view": "₦ 300",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 300",
-        "region": "Oyo State • Ibadan",
-        "region_id": 366,
-        "region_item_text": "Oyo, Ibadan",
-        "region_name": "Ibadan",
-        "region_parent_name": "Oyo State",
-        "region_slug": "ibadan",
-        "short_description": "",
-        "slug": "lip-pencils",
-        "status": "active",
-        "title": "Lip Pencils",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ibadan/makeup/lip-pencils-meguJCq0oELh1UTId9DtgErA.html",
-        "user_id": 1070
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 1,
-        "details": "",
-        "guid": "i0kIsdmKenGNDil61lfYvRdR",
-        "id": 56010665,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210332690_MzAwLTUzMy04ZTEyYzE1YzZk.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210332690_MzAwLTUzMy04ZTEyYzE1YzZk.webp",
-            "center": null,
-            "size": [300, 533]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 5000,
-          "view": "₦ 5,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 5,000",
-        "region": "Lagos State • Alimosho",
-        "region_id": 124,
-        "region_item_text": "Lagos, Alimosho",
-        "region_name": "Alimosho",
-        "region_parent_name": "Lagos State",
-        "region_slug": "alimosho",
-        "short_description": "",
-        "slug": "professional-acrylic-brushes",
-        "status": "active",
-        "title": "Professional Acrylic Brushes",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/alimosho/makeup/professional-acrylic-brushes-i0kIsdmKenGNDil61lfYvRdR.html",
-        "user_id": 1069
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 5,
-        "details": "",
-        "guid": "fQVLoM2q9xDzyf4qU8sZ5aU4",
-        "id": 56008553,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210323766_MzAwLTQwMC01YWJlYmEyMDEx.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210323766_MzAwLTQwMC01YWJlYmEyMDEx.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 5,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 4500,
-          "view": "₦ 4,500",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 4,500",
-        "region": "Lagos State • Amuwo-Odofin",
-        "region_id": 125,
-        "region_item_text": "Lagos, Amuwo-Odofin",
-        "region_name": "Amuwo-Odofin",
-        "region_parent_name": "Lagos State",
-        "region_slug": "amuwo-odofin",
-        "short_description": "",
-        "slug": "all-cosmetics",
-        "status": "active",
-        "title": "All Cosmetics",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/amuwo-odofin/makeup/all-cosmetics-fQVLoM2q9xDzyf4qU8sZ5aU4.html",
-        "user_id": 1071
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 1,
-        "details": "",
-        "guid": "BIJeryEtLsiw6higveypQ3YK",
-        "id": 56003011,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210297178_MzAwLTMwMC03ZGQwODBkNzA5.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210297178_MzAwLTMwMC03ZGQwODBkNzA5.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 12000,
-          "view": "₦ 12,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 12,000",
-        "region": "Lagos State • Lagos Island (Eko)",
-        "region_id": 158,
-        "region_item_text": "Lagos, Lagos Island (Eko)",
-        "region_name": "Lagos Island (Eko)",
-        "region_parent_name": "Lagos State",
-        "region_slug": "lagos-island-eko",
-        "short_description": "",
-        "slug": "rechargeable-led-light-single-handheld-mirror",
-        "status": "active",
-        "title": "Rechargeable Led Light Single Handheld Mirror",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/lagos-island-west/makeup/rechargeable-led-light-single-handheld-mirror-BIJeryEtLsiw6higveypQ3YK.html",
-        "user_id": 1072
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 1,
-        "details": "",
-        "guid": "5q3XFt3e3Lc2dTUUKV07DoyE",
-        "id": 55987798,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210296835_MzAwLTMwMC00NjRlMTBkNjNk.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210296835_MzAwLTMwMC00NjRlMTBkNjNk.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 20000,
-          "view": "₦ 20,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 20,000",
-        "region": "Lagos State • Lagos Island (Eko)",
-        "region_id": 158,
-        "region_item_text": "Lagos, Lagos Island (Eko)",
-        "region_name": "Lagos Island (Eko)",
-        "region_parent_name": "Lagos State",
-        "region_slug": "lagos-island-eko",
-        "short_description": "",
-        "slug": "tricolor-makeup-mirror-with-led-lights",
-        "status": "active",
-        "title": "Tricolor Makeup Mirror With Led Lights",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/lagos-island-west/makeup/tricolor-makeup-mirror-with-led-lights-5q3XFt3e3Lc2dTUUKV07DoyE.html",
-        "user_id": 1072
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 3,
-        "details": "",
-        "guid": "q3HUK347b0VcLi2IRdlpBBK5",
-        "id": 55997206,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210366220_MzAwLTM0MC1lNzVkYzI1NDNm.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210366220_MzAwLTM0MC1lNzVkYzI1NDNm.webp",
-            "center": null,
-            "size": [300, 340]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 3000,
-          "view": "₦ 3,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 3,000",
-        "region": "Delta State • Warri",
-        "region_id": 629,
-        "region_item_text": "Delta, Warri",
-        "region_name": "Warri",
-        "region_parent_name": "Delta State",
-        "region_slug": "warri",
-        "short_description": "",
-        "slug": "verse-by-array-beauty",
-        "status": "active",
-        "title": "Verse by Array Beauty",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/warri-south/makeup/verse-by-array-beauty-q3HUK347b0VcLi2IRdlpBBK5.html",
-        "user_id": 1073
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 1,
-        "details": "",
-        "guid": "w9I13oGMsKcyuYgD1F6NG05d",
-        "id": 55980268,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210194934_MzAwLTMwMC04ZjIwODhjMDVi.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210194934_MzAwLTMwMC04ZjIwODhjMDVi.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 3000,
-          "view": "₦ 3,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 3,000",
-        "region": "Abuja (FCT) • Garki 2",
-        "region_id": 418,
-        "region_item_text": "Abuja, Garki 2",
-        "region_name": "Garki 2",
-        "region_parent_name": "Abuja (FCT)",
-        "region_slug": "garki-2",
-        "short_description": "",
-        "slug": "lip-it-by-maisha",
-        "status": "active",
-        "title": "Lip-iT by Maisha",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/garki-ii/makeup/lip-it-by-maisha-w9I13oGMsKcyuYgD1F6NG05d.html",
-        "user_id": 1074
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 2,
-        "details": "",
-        "guid": "kVPuanMwjUrehoxpELANtxoF",
-        "id": 55997155,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210270703_MzAwLTIyNS00ODU4MmMwNWZm.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210270703_MzAwLTIyNS00ODU4MmMwNWZm.webp",
-            "center": null,
-            "size": [300, 225]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "age",
-            "value": "3+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 20000,
-          "view": "₦ 20,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 20,000",
-        "region": "Edo State • Benin City",
-        "region_id": 88,
-        "region_item_text": "Edo, Benin City",
-        "region_name": "Benin City",
-        "region_parent_name": "Edo State",
-        "region_slug": "benin-city",
-        "short_description": "",
-        "slug": "make-up-case",
-        "status": "active",
-        "title": "Make Up Case",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/oredo/makeup/make-up-case-kVPuanMwjUrehoxpELANtxoF.html",
-        "user_id": 1075
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 2,
-        "details": "",
-        "guid": "dLLpLPXbOGXBvv4r4bn6svAV",
-        "id": 55898803,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210239101_MzAwLTMwMC1lMDM3NDZmZjY1.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210239101_MzAwLTMwMC1lMDM3NDZmZjY1.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "enterprise",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          },
-          {
-            "type": "age",
-            "value": "5+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "enterprise",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 2000,
-          "view": "₦ 2,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 2,000",
-        "region": "Lagos State • Ajah",
-        "region_id": 137,
-        "region_item_text": "Lagos, Ajah",
-        "region_name": "Ajah",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ajah",
-        "short_description": "",
-        "slug": "sparkle-beauty-single-eyelashes",
-        "status": "active",
-        "title": "Sparkle Beauty Single EyeLashes",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ajah/makeup/sparkle-beauty-single-eyelashes-dLLpLPXbOGXBvv4r4bn6svAV.html",
-        "user_id": 1076,
-        "seller": {
-          "user_name": "Seller 1076",
-          "user_avatar_url": "",
-          "user_rating": 5
-        }
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 3,
-        "details": "",
-        "guid": "1JX6WcIcSVToT0rMDjGlBOlv",
-        "id": 55960174,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210214829_MzAwLTIyNS1lYzc5ZWQ1NzU3.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210214829_MzAwLTIyNS1lYzc5ZWQ1NzU3.webp",
-            "center": null,
-            "size": [300, 225]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 5000,
-          "view": "₦ 5,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 5,000",
-        "region": "Ebonyi State • Abakaliki",
-        "region_id": 809,
-        "region_item_text": "Ebonyi, Abakaliki",
-        "region_name": "Abakaliki",
-        "region_parent_name": "Ebonyi State",
-        "region_slug": "abakaliki",
-        "short_description": "",
-        "slug": "handmade-10pcs-soft-nude-yellow-design-rhinestone-gel-press-on-nails",
-        "status": "active",
-        "title": "Handmade 10pcs Soft Nude + Yellow Design Rhinestone Gel Press-on Nails",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/abakaliki/makeup/handmade-10pcs-soft-nude-yellow-design-rhinestone-gel-press-on-nails-1JX6WcIcSVToT0rMDjGlBOlv.html",
-        "user_id": 1077
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 1,
-        "details": "",
-        "guid": "A5V1qk7aXWrHG3XPxBNbE0DM",
-        "id": 55981415,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210200291_MzAwLTY2Ny01YzZiZjJlMTRm.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210200291_MzAwLTY2Ny01YzZiZjJlMTRm.webp",
-            "center": null,
-            "size": [300, 667]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "basic",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "basic"
-        },
-        "price_obj": {
-          "value": 20000,
-          "view": "₦ 20,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 20,000",
-        "region": "Lagos State • Ikeja",
-        "region_id": 146,
-        "region_item_text": "Lagos, Ikeja",
-        "region_name": "Ikeja",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikeja",
-        "short_description": "",
-        "slug": "maybelline-dream-radiant-liquid",
-        "status": "active",
-        "title": "Maybelline Dream Radiant Liquid",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikeja/makeup/maybelline-dream-radiant-liquid-A5V1qk7aXWrHG3XPxBNbE0DM.html",
-        "user_id": 1078
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 3,
-        "details": "",
-        "guid": "ARXhKhHgBsJ0EhNY8tZjbAwu",
-        "id": 55976711,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210365852_MzAwLTIzOC1hYWExZjM0NTdi.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210365852_MzAwLTIzOC1hYWExZjM0NTdi.webp",
-            "center": null,
-            "size": [300, 238]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 3000,
-          "view": "₦ 3,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 3,000",
-        "region": "Delta State • Warri",
-        "region_id": 629,
-        "region_item_text": "Delta, Warri",
-        "region_name": "Warri",
-        "region_parent_name": "Delta State",
-        "region_slug": "warri",
-        "short_description": "",
-        "slug": "luma-lip-gloss-by-array-beauty",
-        "status": "active",
-        "title": "Luma Lip Gloss by Array Beauty",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/warri-south/makeup/luma-lip-gloss-by-array-beauty-ARXhKhHgBsJ0EhNY8tZjbAwu.html",
-        "user_id": 1073
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 6,
-        "details": "",
-        "guid": "5ausvcuw9uO70TkafOUGuTZ4",
-        "id": 55959787,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210105164_MzAwLTIyNS1hMDg5NTc0NGQ0.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210105164_MzAwLTIyNS1hMDg5NTc0NGQ0.webp",
-            "center": null,
-            "size": [300, 225]
-          }
-        ],
-        "images_count": 6,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 3500,
-          "view": "₦ 3,500",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 3,500",
-        "region": "Ondo State • Akure",
-        "region_id": 62,
-        "region_item_text": "Ondo, Akure",
-        "region_name": "Akure",
-        "region_parent_name": "Ondo State",
-        "region_slug": "akure",
-        "short_description": "",
-        "slug": "decentmj-beauty-hub",
-        "status": "active",
-        "title": "Decentmj Beauty Hub",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/akure-south/makeup/decentmj-beauty-hub-5ausvcuw9uO70TkafOUGuTZ4.html",
-        "user_id": 1079
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 1,
-        "details": "",
-        "guid": "rmiBV7vi5uZ9FCnbyzDjVw11",
-        "id": 55969633,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210147288_MzAwLTQwMi0wNDk5M2Q1NWIw.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210147288_MzAwLTQwMi0wNDk5M2Q1NWIw.webp",
-            "center": null,
-            "size": [300, 402]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 7000,
-          "view": "₦ 7,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 7,000",
-        "region": "Anambra State • Nnewi",
-        "region_id": 321,
-        "region_item_text": "Anambra, Nnewi",
-        "region_name": "Nnewi",
-        "region_parent_name": "Anambra State",
-        "region_slug": "nnewi",
-        "short_description": "",
-        "slug": "premium-lip-combo-set-affordable-quality-beauty-products",
-        "status": "active",
-        "title": "Premium Lip Combo Set – Affordable & Quality Beauty Products",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/nnewi/makeup/premium-lip-combo-set-affordable-quality-beauty-products-rmiBV7vi5uZ9FCnbyzDjVw11.html",
-        "user_id": 1080
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 2,
-        "details": "",
-        "guid": "gkxvY94LhBbfTJ51hLVOfm0k",
-        "id": 55761687,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210137977_MzAwLTQwMC0yODAxOWUwYTMx.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210137977_MzAwLTQwMC0yODAxOWUwYTMx.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 7000,
-          "view": "₦ 7,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 7,000",
-        "region": "Lagos State • Ikorodu",
-        "region_id": 149,
-        "region_item_text": "Lagos, Ikorodu",
-        "region_name": "Ikorodu",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikorodu",
-        "short_description": "",
-        "slug": "press-on-nails",
-        "status": "active",
-        "title": "Press-on Nails",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikorodu/makeup/press-on-nails-gkxvY94LhBbfTJ51hLVOfm0k.html",
-        "user_id": 1081
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {
-          "label": "TOP",
-          "slug": "top",
-          "bg_color": "#ffaf45",
-          "text_color": "#ffffff",
-          "aside_color": "#C8822C",
-          "service_type": "top"
-        },
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 2,
-        "details": "",
-        "guid": "rYFtOOYBidPxEmLdPVRmyfHB",
-        "id": 55900037,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210136063_MzAwLTMwMC1hOWRjNWMzZGZm.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210136063_MzAwLTMwMC1hOWRjNWMzZGZm.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": true,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "bg": "#FFF4B8"
-        },
-        "price_obj": {
-          "value": 10000,
-          "view": "₦ 10,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 10,000",
-        "region": "Lagos State • Ojo",
-        "region_id": 164,
-        "region_item_text": "Lagos, Ojo",
-        "region_name": "Ojo",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ojo",
-        "short_description": "",
-        "slug": "lemon-brush-set",
-        "status": "active",
-        "title": "Lemon Brush Set",
-        "title_labels": [],
-        "tops_count": 1,
-        "url": "/ojo/makeup/lemon-brush-set-rYFtOOYBidPxEmLdPVRmyfHB.html",
-        "user_id": 1082
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 1,
-        "details": "",
-        "guid": "kIyUHHZnLXRh9i6TAomJVqqI",
-        "id": 55965056,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210134826_MzAwLTQwMC00Mjg4N2I2MTNiLTE.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210134826_MzAwLTQwMC00Mjg4N2I2MTNiLTE.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 1500,
-          "view": "₦ 1,500",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 1,500",
-        "region": "Oyo State • Ibadan",
-        "region_id": 366,
-        "region_item_text": "Oyo, Ibadan",
-        "region_name": "Ibadan",
-        "region_parent_name": "Oyo State",
-        "region_slug": "ibadan",
-        "short_description": "",
-        "slug": "glossbymofficial",
-        "status": "active",
-        "title": "GlossbyMofficial",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ibadan/makeup/glossbymofficial-kIyUHHZnLXRh9i6TAomJVqqI.html",
-        "user_id": 1083
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 251,
-        "category_name": "Make-Up",
-        "category_slug": "makeup",
-        "count_images": 1,
-        "details": "",
-        "guid": "Ow4rz2K03PjAYpW6JcwxWHi",
-        "id": 55964684,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210124461_MzAwLTIyNS1jNGJhOGRjNmUyLTE.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210124461_MzAwLTIyNS1jNGJhOGRjNmUyLTE.webp",
-            "center": null,
-            "size": [300, 225]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 1000,
-          "view": "₦ 1,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 1,000",
-        "region": "Oyo State • Ibadan",
-        "region_id": 366,
-        "region_item_text": "Oyo, Ibadan",
-        "region_name": "Ibadan",
-        "region_parent_name": "Oyo State",
-        "region_slug": "ibadan",
-        "short_description": "",
-        "slug": "glossbymofficial",
-        "status": "active",
-        "title": "GlossbyMofficial🤏",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ibadan/makeup/glossbymofficial-Ow4rz2K03PjAYpW6JcwxWHi.html",
-        "user_id": 1083
-      }
+ "adverts_list": {
+  "mode_default": "gallery",
+  "count": 849,
+  "adverts": [
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
     ],
-    "per_page": 20,
-    "total_pages": 43,
-    "tops_exist": true,
-    "in_day_count": 5,
-    "in_hour_count": 0
-  },
-  "next_url": "https://jiji.ng/api_web/v1/listing?slug=makeup&sort=new&webp=true&page=2&lsmid=1794495581078",
-  "status": "ok"
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 1,
+    "details": "",
+    "guid": "ppdzKWDvPyKX02gBLDXFevTK",
+    "id": 56019269,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210371508_MzAwLTUzMy1kMjc5Y2VmYTY2.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210371508_MzAwLTUzMy1kMjc5Y2VmYTY2.webp",
+      "center": null,
+      "size": [
+       300,
+       533
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 100000,
+     "view": "₦ 100,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 100,000",
+    "region": "Lagos State • Abule Egba",
+    "region_id": 1195,
+    "region_item_text": "Lagos, Abule Egba",
+    "region_name": "Abule Egba",
+    "region_parent_name": "Lagos State",
+    "region_slug": "abule-egba",
+    "short_description": "",
+    "slug": "custmectic",
+    "status": "active",
+    "title": "Custmectic",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-abule-egba/makeup/custmectic-ppdzKWDvPyKX02gBLDXFevTK.html",
+    "user_id": 1068
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 3,
+    "details": "",
+    "guid": "8JDucfeh0cWlKhyKq7Ykdww6",
+    "id": 56010724,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210332887_MzAwLTQwMS1kNjgyMWUwNTYy.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210332887_MzAwLTQwMS1kNjgyMWUwNTYy.webp",
+      "center": null,
+      "size": [
+       300,
+       401
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 15000,
+     "view": "₦ 15,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 15,000",
+    "region": "Lagos State • Alimosho",
+    "region_id": 124,
+    "region_item_text": "Lagos, Alimosho",
+    "region_name": "Alimosho",
+    "region_parent_name": "Lagos State",
+    "region_slug": "alimosho",
+    "short_description": "",
+    "slug": "5-in-1-dappen-dish",
+    "status": "active",
+    "title": "5 IN 1 Dappen Dish",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/alimosho/makeup/5-in-1-dappen-dish-8JDucfeh0cWlKhyKq7Ykdww6.html",
+    "user_id": 1069
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 2,
+    "details": "",
+    "guid": "meguJCq0oELh1UTId9DtgErA",
+    "id": 56010060,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210330561_MzAwLTQwMC0wZWJiMzE2ODcx.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210330561_MzAwLTQwMC0wZWJiMzE2ODcx.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 300,
+     "view": "₦ 300",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 300",
+    "region": "Oyo State • Ibadan",
+    "region_id": 366,
+    "region_item_text": "Oyo, Ibadan",
+    "region_name": "Ibadan",
+    "region_parent_name": "Oyo State",
+    "region_slug": "ibadan",
+    "short_description": "",
+    "slug": "lip-pencils",
+    "status": "active",
+    "title": "Lip Pencils",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ibadan/makeup/lip-pencils-meguJCq0oELh1UTId9DtgErA.html",
+    "user_id": 1070
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 1,
+    "details": "",
+    "guid": "i0kIsdmKenGNDil61lfYvRdR",
+    "id": 56010665,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210332690_MzAwLTUzMy04ZTEyYzE1YzZk.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210332690_MzAwLTUzMy04ZTEyYzE1YzZk.webp",
+      "center": null,
+      "size": [
+       300,
+       533
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 5000,
+     "view": "₦ 5,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 5,000",
+    "region": "Lagos State • Alimosho",
+    "region_id": 124,
+    "region_item_text": "Lagos, Alimosho",
+    "region_name": "Alimosho",
+    "region_parent_name": "Lagos State",
+    "region_slug": "alimosho",
+    "short_description": "",
+    "slug": "professional-acrylic-brushes",
+    "status": "active",
+    "title": "Professional Acrylic Brushes",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/alimosho/makeup/professional-acrylic-brushes-i0kIsdmKenGNDil61lfYvRdR.html",
+    "user_id": 1069
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 5,
+    "details": "",
+    "guid": "fQVLoM2q9xDzyf4qU8sZ5aU4",
+    "id": 56008553,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210323766_MzAwLTQwMC01YWJlYmEyMDEx.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210323766_MzAwLTQwMC01YWJlYmEyMDEx.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 5,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 4500,
+     "view": "₦ 4,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 4,500",
+    "region": "Lagos State • Amuwo-Odofin",
+    "region_id": 125,
+    "region_item_text": "Lagos, Amuwo-Odofin",
+    "region_name": "Amuwo-Odofin",
+    "region_parent_name": "Lagos State",
+    "region_slug": "amuwo-odofin",
+    "short_description": "",
+    "slug": "all-cosmetics",
+    "status": "active",
+    "title": "All Cosmetics",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/amuwo-odofin/makeup/all-cosmetics-fQVLoM2q9xDzyf4qU8sZ5aU4.html",
+    "user_id": 1071
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 1,
+    "details": "",
+    "guid": "BIJeryEtLsiw6higveypQ3YK",
+    "id": 56003011,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210297178_MzAwLTMwMC03ZGQwODBkNzA5.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210297178_MzAwLTMwMC03ZGQwODBkNzA5.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 12000,
+     "view": "₦ 12,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 12,000",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "rechargeable-led-light-single-handheld-mirror",
+    "status": "active",
+    "title": "Rechargeable Led Light Single Handheld Mirror",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/makeup/rechargeable-led-light-single-handheld-mirror-BIJeryEtLsiw6higveypQ3YK.html",
+    "user_id": 1072
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 1,
+    "details": "",
+    "guid": "5q3XFt3e3Lc2dTUUKV07DoyE",
+    "id": 55987798,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210296835_MzAwLTMwMC00NjRlMTBkNjNk.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210296835_MzAwLTMwMC00NjRlMTBkNjNk.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 20000,
+     "view": "₦ 20,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 20,000",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "tricolor-makeup-mirror-with-led-lights",
+    "status": "active",
+    "title": "Tricolor Makeup Mirror With Led Lights",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/makeup/tricolor-makeup-mirror-with-led-lights-5q3XFt3e3Lc2dTUUKV07DoyE.html",
+    "user_id": 1072
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 3,
+    "details": "",
+    "guid": "q3HUK347b0VcLi2IRdlpBBK5",
+    "id": 55997206,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210366220_MzAwLTM0MC1lNzVkYzI1NDNm.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210366220_MzAwLTM0MC1lNzVkYzI1NDNm.webp",
+      "center": null,
+      "size": [
+       300,
+       340
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 3000,
+     "view": "₦ 3,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 3,000",
+    "region": "Delta State • Warri",
+    "region_id": 629,
+    "region_item_text": "Delta, Warri",
+    "region_name": "Warri",
+    "region_parent_name": "Delta State",
+    "region_slug": "warri",
+    "short_description": "",
+    "slug": "verse-by-array-beauty",
+    "status": "active",
+    "title": "Verse by Array Beauty",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/warri-south/makeup/verse-by-array-beauty-q3HUK347b0VcLi2IRdlpBBK5.html",
+    "user_id": 1073
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 1,
+    "details": "",
+    "guid": "w9I13oGMsKcyuYgD1F6NG05d",
+    "id": 55980268,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210194934_MzAwLTMwMC04ZjIwODhjMDVi.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210194934_MzAwLTMwMC04ZjIwODhjMDVi.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 3000,
+     "view": "₦ 3,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 3,000",
+    "region": "Abuja (FCT) • Garki 2",
+    "region_id": 418,
+    "region_item_text": "Abuja, Garki 2",
+    "region_name": "Garki 2",
+    "region_parent_name": "Abuja (FCT)",
+    "region_slug": "garki-2",
+    "short_description": "",
+    "slug": "lip-it-by-maisha",
+    "status": "active",
+    "title": "Lip-iT by Maisha",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/garki-ii/makeup/lip-it-by-maisha-w9I13oGMsKcyuYgD1F6NG05d.html",
+    "user_id": 1074
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 2,
+    "details": "",
+    "guid": "kVPuanMwjUrehoxpELANtxoF",
+    "id": 55997155,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210270703_MzAwLTIyNS00ODU4MmMwNWZm.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210270703_MzAwLTIyNS00ODU4MmMwNWZm.webp",
+      "center": null,
+      "size": [
+       300,
+       225
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 20000,
+     "view": "₦ 20,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 20,000",
+    "region": "Edo State • Benin City",
+    "region_id": 88,
+    "region_item_text": "Edo, Benin City",
+    "region_name": "Benin City",
+    "region_parent_name": "Edo State",
+    "region_slug": "benin-city",
+    "short_description": "",
+    "slug": "make-up-case",
+    "status": "active",
+    "title": "Make Up Case",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/oredo/makeup/make-up-case-kVPuanMwjUrehoxpELANtxoF.html",
+    "user_id": 1075
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 2,
+    "details": "",
+    "guid": "dLLpLPXbOGXBvv4r4bn6svAV",
+    "id": 55898803,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210239101_MzAwLTMwMC1lMDM3NDZmZjY1.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210239101_MzAwLTMwMC1lMDM3NDZmZjY1.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "enterprise",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "enterprise",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 2000,
+     "view": "₦ 2,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 2,000",
+    "region": "Lagos State • Ajah",
+    "region_id": 137,
+    "region_item_text": "Lagos, Ajah",
+    "region_name": "Ajah",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ajah",
+    "short_description": "",
+    "slug": "sparkle-beauty-single-eyelashes",
+    "status": "active",
+    "title": "Sparkle Beauty Single EyeLashes",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ajah/makeup/sparkle-beauty-single-eyelashes-dLLpLPXbOGXBvv4r4bn6svAV.html",
+    "user_id": 1076,
+    "seller": {
+     "user_name": "Seller 1076",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 3,
+    "details": "",
+    "guid": "1JX6WcIcSVToT0rMDjGlBOlv",
+    "id": 55960174,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210214829_MzAwLTIyNS1lYzc5ZWQ1NzU3.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210214829_MzAwLTIyNS1lYzc5ZWQ1NzU3.webp",
+      "center": null,
+      "size": [
+       300,
+       225
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 5000,
+     "view": "₦ 5,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 5,000",
+    "region": "Ebonyi State • Abakaliki",
+    "region_id": 809,
+    "region_item_text": "Ebonyi, Abakaliki",
+    "region_name": "Abakaliki",
+    "region_parent_name": "Ebonyi State",
+    "region_slug": "abakaliki",
+    "short_description": "",
+    "slug": "handmade-10pcs-soft-nude-yellow-design-rhinestone-gel-press-on-nails",
+    "status": "active",
+    "title": "Handmade 10pcs Soft Nude + Yellow Design Rhinestone Gel Press-on Nails",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/abakaliki/makeup/handmade-10pcs-soft-nude-yellow-design-rhinestone-gel-press-on-nails-1JX6WcIcSVToT0rMDjGlBOlv.html",
+    "user_id": 1077
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 1,
+    "details": "",
+    "guid": "A5V1qk7aXWrHG3XPxBNbE0DM",
+    "id": 55981415,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210200291_MzAwLTY2Ny01YzZiZjJlMTRm.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210200291_MzAwLTY2Ny01YzZiZjJlMTRm.webp",
+      "center": null,
+      "size": [
+       300,
+       667
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "basic",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "basic"
+    },
+    "price_obj": {
+     "value": 20000,
+     "view": "₦ 20,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 20,000",
+    "region": "Lagos State • Ikeja",
+    "region_id": 146,
+    "region_item_text": "Lagos, Ikeja",
+    "region_name": "Ikeja",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikeja",
+    "short_description": "",
+    "slug": "maybelline-dream-radiant-liquid",
+    "status": "active",
+    "title": "Maybelline Dream Radiant Liquid",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikeja/makeup/maybelline-dream-radiant-liquid-A5V1qk7aXWrHG3XPxBNbE0DM.html",
+    "user_id": 1078
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 3,
+    "details": "",
+    "guid": "ARXhKhHgBsJ0EhNY8tZjbAwu",
+    "id": 55976711,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210365852_MzAwLTIzOC1hYWExZjM0NTdi.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210365852_MzAwLTIzOC1hYWExZjM0NTdi.webp",
+      "center": null,
+      "size": [
+       300,
+       238
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 3000,
+     "view": "₦ 3,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 3,000",
+    "region": "Delta State • Warri",
+    "region_id": 629,
+    "region_item_text": "Delta, Warri",
+    "region_name": "Warri",
+    "region_parent_name": "Delta State",
+    "region_slug": "warri",
+    "short_description": "",
+    "slug": "luma-lip-gloss-by-array-beauty",
+    "status": "active",
+    "title": "Luma Lip Gloss by Array Beauty",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/warri-south/makeup/luma-lip-gloss-by-array-beauty-ARXhKhHgBsJ0EhNY8tZjbAwu.html",
+    "user_id": 1073
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 6,
+    "details": "",
+    "guid": "5ausvcuw9uO70TkafOUGuTZ4",
+    "id": 55959787,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210105164_MzAwLTIyNS1hMDg5NTc0NGQ0.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210105164_MzAwLTIyNS1hMDg5NTc0NGQ0.webp",
+      "center": null,
+      "size": [
+       300,
+       225
+      ]
+     }
+    ],
+    "images_count": 6,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 3500,
+     "view": "₦ 3,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 3,500",
+    "region": "Ondo State • Akure",
+    "region_id": 62,
+    "region_item_text": "Ondo, Akure",
+    "region_name": "Akure",
+    "region_parent_name": "Ondo State",
+    "region_slug": "akure",
+    "short_description": "",
+    "slug": "decentmj-beauty-hub",
+    "status": "active",
+    "title": "Decentmj Beauty Hub",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/akure-south/makeup/decentmj-beauty-hub-5ausvcuw9uO70TkafOUGuTZ4.html",
+    "user_id": 1079
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 1,
+    "details": "",
+    "guid": "rmiBV7vi5uZ9FCnbyzDjVw11",
+    "id": 55969633,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210147288_MzAwLTQwMi0wNDk5M2Q1NWIw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210147288_MzAwLTQwMi0wNDk5M2Q1NWIw.webp",
+      "center": null,
+      "size": [
+       300,
+       402
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 7000,
+     "view": "₦ 7,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 7,000",
+    "region": "Anambra State • Nnewi",
+    "region_id": 321,
+    "region_item_text": "Anambra, Nnewi",
+    "region_name": "Nnewi",
+    "region_parent_name": "Anambra State",
+    "region_slug": "nnewi",
+    "short_description": "",
+    "slug": "premium-lip-combo-set-affordable-quality-beauty-products",
+    "status": "active",
+    "title": "Premium Lip Combo Set – Affordable & Quality Beauty Products",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/nnewi/makeup/premium-lip-combo-set-affordable-quality-beauty-products-rmiBV7vi5uZ9FCnbyzDjVw11.html",
+    "user_id": 1080
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 2,
+    "details": "",
+    "guid": "gkxvY94LhBbfTJ51hLVOfm0k",
+    "id": 55761687,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210137977_MzAwLTQwMC0yODAxOWUwYTMx.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210137977_MzAwLTQwMC0yODAxOWUwYTMx.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 7000,
+     "view": "₦ 7,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 7,000",
+    "region": "Lagos State • Ikorodu",
+    "region_id": 149,
+    "region_item_text": "Lagos, Ikorodu",
+    "region_name": "Ikorodu",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikorodu",
+    "short_description": "",
+    "slug": "press-on-nails",
+    "status": "active",
+    "title": "Press-on Nails",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikorodu/makeup/press-on-nails-gkxvY94LhBbfTJ51hLVOfm0k.html",
+    "user_id": 1081
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "TOP",
+     "slug": "top",
+     "bg_color": "#ffaf45",
+     "text_color": "#ffffff",
+     "aside_color": "#C8822C",
+     "service_type": "top"
+    },
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 2,
+    "details": "",
+    "guid": "rYFtOOYBidPxEmLdPVRmyfHB",
+    "id": 55900037,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210136063_MzAwLTMwMC1hOWRjNWMzZGZm.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210136063_MzAwLTMwMC1hOWRjNWMzZGZm.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": true,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "bg": "#FFF4B8"
+    },
+    "price_obj": {
+     "value": 10000,
+     "view": "₦ 10,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 10,000",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "lemon-brush-set",
+    "status": "active",
+    "title": "Lemon Brush Set",
+    "title_labels": [],
+    "tops_count": 1,
+    "url": "/ojo/makeup/lemon-brush-set-rYFtOOYBidPxEmLdPVRmyfHB.html",
+    "user_id": 1082
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 1,
+    "details": "",
+    "guid": "kIyUHHZnLXRh9i6TAomJVqqI",
+    "id": 55965056,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210134826_MzAwLTQwMC00Mjg4N2I2MTNiLTE.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210134826_MzAwLTQwMC00Mjg4N2I2MTNiLTE.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 1500,
+     "view": "₦ 1,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 1,500",
+    "region": "Oyo State • Ibadan",
+    "region_id": 366,
+    "region_item_text": "Oyo, Ibadan",
+    "region_name": "Ibadan",
+    "region_parent_name": "Oyo State",
+    "region_slug": "ibadan",
+    "short_description": "",
+    "slug": "glossbymofficial",
+    "status": "active",
+    "title": "GlossbyMofficial",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ibadan/makeup/glossbymofficial-kIyUHHZnLXRh9i6TAomJVqqI.html",
+    "user_id": 1083
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 251,
+    "category_name": "Make-Up",
+    "category_slug": "makeup",
+    "count_images": 1,
+    "details": "",
+    "guid": "Ow4rz2K03PjAYpW6JcwxWHi",
+    "id": 55964684,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210124461_MzAwLTIyNS1jNGJhOGRjNmUyLTE.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210124461_MzAwLTIyNS1jNGJhOGRjNmUyLTE.webp",
+      "center": null,
+      "size": [
+       300,
+       225
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 1000,
+     "view": "₦ 1,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 1,000",
+    "region": "Oyo State • Ibadan",
+    "region_id": 366,
+    "region_item_text": "Oyo, Ibadan",
+    "region_name": "Ibadan",
+    "region_parent_name": "Oyo State",
+    "region_slug": "ibadan",
+    "short_description": "",
+    "slug": "glossbymofficial",
+    "status": "active",
+    "title": "GlossbyMofficial🤏",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ibadan/makeup/glossbymofficial-Ow4rz2K03PjAYpW6JcwxWHi.html",
+    "user_id": 1083
+   }
+  ],
+  "per_page": 20,
+  "total_pages": 43,
+  "tops_exist": true,
+  "in_day_count": 5,
+  "in_hour_count": 0
+ },
+ "next_url": "https://jiji.ng/api_web/v1/listing?slug=makeup&sort=new&webp=true&page=2&lsmid=1794495581078",
+ "status": "ok"
 }

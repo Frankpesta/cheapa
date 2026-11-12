@@ -1,1408 +1,1468 @@
 {
-  "adverts_list": {
-    "mode_default": "gallery",
-    "count": 18543,
-    "adverts": [
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 9,
-        "details": "",
-        "guid": "uKkGR3wtZlkiMqR8qnGZh7tX",
-        "id": 56020256,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210375688_MzAwLTQyNS0yNTBlZWFmYWU1.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210375688_MzAwLTQyNS0yNTBlZWFmYWU1.webp",
-            "center": null,
-            "size": [300, 425]
-          }
-        ],
-        "images_count": 9,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 38000,
-          "view": "₦ 38,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 38,000",
-        "region": "Lagos State • Lagos Island (Eko)",
-        "region_id": 158,
-        "region_item_text": "Lagos, Lagos Island (Eko)",
-        "region_name": "Lagos Island (Eko)",
-        "region_parent_name": "Lagos State",
-        "region_slug": "lagos-island-eko",
-        "short_description": "",
-        "slug": "quality-versse-bag",
-        "status": "active",
-        "title": "Quality Versse Bag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/lagos-island-west/bags/quality-versse-bag-uKkGR3wtZlkiMqR8qnGZh7tX.html",
-        "user_id": 1016
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 2,
-        "details": "",
-        "guid": "mm6h9325EYJxoabfaAzo0uXm",
-        "id": 56019442,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210374283_MzAwLTI3OC01NDUwMjRhMzcx.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210374283_MzAwLTI3OC01NDUwMjRhMzcx.webp",
-            "center": null,
-            "size": [300, 278]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 11000,
-          "view": "₦ 11,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 11,000",
-        "region": "Oyo State • Ido",
-        "region_id": 370,
-        "region_item_text": "Oyo, Ido",
-        "region_name": "Ido",
-        "region_parent_name": "Oyo State",
-        "region_slug": "ido",
-        "short_description": "",
-        "slug": "luxury-bags",
-        "status": "active",
-        "title": "Luxury Bags",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ido/bags/luxury-bags-mm6h9325EYJxoabfaAzo0uXm.html",
-        "user_id": 1017
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 2,
-        "details": "",
-        "guid": "8jZIp8jri3Ze9RvdQYLwiaQn",
-        "id": 56019155,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210370886_MzAwLTI5NC0wNjBmZDc1YTdj.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210370886_MzAwLTI5NC0wNjBmZDc1YTdj.webp",
-            "center": null,
-            "size": [300, 294]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 12000,
-          "view": "₦ 12,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 12,000",
-        "region": "Oyo State • Ido",
-        "region_id": 370,
-        "region_item_text": "Oyo, Ido",
-        "region_name": "Ido",
-        "region_parent_name": "Oyo State",
-        "region_slug": "ido",
-        "short_description": "",
-        "slug": "luxury-bag",
-        "status": "active",
-        "title": "Luxury Bag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ido/bags/luxury-bag-8jZIp8jri3Ze9RvdQYLwiaQn.html",
-        "user_id": 1017
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 3,
-        "details": "",
-        "guid": "lmc0rxUKBKp7L0PGqVGq3Qjo",
-        "id": 56018954,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210370027_MzAwLTI5NS1mZWIwMWU2NTcz.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210370027_MzAwLTI5NS1mZWIwMWU2NTcz.webp",
-            "center": null,
-            "size": [300, 295]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": "premium",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          },
-          {
-            "type": "age",
-            "value": "3+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "premium",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 6000,
-          "view": "₦ 6,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 6,000",
-        "region": "Lagos State • Lagos Island (Eko)",
-        "region_id": 158,
-        "region_item_text": "Lagos, Lagos Island (Eko)",
-        "region_name": "Lagos Island (Eko)",
-        "region_parent_name": "Lagos State",
-        "region_slug": "lagos-island-eko",
-        "short_description": "",
-        "slug": "mini-travelling-bag",
-        "status": "active",
-        "title": "Mini Travelling Bag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/lagos-island-west/bags/mini-travelling-bag-lmc0rxUKBKp7L0PGqVGq3Qjo.html",
-        "user_id": 1018
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 6,
-        "details": "",
-        "guid": "pBrIt87oy58nSkUCox9ULe0t",
-        "id": 56019387,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210371977_MzAwLTQwMC1jM2ZhZTg3NGQ4.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210371977_MzAwLTQwMC1jM2ZhZTg3NGQ4.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 6,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 75000,
-          "view": "₦ 75,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 75,000",
-        "region": "Lagos State • Surulere",
-        "region_id": 174,
-        "region_item_text": "Lagos, Surulere",
-        "region_name": "Surulere",
-        "region_parent_name": "Lagos State",
-        "region_slug": "surulere",
-        "short_description": "",
-        "slug": "2in-1-luxury-box",
-        "status": "active",
-        "title": "2in 1 Luxury Box",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/surulere/bags/2in-1-luxury-box-pBrIt87oy58nSkUCox9ULe0t.html",
-        "user_id": 1019,
-        "seller": {
-          "user_name": "Seller 1019",
-          "user_avatar_url": "",
-          "user_rating": 5
-        }
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 2,
-        "details": "",
-        "guid": "7qdS8zZbAyXFS314W74ABOY8",
-        "id": 56019463,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210372356_MzAwLTQwMC0wYjYxMmFmYTlh.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210372356_MzAwLTQwMC0wYjYxMmFmYTlh.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 20000,
-          "view": "₦ 20,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 20,000",
-        "region": "Edo State",
-        "region_id": 76,
-        "region_item_text": "Edo",
-        "region_name": "Edo State",
-        "region_slug": "edo-state",
-        "short_description": "",
-        "slug": "mini-chic-crossbag",
-        "status": "active",
-        "title": "Mini Chic Crossbag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/edo/bags/mini-chic-crossbag-7qdS8zZbAyXFS314W74ABOY8.html",
-        "user_id": 1020
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 2,
-        "details": "",
-        "guid": "f4Wm0PElVcfJeSzxWfHorSie",
-        "id": 56019691,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210373286_MzAwLTQwMC1hMjgzNTdlY2Fm.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210373286_MzAwLTQwMC1hMjgzNTdlY2Fm.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 20000,
-          "view": "₦ 20,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 20,000",
-        "region": "Edo State",
-        "region_id": 76,
-        "region_item_text": "Edo",
-        "region_name": "Edo State",
-        "region_slug": "edo-state",
-        "short_description": "",
-        "slug": "mini-cross-bag",
-        "status": "active",
-        "title": "Mini Cross Bag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/edo/bags/mini-cross-bag-f4Wm0PElVcfJeSzxWfHorSie.html",
-        "user_id": 1020
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 2,
-        "details": "",
-        "guid": "94m3mEIMbovtqfErF6mM98wN",
-        "id": 56019569,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210373364_MzAwLTMyMi0xZmViYjUwNTFh.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210373364_MzAwLTMyMi0xZmViYjUwNTFh.webp",
-            "center": null,
-            "size": [300, 322]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 15000,
-          "view": "₦ 15,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 15,000",
-        "region": "Oyo State • Ibadan",
-        "region_id": 366,
-        "region_item_text": "Oyo, Ibadan",
-        "region_name": "Ibadan",
-        "region_parent_name": "Oyo State",
-        "region_slug": "ibadan",
-        "short_description": "",
-        "slug": "cotton-canvas-insulated-lunch-bag",
-        "status": "active",
-        "title": "Cotton Canvas Insulated Lunch Bag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ibadan/bags/cotton-canvas-insulated-lunch-bag-94m3mEIMbovtqfErF6mM98wN.html",
-        "user_id": 1021
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 5,
-        "details": "",
-        "guid": "BSVhwkmAR0AyoG0mPYf9gMO9",
-        "id": 56006574,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210313962_MzAwLTEzNS05MmVmYzJiNmNl.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210313962_MzAwLTEzNS05MmVmYzJiNmNl.webp",
-            "center": null,
-            "size": [300, 135]
-          }
-        ],
-        "images_count": 5,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "age",
-            "value": "3+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 25000,
-          "view": "₦ 25,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 25,000",
-        "region": "Lagos State • Ikeja",
-        "region_id": 146,
-        "region_item_text": "Lagos, Ikeja",
-        "region_name": "Ikeja",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikeja",
-        "short_description": "",
-        "slug": "luxury-bags",
-        "status": "active",
-        "title": "Luxury Bags",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikeja/bags/luxury-bags-BSVhwkmAR0AyoG0mPYf9gMO9.html",
-        "user_id": 1022
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 3,
-        "details": "",
-        "guid": "iW9Sv90FMR7pNxmyteHNedEG",
-        "id": 56017999,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210370320_MzAwLTMwMC04ZDQxMTA3NzYw.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210370320_MzAwLTMwMC04ZDQxMTA3NzYw.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 20000,
-          "view": "₦ 20,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 20,000",
-        "region": "Edo State • Benin City",
-        "region_id": 88,
-        "region_item_text": "Edo, Benin City",
-        "region_name": "Benin City",
-        "region_parent_name": "Edo State",
-        "region_slug": "benin-city",
-        "short_description": "",
-        "slug": "female-bags-and-more",
-        "status": "active",
-        "title": "Female Bags and More",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/oredo/bags/female-bags-and-more-iW9Sv90FMR7pNxmyteHNedEG.html",
-        "user_id": 1023
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {
-          "label": "VIP TOP+",
-          "slug": "booster_vip",
-          "bg_color": "#00B53F",
-          "text_color": "#ffffff",
-          "aside_color": "#229826",
-          "service_type": "boost"
-        },
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 2,
-        "details": "",
-        "guid": "xymtRdfhDiPIS1pp6f3njjG1",
-        "id": 56006742,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210314598_MzAwLTEzNS04YjAxNmM5NmYw.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210314598_MzAwLTEzNS04YjAxNmM5NmYw.webp",
-            "center": null,
-            "size": [300, 135]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "age",
-            "value": "3+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "#FEA03C",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 25000,
-          "view": "₦ 25,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 25,000",
-        "region": "Lagos State • Ikeja",
-        "region_id": 146,
-        "region_item_text": "Lagos, Ikeja",
-        "region_name": "Ikeja",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikeja",
-        "short_description": "",
-        "slug": "quality-hand-bag",
-        "status": "active",
-        "title": "Quality Hand Bag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikeja/bags/quality-hand-bag-xymtRdfhDiPIS1pp6f3njjG1.html",
-        "user_id": 1022
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {
-          "label": "2X VIP TOP+",
-          "slug": "booster_vip_multi",
-          "bg_color": "#00B53F",
-          "text_color": "#ffffff",
-          "aside_color": "#229826",
-          "service_type": "boost"
-        },
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 4,
-        "details": "",
-        "guid": "aqE5IlhQhAP1pARYXeDk4FCc",
-        "id": 55879588,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210371248_MzAwLTE4Ni1lM2M5Yjc1ZWQ5.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210371248_MzAwLTE4Ni1lM2M5Yjc1ZWQ5.webp",
-            "center": null,
-            "size": [300, 186]
-          }
-        ],
-        "images_count": 4,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "#FEA03C",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 30000,
-          "view": "₦ 30,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 30,000",
-        "region": "Lagos State • Ikeja",
-        "region_id": 146,
-        "region_item_text": "Lagos, Ikeja",
-        "region_name": "Ikeja",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikeja",
-        "short_description": "",
-        "slug": "phone-crossbody-bag",
-        "status": "active",
-        "title": "Phone Crossbody Bag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikeja/bags/phone-crossbody-bag-aqE5IlhQhAP1pARYXeDk4FCc.html",
-        "user_id": 1024
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 5,
-        "details": "",
-        "guid": "ktdajEDSytTdgL6YmwezcmZ6",
-        "id": 56011662,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210370431_MzAwLTQwMC0zNDgxMjM1ZTFk.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210370431_MzAwLTQwMC0zNDgxMjM1ZTFk.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 5,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 7500,
-          "view": "₦ 7,500",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 7,500",
-        "region": "Edo State • Egor",
-        "region_id": 78,
-        "region_item_text": "Edo, Egor",
-        "region_name": "Egor",
-        "region_parent_name": "Edo State",
-        "region_slug": "egor",
-        "short_description": "",
-        "slug": "beautiful-ladies-fashion-handbags-affordable-stylish",
-        "status": "active",
-        "title": "Beautiful Ladies Fashion Handbags – Affordable & Stylish",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/egor/bags/beautiful-ladies-fashion-handbags-affordable-stylish-ktdajEDSytTdgL6YmwezcmZ6.html",
-        "user_id": 1025
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 3,
-        "details": "",
-        "guid": "v2kvc9fNFvUmWDUg9x8UtKmq",
-        "id": 56017712,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210365895_MzAwLTI2MC03MWY5N2M4OTlj.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210365895_MzAwLTI2MC03MWY5N2M4OTlj.webp",
-            "center": null,
-            "size": [300, 260]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 20000,
-          "view": "₦ 20,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 20,000",
-        "region": "Abuja (FCT) • Kuchigoro",
-        "region_id": 433,
-        "region_item_text": "Abuja, Kuchigoro",
-        "region_name": "Kuchigoro",
-        "region_parent_name": "Abuja (FCT)",
-        "region_slug": "kuchigoro",
-        "short_description": "",
-        "slug": "womens-stylish-tote-bag-3-colours-available",
-        "status": "active",
-        "title": "Women's Stylish Tote Bag – 3 Colours Available",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/kuchigworo/bags/womens-stylish-tote-bag-3-colours-available-v2kvc9fNFvUmWDUg9x8UtKmq.html",
-        "user_id": 1026
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 12,
-        "details": "",
-        "guid": "qbRR7ZuqXsSmch54ZMIfbrOV",
-        "id": 56016924,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210362633_MzAwLTMwMC05MjE2OWFmMjA4.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210362633_MzAwLTMwMC05MjE2OWFmMjA4.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 12,
-        "is_boost": "enterprise",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "enterprise",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 150000,
-          "view": "₦ 150,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 150,000",
-        "region": "Lagos State • Ikeja",
-        "region_id": 146,
-        "region_item_text": "Lagos, Ikeja",
-        "region_name": "Ikeja",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikeja",
-        "short_description": "",
-        "slug": "original-large-capacity-faux-leather-tote-bag-with-thick-braided-rope",
-        "status": "active",
-        "title": "Original Large-Capacity Faux Leather Tote Bag With Thick Braided Rope",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikeja/bags/original-large-capacity-faux-leather-tote-bag-with-thick-braided-rope-qbRR7ZuqXsSmch54ZMIfbrOV.html",
-        "user_id": 1027,
-        "seller": {
-          "user_name": "Seller 1027",
-          "user_avatar_url": "",
-          "user_rating": 4.9
-        }
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 2,
-        "details": "",
-        "guid": "s7I7LnPx08cYbqZ43sH4Pp0f",
-        "id": 55999440,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210281045_MzAwLTQwMC0zZTAzZjc0ODEx.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210281045_MzAwLTQwMC0zZTAzZjc0ODEx.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 85000,
-          "view": "₦ 85,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 85,000",
-        "region": "Bayelsa State • Yenagoa",
-        "region_id": 839,
-        "region_item_text": "Bayelsa, Yenagoa",
-        "region_name": "Yenagoa",
-        "region_parent_name": "Bayelsa State",
-        "region_slug": "yenagoa",
-        "short_description": "",
-        "slug": "32-inches-5-wheels-traveling-box",
-        "status": "active",
-        "title": "32 Inches 5 Wheels Traveling Box",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/yenagoa/bags/32-inches-5-wheels-traveling-box-s7I7LnPx08cYbqZ43sH4Pp0f.html",
-        "user_id": 1028
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          }
-        ],
-        "badge_info": {
-          "label": "VIP TOP+",
-          "slug": "booster_vip",
-          "bg_color": "#00B53F",
-          "text_color": "#ffffff",
-          "aside_color": "#229826",
-          "service_type": "boost"
-        },
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 2,
-        "details": "",
-        "guid": "BFLqq7R9d4vnQ6acanvptExR",
-        "id": 56017385,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210364337_MzAwLTI3Mi1lYjI2N2Y3Mjdh.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210364337_MzAwLTI3Mi1lYjI2N2Y3Mjdh.webp",
-            "center": null,
-            "size": [300, 272]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "age",
-            "value": "8+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "#FEA03C",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 35000,
-          "view": "₦ 35,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 35,000",
-        "region": "Lagos State • Ikeja",
-        "region_id": 146,
-        "region_item_text": "Lagos, Ikeja",
-        "region_name": "Ikeja",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikeja",
-        "short_description": "",
-        "slug": "executive-vintage-leather-laptop-bag",
-        "status": "active",
-        "title": "Executive Vintage Leather Laptop Bag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikeja/bags/executive-vintage-leather-laptop-bag-BFLqq7R9d4vnQ6acanvptExR.html",
-        "user_id": 1029
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 3,
-        "details": "",
-        "guid": "yKWcp1Q9ki2iqqdv2Zz1S6IP",
-        "id": 56017779,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210364661_MzAwLTQwMC04OTFkMDcxNmY5.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210364661_MzAwLTQwMC04OTFkMDcxNmY5.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 30000,
-          "view": "₦ 30,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 30,000",
-        "region": "Lagos State • Ogba",
-        "region_id": 1237,
-        "region_item_text": "Lagos, Ogba",
-        "region_name": "Ogba",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ogba",
-        "short_description": "",
-        "slug": "ankara-bag",
-        "status": "active",
-        "title": "Ankara Bag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ogba/bags/ankara-bag-yKWcp1Q9ki2iqqdv2Zz1S6IP.html",
-        "user_id": 1030
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 2,
-        "details": "",
-        "guid": "3p3qj7Lg1Oo08jEpwbLBHByA",
-        "id": 56017849,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210365240_MzAwLTMwMC0zYzg5OTdkMGVl.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210365240_MzAwLTMwMC0zYzg5OTdkMGVl.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          },
-          {
-            "type": "age",
-            "value": "5+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 25000,
-          "view": "₦ 25,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 25,000",
-        "region": "Lagos State • Ogba",
-        "region_id": 1237,
-        "region_item_text": "Lagos, Ogba",
-        "region_name": "Ogba",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ogba",
-        "short_description": "",
-        "slug": "quality-women-handbag",
-        "status": "active",
-        "title": "Quality Women Handbag",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ogba/bags/quality-women-handbag-3p3qj7Lg1Oo08jEpwbLBHByA.html",
-        "user_id": 1031,
-        "seller": {
-          "user_name": "Seller 1031",
-          "user_avatar_url": "",
-          "user_rating": 5
-        }
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 169,
-        "category_name": "Bags",
-        "category_slug": "bags",
-        "count_images": 3,
-        "details": "",
-        "guid": "cposRxwWsnIv3o81N7VN2sXA",
-        "id": 56009253,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210364355_MzAwLTMwMC03NWY0ZGM5NWEx.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210364355_MzAwLTMwMC03NWY0ZGM5NWEx.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 150000,
-          "view": "₦ 150,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 150,000",
-        "region": "Lagos State • Lagos Island (Eko)",
-        "region_id": 158,
-        "region_item_text": "Lagos, Lagos Island (Eko)",
-        "region_name": "Lagos Island (Eko)",
-        "region_parent_name": "Lagos State",
-        "region_slug": "lagos-island-eko",
-        "short_description": "",
-        "slug": "ladies-fanshion-hand-bags",
-        "status": "active",
-        "title": "Ladies Fanshion Hand Bags",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/lagos-island-west/bags/ladies-fanshion-hand-bags-cposRxwWsnIv3o81N7VN2sXA.html",
-        "user_id": 1032
-      }
+ "adverts_list": {
+  "mode_default": "gallery",
+  "count": 18543,
+  "adverts": [
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
     ],
-    "per_page": 20,
-    "total_pages": 928,
-    "tops_exist": true,
-    "in_day_count": 76,
-    "in_hour_count": 8
-  },
-  "next_url": "https://jiji.ng/api_web/v1/listing?slug=bags&sort=new&webp=true&page=2&lsmid=1794495571355",
-  "status": "ok"
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 9,
+    "details": "",
+    "guid": "uKkGR3wtZlkiMqR8qnGZh7tX",
+    "id": 56020256,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210375688_MzAwLTQyNS0yNTBlZWFmYWU1.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210375688_MzAwLTQyNS0yNTBlZWFmYWU1.webp",
+      "center": null,
+      "size": [
+       300,
+       425
+      ]
+     }
+    ],
+    "images_count": 9,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 38000,
+     "view": "₦ 38,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 38,000",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "quality-versse-bag",
+    "status": "active",
+    "title": "Quality Versse Bag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/bags/quality-versse-bag-uKkGR3wtZlkiMqR8qnGZh7tX.html",
+    "user_id": 1016
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 2,
+    "details": "",
+    "guid": "mm6h9325EYJxoabfaAzo0uXm",
+    "id": 56019442,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210374283_MzAwLTI3OC01NDUwMjRhMzcx.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210374283_MzAwLTI3OC01NDUwMjRhMzcx.webp",
+      "center": null,
+      "size": [
+       300,
+       278
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 11000,
+     "view": "₦ 11,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 11,000",
+    "region": "Oyo State • Ido",
+    "region_id": 370,
+    "region_item_text": "Oyo, Ido",
+    "region_name": "Ido",
+    "region_parent_name": "Oyo State",
+    "region_slug": "ido",
+    "short_description": "",
+    "slug": "luxury-bags",
+    "status": "active",
+    "title": "Luxury Bags",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ido/bags/luxury-bags-mm6h9325EYJxoabfaAzo0uXm.html",
+    "user_id": 1017
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 2,
+    "details": "",
+    "guid": "8jZIp8jri3Ze9RvdQYLwiaQn",
+    "id": 56019155,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210370886_MzAwLTI5NC0wNjBmZDc1YTdj.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210370886_MzAwLTI5NC0wNjBmZDc1YTdj.webp",
+      "center": null,
+      "size": [
+       300,
+       294
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 12000,
+     "view": "₦ 12,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 12,000",
+    "region": "Oyo State • Ido",
+    "region_id": 370,
+    "region_item_text": "Oyo, Ido",
+    "region_name": "Ido",
+    "region_parent_name": "Oyo State",
+    "region_slug": "ido",
+    "short_description": "",
+    "slug": "luxury-bag",
+    "status": "active",
+    "title": "Luxury Bag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ido/bags/luxury-bag-8jZIp8jri3Ze9RvdQYLwiaQn.html",
+    "user_id": 1017
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 3,
+    "details": "",
+    "guid": "lmc0rxUKBKp7L0PGqVGq3Qjo",
+    "id": 56018954,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210370027_MzAwLTI5NS1mZWIwMWU2NTcz.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210370027_MzAwLTI5NS1mZWIwMWU2NTcz.webp",
+      "center": null,
+      "size": [
+       300,
+       295
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": "premium",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "premium",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 6000,
+     "view": "₦ 6,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 6,000",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "mini-travelling-bag",
+    "status": "active",
+    "title": "Mini Travelling Bag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/bags/mini-travelling-bag-lmc0rxUKBKp7L0PGqVGq3Qjo.html",
+    "user_id": 1018
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 6,
+    "details": "",
+    "guid": "pBrIt87oy58nSkUCox9ULe0t",
+    "id": 56019387,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210371977_MzAwLTQwMC1jM2ZhZTg3NGQ4.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210371977_MzAwLTQwMC1jM2ZhZTg3NGQ4.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 6,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 75000,
+     "view": "₦ 75,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 75,000",
+    "region": "Lagos State • Surulere",
+    "region_id": 174,
+    "region_item_text": "Lagos, Surulere",
+    "region_name": "Surulere",
+    "region_parent_name": "Lagos State",
+    "region_slug": "surulere",
+    "short_description": "",
+    "slug": "2in-1-luxury-box",
+    "status": "active",
+    "title": "2in 1 Luxury Box",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/surulere/bags/2in-1-luxury-box-pBrIt87oy58nSkUCox9ULe0t.html",
+    "user_id": 1019,
+    "seller": {
+     "user_name": "Seller 1019",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 2,
+    "details": "",
+    "guid": "7qdS8zZbAyXFS314W74ABOY8",
+    "id": 56019463,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210372356_MzAwLTQwMC0wYjYxMmFmYTlh.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210372356_MzAwLTQwMC0wYjYxMmFmYTlh.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 20000,
+     "view": "₦ 20,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 20,000",
+    "region": "Edo State",
+    "region_id": 76,
+    "region_item_text": "Edo",
+    "region_name": "Edo State",
+    "region_slug": "edo-state",
+    "short_description": "",
+    "slug": "mini-chic-crossbag",
+    "status": "active",
+    "title": "Mini Chic Crossbag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/edo/bags/mini-chic-crossbag-7qdS8zZbAyXFS314W74ABOY8.html",
+    "user_id": 1020
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 2,
+    "details": "",
+    "guid": "f4Wm0PElVcfJeSzxWfHorSie",
+    "id": 56019691,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210373286_MzAwLTQwMC1hMjgzNTdlY2Fm.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210373286_MzAwLTQwMC1hMjgzNTdlY2Fm.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 20000,
+     "view": "₦ 20,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 20,000",
+    "region": "Edo State",
+    "region_id": 76,
+    "region_item_text": "Edo",
+    "region_name": "Edo State",
+    "region_slug": "edo-state",
+    "short_description": "",
+    "slug": "mini-cross-bag",
+    "status": "active",
+    "title": "Mini Cross Bag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/edo/bags/mini-cross-bag-f4Wm0PElVcfJeSzxWfHorSie.html",
+    "user_id": 1020
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 2,
+    "details": "",
+    "guid": "94m3mEIMbovtqfErF6mM98wN",
+    "id": 56019569,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210373364_MzAwLTMyMi0xZmViYjUwNTFh.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210373364_MzAwLTMyMi0xZmViYjUwNTFh.webp",
+      "center": null,
+      "size": [
+       300,
+       322
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 15000,
+     "view": "₦ 15,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 15,000",
+    "region": "Oyo State • Ibadan",
+    "region_id": 366,
+    "region_item_text": "Oyo, Ibadan",
+    "region_name": "Ibadan",
+    "region_parent_name": "Oyo State",
+    "region_slug": "ibadan",
+    "short_description": "",
+    "slug": "cotton-canvas-insulated-lunch-bag",
+    "status": "active",
+    "title": "Cotton Canvas Insulated Lunch Bag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ibadan/bags/cotton-canvas-insulated-lunch-bag-94m3mEIMbovtqfErF6mM98wN.html",
+    "user_id": 1021
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 5,
+    "details": "",
+    "guid": "BSVhwkmAR0AyoG0mPYf9gMO9",
+    "id": 56006574,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210313962_MzAwLTEzNS05MmVmYzJiNmNl.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210313962_MzAwLTEzNS05MmVmYzJiNmNl.webp",
+      "center": null,
+      "size": [
+       300,
+       135
+      ]
+     }
+    ],
+    "images_count": 5,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 25000,
+     "view": "₦ 25,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 25,000",
+    "region": "Lagos State • Ikeja",
+    "region_id": 146,
+    "region_item_text": "Lagos, Ikeja",
+    "region_name": "Ikeja",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikeja",
+    "short_description": "",
+    "slug": "luxury-bags",
+    "status": "active",
+    "title": "Luxury Bags",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikeja/bags/luxury-bags-BSVhwkmAR0AyoG0mPYf9gMO9.html",
+    "user_id": 1022
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 3,
+    "details": "",
+    "guid": "iW9Sv90FMR7pNxmyteHNedEG",
+    "id": 56017999,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210370320_MzAwLTMwMC04ZDQxMTA3NzYw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210370320_MzAwLTMwMC04ZDQxMTA3NzYw.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 20000,
+     "view": "₦ 20,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 20,000",
+    "region": "Edo State • Benin City",
+    "region_id": 88,
+    "region_item_text": "Edo, Benin City",
+    "region_name": "Benin City",
+    "region_parent_name": "Edo State",
+    "region_slug": "benin-city",
+    "short_description": "",
+    "slug": "female-bags-and-more",
+    "status": "active",
+    "title": "Female Bags and More",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/oredo/bags/female-bags-and-more-iW9Sv90FMR7pNxmyteHNedEG.html",
+    "user_id": 1023
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "VIP TOP+",
+     "slug": "booster_vip",
+     "bg_color": "#00B53F",
+     "text_color": "#ffffff",
+     "aside_color": "#229826",
+     "service_type": "boost"
+    },
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 2,
+    "details": "",
+    "guid": "xymtRdfhDiPIS1pp6f3njjG1",
+    "id": 56006742,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210314598_MzAwLTEzNS04YjAxNmM5NmYw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210314598_MzAwLTEzNS04YjAxNmM5NmYw.webp",
+      "center": null,
+      "size": [
+       300,
+       135
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "#FEA03C",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 25000,
+     "view": "₦ 25,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 25,000",
+    "region": "Lagos State • Ikeja",
+    "region_id": 146,
+    "region_item_text": "Lagos, Ikeja",
+    "region_name": "Ikeja",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikeja",
+    "short_description": "",
+    "slug": "quality-hand-bag",
+    "status": "active",
+    "title": "Quality Hand Bag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikeja/bags/quality-hand-bag-xymtRdfhDiPIS1pp6f3njjG1.html",
+    "user_id": 1022
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "2X VIP TOP+",
+     "slug": "booster_vip_multi",
+     "bg_color": "#00B53F",
+     "text_color": "#ffffff",
+     "aside_color": "#229826",
+     "service_type": "boost"
+    },
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 4,
+    "details": "",
+    "guid": "aqE5IlhQhAP1pARYXeDk4FCc",
+    "id": 55879588,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210371248_MzAwLTE4Ni1lM2M5Yjc1ZWQ5.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210371248_MzAwLTE4Ni1lM2M5Yjc1ZWQ5.webp",
+      "center": null,
+      "size": [
+       300,
+       186
+      ]
+     }
+    ],
+    "images_count": 4,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "#FEA03C",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 30000,
+     "view": "₦ 30,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 30,000",
+    "region": "Lagos State • Ikeja",
+    "region_id": 146,
+    "region_item_text": "Lagos, Ikeja",
+    "region_name": "Ikeja",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikeja",
+    "short_description": "",
+    "slug": "phone-crossbody-bag",
+    "status": "active",
+    "title": "Phone Crossbody Bag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikeja/bags/phone-crossbody-bag-aqE5IlhQhAP1pARYXeDk4FCc.html",
+    "user_id": 1024
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 5,
+    "details": "",
+    "guid": "ktdajEDSytTdgL6YmwezcmZ6",
+    "id": 56011662,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210370431_MzAwLTQwMC0zNDgxMjM1ZTFk.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210370431_MzAwLTQwMC0zNDgxMjM1ZTFk.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 5,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 7500,
+     "view": "₦ 7,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 7,500",
+    "region": "Edo State • Egor",
+    "region_id": 78,
+    "region_item_text": "Edo, Egor",
+    "region_name": "Egor",
+    "region_parent_name": "Edo State",
+    "region_slug": "egor",
+    "short_description": "",
+    "slug": "beautiful-ladies-fashion-handbags-affordable-stylish",
+    "status": "active",
+    "title": "Beautiful Ladies Fashion Handbags – Affordable & Stylish",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/egor/bags/beautiful-ladies-fashion-handbags-affordable-stylish-ktdajEDSytTdgL6YmwezcmZ6.html",
+    "user_id": 1025
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 3,
+    "details": "",
+    "guid": "v2kvc9fNFvUmWDUg9x8UtKmq",
+    "id": 56017712,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210365895_MzAwLTI2MC03MWY5N2M4OTlj.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210365895_MzAwLTI2MC03MWY5N2M4OTlj.webp",
+      "center": null,
+      "size": [
+       300,
+       260
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 20000,
+     "view": "₦ 20,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 20,000",
+    "region": "Abuja (FCT) • Kuchigoro",
+    "region_id": 433,
+    "region_item_text": "Abuja, Kuchigoro",
+    "region_name": "Kuchigoro",
+    "region_parent_name": "Abuja (FCT)",
+    "region_slug": "kuchigoro",
+    "short_description": "",
+    "slug": "womens-stylish-tote-bag-3-colours-available",
+    "status": "active",
+    "title": "Women's Stylish Tote Bag – 3 Colours Available",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/kuchigworo/bags/womens-stylish-tote-bag-3-colours-available-v2kvc9fNFvUmWDUg9x8UtKmq.html",
+    "user_id": 1026
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 12,
+    "details": "",
+    "guid": "qbRR7ZuqXsSmch54ZMIfbrOV",
+    "id": 56016924,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210362633_MzAwLTMwMC05MjE2OWFmMjA4.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210362633_MzAwLTMwMC05MjE2OWFmMjA4.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 12,
+    "is_boost": "enterprise",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "enterprise",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 150000,
+     "view": "₦ 150,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 150,000",
+    "region": "Lagos State • Ikeja",
+    "region_id": 146,
+    "region_item_text": "Lagos, Ikeja",
+    "region_name": "Ikeja",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikeja",
+    "short_description": "",
+    "slug": "original-large-capacity-faux-leather-tote-bag-with-thick-braided-rope",
+    "status": "active",
+    "title": "Original Large-Capacity Faux Leather Tote Bag With Thick Braided Rope",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikeja/bags/original-large-capacity-faux-leather-tote-bag-with-thick-braided-rope-qbRR7ZuqXsSmch54ZMIfbrOV.html",
+    "user_id": 1027,
+    "seller": {
+     "user_name": "Seller 1027",
+     "user_avatar_url": "",
+     "user_rating": 4.9
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 2,
+    "details": "",
+    "guid": "s7I7LnPx08cYbqZ43sH4Pp0f",
+    "id": 55999440,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210281045_MzAwLTQwMC0zZTAzZjc0ODEx.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210281045_MzAwLTQwMC0zZTAzZjc0ODEx.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 85000,
+     "view": "₦ 85,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 85,000",
+    "region": "Bayelsa State • Yenagoa",
+    "region_id": 839,
+    "region_item_text": "Bayelsa, Yenagoa",
+    "region_name": "Yenagoa",
+    "region_parent_name": "Bayelsa State",
+    "region_slug": "yenagoa",
+    "short_description": "",
+    "slug": "32-inches-5-wheels-traveling-box",
+    "status": "active",
+    "title": "32 Inches 5 Wheels Traveling Box",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/yenagoa/bags/32-inches-5-wheels-traveling-box-s7I7LnPx08cYbqZ43sH4Pp0f.html",
+    "user_id": 1028
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "VIP TOP+",
+     "slug": "booster_vip",
+     "bg_color": "#00B53F",
+     "text_color": "#ffffff",
+     "aside_color": "#229826",
+     "service_type": "boost"
+    },
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 2,
+    "details": "",
+    "guid": "BFLqq7R9d4vnQ6acanvptExR",
+    "id": 56017385,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210364337_MzAwLTI3Mi1lYjI2N2Y3Mjdh.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210364337_MzAwLTI3Mi1lYjI2N2Y3Mjdh.webp",
+      "center": null,
+      "size": [
+       300,
+       272
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "age",
+      "value": "8+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "#FEA03C",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 35000,
+     "view": "₦ 35,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 35,000",
+    "region": "Lagos State • Ikeja",
+    "region_id": 146,
+    "region_item_text": "Lagos, Ikeja",
+    "region_name": "Ikeja",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikeja",
+    "short_description": "",
+    "slug": "executive-vintage-leather-laptop-bag",
+    "status": "active",
+    "title": "Executive Vintage Leather Laptop Bag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikeja/bags/executive-vintage-leather-laptop-bag-BFLqq7R9d4vnQ6acanvptExR.html",
+    "user_id": 1029
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 3,
+    "details": "",
+    "guid": "yKWcp1Q9ki2iqqdv2Zz1S6IP",
+    "id": 56017779,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210364661_MzAwLTQwMC04OTFkMDcxNmY5.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210364661_MzAwLTQwMC04OTFkMDcxNmY5.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 30000,
+     "view": "₦ 30,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 30,000",
+    "region": "Lagos State • Ogba",
+    "region_id": 1237,
+    "region_item_text": "Lagos, Ogba",
+    "region_name": "Ogba",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ogba",
+    "short_description": "",
+    "slug": "ankara-bag",
+    "status": "active",
+    "title": "Ankara Bag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ogba/bags/ankara-bag-yKWcp1Q9ki2iqqdv2Zz1S6IP.html",
+    "user_id": 1030
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 2,
+    "details": "",
+    "guid": "3p3qj7Lg1Oo08jEpwbLBHByA",
+    "id": 56017849,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210365240_MzAwLTMwMC0zYzg5OTdkMGVl.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210365240_MzAwLTMwMC0zYzg5OTdkMGVl.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 25000,
+     "view": "₦ 25,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 25,000",
+    "region": "Lagos State • Ogba",
+    "region_id": 1237,
+    "region_item_text": "Lagos, Ogba",
+    "region_name": "Ogba",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ogba",
+    "short_description": "",
+    "slug": "quality-women-handbag",
+    "status": "active",
+    "title": "Quality Women Handbag",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ogba/bags/quality-women-handbag-3p3qj7Lg1Oo08jEpwbLBHByA.html",
+    "user_id": 1031,
+    "seller": {
+     "user_name": "Seller 1031",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 169,
+    "category_name": "Bags",
+    "category_slug": "bags",
+    "count_images": 3,
+    "details": "",
+    "guid": "cposRxwWsnIv3o81N7VN2sXA",
+    "id": 56009253,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210364355_MzAwLTMwMC03NWY0ZGM5NWEx.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210364355_MzAwLTMwMC03NWY0ZGM5NWEx.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 150000,
+     "view": "₦ 150,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 150,000",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "ladies-fanshion-hand-bags",
+    "status": "active",
+    "title": "Ladies Fanshion Hand Bags",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/bags/ladies-fanshion-hand-bags-cposRxwWsnIv3o81N7VN2sXA.html",
+    "user_id": 1032
+   }
+  ],
+  "per_page": 20,
+  "total_pages": 928,
+  "tops_exist": true,
+  "in_day_count": 76,
+  "in_hour_count": 8
+ },
+ "next_url": "https://jiji.ng/api_web/v1/listing?slug=bags&sort=new&webp=true&page=2&lsmid=1794495571355",
+ "status": "ok"
 }

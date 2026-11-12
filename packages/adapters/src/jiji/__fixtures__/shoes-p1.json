@@ -1,1526 +1,1586 @@
 {
-  "adverts_list": {
-    "mode_default": "gallery",
-    "count": 14763,
-    "adverts": [
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "40, 41, 42, 43, 44, 45, 46",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 3,
-        "details": "",
-        "guid": "i0Dhq1GhBrvsfn9Sk4z535ib",
-        "id": 56019941,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210374301_MzAwLTMwMC0wZmJhYjMxYzlm.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210374301_MzAwLTMwMC0wZmJhYjMxYzlm.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": "diamond",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          },
-          {
-            "type": "age",
-            "value": "3+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "diamond",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 85000,
-          "view": "₦ 85,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 85,000",
-        "region": "Lagos State • Ajah",
-        "region_id": 137,
-        "region_item_text": "Lagos, Ajah",
-        "region_name": "Ajah",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ajah",
-        "short_description": "",
-        "slug": "original-asics-ds-tranier-shoes-cream-grey",
-        "status": "active",
-        "title": "Original Asics Ds Tranier Shoes Cream Grey",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ajah/shoes/original-asics-ds-tranier-shoes-cream-grey-i0Dhq1GhBrvsfn9Sk4z535ib.html",
-        "user_id": 1033,
-        "seller": {
-          "user_name": "Seller 1033",
-          "user_avatar_url": "",
-          "user_rating": 5
-        }
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "40, 41, 42, 43, 44, 45, 46",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 3,
-        "details": "",
-        "guid": "rOYgtnFTEos8Lk8ysInX71yo",
-        "id": 56019894,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210374060_MzAwLTMwMC1mYzY3M2U0ODg2.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210374060_MzAwLTMwMC1mYzY3M2U0ODg2.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": "diamond",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          },
-          {
-            "type": "age",
-            "value": "3+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "diamond",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 85000,
-          "view": "₦ 85,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 85,000",
-        "region": "Lagos State • Ajah",
-        "region_id": 137,
-        "region_item_text": "Lagos, Ajah",
-        "region_name": "Ajah",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ajah",
-        "short_description": "",
-        "slug": "ascis-gel-ds-trainer-now-in-store",
-        "status": "active",
-        "title": "Ascis Gel Ds Trainer Now in Store",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ajah/shoes/ascis-gel-ds-trainer-now-in-store-rOYgtnFTEos8Lk8ysInX71yo.html",
-        "user_id": 1033,
-        "seller": {
-          "user_name": "Seller 1033",
-          "user_avatar_url": "",
-          "user_rating": 5
-        }
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "40",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 2,
-        "details": "",
-        "guid": "69FFtoAFOBpRRHAmG44xd8Mc",
-        "id": 56019837,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210373843_MzAwLTQwMC0yNzExMzQ2ZGU4.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210373843_MzAwLTQwMC0yNzExMzQ2ZGU4.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 18000,
-          "view": "₦ 18,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 18,000",
-        "region": "Edo State",
-        "region_id": 76,
-        "region_item_text": "Edo",
-        "region_name": "Edo State",
-        "region_slug": "edo-state",
-        "short_description": "",
-        "slug": "slide-pams",
-        "status": "active",
-        "title": "Slide Pams",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/edo/shoes/slide-pams-69FFtoAFOBpRRHAmG44xd8Mc.html",
-        "user_id": 1020
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "37, 38, 39, 40, 41, 42",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 2,
-        "details": "",
-        "guid": "pVPhgyR5EaYT8f8RGWNN0V0b",
-        "id": 56019568,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210372700_MzAwLTMwMC01MzQxZGJmYjdm.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210372700_MzAwLTMwMC01MzQxZGJmYjdm.webp",
-            "center": null,
-            "size": [300, 300]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "age",
-            "value": "3+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 18500,
-          "view": "₦ 18,500",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 18,500",
-        "region": "Lagos State • Ajah",
-        "region_id": 137,
-        "region_item_text": "Lagos, Ajah",
-        "region_name": "Ajah",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ajah",
-        "short_description": "",
-        "slug": "womens-leather-slippers",
-        "status": "active",
-        "title": "Women’s Leather Slippers",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ajah/shoes/womens-leather-slippers-pVPhgyR5EaYT8f8RGWNN0V0b.html",
-        "user_id": 1034
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "42, 41, 43, 44, 45, 46",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 7,
-        "details": "",
-        "guid": "5qjcFjcjtuydiRhonvXGRPGp",
-        "id": 56009809,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210328688_MzAwLTQwMC0xNTZhMjE1Njcy.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210328688_MzAwLTQwMC0xNTZhMjE1Njcy.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 7,
-        "is_boost": "basic",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "basic"
-        },
-        "price_obj": {
-          "value": 40000,
-          "view": "₦ 40,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 40,000",
-        "region": "Lagos State • Surulere",
-        "region_id": 174,
-        "region_item_text": "Lagos, Surulere",
-        "region_name": "Surulere",
-        "region_parent_name": "Lagos State",
-        "region_slug": "surulere",
-        "short_description": "",
-        "slug": "quality-nike-air-sneakers",
-        "status": "active",
-        "title": "Quality Nike Air Sneakers",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/surulere/shoes/quality-nike-air-sneakers-5qjcFjcjtuydiRhonvXGRPGp.html",
-        "user_id": 1035
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "42, 41, 40, 43, 44, 36, 37, 38, 39, 40.5, 45, 46, 47",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 4,
-        "details": "",
-        "guid": "eNUWTUqSLL63Gk7ehO3MlkBR",
-        "id": 56019131,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210370706_MzAwLTMxOC1jNjE0YzA4YzI1.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210370706_MzAwLTMxOC1jNjE0YzA4YzI1.webp",
-            "center": null,
-            "size": [300, 318]
-          }
-        ],
-        "images_count": 4,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 75000,
-          "view": "₦ 75,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 75,000",
-        "region": "Lagos State • Ikoyi",
-        "region_id": 151,
-        "region_item_text": "Lagos, Ikoyi",
-        "region_name": "Ikoyi",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikoyi",
-        "short_description": "",
-        "slug": "nike-air-max-plus-tn-african-sunrise-orange-mens-sneakers-nike-tn",
-        "status": "active",
-        "title": "Nike Air Max Plus TN African Sunrise – Orange Men's Sneakers, Nike TN",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikoyi-obalende/shoes/nike-air-max-plus-tn-african-sunrise-orange-mens-sneakers-nike-tn-eNUWTUqSLL63Gk7ehO3MlkBR.html",
-        "user_id": 1036
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "40",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 2,
-        "details": "",
-        "guid": "mGQVlKcYRU7Crg1yB1mmIe84",
-        "id": 56006969,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210315859_MzAwLTI1My1lNDBmZmZlOGJl.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210315859_MzAwLTI1My1lNDBmZmZlOGJl.webp",
-            "center": null,
-            "size": [300, 253]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "age",
-            "value": "3+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 7500,
-          "view": "₦ 7,500",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 7,500",
-        "region": "Lagos State • Ikeja",
-        "region_id": 146,
-        "region_item_text": "Lagos, Ikeja",
-        "region_name": "Ikeja",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikeja",
-        "short_description": "",
-        "slug": "foot-wears",
-        "status": "active",
-        "title": "Foot Wears",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikeja/shoes/foot-wears-mGQVlKcYRU7Crg1yB1mmIe84.html",
-        "user_id": 1022
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "42, 41, 40, 43, 44, 6.5, 7.5, 38, 38.5",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 2,
-        "details": "",
-        "guid": "6a1nQoVKw0brVAqww7FHWOQ6",
-        "id": 56001332,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210370372_MzAwLTE3Ni05Zjg2YTliMDJh.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210370372_MzAwLTE3Ni05Zjg2YTliMDJh.webp",
-            "center": null,
-            "size": [300, 176]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 30000,
-          "view": "₦ 30,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 30,000",
-        "region": "Ogun State • Obafemi-Owode",
-        "region_id": 560,
-        "region_item_text": "Ogun, Obafemi-Owode",
-        "region_name": "Obafemi-Owode",
-        "region_parent_name": "Ogun State",
-        "region_slug": "obafemi-owode",
-        "short_description": "",
-        "slug": "coch-slippers",
-        "status": "active",
-        "title": "Coch Slippers",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/obafemi-owode/shoes/coch-slippers-6a1nQoVKw0brVAqww7FHWOQ6.html",
-        "user_id": 1037
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "42, 41, 40, 43, 44, 37, 38, 39, 46, 47",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 4,
-        "details": "",
-        "guid": "w7KeTjWu595vJy9L3pq69my",
-        "id": 55961476,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210370117_MzAwLTM3My00MjZhNzMxNmY4.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210370117_MzAwLTM3My00MjZhNzMxNmY4.webp",
-            "center": null,
-            "size": [300, 373]
-          }
-        ],
-        "images_count": 4,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 15000,
-          "view": "₦ 15,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 15,000",
-        "region": "Edo State • Benin City",
-        "region_id": 88,
-        "region_item_text": "Edo, Benin City",
-        "region_name": "Benin City",
-        "region_parent_name": "Edo State",
-        "region_slug": "benin-city",
-        "short_description": "",
-        "slug": "joy-luxury",
-        "status": "active",
-        "title": "Joy Luxury",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/oredo/shoes/joy-luxury-w7KeTjWu595vJy9L3pq69my.html",
-        "user_id": 1038
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "42, 41, 40, 43, 44, 37, 38, 39, 45, 46, 47",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 3,
-        "details": "",
-        "guid": "wfS1f8eqyx2OEqnj5MGmTk4J",
-        "id": 56018569,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210368270_MzAwLTQwMC00YjI4MTc2MWY3.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210368270_MzAwLTQwMC00YjI4MTc2MWY3.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 78000,
-          "view": "₦ 78,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 78,000",
-        "region": "Lagos State • Ajah",
-        "region_id": 137,
-        "region_item_text": "Lagos, Ajah",
-        "region_name": "Ajah",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ajah",
-        "short_description": "",
-        "slug": "black-chunky-lace-up-combat-boots-side-zip-fashion-boots-unisex",
-        "status": "active",
-        "title": "Black Chunky – Lace-Up Combat Boots, Side Zip Fashion Boots Unisex",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ajah/shoes/black-chunky-lace-up-combat-boots-side-zip-fashion-boots-unisex-wfS1f8eqyx2OEqnj5MGmTk4J.html",
-        "user_id": 1036
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "42, 41, 40, 43, 44, 45, 46",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 2,
-        "details": "",
-        "guid": "wLtLSoueqHk9QJoZQbeCGPnp",
-        "id": 55972665,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210368896_MzAwLTI1Mi0wMTZkNzkyNjlj.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210368896_MzAwLTI1Mi0wMTZkNzkyNjlj.webp",
-            "center": null,
-            "size": [300, 252]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "basic",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "basic"
-        },
-        "price_obj": {
-          "value": 90000,
-          "view": "₦ 90,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 90,000",
-        "region": "Lagos State • Surulere",
-        "region_id": 174,
-        "region_item_text": "Lagos, Surulere",
-        "region_name": "Surulere",
-        "region_parent_name": "Lagos State",
-        "region_slug": "surulere",
-        "short_description": "",
-        "slug": "mens-quality-shoes",
-        "status": "active",
-        "title": "Men's Quality Shoes",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/surulere/shoes/mens-quality-shoes-wLtLSoueqHk9QJoZQbeCGPnp.html",
-        "user_id": 1035
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "44",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 3,
-        "details": "",
-        "guid": "7vNs45LSWwmWfxv9HLrM0SvG",
-        "id": 56018413,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210368247_MzAwLTUzMy1iMTMwZTY4MWYy.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210368247_MzAwLTUzMy1iMTMwZTY4MWYy.webp",
-            "center": null,
-            "size": [300, 533]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "age",
-            "value": "3+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 280000,
-          "view": "₦ 280,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 280,000",
-        "region": "Lagos State • Ikeja",
-        "region_id": 146,
-        "region_item_text": "Lagos, Ikeja",
-        "region_name": "Ikeja",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikeja",
-        "short_description": "",
-        "slug": "nike-sb-dunk-low-x-bleached-aqau",
-        "status": "active",
-        "title": "Nike SB Dunk Low X Bleached Aqau",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikeja/shoes/nike-sb-dunk-low-x-bleached-aqau-7vNs45LSWwmWfxv9HLrM0SvG.html",
-        "user_id": 1039
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "45",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 2,
-        "details": "",
-        "guid": "3X9JdJnohlfhD9kYOKak36nW",
-        "id": 55551252,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210366632_MzAwLTQwMC1hZTFhMTllYjhj.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210366632_MzAwLTQwMC1hZTFhMTllYjhj.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 40000,
-          "view": "₦ 40,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 40,000",
-        "region": "Lagos State • Victoria Island",
-        "region_id": 153,
-        "region_item_text": "Lagos, Victoria Island",
-        "region_name": "Victoria Island",
-        "region_parent_name": "Lagos State",
-        "region_slug": "victoria-island",
-        "short_description": "",
-        "slug": "outlash-lana-shoes",
-        "status": "active",
-        "title": "Outlash Lana Shoes",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/victoria-island/shoes/outlash-lana-shoes-3X9JdJnohlfhD9kYOKak36nW.html",
-        "user_id": 1040
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "38",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 3,
-        "details": "",
-        "guid": "mpl5dHbc96XtMAx5OxyvYbM",
-        "id": 56018043,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210365997_MzAwLTQwMC0xNzdmZWQ3ZTc0.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210365997_MzAwLTQwMC0xNzdmZWQ3ZTc0.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 14000,
-          "view": "₦ 14,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 14,000",
-        "region": "Lagos State • Ajah",
-        "region_id": 137,
-        "region_item_text": "Lagos, Ajah",
-        "region_name": "Ajah",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ajah",
-        "short_description": "",
-        "slug": "crystal-embellished-lace-strap-flat-shoe",
-        "status": "active",
-        "title": "Crystal Embellished Lace Strap Flat Shoe",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ajah/shoes/crystal-embellished-lace-strap-flat-shoe-mpl5dHbc96XtMAx5OxyvYbM.html",
-        "user_id": 1041
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "42",
-            "unit": null
-          }
-        ],
-        "badge_info": {
-          "label": "TOP",
-          "slug": "top",
-          "bg_color": "#ffaf45",
-          "text_color": "#ffffff",
-          "aside_color": "#C8822C",
-          "service_type": "top"
-        },
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 2,
-        "details": "",
-        "guid": "uErcKt63cOkzcehY5Ft03T7",
-        "id": 56018071,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210365988_MzAwLTM2MC1kOTViMTEzOGYy.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210365988_MzAwLTM2MC1kOTViMTEzOGYy.webp",
-            "center": null,
-            "size": [300, 360]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": true,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "bg": "#FFF4B8"
-        },
-        "price_obj": {
-          "value": 30000,
-          "view": "₦ 30,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 30,000",
-        "region": "Lagos State • Ikorodu",
-        "region_id": 149,
-        "region_item_text": "Lagos, Ikorodu",
-        "region_name": "Ikorodu",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikorodu",
-        "short_description": "",
-        "slug": "luxurious-shoes",
-        "status": "active",
-        "title": "Luxurious Shoes",
-        "title_labels": [],
-        "tops_count": 1,
-        "url": "/ikorodu/shoes/luxurious-shoes-uErcKt63cOkzcehY5Ft03T7.html",
-        "user_id": 1042
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "43, 4.5",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 2,
-        "details": "",
-        "guid": "8JJVMNMNwq022YrDICRx69MS",
-        "id": 56008228,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210364833_MzAwLTMzOS02MGMyNGExN2Iy.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210364833_MzAwLTMzOS02MGMyNGExN2Iy.webp",
-            "center": null,
-            "size": [300, 339]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 30000,
-          "view": "₦ 30,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 30,000",
-        "region": "Lagos State • Ikorodu",
-        "region_id": 149,
-        "region_item_text": "Lagos, Ikorodu",
-        "region_name": "Ikorodu",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikorodu",
-        "short_description": "",
-        "slug": "quality-and-affordable-woman-shoes",
-        "status": "active",
-        "title": "QUALITY and Affordable Woman Shoes",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikorodu/shoes/quality-and-affordable-woman-shoes-8JJVMNMNwq022YrDICRx69MS.html",
-        "user_id": 1042
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "40, 41",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 4,
-        "details": "",
-        "guid": "nG1PWd0N2ebW70hwzmOeNwBY",
-        "id": 56016509,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210364538_MzAwLTQwMC1kYzA3NmFjODZl.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210364538_MzAwLTQwMC1kYzA3NmFjODZl.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 4,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "age",
-            "value": "3+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 30000,
-          "view": "₦ 30,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 30,000",
-        "region": "Lagos State • Abule Egba",
-        "region_id": 1195,
-        "region_item_text": "Lagos, Abule Egba",
-        "region_name": "Abule Egba",
-        "region_parent_name": "Lagos State",
-        "region_slug": "abule-egba",
-        "short_description": "",
-        "slug": "womens-heels",
-        "status": "active",
-        "title": "Women’s Heels",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/lagos-abule-egba/shoes/womens-heels-nG1PWd0N2ebW70hwzmOeNwBY.html",
-        "user_id": 1043
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          },
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "37, 38, 39, 40.5",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 2,
-        "details": "",
-        "guid": "brEncWowkiNkbZGTmXOeDreI",
-        "id": 56016593,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210362953_MzAwLTQwMC02NDI1NjkwOGE4.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210362953_MzAwLTQwMC02NDI1NjkwOGE4.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 10000,
-          "view": "₦ 10,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 10,000",
-        "region": "Delta State • Sapele",
-        "region_id": 621,
-        "region_item_text": "Delta, Sapele",
-        "region_name": "Sapele",
-        "region_parent_name": "Delta State",
-        "region_slug": "sapele",
-        "short_description": "",
-        "slug": "women-hermes-style-h-slides-with-stones-all-colors-sizes-37-40",
-        "status": "active",
-        "title": "Women Hermes Style H Slides With Stones - All Colors - Sizes 37-40",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/sapele/shoes/women-hermes-style-h-slides-with-stones-all-colors-sizes-37-40-brEncWowkiNkbZGTmXOeDreI.html",
-        "user_id": 1044
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Unisex",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "42, 41, 40, 43, 44",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 5,
-        "details": "",
-        "guid": "BiXJtbt5PaOfKpvtNgLiNiEQ",
-        "id": 56012534,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210340764_MzAwLTM3NC04MzRiZWZlNmJh.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210340764_MzAwLTM3NC04MzRiZWZlNmJh.webp",
-            "center": null,
-            "size": [300, 374]
-          }
-        ],
-        "images_count": 5,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 20000,
-          "view": "₦ 20,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 20,000",
-        "region": "Anambra State • Onitsha",
-        "region_id": 324,
-        "region_item_text": "Anambra, Onitsha",
-        "region_name": "Onitsha",
-        "region_parent_name": "Anambra State",
-        "region_slug": "onitsha",
-        "short_description": "",
-        "slug": "quality-footwear-crocs",
-        "status": "active",
-        "title": "Quality Footwear Crocs",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/onitsha-north/shoes/quality-footwear-crocs-BiXJtbt5PaOfKpvtNgLiNiEQ.html",
-        "user_id": 1045,
-        "seller": {
-          "user_name": "Seller 1045",
-          "user_avatar_url": "",
-          "user_rating": 4.8
-        }
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "name": "Gender",
-            "value": "Women's",
-            "unit": null
-          },
-          {
-            "name": "Size",
-            "value": "5",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 55,
-        "category_name": "Shoes",
-        "category_slug": "shoes",
-        "count_images": 3,
-        "details": "",
-        "guid": "xgJqgBsS13rq0wW6YU4ycicC",
-        "id": 56015537,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210355375_MzAwLTIyMy1kMGRmM2NjN2Yx.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210355375_MzAwLTIyMy1kMGRmM2NjN2Yx.webp",
-            "center": null,
-            "size": [300, 223]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 15000,
-          "view": "₦ 15,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 15,000",
-        "region": "Lagos State • Ajah",
-        "region_id": 137,
-        "region_item_text": "Lagos, Ajah",
-        "region_name": "Ajah",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ajah",
-        "short_description": "",
-        "slug": "slip-on-flat-black-shoe",
-        "status": "active",
-        "title": "Slip-on Flat Black Shoe",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ajah/shoes/slip-on-flat-black-shoe-xgJqgBsS13rq0wW6YU4ycicC.html",
-        "user_id": 1041
-      }
+ "adverts_list": {
+  "mode_default": "gallery",
+  "count": 14763,
+  "adverts": [
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "40, 41, 42, 43, 44, 45, 46",
+      "unit": null
+     }
     ],
-    "per_page": 20,
-    "total_pages": 739,
-    "tops_exist": true,
-    "in_day_count": 156,
-    "in_hour_count": 4
-  },
-  "next_url": "https://jiji.ng/api_web/v1/listing?slug=shoes&sort=new&webp=true&page=2&lsmid=1794495573745",
-  "status": "ok"
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 3,
+    "details": "",
+    "guid": "i0Dhq1GhBrvsfn9Sk4z535ib",
+    "id": 56019941,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210374301_MzAwLTMwMC0wZmJhYjMxYzlm.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210374301_MzAwLTMwMC0wZmJhYjMxYzlm.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": "diamond",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "diamond",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 85000,
+     "view": "₦ 85,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 85,000",
+    "region": "Lagos State • Ajah",
+    "region_id": 137,
+    "region_item_text": "Lagos, Ajah",
+    "region_name": "Ajah",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ajah",
+    "short_description": "",
+    "slug": "original-asics-ds-tranier-shoes-cream-grey",
+    "status": "active",
+    "title": "Original Asics Ds Tranier Shoes Cream Grey",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ajah/shoes/original-asics-ds-tranier-shoes-cream-grey-i0Dhq1GhBrvsfn9Sk4z535ib.html",
+    "user_id": 1033,
+    "seller": {
+     "user_name": "Seller 1033",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "40, 41, 42, 43, 44, 45, 46",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 3,
+    "details": "",
+    "guid": "rOYgtnFTEos8Lk8ysInX71yo",
+    "id": 56019894,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210374060_MzAwLTMwMC1mYzY3M2U0ODg2.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210374060_MzAwLTMwMC1mYzY3M2U0ODg2.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": "diamond",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "diamond",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 85000,
+     "view": "₦ 85,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 85,000",
+    "region": "Lagos State • Ajah",
+    "region_id": 137,
+    "region_item_text": "Lagos, Ajah",
+    "region_name": "Ajah",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ajah",
+    "short_description": "",
+    "slug": "ascis-gel-ds-trainer-now-in-store",
+    "status": "active",
+    "title": "Ascis Gel Ds Trainer Now in Store",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ajah/shoes/ascis-gel-ds-trainer-now-in-store-rOYgtnFTEos8Lk8ysInX71yo.html",
+    "user_id": 1033,
+    "seller": {
+     "user_name": "Seller 1033",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "40",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 2,
+    "details": "",
+    "guid": "69FFtoAFOBpRRHAmG44xd8Mc",
+    "id": 56019837,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210373843_MzAwLTQwMC0yNzExMzQ2ZGU4.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210373843_MzAwLTQwMC0yNzExMzQ2ZGU4.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 18000,
+     "view": "₦ 18,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 18,000",
+    "region": "Edo State",
+    "region_id": 76,
+    "region_item_text": "Edo",
+    "region_name": "Edo State",
+    "region_slug": "edo-state",
+    "short_description": "",
+    "slug": "slide-pams",
+    "status": "active",
+    "title": "Slide Pams",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/edo/shoes/slide-pams-69FFtoAFOBpRRHAmG44xd8Mc.html",
+    "user_id": 1020
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "37, 38, 39, 40, 41, 42",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 2,
+    "details": "",
+    "guid": "pVPhgyR5EaYT8f8RGWNN0V0b",
+    "id": 56019568,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210372700_MzAwLTMwMC01MzQxZGJmYjdm.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210372700_MzAwLTMwMC01MzQxZGJmYjdm.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 18500,
+     "view": "₦ 18,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 18,500",
+    "region": "Lagos State • Ajah",
+    "region_id": 137,
+    "region_item_text": "Lagos, Ajah",
+    "region_name": "Ajah",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ajah",
+    "short_description": "",
+    "slug": "womens-leather-slippers",
+    "status": "active",
+    "title": "Women’s Leather Slippers",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ajah/shoes/womens-leather-slippers-pVPhgyR5EaYT8f8RGWNN0V0b.html",
+    "user_id": 1034
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "42, 41, 43, 44, 45, 46",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 7,
+    "details": "",
+    "guid": "5qjcFjcjtuydiRhonvXGRPGp",
+    "id": 56009809,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210328688_MzAwLTQwMC0xNTZhMjE1Njcy.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210328688_MzAwLTQwMC0xNTZhMjE1Njcy.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 7,
+    "is_boost": "basic",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "basic"
+    },
+    "price_obj": {
+     "value": 40000,
+     "view": "₦ 40,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 40,000",
+    "region": "Lagos State • Surulere",
+    "region_id": 174,
+    "region_item_text": "Lagos, Surulere",
+    "region_name": "Surulere",
+    "region_parent_name": "Lagos State",
+    "region_slug": "surulere",
+    "short_description": "",
+    "slug": "quality-nike-air-sneakers",
+    "status": "active",
+    "title": "Quality Nike Air Sneakers",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/surulere/shoes/quality-nike-air-sneakers-5qjcFjcjtuydiRhonvXGRPGp.html",
+    "user_id": 1035
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "42, 41, 40, 43, 44, 36, 37, 38, 39, 40.5, 45, 46, 47",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 4,
+    "details": "",
+    "guid": "eNUWTUqSLL63Gk7ehO3MlkBR",
+    "id": 56019131,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210370706_MzAwLTMxOC1jNjE0YzA4YzI1.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210370706_MzAwLTMxOC1jNjE0YzA4YzI1.webp",
+      "center": null,
+      "size": [
+       300,
+       318
+      ]
+     }
+    ],
+    "images_count": 4,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 75000,
+     "view": "₦ 75,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 75,000",
+    "region": "Lagos State • Ikoyi",
+    "region_id": 151,
+    "region_item_text": "Lagos, Ikoyi",
+    "region_name": "Ikoyi",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikoyi",
+    "short_description": "",
+    "slug": "nike-air-max-plus-tn-african-sunrise-orange-mens-sneakers-nike-tn",
+    "status": "active",
+    "title": "Nike Air Max Plus TN African Sunrise – Orange Men's Sneakers, Nike TN",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikoyi-obalende/shoes/nike-air-max-plus-tn-african-sunrise-orange-mens-sneakers-nike-tn-eNUWTUqSLL63Gk7ehO3MlkBR.html",
+    "user_id": 1036
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "40",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 2,
+    "details": "",
+    "guid": "mGQVlKcYRU7Crg1yB1mmIe84",
+    "id": 56006969,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210315859_MzAwLTI1My1lNDBmZmZlOGJl.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210315859_MzAwLTI1My1lNDBmZmZlOGJl.webp",
+      "center": null,
+      "size": [
+       300,
+       253
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 7500,
+     "view": "₦ 7,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 7,500",
+    "region": "Lagos State • Ikeja",
+    "region_id": 146,
+    "region_item_text": "Lagos, Ikeja",
+    "region_name": "Ikeja",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikeja",
+    "short_description": "",
+    "slug": "foot-wears",
+    "status": "active",
+    "title": "Foot Wears",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikeja/shoes/foot-wears-mGQVlKcYRU7Crg1yB1mmIe84.html",
+    "user_id": 1022
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "42, 41, 40, 43, 44, 6.5, 7.5, 38, 38.5",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 2,
+    "details": "",
+    "guid": "6a1nQoVKw0brVAqww7FHWOQ6",
+    "id": 56001332,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210370372_MzAwLTE3Ni05Zjg2YTliMDJh.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210370372_MzAwLTE3Ni05Zjg2YTliMDJh.webp",
+      "center": null,
+      "size": [
+       300,
+       176
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 30000,
+     "view": "₦ 30,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 30,000",
+    "region": "Ogun State • Obafemi-Owode",
+    "region_id": 560,
+    "region_item_text": "Ogun, Obafemi-Owode",
+    "region_name": "Obafemi-Owode",
+    "region_parent_name": "Ogun State",
+    "region_slug": "obafemi-owode",
+    "short_description": "",
+    "slug": "coch-slippers",
+    "status": "active",
+    "title": "Coch Slippers",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/obafemi-owode/shoes/coch-slippers-6a1nQoVKw0brVAqww7FHWOQ6.html",
+    "user_id": 1037
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "42, 41, 40, 43, 44, 37, 38, 39, 46, 47",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 4,
+    "details": "",
+    "guid": "w7KeTjWu595vJy9L3pq69my",
+    "id": 55961476,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210370117_MzAwLTM3My00MjZhNzMxNmY4.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210370117_MzAwLTM3My00MjZhNzMxNmY4.webp",
+      "center": null,
+      "size": [
+       300,
+       373
+      ]
+     }
+    ],
+    "images_count": 4,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 15000,
+     "view": "₦ 15,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 15,000",
+    "region": "Edo State • Benin City",
+    "region_id": 88,
+    "region_item_text": "Edo, Benin City",
+    "region_name": "Benin City",
+    "region_parent_name": "Edo State",
+    "region_slug": "benin-city",
+    "short_description": "",
+    "slug": "joy-luxury",
+    "status": "active",
+    "title": "Joy Luxury",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/oredo/shoes/joy-luxury-w7KeTjWu595vJy9L3pq69my.html",
+    "user_id": 1038
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "42, 41, 40, 43, 44, 37, 38, 39, 45, 46, 47",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 3,
+    "details": "",
+    "guid": "wfS1f8eqyx2OEqnj5MGmTk4J",
+    "id": 56018569,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210368270_MzAwLTQwMC00YjI4MTc2MWY3.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210368270_MzAwLTQwMC00YjI4MTc2MWY3.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 78000,
+     "view": "₦ 78,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 78,000",
+    "region": "Lagos State • Ajah",
+    "region_id": 137,
+    "region_item_text": "Lagos, Ajah",
+    "region_name": "Ajah",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ajah",
+    "short_description": "",
+    "slug": "black-chunky-lace-up-combat-boots-side-zip-fashion-boots-unisex",
+    "status": "active",
+    "title": "Black Chunky – Lace-Up Combat Boots, Side Zip Fashion Boots Unisex",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ajah/shoes/black-chunky-lace-up-combat-boots-side-zip-fashion-boots-unisex-wfS1f8eqyx2OEqnj5MGmTk4J.html",
+    "user_id": 1036
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "42, 41, 40, 43, 44, 45, 46",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 2,
+    "details": "",
+    "guid": "wLtLSoueqHk9QJoZQbeCGPnp",
+    "id": 55972665,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210368896_MzAwLTI1Mi0wMTZkNzkyNjlj.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210368896_MzAwLTI1Mi0wMTZkNzkyNjlj.webp",
+      "center": null,
+      "size": [
+       300,
+       252
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "basic",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "basic"
+    },
+    "price_obj": {
+     "value": 90000,
+     "view": "₦ 90,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 90,000",
+    "region": "Lagos State • Surulere",
+    "region_id": 174,
+    "region_item_text": "Lagos, Surulere",
+    "region_name": "Surulere",
+    "region_parent_name": "Lagos State",
+    "region_slug": "surulere",
+    "short_description": "",
+    "slug": "mens-quality-shoes",
+    "status": "active",
+    "title": "Men's Quality Shoes",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/surulere/shoes/mens-quality-shoes-wLtLSoueqHk9QJoZQbeCGPnp.html",
+    "user_id": 1035
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "44",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 3,
+    "details": "",
+    "guid": "7vNs45LSWwmWfxv9HLrM0SvG",
+    "id": 56018413,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210368247_MzAwLTUzMy1iMTMwZTY4MWYy.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210368247_MzAwLTUzMy1iMTMwZTY4MWYy.webp",
+      "center": null,
+      "size": [
+       300,
+       533
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 280000,
+     "view": "₦ 280,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 280,000",
+    "region": "Lagos State • Ikeja",
+    "region_id": 146,
+    "region_item_text": "Lagos, Ikeja",
+    "region_name": "Ikeja",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikeja",
+    "short_description": "",
+    "slug": "nike-sb-dunk-low-x-bleached-aqau",
+    "status": "active",
+    "title": "Nike SB Dunk Low X Bleached Aqau",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikeja/shoes/nike-sb-dunk-low-x-bleached-aqau-7vNs45LSWwmWfxv9HLrM0SvG.html",
+    "user_id": 1039
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "45",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 2,
+    "details": "",
+    "guid": "3X9JdJnohlfhD9kYOKak36nW",
+    "id": 55551252,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210366632_MzAwLTQwMC1hZTFhMTllYjhj.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210366632_MzAwLTQwMC1hZTFhMTllYjhj.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 40000,
+     "view": "₦ 40,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 40,000",
+    "region": "Lagos State • Victoria Island",
+    "region_id": 153,
+    "region_item_text": "Lagos, Victoria Island",
+    "region_name": "Victoria Island",
+    "region_parent_name": "Lagos State",
+    "region_slug": "victoria-island",
+    "short_description": "",
+    "slug": "outlash-lana-shoes",
+    "status": "active",
+    "title": "Outlash Lana Shoes",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/victoria-island/shoes/outlash-lana-shoes-3X9JdJnohlfhD9kYOKak36nW.html",
+    "user_id": 1040
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "38",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 3,
+    "details": "",
+    "guid": "mpl5dHbc96XtMAx5OxyvYbM",
+    "id": 56018043,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210365997_MzAwLTQwMC0xNzdmZWQ3ZTc0.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210365997_MzAwLTQwMC0xNzdmZWQ3ZTc0.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 14000,
+     "view": "₦ 14,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 14,000",
+    "region": "Lagos State • Ajah",
+    "region_id": 137,
+    "region_item_text": "Lagos, Ajah",
+    "region_name": "Ajah",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ajah",
+    "short_description": "",
+    "slug": "crystal-embellished-lace-strap-flat-shoe",
+    "status": "active",
+    "title": "Crystal Embellished Lace Strap Flat Shoe",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ajah/shoes/crystal-embellished-lace-strap-flat-shoe-mpl5dHbc96XtMAx5OxyvYbM.html",
+    "user_id": 1041
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "42",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "TOP",
+     "slug": "top",
+     "bg_color": "#ffaf45",
+     "text_color": "#ffffff",
+     "aside_color": "#C8822C",
+     "service_type": "top"
+    },
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 2,
+    "details": "",
+    "guid": "uErcKt63cOkzcehY5Ft03T7",
+    "id": 56018071,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210365988_MzAwLTM2MC1kOTViMTEzOGYy.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210365988_MzAwLTM2MC1kOTViMTEzOGYy.webp",
+      "center": null,
+      "size": [
+       300,
+       360
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": true,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "bg": "#FFF4B8"
+    },
+    "price_obj": {
+     "value": 30000,
+     "view": "₦ 30,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 30,000",
+    "region": "Lagos State • Ikorodu",
+    "region_id": 149,
+    "region_item_text": "Lagos, Ikorodu",
+    "region_name": "Ikorodu",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikorodu",
+    "short_description": "",
+    "slug": "luxurious-shoes",
+    "status": "active",
+    "title": "Luxurious Shoes",
+    "title_labels": [],
+    "tops_count": 1,
+    "url": "/ikorodu/shoes/luxurious-shoes-uErcKt63cOkzcehY5Ft03T7.html",
+    "user_id": 1042
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "43, 4.5",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 2,
+    "details": "",
+    "guid": "8JJVMNMNwq022YrDICRx69MS",
+    "id": 56008228,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210364833_MzAwLTMzOS02MGMyNGExN2Iy.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210364833_MzAwLTMzOS02MGMyNGExN2Iy.webp",
+      "center": null,
+      "size": [
+       300,
+       339
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 30000,
+     "view": "₦ 30,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 30,000",
+    "region": "Lagos State • Ikorodu",
+    "region_id": 149,
+    "region_item_text": "Lagos, Ikorodu",
+    "region_name": "Ikorodu",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikorodu",
+    "short_description": "",
+    "slug": "quality-and-affordable-woman-shoes",
+    "status": "active",
+    "title": "QUALITY and Affordable Woman Shoes",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikorodu/shoes/quality-and-affordable-woman-shoes-8JJVMNMNwq022YrDICRx69MS.html",
+    "user_id": 1042
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "40, 41",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 4,
+    "details": "",
+    "guid": "nG1PWd0N2ebW70hwzmOeNwBY",
+    "id": 56016509,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210364538_MzAwLTQwMC1kYzA3NmFjODZl.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210364538_MzAwLTQwMC1kYzA3NmFjODZl.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 4,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 30000,
+     "view": "₦ 30,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 30,000",
+    "region": "Lagos State • Abule Egba",
+    "region_id": 1195,
+    "region_item_text": "Lagos, Abule Egba",
+    "region_name": "Abule Egba",
+    "region_parent_name": "Lagos State",
+    "region_slug": "abule-egba",
+    "short_description": "",
+    "slug": "womens-heels",
+    "status": "active",
+    "title": "Women’s Heels",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-abule-egba/shoes/womens-heels-nG1PWd0N2ebW70hwzmOeNwBY.html",
+    "user_id": 1043
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "37, 38, 39, 40.5",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 2,
+    "details": "",
+    "guid": "brEncWowkiNkbZGTmXOeDreI",
+    "id": 56016593,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210362953_MzAwLTQwMC02NDI1NjkwOGE4.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210362953_MzAwLTQwMC02NDI1NjkwOGE4.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 10000,
+     "view": "₦ 10,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 10,000",
+    "region": "Delta State • Sapele",
+    "region_id": 621,
+    "region_item_text": "Delta, Sapele",
+    "region_name": "Sapele",
+    "region_parent_name": "Delta State",
+    "region_slug": "sapele",
+    "short_description": "",
+    "slug": "women-hermes-style-h-slides-with-stones-all-colors-sizes-37-40",
+    "status": "active",
+    "title": "Women Hermes Style H Slides With Stones - All Colors - Sizes 37-40",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/sapele/shoes/women-hermes-style-h-slides-with-stones-all-colors-sizes-37-40-brEncWowkiNkbZGTmXOeDreI.html",
+    "user_id": 1044
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "42, 41, 40, 43, 44",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 5,
+    "details": "",
+    "guid": "BiXJtbt5PaOfKpvtNgLiNiEQ",
+    "id": 56012534,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210340764_MzAwLTM3NC04MzRiZWZlNmJh.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210340764_MzAwLTM3NC04MzRiZWZlNmJh.webp",
+      "center": null,
+      "size": [
+       300,
+       374
+      ]
+     }
+    ],
+    "images_count": 5,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 20000,
+     "view": "₦ 20,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 20,000",
+    "region": "Anambra State • Onitsha",
+    "region_id": 324,
+    "region_item_text": "Anambra, Onitsha",
+    "region_name": "Onitsha",
+    "region_parent_name": "Anambra State",
+    "region_slug": "onitsha",
+    "short_description": "",
+    "slug": "quality-footwear-crocs",
+    "status": "active",
+    "title": "Quality Footwear Crocs",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/onitsha-north/shoes/quality-footwear-crocs-BiXJtbt5PaOfKpvtNgLiNiEQ.html",
+    "user_id": 1045,
+    "seller": {
+     "user_name": "Seller 1045",
+     "user_avatar_url": "",
+     "user_rating": 4.8
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "5",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 3,
+    "details": "",
+    "guid": "xgJqgBsS13rq0wW6YU4ycicC",
+    "id": 56015537,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210355375_MzAwLTIyMy1kMGRmM2NjN2Yx.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210355375_MzAwLTIyMy1kMGRmM2NjN2Yx.webp",
+      "center": null,
+      "size": [
+       300,
+       223
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 15000,
+     "view": "₦ 15,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 15,000",
+    "region": "Lagos State • Ajah",
+    "region_id": 137,
+    "region_item_text": "Lagos, Ajah",
+    "region_name": "Ajah",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ajah",
+    "short_description": "",
+    "slug": "slip-on-flat-black-shoe",
+    "status": "active",
+    "title": "Slip-on Flat Black Shoe",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ajah/shoes/slip-on-flat-black-shoe-xgJqgBsS13rq0wW6YU4ycicC.html",
+    "user_id": 1041
+   }
+  ],
+  "per_page": 20,
+  "total_pages": 739,
+  "tops_exist": true,
+  "in_day_count": 156,
+  "in_hour_count": 4
+ },
+ "next_url": "https://jiji.ng/api_web/v1/listing?slug=shoes&sort=new&webp=true&page=2&lsmid=1794495573745",
+ "status": "ok"
 }

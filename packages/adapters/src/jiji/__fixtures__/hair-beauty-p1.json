@@ -1,1312 +1,1372 @@
 {
-  "adverts_list": {
-    "mode_default": "gallery",
-    "count": 5271,
-    "adverts": [
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "3uyELjUiUUGvVHNgVjtsAT91",
-        "id": 56020322,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210376040_MzAwLTQwMC0zOTY1ZGE1MmFi.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210376040_MzAwLTQwMC0zOTY1ZGE1MmFi.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 22000,
-          "view": "₦ 22,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 22,000",
-        "region": "Lagos State • Ojo",
-        "region_id": 164,
-        "region_item_text": "Lagos, Ojo",
-        "region_name": "Ojo",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ojo",
-        "short_description": "",
-        "slug": "band-pixie-curls-wig-is-available-for-sale",
-        "status": "active",
-        "title": "Band Pixie Curls Wig Is Available for Sale",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ojo/hair-beauty/band-pixie-curls-wig-is-available-for-sale-3uyELjUiUUGvVHNgVjtsAT91.html",
-        "user_id": 1057
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "6viDe1rOjwXnsGycnRFz9Bfd",
-        "id": 56020008,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210374683_MzAwLTI1NC0zMDQ5ZGY2MWRl.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210374683_MzAwLTI1NC0zMDQ5ZGY2MWRl.webp",
-            "center": null,
-            "size": [300, 254]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 22000,
-          "view": "₦ 22,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 22,000",
-        "region": "Lagos State • Ojo",
-        "region_id": 164,
-        "region_item_text": "Lagos, Ojo",
-        "region_name": "Ojo",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ojo",
-        "short_description": "",
-        "slug": "14-inches-pixie-curl-for-sale",
-        "status": "active",
-        "title": "14 Inches Pixie Curl for Sale",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ojo/hair-beauty/14-inches-pixie-curl-for-sale-6viDe1rOjwXnsGycnRFz9Bfd.html",
-        "user_id": 1057
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "mU4PyUONFZj0Z59c2H25QjMd",
-        "id": 56019597,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210373399_MzAwLTM0NC0wMzg4MjY1NTRm.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210373399_MzAwLTM0NC0wMzg4MjY1NTRm.webp",
-            "center": null,
-            "size": [300, 344]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 26000,
-          "view": "₦ 26,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 26,000",
-        "region": "Lagos State • Ojo",
-        "region_id": 164,
-        "region_item_text": "Lagos, Ojo",
-        "region_name": "Ojo",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ojo",
-        "short_description": "",
-        "slug": "black-curly-wig-available-for-sale",
-        "status": "active",
-        "title": "Black Curly Wig Available for Sale",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ojo/hair-beauty/black-curly-wig-available-for-sale-mU4PyUONFZj0Z59c2H25QjMd.html",
-        "user_id": 1057
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "b3MaIlC1UaYEY1i6Ylkqo8IZ",
-        "id": 56019510,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210372485_MzAwLTQ4MC02Mjg0YzQ2NWYw.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210372485_MzAwLTQ4MC02Mjg0YzQ2NWYw.webp",
-            "center": null,
-            "size": [300, 480]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "basic",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "basic"
-        },
-        "price_obj": {
-          "value": 24500,
-          "view": "₦ 24,500",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 24,500",
-        "region": "Lagos State • Gbagada",
-        "region_id": 913,
-        "region_item_text": "Lagos, Gbagada",
-        "region_name": "Gbagada",
-        "region_parent_name": "Lagos State",
-        "region_slug": "gbagada",
-        "short_description": "",
-        "slug": "100-human-hair",
-        "status": "active",
-        "title": "100% Human Hair",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/gbagada/hair-beauty/100-human-hair-b3MaIlC1UaYEY1i6Ylkqo8IZ.html",
-        "user_id": 1058
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 2,
-        "details": "",
-        "guid": "551TEMxUCz2Bcc86SC2UxeEZ",
-        "id": 56019392,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210372476_MzAwLTMyOC0yMjEyYjA3Zjc2.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210372476_MzAwLTMyOC0yMjEyYjA3Zjc2.webp",
-            "center": null,
-            "size": [300, 328]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 150000,
-          "view": "₦ 150,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 150,000",
-        "region": "Abuja (FCT) • Asokoro",
-        "region_id": 406,
-        "region_item_text": "Abuja, Asokoro",
-        "region_name": "Asokoro",
-        "region_parent_name": "Abuja (FCT)",
-        "region_slug": "asokoro",
-        "short_description": "",
-        "slug": "zevera-luxury-hair",
-        "status": "active",
-        "title": "Zevera Luxury Hair",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/asokoro/hair-beauty/zevera-luxury-hair-551TEMxUCz2Bcc86SC2UxeEZ.html",
-        "user_id": 1059
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {
-          "label": "VIP TOP+",
-          "slug": "booster_vip",
-          "bg_color": "#00B53F",
-          "text_color": "#ffffff",
-          "aside_color": "#229826",
-          "service_type": "boost"
-        },
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "k9KFqBPlFmFqklRj8uu2mteL",
-        "id": 56018982,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210370791_MzAwLTQyOS1hZDJiOTg4ZTY3.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210370791_MzAwLTQyOS1hZDJiOTg4ZTY3.webp",
-            "center": null,
-            "size": [300, 429]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "#FEA03C",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 32000,
-          "view": "₦ 32,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 32,000",
-        "region": "Lagos State • Ojo",
-        "region_id": 164,
-        "region_item_text": "Lagos, Ojo",
-        "region_name": "Ojo",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ojo",
-        "short_description": "",
-        "slug": "30-inches-piano-wig",
-        "status": "active",
-        "title": "30 Inches Piano Wig",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ojo/hair-beauty/30-inches-piano-wig-k9KFqBPlFmFqklRj8uu2mteL.html",
-        "user_id": 1057
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [],
-        "badge_info": {
-          "label": "TOP",
-          "slug": "top",
-          "bg_color": "#ffaf45",
-          "text_color": "#ffffff",
-          "aside_color": "#C8822C",
-          "service_type": "top"
-        },
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "iEApCDP5aG7PryWaCxLtEzCl",
-        "id": 56018811,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210371199_MzAwLTQ1My0zYTMyZTRlZWY5.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210371199_MzAwLTQ1My0zYTMyZTRlZWY5.webp",
-            "center": null,
-            "size": [300, 453]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": true,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "bg": "#FFF4B8"
-        },
-        "price_obj": {
-          "value": 80000,
-          "view": "₦ 80,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 80,000",
-        "region": "Abuja (FCT) • Asokoro",
-        "region_id": 406,
-        "region_item_text": "Abuja, Asokoro",
-        "region_name": "Asokoro",
-        "region_parent_name": "Abuja (FCT)",
-        "region_slug": "asokoro",
-        "short_description": "",
-        "slug": "zevera-luxury-hair",
-        "status": "active",
-        "title": "Zevera Luxury Hair",
-        "title_labels": [],
-        "tops_count": 1,
-        "url": "/asokoro/hair-beauty/zevera-luxury-hair-iEApCDP5aG7PryWaCxLtEzCl.html",
-        "user_id": 1059
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "8ZpFyTWyuIRA9OhSkpc4apAg",
-        "id": 56005905,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210370363_MzAwLTQwMC1jMTQxOWRmZTcw.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210370363_MzAwLTQwMC1jMTQxOWRmZTcw.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 240000,
-          "view": "₦ 240,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 240,000",
-        "region": "Lagos State • Apapa",
-        "region_id": 127,
-        "region_item_text": "Lagos, Apapa",
-        "region_name": "Apapa",
-        "region_parent_name": "Lagos State",
-        "region_slug": "apapa",
-        "short_description": "",
-        "slug": "18-inches-5by5-sdd-pixie-curl",
-        "status": "active",
-        "title": "18 Inches 5by5 SDD Pixie Curl",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/apapa/hair-beauty/18-inches-5by5-sdd-pixie-curl-8ZpFyTWyuIRA9OhSkpc4apAg.html",
-        "user_id": 1060
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {
-          "label": "2X VIP TOP+",
-          "slug": "booster_vip_multi",
-          "bg_color": "#00B53F",
-          "text_color": "#ffffff",
-          "aside_color": "#229826",
-          "service_type": "boost"
-        },
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "jEL4Fz9eQ8E3RnsPQRn4aD4a",
-        "id": 56018846,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210369483_MzAwLTQxMi0xNmQ1YWIwYWYz.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210369483_MzAwLTQxMi0xNmQ1YWIwYWYz.webp",
-            "center": null,
-            "size": [300, 412]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "#FEA03C",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 22000,
-          "view": "₦ 22,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 22,000",
-        "region": "Lagos State • Ojo",
-        "region_id": 164,
-        "region_item_text": "Lagos, Ojo",
-        "region_name": "Ojo",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ojo",
-        "short_description": "",
-        "slug": "burgundy-band-wig",
-        "status": "active",
-        "title": "Burgundy Band Wig",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ojo/hair-beauty/burgundy-band-wig-jEL4Fz9eQ8E3RnsPQRn4aD4a.html",
-        "user_id": 1057
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "4bRKpCRUnCw1T854BrpwUZhk",
-        "id": 56005648,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210368987_MzAwLTM1My01ZDEyYTRjNTQz.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210368987_MzAwLTM1My01ZDEyYTRjNTQz.webp",
-            "center": null,
-            "size": [300, 353]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 150000,
-          "view": "₦ 150,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 150,000",
-        "region": "Lagos State • Apapa",
-        "region_id": 127,
-        "region_item_text": "Lagos, Apapa",
-        "region_name": "Apapa",
-        "region_parent_name": "Lagos State",
-        "region_slug": "apapa",
-        "short_description": "",
-        "slug": "12-inches-5by5-sdd-vietnam-bonestraight",
-        "status": "active",
-        "title": "12 Inches 5by5 SDD Vietnam Bonestraight",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/apapa/hair-beauty/12-inches-5by5-sdd-vietnam-bonestraight-4bRKpCRUnCw1T854BrpwUZhk.html",
-        "user_id": 1060
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 2,
-        "details": "",
-        "guid": "p0miEpJ5TT1Dv7g6wR6qe6Y9",
-        "id": 55955332,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210368622_MzAwLTM5OS0wMWIxODlmMDIw.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210368622_MzAwLTM5OS0wMWIxODlmMDIw.webp",
-            "center": null,
-            "size": [300, 399]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "basic",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "basic"
-        },
-        "price_obj": {
-          "value": 7000,
-          "view": "₦ 7,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 7,000",
-        "region": "Lagos State • Surulere",
-        "region_id": 174,
-        "region_item_text": "Lagos, Surulere",
-        "region_name": "Surulere",
-        "region_parent_name": "Lagos State",
-        "region_slug": "surulere",
-        "short_description": "",
-        "slug": "deepwave-braiding-extensions",
-        "status": "active",
-        "title": "Deepwave Braiding Extensions",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/surulere/hair-beauty/deepwave-braiding-extensions-p0miEpJ5TT1Dv7g6wR6qe6Y9.html",
-        "user_id": 1035
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {
-          "label": "VIP TOP+",
-          "slug": "booster_vip",
-          "bg_color": "#00B53F",
-          "text_color": "#ffffff",
-          "aside_color": "#229826",
-          "service_type": "boost"
-        },
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "uhFPNgAFioG3cOtGK0jMlZpt",
-        "id": 55966328,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210368869_MzAwLTM2Mi1lM2M5MWQyYjhh.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210368869_MzAwLTM2Mi1lM2M5MWQyYjhh.webp",
-            "center": null,
-            "size": [300, 362]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "#FEA03C",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 32500,
-          "view": "₦ 32,500",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 32,500",
-        "region": "Lagos State • Ojo",
-        "region_id": 164,
-        "region_item_text": "Lagos, Ojo",
-        "region_name": "Ojo",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ojo",
-        "short_description": "",
-        "slug": "fashion-pixie-curls-wig-with-frontal",
-        "status": "active",
-        "title": "Fashion Pixie Curls Wig With Frontal",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ojo/hair-beauty/fashion-pixie-curls-wig-with-frontal-uhFPNgAFioG3cOtGK0jMlZpt.html",
-        "user_id": 1057
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 2,
-        "details": "",
-        "guid": "uWWAtlLkEBaBLPQGjyaeU3Ag",
-        "id": 55894627,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210367099_MzAwLTQwMC0zNjUxNGY1OGZh.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210367099_MzAwLTQwMC0zNjUxNGY1OGZh.webp",
-            "center": null,
-            "size": [300, 400]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 23000,
-          "view": "₦ 23,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 23,000",
-        "region": "Lagos State • Ikotun/Igando",
-        "region_id": 143,
-        "region_item_text": "Lagos, Ikotun/Igando",
-        "region_name": "Ikotun/Igando",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikotun-igando",
-        "short_description": "",
-        "slug": "kimk-human-hair-blend",
-        "status": "active",
-        "title": "Kimk -Human Hair Blend",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/igando-ikotun/hair-beauty/kimk-human-hair-blend-uWWAtlLkEBaBLPQGjyaeU3Ag.html",
-        "user_id": 1061
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 3,
-        "details": "",
-        "guid": "p1x8fQgeAQMwJEP5aiTAhbt0",
-        "id": 55896731,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/209829930_MzAwLTM0OS0yYTk3MWRlMjcz.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/209829930_MzAwLTM0OS0yYTk3MWRlMjcz.webp",
-            "center": null,
-            "size": [300, 349]
-          }
-        ],
-        "images_count": 3,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 30000,
-          "view": "₦ 30,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 30,000",
-        "region": "Lagos State • Agbara-Igbesan",
-        "region_id": 1196,
-        "region_item_text": "Lagos, Agbara-Igbesan",
-        "region_name": "Agbara-Igbesan",
-        "region_parent_name": "Lagos State",
-        "region_slug": "agbara-igbesan",
-        "short_description": "",
-        "slug": "praise-enterprise",
-        "status": "active",
-        "title": "Praise Enterprise",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/agbara-igbesan/hair-beauty/praise-enterprise-p1x8fQgeAQMwJEP5aiTAhbt0.html",
-        "user_id": 1062
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "i0hTjioCKjmEC7JYetZoS0Gx",
-        "id": 56002739,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210362262_MzAwLTMyOS1mYjg2MTI4MTAz.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210362262_MzAwLTMyOS1mYjg2MTI4MTAz.webp",
-            "center": null,
-            "size": [300, 329]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 60000,
-          "view": "₦ 60,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 60,000",
-        "region": "Lagos State • Alimosho",
-        "region_id": 124,
-        "region_item_text": "Lagos, Alimosho",
-        "region_name": "Alimosho",
-        "region_parent_name": "Lagos State",
-        "region_slug": "alimosho",
-        "short_description": "",
-        "slug": "highest-quality-futura-blend-wig-hdlace",
-        "status": "active",
-        "title": "Highest Quality Futura Blend Wig Hdlace",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/alimosho/hair-beauty/highest-quality-futura-blend-wig-hdlace-i0hTjioCKjmEC7JYetZoS0Gx.html",
-        "user_id": 1063
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 2,
-        "details": "",
-        "guid": "eTKGzQP2E16uPrfUGqxCt5Al",
-        "id": 56011994,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210338381_MzAwLTQ3My1kMTE4MjIxYTIx.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210338381_MzAwLTQ3My1kMTE4MjIxYTIx.webp",
-            "center": null,
-            "size": [300, 473]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "diamond",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "id_verify",
-            "value": "Verified ID"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "diamond",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 80000,
-          "view": "₦ 80,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 80,000",
-        "region": "Rivers State • Port-Harcourt",
-        "region_id": 117,
-        "region_item_text": "Rivers, Port-Harcourt",
-        "region_name": "Port-Harcourt",
-        "region_parent_name": "Rivers State",
-        "region_slug": "port-harcourt",
-        "short_description": "",
-        "slug": "luxury-30-inch-chocolate-brown-body-wave-human-hair-lace-front-wig",
-        "status": "active",
-        "title": "Luxury 30-Inch Chocolate Brown Body Wave Human Hair Lace Front Wig",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/port-harcourt/hair-beauty/luxury-30-inch-chocolate-brown-body-wave-human-hair-lace-front-wig-eTKGzQP2E16uPrfUGqxCt5Al.html",
-        "user_id": 1064,
-        "seller": {
-          "user_name": "Seller 1064",
-          "user_avatar_url": "",
-          "user_rating": 5
-        }
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "5gXeM2wLRRGpQ3PL7YxQ8qpX",
-        "id": 56016953,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210361470_MzAwLTQ3MC01NTM2NTIyOTdi.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210361470_MzAwLTQ3MC01NTM2NTIyOTdi.webp",
-            "center": null,
-            "size": [300, 470]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 185000,
-          "view": "₦ 185,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 185,000",
-        "region": "Lagos State • Ikorodu",
-        "region_id": 149,
-        "region_item_text": "Lagos, Ikorodu",
-        "region_name": "Ikorodu",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ikorodu",
-        "short_description": "",
-        "slug": "bounce-wig",
-        "status": "active",
-        "title": "Bounce Wig",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ikorodu/hair-beauty/bounce-wig-5gXeM2wLRRGpQ3PL7YxQ8qpX.html",
-        "user_id": 1065
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 2,
-        "details": "",
-        "guid": "nv96M7jOoiWi1N2mMPNPwVYU",
-        "id": 56016667,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210359898_MzAwLTM3MC1lMjRkMmIxYjdk.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210359898_MzAwLTM3MC1lMjRkMmIxYjdk.webp",
-            "center": null,
-            "size": [300, 370]
-          }
-        ],
-        "images_count": 2,
-        "is_boost": "vip",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip",
-          "border": "",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 140000,
-          "view": "₦ 140,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 140,000",
-        "region": "Abuja (FCT) • Karu",
-        "region_id": 429,
-        "region_item_text": "Abuja, Karu",
-        "region_name": "Karu",
-        "region_parent_name": "Abuja (FCT)",
-        "region_slug": "karu",
-        "short_description": "",
-        "slug": "10inch-vietnam-bonestraight",
-        "status": "active",
-        "title": "10inch Vietnam Bonestraight",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/karu/hair-beauty/10inch-vietnam-bonestraight-nv96M7jOoiWi1N2mMPNPwVYU.html",
-        "user_id": 1066
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {},
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "sgX51nxNh70VwjAhtKj2Tv1C",
-        "id": 56016446,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210358949_MzAwLTI4OC00NWEzZDhlYmRi.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210358949_MzAwLTI4OC00NWEzZDhlYmRi.webp",
-            "center": null,
-            "size": [300, 288]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": false,
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [
-          {
-            "type": "age",
-            "value": "5+ years on Jiji"
-          }
-        ],
-        "message_url": "",
-        "paid_info": {},
-        "price_obj": {
-          "value": 3500,
-          "view": "₦ 3,500",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 3,500",
-        "region": "Oyo State • Ibadan",
-        "region_id": 366,
-        "region_item_text": "Oyo, Ibadan",
-        "region_name": "Ibadan",
-        "region_parent_name": "Oyo State",
-        "region_slug": "ibadan",
-        "short_description": "",
-        "slug": "miracle-hair-butter",
-        "status": "active",
-        "title": "Miracle Hair Butter",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ibadan/hair-beauty/miracle-hair-butter-sgX51nxNh70VwjAhtKj2Tv1C.html",
-        "user_id": 1067
-      },
-      {
-        "admin_info": {},
-        "as_top": false,
-        "attrs": [
-          {
-            "value": "Bulk prices",
-            "unit": null
-          }
-        ],
-        "badge_info": {
-          "label": "VIP TOP+",
-          "slug": "booster_vip",
-          "bg_color": "#00B53F",
-          "text_color": "#ffffff",
-          "aside_color": "#229826",
-          "service_type": "boost"
-        },
-        "category_id": 257,
-        "category_name": "Hair Beauty",
-        "category_slug": "hair-beauty",
-        "count_images": 1,
-        "details": "",
-        "guid": "rt8BXC73R76nADuTlr7kUFLy",
-        "id": 55965892,
-        "image_obj": {
-          "url": "https://pictures-nigeria.jijistatic.net/210129705_MzAwLTM4My05YzFhMzhkOTNi.webp",
-          "center": null
-        },
-        "images": [
-          {
-            "url": "https://pictures-nigeria.jijistatic.net/210129705_MzAwLTM4My05YzFhMzhkOTNi.webp",
-            "center": null,
-            "size": [300, 383]
-          }
-        ],
-        "images_count": 1,
-        "is_boost": "vip_gold",
-        "is_cv": false,
-        "is_inspected": false,
-        "is_job": false,
-        "is_owner": false,
-        "is_top": false,
-        "labels": [],
-        "message_url": "",
-        "paid_info": {
-          "text": "Promoted",
-          "package_type": "vip_gold",
-          "border": "#FEA03C",
-          "icon": true,
-          "more_photos": false
-        },
-        "price_obj": {
-          "value": 26000,
-          "view": "₦ 26,000",
-          "period": null,
-          "bulk": null,
-          "type": null
-        },
-        "price_title": "₦ 26,000",
-        "region": "Lagos State • Ojo",
-        "region_id": 164,
-        "region_item_text": "Lagos, Ojo",
-        "region_name": "Ojo",
-        "region_parent_name": "Lagos State",
-        "region_slug": "ojo",
-        "short_description": "",
-        "slug": "budget-pixie",
-        "status": "active",
-        "title": "Budget Pixie",
-        "title_labels": [],
-        "tops_count": 0,
-        "url": "/ojo/hair-beauty/budget-pixie-rt8BXC73R76nADuTlr7kUFLy.html",
-        "user_id": 1057
-      }
+ "adverts_list": {
+  "mode_default": "gallery",
+  "count": 5271,
+  "adverts": [
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
     ],
-    "per_page": 20,
-    "total_pages": 264,
-    "tops_exist": true,
-    "in_day_count": 68,
-    "in_hour_count": 3
-  },
-  "next_url": "https://jiji.ng/api_web/v1/listing?slug=hair-beauty&sort=new&webp=true&page=2&lsmid=1794495578629",
-  "status": "ok"
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "3uyELjUiUUGvVHNgVjtsAT91",
+    "id": 56020322,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210376040_MzAwLTQwMC0zOTY1ZGE1MmFi.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210376040_MzAwLTQwMC0zOTY1ZGE1MmFi.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 22000,
+     "view": "₦ 22,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 22,000",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "band-pixie-curls-wig-is-available-for-sale",
+    "status": "active",
+    "title": "Band Pixie Curls Wig Is Available for Sale",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/hair-beauty/band-pixie-curls-wig-is-available-for-sale-3uyELjUiUUGvVHNgVjtsAT91.html",
+    "user_id": 1057
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "6viDe1rOjwXnsGycnRFz9Bfd",
+    "id": 56020008,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210374683_MzAwLTI1NC0zMDQ5ZGY2MWRl.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210374683_MzAwLTI1NC0zMDQ5ZGY2MWRl.webp",
+      "center": null,
+      "size": [
+       300,
+       254
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 22000,
+     "view": "₦ 22,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 22,000",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "14-inches-pixie-curl-for-sale",
+    "status": "active",
+    "title": "14 Inches Pixie Curl for Sale",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/hair-beauty/14-inches-pixie-curl-for-sale-6viDe1rOjwXnsGycnRFz9Bfd.html",
+    "user_id": 1057
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "mU4PyUONFZj0Z59c2H25QjMd",
+    "id": 56019597,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210373399_MzAwLTM0NC0wMzg4MjY1NTRm.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210373399_MzAwLTM0NC0wMzg4MjY1NTRm.webp",
+      "center": null,
+      "size": [
+       300,
+       344
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 26000,
+     "view": "₦ 26,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 26,000",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "black-curly-wig-available-for-sale",
+    "status": "active",
+    "title": "Black Curly Wig Available for Sale",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/hair-beauty/black-curly-wig-available-for-sale-mU4PyUONFZj0Z59c2H25QjMd.html",
+    "user_id": 1057
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "b3MaIlC1UaYEY1i6Ylkqo8IZ",
+    "id": 56019510,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210372485_MzAwLTQ4MC02Mjg0YzQ2NWYw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210372485_MzAwLTQ4MC02Mjg0YzQ2NWYw.webp",
+      "center": null,
+      "size": [
+       300,
+       480
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "basic",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "basic"
+    },
+    "price_obj": {
+     "value": 24500,
+     "view": "₦ 24,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 24,500",
+    "region": "Lagos State • Gbagada",
+    "region_id": 913,
+    "region_item_text": "Lagos, Gbagada",
+    "region_name": "Gbagada",
+    "region_parent_name": "Lagos State",
+    "region_slug": "gbagada",
+    "short_description": "",
+    "slug": "100-human-hair",
+    "status": "active",
+    "title": "100% Human Hair",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/gbagada/hair-beauty/100-human-hair-b3MaIlC1UaYEY1i6Ylkqo8IZ.html",
+    "user_id": 1058
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 2,
+    "details": "",
+    "guid": "551TEMxUCz2Bcc86SC2UxeEZ",
+    "id": 56019392,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210372476_MzAwLTMyOC0yMjEyYjA3Zjc2.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210372476_MzAwLTMyOC0yMjEyYjA3Zjc2.webp",
+      "center": null,
+      "size": [
+       300,
+       328
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 150000,
+     "view": "₦ 150,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 150,000",
+    "region": "Abuja (FCT) • Asokoro",
+    "region_id": 406,
+    "region_item_text": "Abuja, Asokoro",
+    "region_name": "Asokoro",
+    "region_parent_name": "Abuja (FCT)",
+    "region_slug": "asokoro",
+    "short_description": "",
+    "slug": "zevera-luxury-hair",
+    "status": "active",
+    "title": "Zevera Luxury Hair",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/asokoro/hair-beauty/zevera-luxury-hair-551TEMxUCz2Bcc86SC2UxeEZ.html",
+    "user_id": 1059
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "VIP TOP+",
+     "slug": "booster_vip",
+     "bg_color": "#00B53F",
+     "text_color": "#ffffff",
+     "aside_color": "#229826",
+     "service_type": "boost"
+    },
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "k9KFqBPlFmFqklRj8uu2mteL",
+    "id": 56018982,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210370791_MzAwLTQyOS1hZDJiOTg4ZTY3.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210370791_MzAwLTQyOS1hZDJiOTg4ZTY3.webp",
+      "center": null,
+      "size": [
+       300,
+       429
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "#FEA03C",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 32000,
+     "view": "₦ 32,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 32,000",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "30-inches-piano-wig",
+    "status": "active",
+    "title": "30 Inches Piano Wig",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/hair-beauty/30-inches-piano-wig-k9KFqBPlFmFqklRj8uu2mteL.html",
+    "user_id": 1057
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [],
+    "badge_info": {
+     "label": "TOP",
+     "slug": "top",
+     "bg_color": "#ffaf45",
+     "text_color": "#ffffff",
+     "aside_color": "#C8822C",
+     "service_type": "top"
+    },
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "iEApCDP5aG7PryWaCxLtEzCl",
+    "id": 56018811,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210371199_MzAwLTQ1My0zYTMyZTRlZWY5.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210371199_MzAwLTQ1My0zYTMyZTRlZWY5.webp",
+      "center": null,
+      "size": [
+       300,
+       453
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": true,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "bg": "#FFF4B8"
+    },
+    "price_obj": {
+     "value": 80000,
+     "view": "₦ 80,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 80,000",
+    "region": "Abuja (FCT) • Asokoro",
+    "region_id": 406,
+    "region_item_text": "Abuja, Asokoro",
+    "region_name": "Asokoro",
+    "region_parent_name": "Abuja (FCT)",
+    "region_slug": "asokoro",
+    "short_description": "",
+    "slug": "zevera-luxury-hair",
+    "status": "active",
+    "title": "Zevera Luxury Hair",
+    "title_labels": [],
+    "tops_count": 1,
+    "url": "/asokoro/hair-beauty/zevera-luxury-hair-iEApCDP5aG7PryWaCxLtEzCl.html",
+    "user_id": 1059
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "8ZpFyTWyuIRA9OhSkpc4apAg",
+    "id": 56005905,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210370363_MzAwLTQwMC1jMTQxOWRmZTcw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210370363_MzAwLTQwMC1jMTQxOWRmZTcw.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 240000,
+     "view": "₦ 240,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 240,000",
+    "region": "Lagos State • Apapa",
+    "region_id": 127,
+    "region_item_text": "Lagos, Apapa",
+    "region_name": "Apapa",
+    "region_parent_name": "Lagos State",
+    "region_slug": "apapa",
+    "short_description": "",
+    "slug": "18-inches-5by5-sdd-pixie-curl",
+    "status": "active",
+    "title": "18 Inches 5by5 SDD Pixie Curl",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/apapa/hair-beauty/18-inches-5by5-sdd-pixie-curl-8ZpFyTWyuIRA9OhSkpc4apAg.html",
+    "user_id": 1060
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "2X VIP TOP+",
+     "slug": "booster_vip_multi",
+     "bg_color": "#00B53F",
+     "text_color": "#ffffff",
+     "aside_color": "#229826",
+     "service_type": "boost"
+    },
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "jEL4Fz9eQ8E3RnsPQRn4aD4a",
+    "id": 56018846,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210369483_MzAwLTQxMi0xNmQ1YWIwYWYz.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210369483_MzAwLTQxMi0xNmQ1YWIwYWYz.webp",
+      "center": null,
+      "size": [
+       300,
+       412
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "#FEA03C",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 22000,
+     "view": "₦ 22,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 22,000",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "burgundy-band-wig",
+    "status": "active",
+    "title": "Burgundy Band Wig",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/hair-beauty/burgundy-band-wig-jEL4Fz9eQ8E3RnsPQRn4aD4a.html",
+    "user_id": 1057
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "4bRKpCRUnCw1T854BrpwUZhk",
+    "id": 56005648,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210368987_MzAwLTM1My01ZDEyYTRjNTQz.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210368987_MzAwLTM1My01ZDEyYTRjNTQz.webp",
+      "center": null,
+      "size": [
+       300,
+       353
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 150000,
+     "view": "₦ 150,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 150,000",
+    "region": "Lagos State • Apapa",
+    "region_id": 127,
+    "region_item_text": "Lagos, Apapa",
+    "region_name": "Apapa",
+    "region_parent_name": "Lagos State",
+    "region_slug": "apapa",
+    "short_description": "",
+    "slug": "12-inches-5by5-sdd-vietnam-bonestraight",
+    "status": "active",
+    "title": "12 Inches 5by5 SDD Vietnam Bonestraight",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/apapa/hair-beauty/12-inches-5by5-sdd-vietnam-bonestraight-4bRKpCRUnCw1T854BrpwUZhk.html",
+    "user_id": 1060
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 2,
+    "details": "",
+    "guid": "p0miEpJ5TT1Dv7g6wR6qe6Y9",
+    "id": 55955332,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210368622_MzAwLTM5OS0wMWIxODlmMDIw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210368622_MzAwLTM5OS0wMWIxODlmMDIw.webp",
+      "center": null,
+      "size": [
+       300,
+       399
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "basic",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "basic"
+    },
+    "price_obj": {
+     "value": 7000,
+     "view": "₦ 7,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 7,000",
+    "region": "Lagos State • Surulere",
+    "region_id": 174,
+    "region_item_text": "Lagos, Surulere",
+    "region_name": "Surulere",
+    "region_parent_name": "Lagos State",
+    "region_slug": "surulere",
+    "short_description": "",
+    "slug": "deepwave-braiding-extensions",
+    "status": "active",
+    "title": "Deepwave Braiding Extensions",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/surulere/hair-beauty/deepwave-braiding-extensions-p0miEpJ5TT1Dv7g6wR6qe6Y9.html",
+    "user_id": 1035
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "VIP TOP+",
+     "slug": "booster_vip",
+     "bg_color": "#00B53F",
+     "text_color": "#ffffff",
+     "aside_color": "#229826",
+     "service_type": "boost"
+    },
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "uhFPNgAFioG3cOtGK0jMlZpt",
+    "id": 55966328,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210368869_MzAwLTM2Mi1lM2M5MWQyYjhh.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210368869_MzAwLTM2Mi1lM2M5MWQyYjhh.webp",
+      "center": null,
+      "size": [
+       300,
+       362
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "#FEA03C",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 32500,
+     "view": "₦ 32,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 32,500",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "fashion-pixie-curls-wig-with-frontal",
+    "status": "active",
+    "title": "Fashion Pixie Curls Wig With Frontal",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/hair-beauty/fashion-pixie-curls-wig-with-frontal-uhFPNgAFioG3cOtGK0jMlZpt.html",
+    "user_id": 1057
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 2,
+    "details": "",
+    "guid": "uWWAtlLkEBaBLPQGjyaeU3Ag",
+    "id": 55894627,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210367099_MzAwLTQwMC0zNjUxNGY1OGZh.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210367099_MzAwLTQwMC0zNjUxNGY1OGZh.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 23000,
+     "view": "₦ 23,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 23,000",
+    "region": "Lagos State • Ikotun/Igando",
+    "region_id": 143,
+    "region_item_text": "Lagos, Ikotun/Igando",
+    "region_name": "Ikotun/Igando",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikotun-igando",
+    "short_description": "",
+    "slug": "kimk-human-hair-blend",
+    "status": "active",
+    "title": "Kimk -Human Hair Blend",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/igando-ikotun/hair-beauty/kimk-human-hair-blend-uWWAtlLkEBaBLPQGjyaeU3Ag.html",
+    "user_id": 1061
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 3,
+    "details": "",
+    "guid": "p1x8fQgeAQMwJEP5aiTAhbt0",
+    "id": 55896731,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/209829930_MzAwLTM0OS0yYTk3MWRlMjcz.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/209829930_MzAwLTM0OS0yYTk3MWRlMjcz.webp",
+      "center": null,
+      "size": [
+       300,
+       349
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 30000,
+     "view": "₦ 30,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 30,000",
+    "region": "Lagos State • Agbara-Igbesan",
+    "region_id": 1196,
+    "region_item_text": "Lagos, Agbara-Igbesan",
+    "region_name": "Agbara-Igbesan",
+    "region_parent_name": "Lagos State",
+    "region_slug": "agbara-igbesan",
+    "short_description": "",
+    "slug": "praise-enterprise",
+    "status": "active",
+    "title": "Praise Enterprise",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/agbara-igbesan/hair-beauty/praise-enterprise-p1x8fQgeAQMwJEP5aiTAhbt0.html",
+    "user_id": 1062
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "i0hTjioCKjmEC7JYetZoS0Gx",
+    "id": 56002739,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210362262_MzAwLTMyOS1mYjg2MTI4MTAz.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210362262_MzAwLTMyOS1mYjg2MTI4MTAz.webp",
+      "center": null,
+      "size": [
+       300,
+       329
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 60000,
+     "view": "₦ 60,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 60,000",
+    "region": "Lagos State • Alimosho",
+    "region_id": 124,
+    "region_item_text": "Lagos, Alimosho",
+    "region_name": "Alimosho",
+    "region_parent_name": "Lagos State",
+    "region_slug": "alimosho",
+    "short_description": "",
+    "slug": "highest-quality-futura-blend-wig-hdlace",
+    "status": "active",
+    "title": "Highest Quality Futura Blend Wig Hdlace",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/alimosho/hair-beauty/highest-quality-futura-blend-wig-hdlace-i0hTjioCKjmEC7JYetZoS0Gx.html",
+    "user_id": 1063
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 2,
+    "details": "",
+    "guid": "eTKGzQP2E16uPrfUGqxCt5Al",
+    "id": 56011994,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210338381_MzAwLTQ3My1kMTE4MjIxYTIx.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210338381_MzAwLTQ3My1kMTE4MjIxYTIx.webp",
+      "center": null,
+      "size": [
+       300,
+       473
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "diamond",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "diamond",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 80000,
+     "view": "₦ 80,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 80,000",
+    "region": "Rivers State • Port-Harcourt",
+    "region_id": 117,
+    "region_item_text": "Rivers, Port-Harcourt",
+    "region_name": "Port-Harcourt",
+    "region_parent_name": "Rivers State",
+    "region_slug": "port-harcourt",
+    "short_description": "",
+    "slug": "luxury-30-inch-chocolate-brown-body-wave-human-hair-lace-front-wig",
+    "status": "active",
+    "title": "Luxury 30-Inch Chocolate Brown Body Wave Human Hair Lace Front Wig",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/port-harcourt/hair-beauty/luxury-30-inch-chocolate-brown-body-wave-human-hair-lace-front-wig-eTKGzQP2E16uPrfUGqxCt5Al.html",
+    "user_id": 1064,
+    "seller": {
+     "user_name": "Seller 1064",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "5gXeM2wLRRGpQ3PL7YxQ8qpX",
+    "id": 56016953,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210361470_MzAwLTQ3MC01NTM2NTIyOTdi.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210361470_MzAwLTQ3MC01NTM2NTIyOTdi.webp",
+      "center": null,
+      "size": [
+       300,
+       470
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 185000,
+     "view": "₦ 185,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 185,000",
+    "region": "Lagos State • Ikorodu",
+    "region_id": 149,
+    "region_item_text": "Lagos, Ikorodu",
+    "region_name": "Ikorodu",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikorodu",
+    "short_description": "",
+    "slug": "bounce-wig",
+    "status": "active",
+    "title": "Bounce Wig",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikorodu/hair-beauty/bounce-wig-5gXeM2wLRRGpQ3PL7YxQ8qpX.html",
+    "user_id": 1065
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 2,
+    "details": "",
+    "guid": "nv96M7jOoiWi1N2mMPNPwVYU",
+    "id": 56016667,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210359898_MzAwLTM3MC1lMjRkMmIxYjdk.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210359898_MzAwLTM3MC1lMjRkMmIxYjdk.webp",
+      "center": null,
+      "size": [
+       300,
+       370
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 140000,
+     "view": "₦ 140,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 140,000",
+    "region": "Abuja (FCT) • Karu",
+    "region_id": 429,
+    "region_item_text": "Abuja, Karu",
+    "region_name": "Karu",
+    "region_parent_name": "Abuja (FCT)",
+    "region_slug": "karu",
+    "short_description": "",
+    "slug": "10inch-vietnam-bonestraight",
+    "status": "active",
+    "title": "10inch Vietnam Bonestraight",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/karu/hair-beauty/10inch-vietnam-bonestraight-nv96M7jOoiWi1N2mMPNPwVYU.html",
+    "user_id": 1066
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "sgX51nxNh70VwjAhtKj2Tv1C",
+    "id": 56016446,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210358949_MzAwLTI4OC00NWEzZDhlYmRi.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210358949_MzAwLTI4OC00NWEzZDhlYmRi.webp",
+      "center": null,
+      "size": [
+       300,
+       288
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 3500,
+     "view": "₦ 3,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 3,500",
+    "region": "Oyo State • Ibadan",
+    "region_id": 366,
+    "region_item_text": "Oyo, Ibadan",
+    "region_name": "Ibadan",
+    "region_parent_name": "Oyo State",
+    "region_slug": "ibadan",
+    "short_description": "",
+    "slug": "miracle-hair-butter",
+    "status": "active",
+    "title": "Miracle Hair Butter",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ibadan/hair-beauty/miracle-hair-butter-sgX51nxNh70VwjAhtKj2Tv1C.html",
+    "user_id": 1067
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "VIP TOP+",
+     "slug": "booster_vip",
+     "bg_color": "#00B53F",
+     "text_color": "#ffffff",
+     "aside_color": "#229826",
+     "service_type": "boost"
+    },
+    "category_id": 257,
+    "category_name": "Hair Beauty",
+    "category_slug": "hair-beauty",
+    "count_images": 1,
+    "details": "",
+    "guid": "rt8BXC73R76nADuTlr7kUFLy",
+    "id": 55965892,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210129705_MzAwLTM4My05YzFhMzhkOTNi.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210129705_MzAwLTM4My05YzFhMzhkOTNi.webp",
+      "center": null,
+      "size": [
+       300,
+       383
+      ]
+     }
+    ],
+    "images_count": 1,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "#FEA03C",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 26000,
+     "view": "₦ 26,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 26,000",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "budget-pixie",
+    "status": "active",
+    "title": "Budget Pixie",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/hair-beauty/budget-pixie-rt8BXC73R76nADuTlr7kUFLy.html",
+    "user_id": 1057
+   }
+  ],
+  "per_page": 20,
+  "total_pages": 264,
+  "tops_exist": true,
+  "in_day_count": 68,
+  "in_hour_count": 3
+ },
+ "next_url": "https://jiji.ng/api_web/v1/listing?slug=hair-beauty&sort=new&webp=true&page=2&lsmid=1794495578629",
+ "status": "ok"
 }
