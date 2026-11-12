@@ -1,0 +1,479 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`shopify parse: every fixture > matches the reviewed snapshot 1`] = `
+[
+  {
+    "listings": [
+      {
+        "attributes": {
+          "productId": "15488464879839",
+          "soldOutSizes": [
+            "S",
+          ],
+        },
+        "categoryPath": [
+          "CLOTHING",
+        ],
+        "currency": "NGN",
+        "externalId": "15488464879839",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0644/9292/9247/files/IMG_2705.jpg?v=1793889151",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 6500000,
+        "sourceUrl": "https://garmisland.com/products/garm-island-zip-along-jacket-in-anthracite-grey",
+        "sponsored": false,
+        "title": "Garm Island Zip Along Jacket in Anthracite grey",
+        "variant": {
+          "sizes": [
+            {
+              "system": "letter",
+              "value": "M",
+            },
+            {
+              "system": "letter",
+              "value": "L",
+            },
+            {
+              "system": "letter",
+              "value": "XL",
+            },
+            {
+              "system": "letter",
+              "value": "2XL",
+            },
+          ],
+        },
+      },
+      {
+        "attributes": {
+          "productId": "15488464322783",
+          "soldOutSizes": [
+            "S",
+          ],
+        },
+        "categoryPath": [
+          "CLOTHING",
+        ],
+        "currency": "NGN",
+        "externalId": "15488464322783",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0644/9292/9247/files/IMG_2702.jpg?v=1793888801",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 6500000,
+        "sourceUrl": "https://garmisland.com/products/garm-island-zip-along-jacket-in-dark-brown",
+        "sponsored": false,
+        "title": "Garm Island Zip Along Jacket in Dark Brown",
+        "variant": {
+          "sizes": [
+            {
+              "system": "letter",
+              "value": "M",
+            },
+            {
+              "system": "letter",
+              "value": "L",
+            },
+            {
+              "system": "letter",
+              "value": "XL",
+            },
+            {
+              "system": "letter",
+              "value": "2XL",
+            },
+          ],
+        },
+      },
+      {
+        "attributes": {
+          "productId": "8044495438047",
+          "soldOutSizes": [
+            "9",
+            "11",
+          ],
+        },
+        "categoryPath": [
+          "ACCESSORIES",
+        ],
+        "currency": "NGN",
+        "externalId": "8044495438047",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0644/9292/9247/files/image_838f3398-64ba-4977-bc0f-1012a530fd19.jpg?v=1683890452",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 350000,
+        "sourceUrl": "https://garmisland.com/products/nike-repeat-swoosh-ring",
+        "sponsored": false,
+        "title": "Nike Repeat Swoosh Ring",
+        "variant": {
+          "sizes": [
+            {
+              "system": "numeric",
+              "value": "10",
+            },
+          ],
+        },
+      },
+      {
+        "attributes": {
+          "productId": "15456712458463",
+          "soldOutSizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+          ],
+        },
+        "categoryPath": [
+          "CLOTHING",
+        ],
+        "currency": "NGN",
+        "externalId": "15456712458463",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0644/9292/9247/files/photo-a26y8357-colorphotos-22-a26y8357-22-3.webp?v=1792759177",
+        "inStock": false,
+        "priceKind": "exact",
+        "priceKobo": 12000000,
+        "sourceUrl": "https://garmisland.com/products/antioch-suede-jacket-in-brown",
+        "sponsored": false,
+        "title": "Antioch suede jacket in camel",
+      },
+      {
+        "attributes": {
+          "productId": "15500702843103",
+        },
+        "categoryPath": [],
+        "currency": "NGN",
+        "externalId": "15500702843103",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0644/9292/9247/files/Untitled_design.png?v=1794318971",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 2750000,
+        "sourceUrl": "https://garmisland.com/products/inspired-by-maison-criveli-s-hibiscus-mahajad",
+        "sponsored": false,
+        "title": "Inspired by Maison Criveli’s Hibiscus Mahajad",
+      },
+      {
+        "attributes": {
+          "productId": "15488626196703",
+        },
+        "categoryPath": [
+          "CLOTHING",
+        ],
+        "currency": "NGN",
+        "externalId": "15488626196703",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0644/9292/9247/files/Image_2026-09-29_at_1.07_PM.jpg?v=1793954184",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 5000000,
+        "sourceUrl": "https://garmisland.com/products/garm-island-godspeed-t-shirt-in-black",
+        "sponsored": false,
+        "title": "Garm Island Godspeed T-shirt in Black",
+        "variant": {
+          "sizes": [
+            {
+              "system": "letter",
+              "value": "M",
+            },
+            {
+              "system": "letter",
+              "value": "L",
+            },
+            {
+              "system": "letter",
+              "value": "XL",
+            },
+            {
+              "system": "letter",
+              "value": "2XL",
+            },
+          ],
+        },
+      },
+    ],
+    "shop": "garmisland",
+  },
+  {
+    "listings": [
+      {
+        "attributes": {
+          "option": "Anti Age",
+          "productId": "15772280619332",
+        },
+        "brand": "Biodroga",
+        "categoryPath": [
+          "CC Cream",
+        ],
+        "currency": "NGN",
+        "externalId": "15772280619332:57662670602564",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0937/5940/6404/files/CC.png?v=1793876744",
+        "inStock": true,
+        "oldPriceKobo": 8000000,
+        "priceKind": "exact",
+        "priceKobo": 7200000,
+        "sourceUrl": "https://www.brandlistry.ng/products/even-and-perfect-colour-correction-cream-lsf-20?variant=57662670602564",
+        "sponsored": false,
+        "title": "EVEN & PERFECT Colour Correction Cream LSF 20 - Anti Age",
+      },
+      {
+        "attributes": {
+          "option": "Anti Redness",
+          "productId": "15772280619332",
+        },
+        "brand": "Biodroga",
+        "categoryPath": [
+          "CC Cream",
+        ],
+        "currency": "NGN",
+        "externalId": "15772280619332:57662670635332",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0937/5940/6404/files/CC.png?v=1793876744",
+        "inStock": true,
+        "oldPriceKobo": 8000000,
+        "priceKind": "exact",
+        "priceKobo": 7200000,
+        "sourceUrl": "https://www.brandlistry.ng/products/even-and-perfect-colour-correction-cream-lsf-20?variant=57662670635332",
+        "sponsored": false,
+        "title": "EVEN & PERFECT Colour Correction Cream LSF 20 - Anti Redness",
+      },
+      {
+        "attributes": {
+          "productId": "15772280521028",
+        },
+        "brand": "Biodroga",
+        "categoryPath": [
+          "Moisturiser",
+        ],
+        "currency": "NGN",
+        "externalId": "15772280521028",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0937/5940/6404/files/Biodroga_Medical_Ultimate_Anti_Age_24h_Care.png?v=1793876743",
+        "inStock": true,
+        "oldPriceKobo": 17600000,
+        "priceKind": "exact",
+        "priceKobo": 16000000,
+        "sourceUrl": "https://www.brandlistry.ng/products/ultimate-anti-age-cream",
+        "sponsored": false,
+        "title": "Ultimate Anti-Age Cream",
+      },
+      {
+        "attributes": {
+          "productId": "15772278063428",
+        },
+        "brand": "Biodroga",
+        "categoryPath": [
+          "SPF",
+        ],
+        "currency": "NGN",
+        "externalId": "15772278063428",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0937/5940/6404/files/Biodroga_Medical_Sun_High_UV_Protection.png?v=1793876700",
+        "inStock": false,
+        "priceKind": "exact",
+        "priceKobo": 8400000,
+        "sourceUrl": "https://www.brandlistry.ng/products/sun-high-uv-protection-spf50",
+        "sponsored": false,
+        "title": "Sun High UV Protection SPF50",
+      },
+    ],
+    "shop": "brandlistry",
+  },
+  {
+    "listings": [
+      {
+        "attributes": {
+          "productId": "7412516061346",
+          "soldOutSizes": [
+            "MEDIUM",
+            "LARGE",
+          ],
+        },
+        "categoryPath": [
+          "Dress",
+        ],
+        "currency": "NGN",
+        "externalId": "7412516061346",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/ce8dcb52-5a33-4c3b-834c-20b6dac21f83.jpg?v=1647874634",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 1450000,
+        "sourceUrl": "https://shopmaju.com/products/kim-dress-1",
+        "sponsored": false,
+        "title": "KIM DRESS",
+        "variant": {
+          "sizes": [
+            {
+              "system": "letter",
+              "value": "S",
+            },
+          ],
+        },
+      },
+      {
+        "attributes": {
+          "productId": "7412480835746",
+          "soldOutSizes": [
+            "MEDIUM",
+            "LARGE",
+          ],
+        },
+        "categoryPath": [
+          "Dress",
+        ],
+        "currency": "NGN",
+        "externalId": "7412480835746",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/4f06c71f-359d-4d2f-a528-5fb868520dbc.jpg?v=1647870293",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 1050000,
+        "sourceUrl": "https://shopmaju.com/products/kim-dress",
+        "sponsored": false,
+        "title": "KIM DRESS",
+        "variant": {
+          "sizes": [
+            {
+              "system": "letter",
+              "value": "S",
+            },
+          ],
+        },
+      },
+      {
+        "attributes": {
+          "productId": "7650648621218",
+        },
+        "categoryPath": [],
+        "currency": "NGN",
+        "externalId": "7650648621218",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/ACC54E5D-CF5B-4CF8-8959-A8AD1BD75178.jpg?v=1662640766",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 1680000,
+        "sourceUrl": "https://shopmaju.com/products/raven-set",
+        "sponsored": false,
+        "title": "Raven set",
+        "variant": {
+          "colours": [
+            "Green and pink",
+            "Blue and pink",
+          ],
+          "sizes": [
+            {
+              "system": "letter",
+              "value": "S",
+            },
+            {
+              "system": "letter",
+              "value": "M",
+            },
+            {
+              "system": "letter",
+              "value": "L",
+            },
+          ],
+        },
+      },
+      {
+        "attributes": {
+          "productId": "7606322987170",
+        },
+        "categoryPath": [
+          "Dress",
+        ],
+        "currency": "NGN",
+        "externalId": "7606322987170",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/WhatsAppImage2022-08-08at5.13.23PM.jpg?v=1659975512",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 1980000,
+        "sourceUrl": "https://shopmaju.com/products/tifah-boubou",
+        "sponsored": false,
+        "title": "TIFAH BOUBOU",
+        "variant": {
+          "colours": [
+            "pink and black",
+          ],
+        },
+      },
+      {
+        "attributes": {
+          "productId": "7512519311522",
+        },
+        "categoryPath": [],
+        "currency": "NGN",
+        "externalId": "7512519311522",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/dde4b2b1-7ba1-4513-bd1c-b68acaff2ea5.jpg?v=1653058501",
+        "inStock": false,
+        "priceKind": "exact",
+        "priceKobo": 1890000,
+        "sourceUrl": "https://shopmaju.com/products/the-rio-boubou",
+        "sponsored": false,
+        "title": "THE RIO BOUBOU",
+      },
+      {
+        "attributes": {
+          "productId": "7737391579298",
+        },
+        "categoryPath": [],
+        "currency": "NGN",
+        "externalId": "7737391579298",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/EDFABDE8-80F2-4B6F-8111-2560BA7F2A4D.jpg?v=1669129657",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 1000000,
+        "sourceUrl": "https://shopmaju.com/products/halima-dress",
+        "sponsored": false,
+        "title": "Yudee Dress",
+      },
+    ],
+    "shop": "shopmaju",
+  },
+  {
+    "listings": [
+      {
+        "attributes": {
+          "productId": "8052462583856",
+        },
+        "brand": "Etlee",
+        "categoryPath": [],
+        "currency": "NGN",
+        "externalId": "8052462583856",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0631/1650/9232/files/Woody_MuskyPerfumeBox_c0ef613d-a44a-4a30-9d67-bda9c261d899.png?v=1794435212",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 1193250,
+        "sourceUrl": "https://kuddycosmetics.com/products/etlee-woody-musky-10ml-epm13",
+        "sponsored": false,
+        "title": "Etlee Woody & Musky 10ml (EPM13)",
+      },
+      {
+        "attributes": {
+          "productId": "7682432991280",
+        },
+        "categoryPath": [],
+        "currency": "NGN",
+        "externalId": "7682432991280",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 310000,
+        "sourceUrl": "https://kuddycosmetics.com/products/kuddy-perfect-color-match-4-complete-looks-eyeshadows",
+        "sponsored": false,
+        "title": "Kuddy Perfect Color Match 4 Complete Looks Eyeshadows",
+      },
+      {
+        "attributes": {
+          "productId": "7710059495472",
+        },
+        "brand": "Makari",
+        "categoryPath": [
+          "Hair Treatment",
+        ],
+        "currency": "NGN",
+        "externalId": "7710059495472",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 560000,
+        "sourceUrl": "https://kuddycosmetics.com/products/makari-hair-treatment-oil-3-38-oz",
+        "sponsored": false,
+        "title": "Makari Hair Treatment Oil 3.38.oz.",
+      },
+    ],
+    "shop": "kuddy",
+  },
+]
+`;

@@ -1,0 +1,1364 @@
+[
+ {
+  "id": 38778,
+  "name": "Anua PDRN Hyaluronic Acid Hydrating Capsule Mist 100ml",
+  "slug": "anua-pdrn-hyaluronic-acid-hydrating-capsule-mist-100ml",
+  "parent": 0,
+  "type": "simple",
+  "variation": "",
+  "permalink": "https://essentialshub.com/product/anua-pdrn-hyaluronic-acid-hydrating-capsule-mist-100ml/",
+  "sku": "4657-1-EH",
+  "on_sale": false,
+  "prices": {
+   "price": "27000",
+   "regular_price": "27000",
+   "sale_price": "27000",
+   "price_range": null,
+   "currency_code": "NGN",
+   "currency_symbol": "₦",
+   "currency_minor_unit": 0,
+   "currency_decimal_separator": ".",
+   "currency_thousand_separator": ",",
+   "currency_prefix": "₦",
+   "currency_suffix": ""
+  },
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#8358;</span>27,000</span>",
+  "average_rating": "0",
+  "review_count": 0,
+  "images": [
+   {
+    "id": 38815,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-1.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-1.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-1.webp 309w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-1-226x300.webp 226w",
+    "sizes": "(max-width: 309px) 100vw, 309px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-1.webp 309w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-1-226x300.webp 226w",
+    "thumbnail_sizes": "(max-width: 309px) 100vw, 309px",
+    "name": "Anua 1",
+    "alt": "Anua PDRN Hyaluronic Acid Hydrating Capsule Mist 100ml"
+   },
+   {
+    "id": 38816,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-5.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-500x500.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-5.webp 1000w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-100x100.webp 100w",
+    "sizes": "(max-width: 1000px) 100vw, 1000px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5-100x100.webp 100w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-5.webp 1000w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Anua 5",
+    "alt": ""
+   },
+   {
+    "id": 38817,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-4.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-500x500.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-4.webp 1000w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-100x100.webp 100w",
+    "sizes": "(max-width: 1000px) 100vw, 1000px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4-100x100.webp 100w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-4.webp 1000w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Anua 4",
+    "alt": ""
+   },
+   {
+    "id": 38818,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-3.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-500x500.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-3.webp 1000w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-100x100.webp 100w",
+    "sizes": "(max-width: 1000px) 100vw, 1000px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3-100x100.webp 100w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-3.webp 1000w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Anua 3",
+    "alt": ""
+   },
+   {
+    "id": 38819,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-500x500.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2.webp 1000w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-100x100.webp 100w",
+    "sizes": "(max-width: 1000px) 100vw, 1000px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2-100x100.webp 100w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-2.webp 1000w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Anua Mist 2",
+    "alt": ""
+   },
+   {
+    "id": 38820,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-500x500.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1.webp 1000w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-100x100.webp 100w",
+    "sizes": "(max-width: 1000px) 100vw, 1000px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1-100x100.webp 100w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-Mist-1.webp 1000w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Anua Mist 1",
+    "alt": ""
+   }
+  ],
+  "categories": [
+   {
+    "id": 2113,
+    "name": "Glowing Skin",
+    "slug": "glowing-skin",
+    "link": "https://essentialshub.com/product-category/glowing-skin/"
+   },
+   {
+    "id": 190,
+    "name": "Face",
+    "slug": "face",
+    "link": "https://essentialshub.com/product-category/face/"
+   },
+   {
+    "id": 375,
+    "name": "Face Essence",
+    "slug": "face-essence",
+    "link": "https://essentialshub.com/product-category/face/cleansers-toners-mists/face-essence/"
+   },
+   {
+    "id": 194,
+    "name": "Face Toners &amp; Mists",
+    "slug": "face-toners-mists",
+    "link": "https://essentialshub.com/product-category/face/cleansers-toners-mists/face-toners-mists/"
+   },
+   {
+    "id": 376,
+    "name": "Moisturisers &amp; Serums",
+    "slug": "moisturisers-serums",
+    "link": "https://essentialshub.com/product-category/face/moisturisers-serums/"
+   }
+  ],
+  "tags": [
+   {
+    "id": 14529,
+    "name": "Anua Capsule Mist",
+    "slug": "anua-capsule-mist",
+    "link": "https://essentialshub.com/product-tag/anua-capsule-mist/"
+   },
+   {
+    "id": 14914,
+    "name": "Anua facial mist",
+    "slug": "anua-facial-mist",
+    "link": "https://essentialshub.com/product-tag/anua-facial-mist/"
+   },
+   {
+    "id": 14912,
+    "name": "Anua PDRN Hyaluronic Acid Hydrating Capsule Mist 100ml",
+    "slug": "anua-pdrn-hyaluronic-acid-hydrating-capsule-mist-100ml",
+    "link": "https://essentialshub.com/product-tag/anua-pdrn-hyaluronic-acid-hydrating-capsule-mist-100ml/"
+   },
+   {
+    "id": 14913,
+    "name": "Anua PDRN mist",
+    "slug": "anua-pdrn-mist",
+    "link": "https://essentialshub.com/product-tag/anua-pdrn-mist/"
+   },
+   {
+    "id": 12323,
+    "name": "Authentic Anua Nigeria",
+    "slug": "authentic-anua-nigeria",
+    "link": "https://essentialshub.com/product-tag/authentic-anua-nigeria/"
+   },
+   {
+    "id": 14917,
+    "name": "Collagen face mist",
+    "slug": "collagen-face-mist",
+    "link": "https://essentialshub.com/product-tag/collagen-face-mist/"
+   },
+   {
+    "id": 4166,
+    "name": "Dewy Skin Mist",
+    "slug": "dewy-skin-mist",
+    "link": "https://essentialshub.com/product-tag/dewy-skin-mist/"
+   },
+   {
+    "id": 1274,
+    "name": "essentials hub",
+    "slug": "essentials-hub",
+    "link": "https://essentialshub.com/product-tag/essentials-hub/"
+   },
+   {
+    "id": 14919,
+    "name": "firming facial mist",
+    "slug": "firming-facial-mist",
+    "link": "https://essentialshub.com/product-tag/firming-facial-mist/"
+   },
+   {
+    "id": 14916,
+    "name": "Hyaluronic Acid facial mist",
+    "slug": "hyaluronic-acid-facial-mist",
+    "link": "https://essentialshub.com/product-tag/hyaluronic-acid-facial-mist/"
+   },
+   {
+    "id": 14918,
+    "name": "hydrating face spray",
+    "slug": "hydrating-face-spray",
+    "link": "https://essentialshub.com/product-tag/hydrating-face-spray/"
+   },
+   {
+    "id": 7271,
+    "name": "korean hydrating mist",
+    "slug": "korean-hydrating-mist",
+    "link": "https://essentialshub.com/product-tag/korean-hydrating-mist/"
+   },
+   {
+    "id": 3014,
+    "name": "korean skincare nigeria",
+    "slug": "korean-skincare-nigeria",
+    "link": "https://essentialshub.com/product-tag/korean-skincare-nigeria/"
+   },
+   {
+    "id": 14922,
+    "name": "makeup prep mist",
+    "slug": "makeup-prep-mist",
+    "link": "https://essentialshub.com/product-tag/makeup-prep-mist/"
+   },
+   {
+    "id": 14923,
+    "name": "makeup refreshing spray",
+    "slug": "makeup-refreshing-spray",
+    "link": "https://essentialshub.com/product-tag/makeup-refreshing-spray/"
+   },
+   {
+    "id": 14920,
+    "name": "moisturising face mist",
+    "slug": "moisturising-face-mist",
+    "link": "https://essentialshub.com/product-tag/moisturising-face-mist/"
+   },
+   {
+    "id": 14921,
+    "name": "non-sticky facial mist",
+    "slug": "non-sticky-facial-mist",
+    "link": "https://essentialshub.com/product-tag/non-sticky-facial-mist/"
+   },
+   {
+    "id": 14915,
+    "name": "PDRN face mist",
+    "slug": "pdrn-face-mist",
+    "link": "https://essentialshub.com/product-tag/pdrn-face-mist/"
+   },
+   {
+    "id": 4190,
+    "name": "PDRN skincare",
+    "slug": "pdrn-skincare",
+    "link": "https://essentialshub.com/product-tag/pdrn-skincare/"
+   },
+   {
+    "id": 11864,
+    "name": "skincare mist for dry skin",
+    "slug": "skincare-mist-for-dry-skin",
+    "link": "https://essentialshub.com/product-tag/skincare-mist-for-dry-skin/"
+   }
+  ],
+  "brands": [],
+  "attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "has_options": false,
+  "is_purchasable": true,
+  "is_in_stock": true,
+  "is_on_backorder": false,
+  "low_stock_remaining": null,
+  "stock_availability": {
+   "text": "In stock",
+   "class": "in-stock"
+  },
+  "sold_individually": false,
+  "weight": "0.2",
+  "dimensions": {
+   "length": "",
+   "width": "",
+   "height": ""
+  },
+  "formatted_weight": "0.2 kg",
+  "formatted_dimensions": "N/A",
+  "add_to_cart": {
+   "text": "Add to cart",
+   "description": "Add to cart: &ldquo;Anua PDRN Hyaluronic Acid Hydrating Capsule Mist 100ml&rdquo;",
+   "url": "/wp-json/wc/store/v1/products?per_page=20&#038;add-to-cart=38778",
+   "single_text": "Add to cart",
+   "minimum": 1,
+   "maximum": 14,
+   "multiple_of": 1
+  },
+  "is_password_protected": false,
+  "extensions": {},
+  "_links": {
+   "self": [
+    {
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products/38778",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products"
+    }
+   ],
+   "related": [
+    {
+     "embeddable": true,
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products?related=38778&per_page=10"
+    }
+   ]
+  }
+ },
+ {
+  "id": 38777,
+  "name": "Anua Barrier Reboot Intense Cream 50ml",
+  "slug": "anua-kdh-barrier-reboot-intense-cream-50ml",
+  "parent": 0,
+  "type": "simple",
+  "variation": "",
+  "permalink": "https://essentialshub.com/product/anua-kdh-barrier-reboot-intense-cream-50ml/",
+  "sku": "4656-1-EH",
+  "on_sale": false,
+  "prices": {
+   "price": "19000",
+   "regular_price": "19000",
+   "sale_price": "19000",
+   "price_range": null,
+   "currency_code": "NGN",
+   "currency_symbol": "₦",
+   "currency_minor_unit": 0,
+   "currency_decimal_separator": ".",
+   "currency_thousand_separator": ",",
+   "currency_prefix": "₦",
+   "currency_suffix": ""
+  },
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#8358;</span>19,000</span>",
+  "average_rating": "0",
+  "review_count": 0,
+  "images": [
+   {
+    "id": 38871,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-500x500.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56.webp 640w, https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-100x100.webp 100w",
+    "sizes": "(max-width: 640px) 100vw, 640px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56-100x100.webp 100w, https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56.webp 640w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "XXL_p0225135737178814184282755c180d5db56",
+    "alt": "Anua Barrier Reboot Intensive Cream 50ml"
+   },
+   {
+    "id": 38822,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-500x500.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4.webp 1000w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-100x100.webp 100w",
+    "sizes": "(max-width: 1000px) 100vw, 1000px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4-100x100.webp 100w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-4.webp 1000w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Anua rebot 4",
+    "alt": ""
+   },
+   {
+    "id": 38823,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-500x500.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3.webp 1000w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-100x100.webp 100w",
+    "sizes": "(max-width: 1000px) 100vw, 1000px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3-100x100.webp 100w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-3.webp 1000w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Anua rebot 3",
+    "alt": ""
+   },
+   {
+    "id": 38824,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-500x500.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2.webp 1000w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-100x100.webp 100w",
+    "sizes": "(max-width: 1000px) 100vw, 1000px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2-100x100.webp 100w, https://essentialshub.com/wp-content/uploads/2026/11/Anua-rebot-2.webp 1000w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Anua rebot 2",
+    "alt": ""
+   },
+   {
+    "id": 38872,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708.webp",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-500x500.webp",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708.webp 860w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-100x100.webp 100w",
+    "sizes": "(max-width: 860px) 100vw, 860px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-500x500.webp 500w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-300x300.webp 300w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-150x150.webp 150w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-768x768.webp 768w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-600x600.webp 600w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708-100x100.webp 100w, https://essentialshub.com/wp-content/uploads/2026/11/L_g0225178708.webp 860w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "L_g0225178708",
+    "alt": ""
+   }
+  ],
+  "categories": [
+   {
+    "id": 190,
+    "name": "Face",
+    "slug": "face",
+    "link": "https://essentialshub.com/product-category/face/"
+   },
+   {
+    "id": 191,
+    "name": "Face Moisturizer",
+    "slug": "face-moisturizer",
+    "link": "https://essentialshub.com/product-category/face/moisturisers-serums/face-moisturizer/"
+   },
+   {
+    "id": 2113,
+    "name": "Glowing Skin",
+    "slug": "glowing-skin",
+    "link": "https://essentialshub.com/product-category/glowing-skin/"
+   },
+   {
+    "id": 2088,
+    "name": "Korean Skincare",
+    "slug": "korean-skincare",
+    "link": "https://essentialshub.com/product-category/korean-skincare/"
+   },
+   {
+    "id": 376,
+    "name": "Moisturisers &amp; Serums",
+    "slug": "moisturisers-serums",
+    "link": "https://essentialshub.com/product-category/face/moisturisers-serums/"
+   }
+  ],
+  "tags": [
+   {
+    "id": 14930,
+    "name": "120-hour hydration",
+    "slug": "120-hour-hydration",
+    "link": "https://essentialshub.com/product-tag/120-hour-hydration/"
+   },
+   {
+    "id": 14925,
+    "name": "Anua Barrier Reboot Cream",
+    "slug": "anua-barrier-reboot-cream",
+    "link": "https://essentialshub.com/product-tag/anua-barrier-reboot-cream/"
+   },
+   {
+    "id": 14927,
+    "name": "Anua face cream",
+    "slug": "anua-face-cream",
+    "link": "https://essentialshub.com/product-tag/anua-face-cream/"
+   },
+   {
+    "id": 14924,
+    "name": "Anua KDH Barrier Reboot Intense Cream 50ml",
+    "slug": "anua-kdh-barrier-reboot-intense-cream-50ml",
+    "link": "https://essentialshub.com/product-tag/anua-kdh-barrier-reboot-intense-cream-50ml/"
+   },
+   {
+    "id": 14926,
+    "name": "Anua moisturiser",
+    "slug": "anua-moisturiser",
+    "link": "https://essentialshub.com/product-tag/anua-moisturiser/"
+   },
+   {
+    "id": 12323,
+    "name": "Authentic Anua Nigeria",
+    "slug": "authentic-anua-nigeria",
+    "link": "https://essentialshub.com/product-tag/authentic-anua-nigeria/"
+   },
+   {
+    "id": 10487,
+    "name": "Barrier Strengthening Cream",
+    "slug": "barrier-strengthening-cream",
+    "link": "https://essentialshub.com/product-tag/barrier-strengthening-cream/"
+   },
+   {
+    "id": 11238,
+    "name": "Ceramide Face Cream",
+    "slug": "ceramide-face-cream",
+    "link": "https://essentialshub.com/product-tag/ceramide-face-cream/"
+   },
+   {
+    "id": 1274,
+    "name": "essentials hub",
+    "slug": "essentials-hub",
+    "link": "https://essentialshub.com/product-tag/essentials-hub/"
+   },
+   {
+    "id": 14931,
+    "name": "fragrance-free moisturiser",
+    "slug": "fragrance-free-moisturiser",
+    "link": "https://essentialshub.com/product-tag/fragrance-free-moisturiser/"
+   },
+   {
+    "id": 3636,
+    "name": "hydrating face cream",
+    "slug": "hydrating-face-cream",
+    "link": "https://essentialshub.com/product-tag/hydrating-face-cream/"
+   },
+   {
+    "id": 14928,
+    "name": "Korean moisturiser",
+    "slug": "korean-moisturiser",
+    "link": "https://essentialshub.com/product-tag/korean-moisturiser/"
+   },
+   {
+    "id": 3014,
+    "name": "korean skincare nigeria",
+    "slug": "korean-skincare-nigeria",
+    "link": "https://essentialshub.com/product-tag/korean-skincare-nigeria/"
+   },
+   {
+    "id": 11186,
+    "name": "long lasting hydration cream",
+    "slug": "long-lasting-hydration-cream",
+    "link": "https://essentialshub.com/product-tag/long-lasting-hydration-cream/"
+   },
+   {
+    "id": 14933,
+    "name": "moisturiser for breakout-prone skin",
+    "slug": "moisturiser-for-breakout-prone-skin",
+    "link": "https://essentialshub.com/product-tag/moisturiser-for-breakout-prone-skin/"
+   },
+   {
+    "id": 14932,
+    "name": "moisturiser for sensitive skin",
+    "slug": "moisturiser-for-sensitive-skin",
+    "link": "https://essentialshub.com/product-tag/moisturiser-for-sensitive-skin/"
+   },
+   {
+    "id": 6031,
+    "name": "non-comedogenic face cream",
+    "slug": "non-comedogenic-face-cream",
+    "link": "https://essentialshub.com/product-tag/non-comedogenic-face-cream/"
+   },
+   {
+    "id": 14929,
+    "name": "skin barrier moisturiser",
+    "slug": "skin-barrier-moisturiser",
+    "link": "https://essentialshub.com/product-tag/skin-barrier-moisturiser/"
+   },
+   {
+    "id": 6211,
+    "name": "Skin Barrier Repair Cream",
+    "slug": "skin-barrier-repair-cream",
+    "link": "https://essentialshub.com/product-tag/skin-barrier-repair-cream/"
+   }
+  ],
+  "brands": [],
+  "attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "has_options": false,
+  "is_purchasable": true,
+  "is_in_stock": true,
+  "is_on_backorder": false,
+  "low_stock_remaining": null,
+  "stock_availability": {
+   "text": "In stock",
+   "class": "in-stock"
+  },
+  "sold_individually": false,
+  "weight": "0.2",
+  "dimensions": {
+   "length": "",
+   "width": "",
+   "height": ""
+  },
+  "formatted_weight": "0.2 kg",
+  "formatted_dimensions": "N/A",
+  "add_to_cart": {
+   "text": "Add to cart",
+   "description": "Add to cart: &ldquo;Anua Barrier Reboot Intense Cream 50ml&rdquo;",
+   "url": "/wp-json/wc/store/v1/products?per_page=20&#038;add-to-cart=38777",
+   "single_text": "Add to cart",
+   "minimum": 1,
+   "maximum": 12,
+   "multiple_of": 1
+  },
+  "is_password_protected": false,
+  "extensions": {},
+  "_links": {
+   "self": [
+    {
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products/38777",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products"
+    }
+   ],
+   "related": [
+    {
+     "embeddable": true,
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products?related=38777&per_page=10"
+    }
+   ]
+  }
+ },
+ {
+  "id": 38776,
+  "name": "Some By Mi Yuja Niacin Brightening Toner",
+  "slug": "some-by-mi-yuja-niacin-brightening-toner",
+  "parent": 0,
+  "type": "simple",
+  "variation": "",
+  "permalink": "https://essentialshub.com/product/some-by-mi-yuja-niacin-brightening-toner/",
+  "sku": "4655-1-EH",
+  "on_sale": false,
+  "prices": {
+   "price": "18000",
+   "regular_price": "18000",
+   "sale_price": "18000",
+   "price_range": null,
+   "currency_code": "NGN",
+   "currency_symbol": "₦",
+   "currency_minor_unit": 0,
+   "currency_decimal_separator": ".",
+   "currency_thousand_separator": ",",
+   "currency_prefix": "₦",
+   "currency_suffix": ""
+  },
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#8358;</span>18,000</span>",
+  "average_rating": "0",
+  "review_count": 0,
+  "images": [
+   {
+    "id": 38810,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Some-1.jpg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Some-1-500x500.jpg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Some-1.jpg 1500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-100x100.jpg 100w",
+    "sizes": "(max-width: 1500px) 100vw, 1500px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Some-1-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1-100x100.jpg 100w, https://essentialshub.com/wp-content/uploads/2026/11/Some-1.jpg 1500w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Some 1",
+    "alt": "Some By Mi"
+   },
+   {
+    "id": 38808,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2.jpg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-500x500.jpg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2.jpg 679w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-100x100.jpg 100w",
+    "sizes": "(max-width: 679px) 100vw, 679px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-100x100.jpg 100w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2.jpg 679w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Somebymi 2",
+    "alt": "Some By Mi"
+   },
+   {
+    "id": 38812,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Some-3.jpg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Some-3-500x500.jpg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Some-3.jpg 1500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-100x100.jpg 100w",
+    "sizes": "(max-width: 1500px) 100vw, 1500px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Some-3-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3-100x100.jpg 100w, https://essentialshub.com/wp-content/uploads/2026/11/Some-3.jpg 1500w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Some 3",
+    "alt": ""
+   },
+   {
+    "id": 38811,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Some-4.jpg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Some-4-500x500.jpg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Some-4.jpg 1500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-100x100.jpg 100w",
+    "sizes": "(max-width: 1500px) 100vw, 1500px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Some-4-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4-100x100.jpg 100w, https://essentialshub.com/wp-content/uploads/2026/11/Some-4.jpg 1500w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Some 4",
+    "alt": "Some By Mi"
+   }
+  ],
+  "categories": [
+   {
+    "id": 190,
+    "name": "Face",
+    "slug": "face",
+    "link": "https://essentialshub.com/product-category/face/"
+   },
+   {
+    "id": 2088,
+    "name": "Korean Skincare",
+    "slug": "korean-skincare",
+    "link": "https://essentialshub.com/product-category/korean-skincare/"
+   }
+  ],
+  "tags": [
+   {
+    "id": 14901,
+    "name": "authentic Some By Mi Nigeria",
+    "slug": "authentic-some-by-mi-nigeria",
+    "link": "https://essentialshub.com/product-tag/authentic-some-by-mi-nigeria/"
+   },
+   {
+    "id": 14908,
+    "name": "brightening facial toner",
+    "slug": "brightening-facial-toner",
+    "link": "https://essentialshub.com/product-tag/brightening-facial-toner/"
+   },
+   {
+    "id": 1274,
+    "name": "essentials hub",
+    "slug": "essentials-hub",
+    "link": "https://essentialshub.com/product-tag/essentials-hub/"
+   },
+   {
+    "id": 14910,
+    "name": "hydrating Korean toner",
+    "slug": "hydrating-korean-toner",
+    "link": "https://essentialshub.com/product-tag/hydrating-korean-toner/"
+   },
+   {
+    "id": 11343,
+    "name": "Korean Brightening Toner",
+    "slug": "korean-brightening-toner",
+    "link": "https://essentialshub.com/product-tag/korean-brightening-toner/"
+   },
+   {
+    "id": 3014,
+    "name": "korean skincare nigeria",
+    "slug": "korean-skincare-nigeria",
+    "link": "https://essentialshub.com/product-tag/korean-skincare-nigeria/"
+   },
+   {
+    "id": 14911,
+    "name": "Lotus Extract skincare",
+    "slug": "lotus-extract-skincare",
+    "link": "https://essentialshub.com/product-tag/lotus-extract-skincare/"
+   },
+   {
+    "id": 1300,
+    "name": "niacinamide toner",
+    "slug": "niacinamide-toner",
+    "link": "https://essentialshub.com/product-tag/niacinamide-toner/"
+   },
+   {
+    "id": 14903,
+    "name": "Some By Mi toner",
+    "slug": "some-by-mi-toner",
+    "link": "https://essentialshub.com/product-tag/some-by-mi-toner/"
+   },
+   {
+    "id": 14895,
+    "name": "Some By Mi Yuja Niacin",
+    "slug": "some-by-mi-yuja-niacin",
+    "link": "https://essentialshub.com/product-tag/some-by-mi-yuja-niacin/"
+   },
+   {
+    "id": 14902,
+    "name": "Some By Mi Yuja Niacin Brightening Toner",
+    "slug": "some-by-mi-yuja-niacin-brightening-toner",
+    "link": "https://essentialshub.com/product-tag/some-by-mi-yuja-niacin-brightening-toner/"
+   },
+   {
+    "id": 11077,
+    "name": "soothing face toner",
+    "slug": "soothing-face-toner",
+    "link": "https://essentialshub.com/product-tag/soothing-face-toner/"
+   },
+   {
+    "id": 14905,
+    "name": "toner for dark spots",
+    "slug": "toner-for-dark-spots",
+    "link": "https://essentialshub.com/product-tag/toner-for-dark-spots/"
+   },
+   {
+    "id": 14909,
+    "name": "toner for dull skin",
+    "slug": "toner-for-dull-skin",
+    "link": "https://essentialshub.com/product-tag/toner-for-dull-skin/"
+   },
+   {
+    "id": 14906,
+    "name": "toner for hyperpigmentation",
+    "slug": "toner-for-hyperpigmentation",
+    "link": "https://essentialshub.com/product-tag/toner-for-hyperpigmentation/"
+   },
+   {
+    "id": 14907,
+    "name": "toner for uneven skin tone",
+    "slug": "toner-for-uneven-skin-tone",
+    "link": "https://essentialshub.com/product-tag/toner-for-uneven-skin-tone/"
+   },
+   {
+    "id": 1473,
+    "name": "vitamin c toner",
+    "slug": "vitamin-c-toner",
+    "link": "https://essentialshub.com/product-tag/vitamin-c-toner/"
+   },
+   {
+    "id": 14904,
+    "name": "Yuja toner",
+    "slug": "yuja-toner",
+    "link": "https://essentialshub.com/product-tag/yuja-toner/"
+   }
+  ],
+  "brands": [],
+  "attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "has_options": false,
+  "is_purchasable": true,
+  "is_in_stock": true,
+  "is_on_backorder": false,
+  "low_stock_remaining": null,
+  "stock_availability": {
+   "text": "In stock",
+   "class": "in-stock"
+  },
+  "sold_individually": false,
+  "weight": "0.2",
+  "dimensions": {
+   "length": "",
+   "width": "",
+   "height": ""
+  },
+  "formatted_weight": "0.2 kg",
+  "formatted_dimensions": "N/A",
+  "add_to_cart": {
+   "text": "Add to cart",
+   "description": "Add to cart: &ldquo;Some By Mi Yuja Niacin Brightening Toner&rdquo;",
+   "url": "/wp-json/wc/store/v1/products?per_page=20&#038;add-to-cart=38776",
+   "single_text": "Add to cart",
+   "minimum": 1,
+   "maximum": 12,
+   "multiple_of": 1
+  },
+  "is_password_protected": false,
+  "extensions": {},
+  "_links": {
+   "self": [
+    {
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products/38776",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products"
+    }
+   ],
+   "related": [
+    {
+     "embeddable": true,
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products?related=38776&per_page=10"
+    }
+   ]
+  }
+ },
+ {
+  "id": 38775,
+  "name": "Some By Mi Yuja Niacin Brightening Cleanser",
+  "slug": "some-by-mi-yuja-niacin-brightening-cleanser",
+  "parent": 0,
+  "type": "simple",
+  "variation": "",
+  "permalink": "https://essentialshub.com/product/some-by-mi-yuja-niacin-brightening-cleanser/",
+  "sku": "4654-1-EH",
+  "on_sale": false,
+  "prices": {
+   "price": "17000",
+   "regular_price": "17000",
+   "sale_price": "17000",
+   "price_range": null,
+   "currency_code": "NGN",
+   "currency_symbol": "₦",
+   "currency_minor_unit": 0,
+   "currency_decimal_separator": ".",
+   "currency_thousand_separator": ",",
+   "currency_prefix": "₦",
+   "currency_suffix": ""
+  },
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#8358;</span>17,000</span>",
+  "average_rating": "0",
+  "review_count": 0,
+  "images": [
+   {
+    "id": 38804,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1.jpg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-500x500.jpg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1.jpg 679w, https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-100x100.jpg 100w",
+    "sizes": "(max-width: 679px) 100vw, 679px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1-100x100.jpg 100w, https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1.jpg 679w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Some by mi 1",
+    "alt": "Somebymi"
+   },
+   {
+    "id": 38806,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4.jpg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-500x500.jpg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4.jpg 1500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-100x100.jpg 100w",
+    "sizes": "(max-width: 1500px) 100vw, 1500px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4-100x100.jpg 100w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-4.jpg 1500w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Somebymi 4",
+    "alt": ""
+   },
+   {
+    "id": 38807,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3.jpg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-500x500.jpg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3.jpg 1500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-100x100.jpg 100w",
+    "sizes": "(max-width: 1500px) 100vw, 1500px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3-100x100.jpg 100w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-3.jpg 1500w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Somebymi 3",
+    "alt": ""
+   },
+   {
+    "id": 38805,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5.jpg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-500x500.jpg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5.jpg 1500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-100x100.jpg 100w",
+    "sizes": "(max-width: 1500px) 100vw, 1500px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-1024x1024.jpg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-768x768.jpg 768w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5-100x100.jpg 100w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-5.jpg 1500w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Somebymi 5",
+    "alt": ""
+   },
+   {
+    "id": 38808,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2.jpg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-500x500.jpg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2.jpg 679w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-100x100.jpg 100w",
+    "sizes": "(max-width: 679px) 100vw, 679px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-500x500.jpg 500w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-300x300.jpg 300w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-150x150.jpg 150w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-600x600.jpg 600w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2-100x100.jpg 100w, https://essentialshub.com/wp-content/uploads/2026/11/Somebymi-2.jpg 679w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "Somebymi 2",
+    "alt": "Some By Mi"
+   }
+  ],
+  "categories": [
+   {
+    "id": 190,
+    "name": "Face",
+    "slug": "face",
+    "link": "https://essentialshub.com/product-category/face/"
+   },
+   {
+    "id": 370,
+    "name": "Cleansers, Toners &amp; Mists",
+    "slug": "cleansers-toners-mists",
+    "link": "https://essentialshub.com/product-category/face/cleansers-toners-mists/"
+   },
+   {
+    "id": 196,
+    "name": "Face Cleansers",
+    "slug": "face-cleansers",
+    "link": "https://essentialshub.com/product-category/face/cleansers-toners-mists/face-cleansers/"
+   }
+  ],
+  "tags": [
+   {
+    "id": 14901,
+    "name": "authentic Some By Mi Nigeria",
+    "slug": "authentic-some-by-mi-nigeria",
+    "link": "https://essentialshub.com/product-tag/authentic-some-by-mi-nigeria/"
+   },
+   {
+    "id": 4950,
+    "name": "brightening face wash",
+    "slug": "brightening-face-wash",
+    "link": "https://essentialshub.com/product-tag/brightening-face-wash/"
+   },
+   {
+    "id": 14898,
+    "name": "citrus facial cleanser",
+    "slug": "citrus-facial-cleanser",
+    "link": "https://essentialshub.com/product-tag/citrus-facial-cleanser/"
+   },
+   {
+    "id": 14899,
+    "name": "cleanser for dull skin",
+    "slug": "cleanser-for-dull-skin",
+    "link": "https://essentialshub.com/product-tag/cleanser-for-dull-skin/"
+   },
+   {
+    "id": 3859,
+    "name": "daily facial cleanser",
+    "slug": "daily-facial-cleanser",
+    "link": "https://essentialshub.com/product-tag/daily-facial-cleanser/"
+   },
+   {
+    "id": 1274,
+    "name": "essentials hub",
+    "slug": "essentials-hub",
+    "link": "https://essentialshub.com/product-tag/essentials-hub/"
+   },
+   {
+    "id": 14900,
+    "name": "facial cleanser for glowing skin",
+    "slug": "facial-cleanser-for-glowing-skin",
+    "link": "https://essentialshub.com/product-tag/facial-cleanser-for-glowing-skin/"
+   },
+   {
+    "id": 7566,
+    "name": "gentle foaming cleanser",
+    "slug": "gentle-foaming-cleanser",
+    "link": "https://essentialshub.com/product-tag/gentle-foaming-cleanser/"
+   },
+   {
+    "id": 14897,
+    "name": "Korean brightening cleanser",
+    "slug": "korean-brightening-cleanser",
+    "link": "https://essentialshub.com/product-tag/korean-brightening-cleanser/"
+   },
+   {
+    "id": 3014,
+    "name": "korean skincare nigeria",
+    "slug": "korean-skincare-nigeria",
+    "link": "https://essentialshub.com/product-tag/korean-skincare-nigeria/"
+   },
+   {
+    "id": 4952,
+    "name": "niacinamide cleanser",
+    "slug": "niacinamide-cleanser",
+    "link": "https://essentialshub.com/product-tag/niacinamide-cleanser/"
+   },
+   {
+    "id": 14894,
+    "name": "Some By Mi cleanser",
+    "slug": "some-by-mi-cleanser",
+    "link": "https://essentialshub.com/product-tag/some-by-mi-cleanser/"
+   },
+   {
+    "id": 14895,
+    "name": "Some By Mi Yuja Niacin",
+    "slug": "some-by-mi-yuja-niacin",
+    "link": "https://essentialshub.com/product-tag/some-by-mi-yuja-niacin/"
+   },
+   {
+    "id": 14893,
+    "name": "Some By Mi Yuja Niacin Brightening Cleanser",
+    "slug": "some-by-mi-yuja-niacin-brightening-cleanser",
+    "link": "https://essentialshub.com/product-tag/some-by-mi-yuja-niacin-brightening-cleanser/"
+   },
+   {
+    "id": 12109,
+    "name": "Vitamin C Face Wash",
+    "slug": "vitamin-c-face-wash",
+    "link": "https://essentialshub.com/product-tag/vitamin-c-face-wash/"
+   },
+   {
+    "id": 14896,
+    "name": "Yuja Niacin cleanser",
+    "slug": "yuja-niacin-cleanser",
+    "link": "https://essentialshub.com/product-tag/yuja-niacin-cleanser/"
+   }
+  ],
+  "brands": [],
+  "attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "has_options": false,
+  "is_purchasable": true,
+  "is_in_stock": true,
+  "is_on_backorder": false,
+  "low_stock_remaining": null,
+  "stock_availability": {
+   "text": "In stock",
+   "class": "in-stock"
+  },
+  "sold_individually": false,
+  "weight": "0.2",
+  "dimensions": {
+   "length": "",
+   "width": "",
+   "height": ""
+  },
+  "formatted_weight": "0.2 kg",
+  "formatted_dimensions": "N/A",
+  "add_to_cart": {
+   "text": "Add to cart",
+   "description": "Add to cart: &ldquo;Some By Mi Yuja Niacin Brightening Cleanser&rdquo;",
+   "url": "/wp-json/wc/store/v1/products?per_page=20&#038;add-to-cart=38775",
+   "single_text": "Add to cart",
+   "minimum": 1,
+   "maximum": 12,
+   "multiple_of": 1
+  },
+  "is_password_protected": false,
+  "extensions": {},
+  "_links": {
+   "self": [
+    {
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products/38775",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products"
+    }
+   ],
+   "related": [
+    {
+     "embeddable": true,
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products?related=38775&per_page=10"
+    }
+   ]
+  }
+ },
+ {
+  "id": 38601,
+  "name": "Tree Hut Vanilla Foaming Gel Wash 532ml",
+  "slug": "tree-hut-vanilla-foaming-gel-wash-532ml",
+  "parent": 0,
+  "type": "simple",
+  "variation": "",
+  "permalink": "https://essentialshub.com/product/tree-hut-vanilla-foaming-gel-wash-532ml/",
+  "sku": "4653-1-EH",
+  "on_sale": false,
+  "prices": {
+   "price": "22000",
+   "regular_price": "22000",
+   "sale_price": "22000",
+   "price_range": null,
+   "currency_code": "NGN",
+   "currency_symbol": "₦",
+   "currency_minor_unit": 0,
+   "currency_decimal_separator": ".",
+   "currency_thousand_separator": ",",
+   "currency_prefix": "₦",
+   "currency_suffix": ""
+  },
+  "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#8358;</span>22,000</span>",
+  "average_rating": "0",
+  "review_count": 0,
+  "images": [
+   {
+    "id": 38756,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475.jpeg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-500x500.jpeg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475.jpeg 1200w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-300x300.jpeg 300w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-1024x1024.jpeg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-150x150.jpeg 150w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-768x768.jpeg 768w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-500x500.jpeg 500w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-600x600.jpeg 600w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-100x100.jpeg 100w",
+    "sizes": "(max-width: 1200px) 100vw, 1200px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-500x500.jpeg 500w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-300x300.jpeg 300w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-1024x1024.jpeg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-150x150.jpeg 150w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-768x768.jpeg 768w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-600x600.jpeg 600w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475-100x100.jpeg 100w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475.jpeg 1200w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "IMG_2475",
+    "alt": ""
+   },
+   {
+    "id": 38752,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479.jpeg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-500x500.jpeg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479.jpeg 1200w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-300x300.jpeg 300w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-1024x1024.jpeg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-150x150.jpeg 150w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-768x768.jpeg 768w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-500x500.jpeg 500w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-600x600.jpeg 600w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-100x100.jpeg 100w",
+    "sizes": "(max-width: 1200px) 100vw, 1200px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-500x500.jpeg 500w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-300x300.jpeg 300w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-1024x1024.jpeg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-150x150.jpeg 150w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-768x768.jpeg 768w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-600x600.jpeg 600w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479-100x100.jpeg 100w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2479.jpeg 1200w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "IMG_2479",
+    "alt": ""
+   },
+   {
+    "id": 38753,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476.jpeg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-500x500.jpeg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476.jpeg 1200w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-300x300.jpeg 300w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-1024x1024.jpeg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-150x150.jpeg 150w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-768x768.jpeg 768w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-500x500.jpeg 500w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-600x600.jpeg 600w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-100x100.jpeg 100w",
+    "sizes": "(max-width: 1200px) 100vw, 1200px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-500x500.jpeg 500w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-300x300.jpeg 300w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-1024x1024.jpeg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-150x150.jpeg 150w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-768x768.jpeg 768w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-600x600.jpeg 600w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476-100x100.jpeg 100w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2476.jpeg 1200w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "IMG_2476",
+    "alt": ""
+   },
+   {
+    "id": 38754,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477.jpeg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-500x500.jpeg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477.jpeg 1200w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-300x300.jpeg 300w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-1024x1024.jpeg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-150x150.jpeg 150w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-768x768.jpeg 768w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-500x500.jpeg 500w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-600x600.jpeg 600w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-100x100.jpeg 100w",
+    "sizes": "(max-width: 1200px) 100vw, 1200px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-500x500.jpeg 500w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-300x300.jpeg 300w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-1024x1024.jpeg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-150x150.jpeg 150w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-768x768.jpeg 768w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-600x600.jpeg 600w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477-100x100.jpeg 100w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2477.jpeg 1200w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "IMG_2477",
+    "alt": ""
+   },
+   {
+    "id": 38755,
+    "src": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478.jpeg",
+    "thumbnail": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-500x500.jpeg",
+    "srcset": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478.jpeg 1200w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-300x300.jpeg 300w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-1024x1024.jpeg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-150x150.jpeg 150w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-768x768.jpeg 768w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-500x500.jpeg 500w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-600x600.jpeg 600w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-100x100.jpeg 100w",
+    "sizes": "(max-width: 1200px) 100vw, 1200px",
+    "thumbnail_srcset": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-500x500.jpeg 500w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-300x300.jpeg 300w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-1024x1024.jpeg 1024w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-150x150.jpeg 150w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-768x768.jpeg 768w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-600x600.jpeg 600w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478-100x100.jpeg 100w, https://essentialshub.com/wp-content/uploads/2026/11/IMG_2478.jpeg 1200w",
+    "thumbnail_sizes": "(max-width: 500px) 100vw, 500px",
+    "name": "IMG_2478",
+    "alt": ""
+   }
+  ],
+  "categories": [
+   {
+    "id": 181,
+    "name": "Bath &amp; Body",
+    "slug": "bath-body",
+    "link": "https://essentialshub.com/product-category/bath-body/"
+   },
+   {
+    "id": 423,
+    "name": "Body Care",
+    "slug": "body-care",
+    "link": "https://essentialshub.com/product-category/bath-body/body-care/"
+   },
+   {
+    "id": 186,
+    "name": "Body Wash &amp; Shower Gels",
+    "slug": "body-wash-shower-gels",
+    "link": "https://essentialshub.com/product-category/bath-body/body-wash-shower-gels/"
+   }
+  ],
+  "tags": [
+   {
+    "id": 14873,
+    "name": "Avocado Oil Body Wash",
+    "slug": "avocado-oil-body-wash",
+    "link": "https://essentialshub.com/product-tag/avocado-oil-body-wash/"
+   },
+   {
+    "id": 12126,
+    "name": "Body Wash Nigeria",
+    "slug": "body-wash-nigeria",
+    "link": "https://essentialshub.com/product-tag/body-wash-nigeria/"
+   },
+   {
+    "id": 12252,
+    "name": "Essentials Hub Nigeria",
+    "slug": "essentials-hub-nigeria",
+    "link": "https://essentialshub.com/product-tag/essentials-hub-nigeria/"
+   },
+   {
+    "id": 14890,
+    "name": "Foaming Gel Wash 532ml",
+    "slug": "foaming-gel-wash-532ml",
+    "link": "https://essentialshub.com/product-tag/foaming-gel-wash-532ml/"
+   },
+   {
+    "id": 14874,
+    "name": "Kiwi Oil Skincare",
+    "slug": "kiwi-oil-skincare",
+    "link": "https://essentialshub.com/product-tag/kiwi-oil-skincare/"
+   },
+   {
+    "id": 6935,
+    "name": "luxury body wash",
+    "slug": "luxury-body-wash",
+    "link": "https://essentialshub.com/product-tag/luxury-body-wash/"
+   },
+   {
+    "id": 8391,
+    "name": "moisturising body wash",
+    "slug": "moisturising-body-wash",
+    "link": "https://essentialshub.com/product-tag/moisturising-body-wash/"
+   },
+   {
+    "id": 14891,
+    "name": "Orange Oil Body Care",
+    "slug": "orange-oil-body-care",
+    "link": "https://essentialshub.com/product-tag/orange-oil-body-care/"
+   },
+   {
+    "id": 9661,
+    "name": "Shea Butter Body Wash",
+    "slug": "shea-butter-body-wash",
+    "link": "https://essentialshub.com/product-tag/shea-butter-body-wash/"
+   },
+   {
+    "id": 14892,
+    "name": "Sweet Scented Shower Gel",
+    "slug": "sweet-scented-shower-gel",
+    "link": "https://essentialshub.com/product-tag/sweet-scented-shower-gel/"
+   },
+   {
+    "id": 10265,
+    "name": "Tree Hut Nigeria",
+    "slug": "tree-hut-nigeria",
+    "link": "https://essentialshub.com/product-tag/tree-hut-nigeria/"
+   },
+   {
+    "id": 14870,
+    "name": "Tree Hut Shower Gel",
+    "slug": "tree-hut-shower-gel",
+    "link": "https://essentialshub.com/product-tag/tree-hut-shower-gel/"
+   },
+   {
+    "id": 14889,
+    "name": "Tree Hut Vanilla Body Wash",
+    "slug": "tree-hut-vanilla-body-wash",
+    "link": "https://essentialshub.com/product-tag/tree-hut-vanilla-body-wash/"
+   },
+   {
+    "id": 14888,
+    "name": "Tree Hut Vanilla Foaming Gel Wash",
+    "slug": "tree-hut-vanilla-foaming-gel-wash",
+    "link": "https://essentialshub.com/product-tag/tree-hut-vanilla-foaming-gel-wash/"
+   },
+   {
+    "id": 10350,
+    "name": "Vanilla Body Care",
+    "slug": "vanilla-body-care",
+    "link": "https://essentialshub.com/product-tag/vanilla-body-care/"
+   },
+   {
+    "id": 5446,
+    "name": "vanilla scented body wash",
+    "slug": "vanilla-scented-body-wash",
+    "link": "https://essentialshub.com/product-tag/vanilla-scented-body-wash/"
+   }
+  ],
+  "brands": [],
+  "attributes": [],
+  "variations": [],
+  "grouped_products": [],
+  "has_options": false,
+  "is_purchasable": true,
+  "is_in_stock": true,
+  "is_on_backorder": false,
+  "low_stock_remaining": null,
+  "stock_availability": {
+   "text": "In stock",
+   "class": "in-stock"
+  },
+  "sold_individually": false,
+  "weight": "0.6",
+  "dimensions": {
+   "length": "",
+   "width": "",
+   "height": ""
+  },
+  "formatted_weight": "0.6 kg",
+  "formatted_dimensions": "N/A",
+  "add_to_cart": {
+   "text": "Add to cart",
+   "description": "Add to cart: &ldquo;Tree Hut Vanilla Foaming Gel Wash 532ml&rdquo;",
+   "url": "/wp-json/wc/store/v1/products?per_page=20&#038;add-to-cart=38601",
+   "single_text": "Add to cart",
+   "minimum": 1,
+   "maximum": 3,
+   "multiple_of": 1
+  },
+  "is_password_protected": false,
+  "extensions": {},
+  "_links": {
+   "self": [
+    {
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products/38601",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products"
+    }
+   ],
+   "related": [
+    {
+     "embeddable": true,
+     "href": "https://essentialshub.com/wp-json/wc/store/v1/products?related=38601&per_page=10"
+    }
+   ]
+  }
+ }
+]

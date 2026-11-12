@@ -34,6 +34,8 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-12 | Konga is blocked: partnership track, no adapter | Cloudflare answers CheapaBot with 403 "you have been blocked", even on robots.txt. Rule 3: no other UA, browser, proxy or search-backend route around it (docs/sources/konga.md) |
 | 2026-11-12 | Jiji via its listing API (`/api_web/v1/listing`), `sort=new`, ≤1,000 pages per category | robots.txt allows it; JSON is ~40 KB a page. Jiji serves only 1,000 pages, so newest-first gives each sweep a stable window of the freshest 20,000 ads per category |
 | 2026-11-12 | Jiji fixtures are anonymised (seller names, user ids, free text) | Private sellers; descriptions can carry phone numbers. Ad facts stay verbatim |
+| 2026-11-12 | Platform adapters split products only on hard options; size and colour stay on one listing | 13 §13.4 (09 §9.1 said one listing per size/storage variant, which is the electronics rule). A "Size" whose values are ml/g is hard |
+| 2026-11-12 | A store is refused unless its platform API prices in NGN (Shopify `/meta.json` currency, Woo `currency_code`) | 09 §9.1. A ₦ symbol on the home page isn't enough: crypsbeauty shows ₦ but its API answers in USD |
 
 ## Deferred
 

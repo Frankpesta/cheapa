@@ -47,7 +47,8 @@ export const TAXONOMY: readonly TaxonomyLeaf[] = [
   leaf(
     'perfume',
     'beauty',
-    'perfumes?|eau de (?:parfum|toilette)|edp|edt|fragrances?|body mists?|cologne|oil perfume',
+    // Scent notes ("Woody & Musky 10ml", "Oud Mood") mean fragrance in Nigerian beauty titles.
+    'perfumes?|eau de (?:parfum|toilette)|edp|edt|fragrances?|body mists?|cologne|oil perfume|musk|musky|oud',
   ),
   leaf(
     'nails',
@@ -213,8 +214,15 @@ export function classify(categoryPath: readonly string[], title: string): Classi
   for (const crumb of [...categoryPath].reverse()) {
     const hit = findLeaf(crumb);
     if (!hit) continue;
-    const better = hit.broad ? findLeaf(titleHead(title)) : undefined;
-    const chosen = better && better.department === hit.department ? better : hit;
+    const fromTitle = findLeaf(titleHead(title));
+    // A broad crumb ("Jewellery") or a combined one ("Tops and Jackets") yields to the
+    // title when the title names one of the leaves the crumb could mean.
+    const crumbLeaves = TAXONOMY.filter((l) => l.pattern.test(crumb));
+    const titleFits =
+      fromTitle !== undefined &&
+      fromTitle.department === hit.department &&
+      (hit.broad === true || crumbLeaves.includes(fromTitle));
+    const chosen = titleFits ? fromTitle : hit;
     return { department: chosen.department, category: chosen.id, source: 'path' };
   }
   const fromTitle = findLeaf(titleHead(title)) ?? findLeaf(title);
