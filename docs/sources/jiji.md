@@ -44,7 +44,9 @@ Rendering: json (listing API), no browser needed
 - `repostKey` = hash(seller id, cleaned title, price). Reposts on the same page collapse to the first copy in `parse`. Cross-page and cross-day reposts keep their own listings carrying the same `repostKey`; phase 05 adds the image phash to the key and the search side collapses them (BACKLOG).
 
 ## Live search (for query time)
-- Not investigated yet. The listing response echoes `search_params.query`, so the same API may accept a query; verify before building (03 §3.6 makes Jiji optional).
+- `GET https://jiji.ng/api_web/v1/listing?query=<text>&webp=true` (verified 2026-11-12: "satin slip dress" → 8 ads, one page, same JSON as category pages). robots.txt restricts `query` for Bingbot only.
+- `jijiAdapter.liveSearch` keeps Jiji's relevance order and only ads in the categories we sweep (each with its own breadcrumb); vehicles, property and services never come through.
+- Fixture: `search-satin-slip-dress.json` (anonymised like the others).
 
 ## Gotchas
 - 1,000-page cap per category (above).

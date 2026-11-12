@@ -1,0 +1,735 @@
+{
+ "adverts_list": {
+  "mode_default": "gallery",
+  "count": 8,
+  "adverts": [
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Men's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "42, 41, 40, 43, 44, 45, 46",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 6,
+    "details": "",
+    "event_params": {
+     "listing_options": [
+      "search"
+     ]
+    },
+    "guid": "pOV8FCiMhygueRFrSyPeRBQk",
+    "id": 56018148,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210367771_MzAwLTMwMC04OWI4YTFjZjU4.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210367771_MzAwLTMwMC04OWI4YTFjZjU4.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 6,
+    "is_boost": "enterprise",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "enterprise",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 170000,
+     "view": "₦ 170,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 170,000",
+    "region": "Lagos State • Ikeja",
+    "region_id": 146,
+    "region_item_text": "Lagos, Ikeja",
+    "region_name": "Ikeja",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikeja",
+    "short_description": "",
+    "slug": "original-dior-palmares-loafers-available-now",
+    "status": "active",
+    "title": "Original Dior Palmarès Loafers Available Now",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikeja/shoes/original-dior-palmares-loafers-available-now-pOV8FCiMhygueRFrSyPeRBQk.html",
+    "user_id": 2000,
+    "seller": {
+     "user_name": "Seller 2000",
+     "user_avatar_url": "",
+     "user_rating": 4.9
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "L",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 8,
+    "details": "",
+    "event_params": {
+     "listing_options": [
+      "search"
+     ]
+    },
+    "guid": "QDAt3nVRqQzKYQWb8kXv8nJ",
+    "id": 55424711,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/207754539_MzAwLTMwMC00NWM5MGQ4MDlh.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/207754539_MzAwLTMwMC00NWM5MGQ4MDlh.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 8,
+    "is_boost": "enterprise",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "8+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "enterprise",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 10000,
+     "view": "₦ 10,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 10,000",
+    "region": "Lagos State • Ojodu",
+    "region_id": 165,
+    "region_item_text": "Lagos, Ojodu",
+    "region_name": "Ojodu",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojodu",
+    "short_description": "",
+    "slug": "sexy-nightwear-lace-mesh-slip-lingerie-dress-slim-fit-intimate-wear",
+    "status": "active",
+    "title": "Sexy Nightwear Lace Mesh Slip Lingerie Dress Slim Fit Intimate Wear",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojodu/clothing/sexy-nightwear-lace-mesh-slip-lingerie-dress-slim-fit-intimate-wear-QDAt3nVRqQzKYQWb8kXv8nJ.html",
+    "user_id": 2001,
+    "seller": {
+     "user_name": "Seller 2001",
+     "user_avatar_url": "",
+     "user_rating": 4.9
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "M, L, XL, XXL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 7,
+    "details": "",
+    "event_params": {
+     "listing_options": [
+      "search"
+     ]
+    },
+    "guid": "l332MfOeSofT2b6ZlbKo6Okp",
+    "id": 55369450,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/207512828_MzAwLTM3Mi0zNDZmNjkyOGY5.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/207512828_MzAwLTM3Mi0zNDZmNjkyOGY5.webp",
+      "center": null,
+      "size": [
+       300,
+       372
+      ]
+     }
+    ],
+    "images_count": 7,
+    "is_boost": "diamond",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "diamond",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 18500,
+     "view": "₦ 18,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 18,500",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "butterfly-garden-silk-seduction-slip",
+    "status": "active",
+    "title": "Butterfly Garden Silk Seduction Slip",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/clothing/butterfly-garden-silk-seduction-slip-l332MfOeSofT2b6ZlbKo6Okp.html",
+    "user_id": 2002,
+    "seller": {
+     "user_name": "Seller 2002",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "L, XL, XXL, 3XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 3,
+    "details": "",
+    "event_params": {
+     "listing_options": [
+      "search"
+     ]
+    },
+    "guid": "MO3iII7iGItcVPUbKGlcJTg",
+    "id": 55104861,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/206326752_MzAwLTQ1MC1kMjk5NmJjYjM1.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/206326752_MzAwLTQ1MC1kMjk5NmJjYjM1.webp",
+      "center": null,
+      "size": [
+       300,
+       450
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": "diamond",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "diamond",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 13000,
+     "view": "₦ 13,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 13,000",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "silk-vibe-sexy-wear",
+    "status": "active",
+    "title": "Silk Vibe Sexy Wear",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/clothing/silk-vibe-sexy-wear-MO3iII7iGItcVPUbKGlcJTg.html",
+    "user_id": 2002,
+    "seller": {
+     "user_name": "Seller 2002",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "M, L, XL, XXL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 3,
+    "details": "",
+    "event_params": {
+     "listing_options": [
+      "search"
+     ]
+    },
+    "guid": "2Onj0ghT1iLtftnjPMJTckMM",
+    "id": 55130552,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/206443242_MzAwLTQwMC0zZjQ5Y2MwNTQz.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/206443242_MzAwLTQwMC0zZjQ5Y2MwNTQz.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": "diamond",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "diamond",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 11500,
+     "view": "₦ 11,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 11,500",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "midnight-bloom-lace-chemise",
+    "status": "active",
+    "title": "Midnight Bloom Lace Chemise",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/clothing/midnight-bloom-lace-chemise-2Onj0ghT1iLtftnjPMJTckMM.html",
+    "user_id": 2002,
+    "seller": {
+     "user_name": "Seller 2002",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "M",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 3,
+    "details": "",
+    "event_params": {
+     "listing_options": [
+      "search"
+     ]
+    },
+    "guid": "i7LqTTrMm5GdVbzGe66Um9jX",
+    "id": 47473816,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/172607789_MzAwLTM4My0wZjFmYzIzODZk.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/172607789_MzAwLTM4My0wZjFmYzIzODZk.webp",
+      "center": null,
+      "size": [
+       300,
+       383
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "age",
+      "value": "3+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 15000,
+     "view": "₦ 15,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 15,000",
+    "region": "Lagos State • Ikoyi",
+    "region_id": 151,
+    "region_item_text": "Lagos, Ikoyi",
+    "region_name": "Ikoyi",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ikoyi",
+    "short_description": "",
+    "slug": "satin-spaghetti-strap-nightdress",
+    "status": "active",
+    "title": "Satin Spaghetti Strap Nightdress",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikoyi-obalende/clothing/satin-spaghetti-strap-nightdress-i7LqTTrMm5GdVbzGe66Um9jX.html",
+    "user_id": 2003
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "41, 42, 40, 43, 39",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "TOP",
+     "slug": "top",
+     "bg_color": "#ffaf45",
+     "text_color": "#ffffff",
+     "aside_color": "#C8822C",
+     "service_type": "top"
+    },
+    "category_id": 55,
+    "category_name": "Shoes",
+    "category_slug": "shoes",
+    "count_images": 4,
+    "details": "",
+    "event_params": {
+     "listing_options": [
+      "search"
+     ]
+    },
+    "guid": "a4l6VzqhqaHgeeGsSsST5e34",
+    "id": 55364904,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/207490156_MzAwLTMwMC1lNDZhMGQwZjRlLTE.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/207490156_MzAwLTMwMC1lNDZhMGQwZjRlLTE.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 4,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": true,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "bg": "#FFF4B8"
+    },
+    "price_obj": {
+     "value": 34000,
+     "view": "₦ 34,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 34,000",
+    "region": "Lagos State • Ibeju",
+    "region_id": 140,
+    "region_item_text": "Lagos, Ibeju",
+    "region_name": "Ibeju",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ibeju",
+    "short_description": "",
+    "slug": "luxury-pearl-trimmed-burgundy-stiletto-mules",
+    "status": "active",
+    "title": "Luxury Pearl-Trimmed Burgundy Stiletto Mules",
+    "title_labels": [],
+    "tops_count": 1,
+    "url": "/ibeju/shoes/luxury-pearl-trimmed-burgundy-stiletto-mules-a4l6VzqhqaHgeeGsSsST5e34.html",
+    "user_id": 2004
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 3,
+    "details": "",
+    "event_params": {
+     "listing_options": [
+      "search"
+     ]
+    },
+    "guid": "8MykNbmHCep949uU7cfD91dM",
+    "id": 55661828,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/208806111_MzAwLTQwMC05YjIzZmM0Nzkw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/208806111_MzAwLTQwMC05YjIzZmM0Nzkw.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 15000,
+     "view": "₦ 15,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 15,000",
+    "region": "Lagos State • Ojodu",
+    "region_id": 165,
+    "region_item_text": "Lagos, Ojodu",
+    "region_name": "Ojodu",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojodu",
+    "short_description": "",
+    "slug": "the-midnight-cowl-slip-silk-satin-cowl-neck-slip-dress",
+    "status": "active",
+    "title": "The Midnight Cowl Slip: Silk-Satin Cowl Neck Slip Dress",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojodu/clothing/the-midnight-cowl-slip-silk-satin-cowl-neck-slip-dress-8MykNbmHCep949uU7cfD91dM.html",
+    "user_id": 2005
+   }
+  ],
+  "per_page": 20,
+  "total_pages": 1,
+  "tops_exist": true,
+  "in_day_count": 1,
+  "in_hour_count": 0
+ },
+ "next_url": null,
+ "status": "ok",
+ "search_params": {
+  "sort": "google",
+  "period": null,
+  "query": "satin slip dress"
+ }
+}

@@ -7,6 +7,7 @@ import { letterSize, type Audience, type Size } from '@cheapa/core';
 import { createHash } from 'node:crypto';
 import { ParseError } from '../errors.js';
 import type { JsonValue, RawListingInput, RawPayload, StoreRef } from '../types.js';
+import { categoryPath } from './categories.js';
 
 const ADAPTER_ID = 'jiji';
 
@@ -112,23 +113,46 @@ function toListing(ad: JijiAdvert, pageUrl: string, path: readonly string[]): Ra
   };
 }
 
-export function parseJiji(raw: RawPayload, _store: StoreRef): RawListingInput[] {
+function adverts(raw: RawPayload): JijiAdvert[] {
   if (raw.format !== 'json') throw new ParseError(ADAPTER_ID, `expected json, got ${raw.format}`);
-  const adverts = asPage(raw.body).adverts_list?.adverts;
-  if (!Array.isArray(adverts))
-    throw new ParseError(ADAPTER_ID, 'no adverts_list.adverts: API shape changed?');
-  const meta = raw.ref.meta?.path;
-  const path = Array.isArray(meta) ? meta.filter((p): p is string => typeof p === 'string') : [];
+  const list = asPage(raw.body).adverts_list?.adverts;
+  if (!Array.isArray(list)) throw new ParseError(ADAPTER_ID, 'no adverts_list.adverts: API shape changed?');
+  return list;
+}
+
+/** Reposts on the same page collapse to the first copy. */
+function collect(
+  ads: JijiAdvert[],
+  pageUrl: string,
+  pathFor: (ad: JijiAdvert) => readonly string[] | undefined,
+) {
   const seen = new Set<string>();
   const listings: RawListingInput[] = [];
-  for (const ad of adverts) {
-    const listing = toListing(ad, raw.url, path);
+  for (const ad of ads) {
+    const path = pathFor(ad);
+    if (!path) continue;
+    const listing = toListing(ad, pageUrl, path);
     if (!listing) continue;
-    // Reposts on the same page collapse to the first copy.
     const key = listing.attributes!.repostKey as string;
     if (seen.has(key)) continue;
     seen.add(key);
     listings.push(listing);
   }
   return listings;
+}
+
+/** A category page: every ad gets the swept category's breadcrumb (ref.meta.path). */
+export function parseJiji(raw: RawPayload, _store: StoreRef): RawListingInput[] {
+  const meta = raw.ref.meta?.path;
+  const path = Array.isArray(meta) ? meta.filter((p): p is string => typeof p === 'string') : [];
+  return collect(adverts(raw), raw.url, () => path);
+}
+
+/**
+ * A search page (liveSearch): results span every category, so each ad takes its own
+ * category's breadcrumb, and ads outside the categories we sweep (vehicles, property,
+ * services...) are dropped (03 §3.4).
+ */
+export function parseJijiSearch(raw: RawPayload): RawListingInput[] {
+  return collect(adverts(raw), raw.url, (ad) => categoryPath(ad.category_slug));
 }

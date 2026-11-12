@@ -36,6 +36,7 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-12 | Jiji fixtures are anonymised (seller names, user ids, free text) | Private sellers; descriptions can carry phone numbers. Ad facts stay verbatim |
 | 2026-11-12 | Platform adapters split products only on hard options; size and colour stay on one listing | 13 §13.4 (09 §9.1 said one listing per size/storage variant, which is the electronics rule). A "Size" whose values are ml/g is hard |
 | 2026-11-12 | A store is refused unless its platform API prices in NGN (Shopify `/meta.json` currency, Woo `currency_code`) | 09 §9.1. A ₦ symbol on the home page isn't enough: crypsbeauty shows ₦ but its API answers in USD |
+| 2026-11-12 | Live search (03 §3.6) is Jiji only; Jumia's search is robots-disallowed and Konga is blocked | `runLiveSearch` (adapters) + `LiveSearchService` (API): tier-1, active, robots-reviewed stores with a `liveSearch`; 1 call/store/search, 30-min redis-cache, 4 s budget, 1-h backoff after a block; never throws; query text never logged |
 
 ## Deferred
 

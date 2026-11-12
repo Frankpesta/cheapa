@@ -1,1527 +1,1458 @@
 {
- "adverts_list": {
-  "mode_default": "gallery",
-  "count": 5011,
-  "adverts": [
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
+  "adverts_list": {
+    "mode_default": "gallery",
+    "count": 5011,
+    "adverts": [
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {
+          "label": "2X VIP TOP+",
+          "slug": "booster_vip_multi",
+          "bg_color": "#00B53F",
+          "text_color": "#ffffff",
+          "aside_color": "#229826",
+          "service_type": "boost"
+        },
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 4,
+        "details": "",
+        "guid": "8ZIaiTcmhmzGKrWVZQwToHql",
+        "id": 56019611,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210373067_MzAwLTM2NC0wM2Y1OTk1M2Ez.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210373067_MzAwLTM2NC0wM2Y1OTk1M2Ez.webp",
+            "center": null,
+            "size": [300, 364]
+          },
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210373029_MzAwLTE4NS1mYzIxY2VlMTU1.webp",
+            "center": null,
+            "size": [300, 185]
+          },
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210373094_MzAwLTE4MC1iMjQ1M2IxZmY0.webp",
+            "center": null,
+            "size": [300, 180]
+          },
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210373095_MzAwLTE3OS01ZTNkODlhMWY4.webp",
+            "center": null,
+            "size": [300, 179]
+          }
+        ],
+        "images_count": 4,
+        "is_boost": "vip",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "id_verify",
+            "value": "Verified ID"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "vip",
+          "border": "#FEA03C",
+          "icon": true,
+          "more_photos": true,
+          "package_title": "VIP"
+        },
+        "price_obj": {
+          "value": 3000,
+          "view": "₦ 3,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 3,000",
+        "region": "Lagos State • Ikeja",
+        "region_id": 146,
+        "region_item_text": "Lagos, Ikeja",
+        "region_name": "Ikeja",
+        "region_parent_name": "Lagos State",
+        "region_slug": "ikeja",
+        "short_description": "",
+        "slug": "mini-four-leaf-clover-titanium-steel-bracelet",
+        "status": "active",
+        "title": "Mini Four Leaf Clover Titanium Steel Bracelet",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/ikeja/jewellery-and-watches/mini-four-leaf-clover-titanium-steel-bracelet-8ZIaiTcmhmzGKrWVZQwToHql.html",
+        "user_id": 1024
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 5,
+        "details": "",
+        "guid": "8cmxiFHxi7AUjpKM7JfOXezP",
+        "id": 56014945,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210371633_MzAwLTQwMC1jMmRlY2EzODY2.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210371633_MzAwLTQwMC1jMmRlY2EzODY2.webp",
+            "center": null,
+            "size": [300, 400]
+          }
+        ],
+        "images_count": 5,
+        "is_boost": false,
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [],
+        "message_url": "",
+        "paid_info": {},
+        "price_obj": {
+          "value": 700,
+          "view": "₦ 700",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 700",
+        "region": "Abuja (FCT) • Apo District",
+        "region_id": 445,
+        "region_item_text": "Abuja, Apo District",
+        "region_name": "Apo District",
+        "region_parent_name": "Abuja (FCT)",
+        "region_slug": "apo-district",
+        "short_description": "",
+        "slug": "fashion-jewelry",
+        "status": "active",
+        "title": "Fashion Jewelry",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/apo-district/jewellery-and-watches/fashion-jewelry-8cmxiFHxi7AUjpKM7JfOXezP.html",
+        "user_id": 1046
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 3,
+        "details": "",
+        "guid": "kqkSq5AHBD248YTlycdNdPOP",
+        "id": 56012516,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210370197_MzAwLTUzMy02OGRjOGRkYmMw.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210370197_MzAwLTUzMy02OGRjOGRkYmMw.webp",
+            "center": null,
+            "size": [300, 533]
+          }
+        ],
+        "images_count": 3,
+        "is_boost": false,
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [],
+        "message_url": "",
+        "paid_info": {},
+        "price_obj": {
+          "value": 15000,
+          "view": "₦ 15,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 15,000",
+        "region": "Oyo State • Ibadan",
+        "region_id": 366,
+        "region_item_text": "Oyo, Ibadan",
+        "region_name": "Ibadan",
+        "region_parent_name": "Oyo State",
+        "region_slug": "ibadan",
+        "short_description": "",
+        "slug": "jewelry-set",
+        "status": "active",
+        "title": "Jewelry Set",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/ibadan/jewellery-and-watches/jewelry-set-kqkSq5AHBD248YTlycdNdPOP.html",
+        "user_id": 1047
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Unisex",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 2,
+        "details": "",
+        "guid": "aSYX19SbGgusR8HqwJdOgynh",
+        "id": 56018468,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210368709_MzAwLTI4NC04MjNmZGU1YmQ3.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210368709_MzAwLTI4NC04MjNmZGU1YmQ3.webp",
+            "center": null,
+            "size": [300, 284]
+          }
+        ],
+        "images_count": 2,
+        "is_boost": false,
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [],
+        "message_url": "",
+        "paid_info": {},
+        "price_obj": {
+          "value": 15000,
+          "view": "₦ 15,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 15,000",
+        "region": "Delta State • Uvwie",
+        "region_id": 626,
+        "region_item_text": "Delta, Uvwie",
+        "region_name": "Uvwie",
+        "region_parent_name": "Delta State",
+        "region_slug": "uvwie",
+        "short_description": "",
+        "slug": "unisex-cuban-bracelet-gold-street-chain",
+        "status": "active",
+        "title": "Unisex Cuban Bracelet Gold - Street Chain",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/uvwie/jewellery-and-watches/unisex-cuban-bracelet-gold-street-chain-aSYX19SbGgusR8HqwJdOgynh.html",
+        "user_id": 1048
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "value": "Bulk prices",
+            "unit": null
+          },
+          {
+            "name": "Gender",
+            "value": "Unisex",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 0,
+        "details": "",
+        "guid": "aDnAMOLki2lXwUqX4r2aLjkq",
+        "id": 56018027,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210365789_MzAwLTQwMC1iYTI4NjE5YTdl.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210365789_MzAwLTQwMC1iYTI4NjE5YTdl.webp",
+            "center": null,
+            "size": [300, 400]
+          }
+        ],
+        "images_count": 0,
+        "is_boost": "enterprise",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "id_verify",
+            "value": "Verified ID"
+          },
+          {
+            "type": "age",
+            "value": "3+ years on Jiji"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "enterprise",
+          "border": "",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 5000,
+          "view": "₦ 5,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 5,000",
+        "region": "Lagos State • Mushin",
+        "region_id": 162,
+        "region_item_text": "Lagos, Mushin",
+        "region_name": "Mushin",
+        "region_parent_name": "Lagos State",
+        "region_slug": "mushin",
+        "short_description": "",
+        "slug": "luxury-stainless-steel-screw-nail-clover-bracelets-unisex",
+        "status": "active",
+        "title": "Luxury Stainless Steel Screw, Nail & Clover Bracelets (Unisex)",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/mushin/jewellery-and-watches/luxury-stainless-steel-screw-nail-clover-bracelets-unisex-aDnAMOLki2lXwUqX4r2aLjkq.html",
+        "user_id": 1049
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 5,
+        "details": "",
+        "guid": "ilg5pOFtn3uBUvj40f1MB0c",
+        "id": 56018192,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210366622_MzAwLTQwMC1jYWMxMDRhYWM1.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210366622_MzAwLTQwMC1jYWMxMDRhYWM1.webp",
+            "center": null,
+            "size": [300, 400]
+          }
+        ],
+        "images_count": 5,
+        "is_boost": false,
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [],
+        "message_url": "",
+        "paid_info": {},
+        "price_obj": {
+          "value": 14000,
+          "view": "₦ 14,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 14,000",
+        "region": "Lagos State • Abule Egba",
+        "region_id": 1195,
+        "region_item_text": "Lagos, Abule Egba",
+        "region_name": "Abule Egba",
+        "region_parent_name": "Lagos State",
+        "region_slug": "abule-egba",
+        "short_description": "",
+        "slug": "shimmer-set",
+        "status": "active",
+        "title": "Shimmer Set",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/lagos-abule-egba/jewellery-and-watches/shimmer-set-ilg5pOFtn3uBUvj40f1MB0c.html",
+        "user_id": 1050
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 2,
+        "details": "",
+        "guid": "a3SRrcSjQTWcLKCK5eBvXjFw",
+        "id": 56017792,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210365273_MzAwLTQ0OS02YmVjMGYyNTM3.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210365273_MzAwLTQ0OS02YmVjMGYyNTM3.webp",
+            "center": null,
+            "size": [300, 449]
+          }
+        ],
+        "images_count": 2,
+        "is_boost": false,
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [],
+        "message_url": "",
+        "paid_info": {},
+        "price_obj": {
+          "value": 2000,
+          "view": "₦ 2,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 2,000",
+        "region": "Lagos State • Maryland",
+        "region_id": 168,
+        "region_item_text": "Lagos, Maryland",
+        "region_name": "Maryland",
+        "region_parent_name": "Lagos State",
+        "region_slug": "maryland",
+        "short_description": "",
+        "slug": "earings-gold",
+        "status": "active",
+        "title": "Earings Gold",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/maryland/jewellery-and-watches/earings-gold-a3SRrcSjQTWcLKCK5eBvXjFw.html",
+        "user_id": 1051
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 3,
+        "details": "",
+        "guid": "pAbr0pL6qQQEUnT7BO4pcFiO",
+        "id": 56017704,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210364418_MzAwLTMwMC02YjhjM2RjOGE4.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210364418_MzAwLTMwMC02YjhjM2RjOGE4.webp",
+            "center": null,
+            "size": [300, 300]
+          }
+        ],
+        "images_count": 3,
+        "is_boost": "vip_gold",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "id_verify",
+            "value": "Verified ID"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "vip_gold",
+          "border": "",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 12500,
+          "view": "₦ 12,500",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 12,500",
+        "region": "Edo State • Benin City",
+        "region_id": 88,
+        "region_item_text": "Edo, Benin City",
+        "region_name": "Benin City",
+        "region_parent_name": "Edo State",
+        "region_slug": "benin-city",
+        "short_description": "",
+        "slug": "m-c-jewelry",
+        "status": "active",
+        "title": "M.C Jewelry",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/oredo/jewellery-and-watches/m-c-jewelry-pAbr0pL6qQQEUnT7BO4pcFiO.html",
+        "user_id": 1052
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "value": "Bulk prices",
+            "unit": null
+          },
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 9,
+        "details": "",
+        "guid": "ir6ti9icux6OBxYW7DOnY9Sz",
+        "id": 56012356,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210363838_MzAwLTUzNC01ODE5NjBlOTMw.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210363838_MzAwLTUzNC01ODE5NjBlOTMw.webp",
+            "center": null,
+            "size": [300, 534]
+          }
+        ],
+        "images_count": 9,
+        "is_boost": "basic",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "id_verify",
+            "value": "Verified ID"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "basic"
+        },
+        "price_obj": {
+          "value": 34000,
+          "view": "₦ 34,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 34,000",
+        "region": "Delta State • Ethiope East",
+        "region_id": 609,
+        "region_item_text": "Delta, Ethiope East",
+        "region_name": "Ethiope East",
+        "region_parent_name": "Delta State",
+        "region_slug": "ethiope-east",
+        "short_description": "",
+        "slug": "female-jewelry-set",
+        "status": "active",
+        "title": "Female Jewelry Set",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/ethiope-east/jewellery-and-watches/female-jewelry-set-ir6ti9icux6OBxYW7DOnY9Sz.html",
+        "user_id": 1053
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "value": "Bulk prices",
+            "unit": null
+          },
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 19,
+        "details": "",
+        "guid": "pOm0XK1MRlp4I6baJDAWNmlu",
+        "id": 56017217,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210363069_MzAwLTM3NS01OGI3ZGRmYjYw.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210363069_MzAwLTM3NS01OGI3ZGRmYjYw.webp",
+            "center": null,
+            "size": [300, 375]
+          }
+        ],
+        "images_count": 19,
+        "is_boost": false,
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [],
+        "message_url": "",
+        "paid_info": {},
+        "price_obj": {
+          "value": 5000,
+          "view": "₦ 5,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 5,000",
+        "region": "Lagos State • Alimosho",
+        "region_id": 124,
+        "region_item_text": "Lagos, Alimosho",
+        "region_name": "Alimosho",
+        "region_parent_name": "Lagos State",
+        "region_slug": "alimosho",
+        "short_description": "",
+        "slug": "midey-empire",
+        "status": "active",
+        "title": "Midey Empire",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/alimosho/jewellery-and-watches/midey-empire-pOm0XK1MRlp4I6baJDAWNmlu.html",
+        "user_id": 1054
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "value": "Bulk prices",
+            "unit": null
+          },
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 2,
+        "details": "",
+        "guid": "zqjwDKhfH0eZt9HjGCmINfc8",
+        "id": 56006068,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210311322_MzAwLTMwMC1hMWI5MDg4Mjk5.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210311322_MzAwLTMwMC1hMWI5MDg4Mjk5.webp",
+            "center": null,
+            "size": [300, 300]
+          }
+        ],
+        "images_count": 2,
+        "is_boost": false,
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [],
+        "message_url": "",
+        "paid_info": {},
+        "price_obj": {
+          "value": 4000,
+          "view": "₦ 4,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 4,000",
+        "region": "Lagos State • Ipaja",
+        "region_id": 128,
+        "region_item_text": "Lagos, Ipaja",
+        "region_name": "Ipaja",
+        "region_parent_name": "Lagos State",
+        "region_slug": "ipaja",
+        "short_description": "",
+        "slug": "midey-empire",
+        "status": "active",
+        "title": "Midey Empire",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/ayobo-ipaja/jewellery-and-watches/midey-empire-zqjwDKhfH0eZt9HjGCmINfc8.html",
+        "user_id": 1054
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {
+          "label": "VIP TOP+",
+          "slug": "booster_vip",
+          "bg_color": "#00B53F",
+          "text_color": "#ffffff",
+          "aside_color": "#229826",
+          "service_type": "boost"
+        },
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 3,
+        "details": "",
+        "guid": "iSjgJrxEPMqMdIZ2qfSFOmhx",
+        "id": 56016510,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210363038_MzAwLTMwMC1mZTMxNzRlMTVh.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210363038_MzAwLTMwMC1mZTMxNzRlMTVh.webp",
+            "center": null,
+            "size": [300, 300]
+          }
+        ],
+        "images_count": 3,
+        "is_boost": "vip_gold",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "id_verify",
+            "value": "Verified ID"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "vip_gold",
+          "border": "#FEA03C",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 10500,
+          "view": "₦ 10,500",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 10,500",
+        "region": "Edo State • Benin City",
+        "region_id": 88,
+        "region_item_text": "Edo, Benin City",
+        "region_name": "Benin City",
+        "region_parent_name": "Edo State",
+        "region_slug": "benin-city",
+        "short_description": "",
+        "slug": "m-c-jewelry-store",
+        "status": "active",
+        "title": "M C Jewelry Store",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/oredo/jewellery-and-watches/m-c-jewelry-store-iSjgJrxEPMqMdIZ2qfSFOmhx.html",
+        "user_id": 1052
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 0,
+        "details": "",
+        "guid": "C5gfKGf2zQpPq9mhGbaCyuzX",
+        "id": 56016490,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210359114_MzAwLTQwMC03Y2VkNTg3YTkw.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210359114_MzAwLTQwMC03Y2VkNTg3YTkw.webp",
+            "center": null,
+            "size": [300, 400]
+          }
+        ],
+        "images_count": 0,
+        "is_boost": "enterprise",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "id_verify",
+            "value": "Verified ID"
+          },
+          {
+            "type": "age",
+            "value": "3+ years on Jiji"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "enterprise",
+          "border": "",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 270000,
+          "view": "₦ 270,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 270,000",
+        "region": "Lagos State • Mushin",
+        "region_id": 162,
+        "region_item_text": "Lagos, Mushin",
+        "region_name": "Mushin",
+        "region_parent_name": "Lagos State",
+        "region_slug": "mushin",
+        "short_description": "",
+        "slug": "vvs1-moissanite-pear-halo-necklace-earring-set-925-silver",
+        "status": "active",
+        "title": "VVS1 Moissanite Pear-Halo Necklace & Earring Set (925 Silver)",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/mushin/jewellery-and-watches/vvs1-moissanite-pear-halo-necklace-earring-set-925-silver-C5gfKGf2zQpPq9mhGbaCyuzX.html",
+        "user_id": 1049
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 3,
+        "details": "",
+        "guid": "cNJ5EVkMN29zLrMExxmEahyw",
+        "id": 56015930,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210356408_MzAwLTM4Mi0wMmMzZWVlNDVm.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210356408_MzAwLTM4Mi0wMmMzZWVlNDVm.webp",
+            "center": null,
+            "size": [300, 382]
+          }
+        ],
+        "images_count": 3,
+        "is_boost": "vip_gold",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "age",
+            "value": "3+ years on Jiji"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "vip_gold",
+          "border": "",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 165000,
+          "view": "₦ 165,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 165,000",
+        "region": "Lagos State • Amuwo-Odofin",
+        "region_id": 125,
+        "region_item_text": "Lagos, Amuwo-Odofin",
+        "region_name": "Amuwo-Odofin",
+        "region_parent_name": "Lagos State",
+        "region_slug": "amuwo-odofin",
+        "short_description": "",
+        "slug": "ladies-sets",
+        "status": "active",
+        "title": "Ladies Sets",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-cNJ5EVkMN29zLrMExxmEahyw.html",
+        "user_id": 1055
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Unisex",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 2,
+        "details": "",
+        "guid": "5JtJwuKIgJImapcqeaIaGUAa",
+        "id": 56015873,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210356381_MzAwLTMwMC02NjkzZTdlNTE1.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210356381_MzAwLTMwMC02NjkzZTdlNTE1.webp",
+            "center": null,
+            "size": [300, 300]
+          }
+        ],
+        "images_count": 2,
+        "is_boost": "enterprise",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "id_verify",
+            "value": "Verified ID"
+          },
+          {
+            "type": "age",
+            "value": "5+ years on Jiji"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "enterprise",
+          "border": "",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 11000,
+          "view": "₦ 11,000",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 11,000",
+        "region": "Lagos State • Lagos Island (Eko)",
+        "region_id": 158,
+        "region_item_text": "Lagos, Lagos Island (Eko)",
+        "region_name": "Lagos Island (Eko)",
+        "region_parent_name": "Lagos State",
+        "region_slug": "lagos-island-eko",
+        "short_description": "",
+        "slug": "3in1-gift-box-set",
+        "status": "active",
+        "title": "3in1 Gift Box Set",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/lagos-island-west/jewellery-and-watches/3in1-gift-box-set-5JtJwuKIgJImapcqeaIaGUAa.html",
+        "user_id": 1056,
+        "seller": {
+          "user_name": "Seller 1056",
+          "user_avatar_url": "",
+          "user_rating": 4.8
+        }
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 3,
+        "details": "",
+        "guid": "mhIIHKXNjh3flTUHxuRiJ7aE",
+        "id": 56015885,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210356163_MzAwLTQwOS0wMmY3MDAwY2Yy.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210356163_MzAwLTQwOS0wMmY3MDAwY2Yy.webp",
+            "center": null,
+            "size": [300, 409]
+          }
+        ],
+        "images_count": 3,
+        "is_boost": "vip_gold",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "age",
+            "value": "3+ years on Jiji"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "vip_gold",
+          "border": "",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 87500,
+          "view": "₦ 87,500",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 87,500",
+        "region": "Lagos State • Amuwo-Odofin",
+        "region_id": 125,
+        "region_item_text": "Lagos, Amuwo-Odofin",
+        "region_name": "Amuwo-Odofin",
+        "region_parent_name": "Lagos State",
+        "region_slug": "amuwo-odofin",
+        "short_description": "",
+        "slug": "ladies-sets",
+        "status": "active",
+        "title": "Ladies Sets",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-mhIIHKXNjh3flTUHxuRiJ7aE.html",
+        "user_id": 1055
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 5,
+        "details": "",
+        "guid": "z4CQRZ2Eahn9TKu6uqAphDPL",
+        "id": 56015832,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210355870_MzAwLTQwNS0wNWE5OWJjMTQ1.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210355870_MzAwLTQwNS0wNWE5OWJjMTQ1.webp",
+            "center": null,
+            "size": [300, 405]
+          }
+        ],
+        "images_count": 5,
+        "is_boost": "vip_gold",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "age",
+            "value": "3+ years on Jiji"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "vip_gold",
+          "border": "",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 48500,
+          "view": "₦ 48,500",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 48,500",
+        "region": "Lagos State • Amuwo-Odofin",
+        "region_id": 125,
+        "region_item_text": "Lagos, Amuwo-Odofin",
+        "region_name": "Amuwo-Odofin",
+        "region_parent_name": "Lagos State",
+        "region_slug": "amuwo-odofin",
+        "short_description": "",
+        "slug": "ladies-sets",
+        "status": "active",
+        "title": "Ladies Sets",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-z4CQRZ2Eahn9TKu6uqAphDPL.html",
+        "user_id": 1055
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 4,
+        "details": "",
+        "guid": "CjQHMQGDMQJ4x15nx4o5tSMf",
+        "id": 56015765,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210355506_MzAwLTM4NC04ZjFiZGI3YTkz.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210355506_MzAwLTM4NC04ZjFiZGI3YTkz.webp",
+            "center": null,
+            "size": [300, 384]
+          }
+        ],
+        "images_count": 4,
+        "is_boost": "vip_gold",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "age",
+            "value": "3+ years on Jiji"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "vip_gold",
+          "border": "",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 68500,
+          "view": "₦ 68,500",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 68,500",
+        "region": "Lagos State • Amuwo-Odofin",
+        "region_id": 125,
+        "region_item_text": "Lagos, Amuwo-Odofin",
+        "region_name": "Amuwo-Odofin",
+        "region_parent_name": "Lagos State",
+        "region_slug": "amuwo-odofin",
+        "short_description": "",
+        "slug": "ladies-sets",
+        "status": "active",
+        "title": "Ladies Sets",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-CjQHMQGDMQJ4x15nx4o5tSMf.html",
+        "user_id": 1055
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 4,
+        "details": "",
+        "guid": "tvQGJDqQOtQHJhvNvE40iPer",
+        "id": 56015699,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210355273_MzAwLTM3Ni05ZjliMGNjYTFj.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210355273_MzAwLTM3Ni05ZjliMGNjYTFj.webp",
+            "center": null,
+            "size": [300, 376]
+          }
+        ],
+        "images_count": 4,
+        "is_boost": "vip_gold",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "age",
+            "value": "3+ years on Jiji"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "vip_gold",
+          "border": "",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 135500,
+          "view": "₦ 135,500",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 135,500",
+        "region": "Lagos State • Amuwo-Odofin",
+        "region_id": 125,
+        "region_item_text": "Lagos, Amuwo-Odofin",
+        "region_name": "Amuwo-Odofin",
+        "region_parent_name": "Lagos State",
+        "region_slug": "amuwo-odofin",
+        "short_description": "",
+        "slug": "ladies-sets",
+        "status": "active",
+        "title": "Ladies Sets",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-tvQGJDqQOtQHJhvNvE40iPer.html",
+        "user_id": 1055
+      },
+      {
+        "admin_info": {},
+        "as_top": false,
+        "attrs": [
+          {
+            "name": "Gender",
+            "value": "Women's",
+            "unit": null
+          }
+        ],
+        "badge_info": {},
+        "category_id": 26,
+        "category_name": "Jewelry",
+        "category_slug": "jewellery-and-watches",
+        "count_images": 6,
+        "details": "",
+        "guid": "hxAIz6i5jFyEARFN589P98C8",
+        "id": 56015045,
+        "image_obj": {
+          "url": "https://pictures-nigeria.jijistatic.net/210352159_MzAwLTQwMC00MDY0ODVhYTRl.webp",
+          "center": null
+        },
+        "images": [
+          {
+            "url": "https://pictures-nigeria.jijistatic.net/210352159_MzAwLTQwMC00MDY0ODVhYTRl.webp",
+            "center": null,
+            "size": [300, 400]
+          }
+        ],
+        "images_count": 6,
+        "is_boost": "vip_gold",
+        "is_cv": false,
+        "is_inspected": false,
+        "is_job": false,
+        "is_owner": false,
+        "is_top": false,
+        "labels": [
+          {
+            "type": "age",
+            "value": "3+ years on Jiji"
+          }
+        ],
+        "message_url": "",
+        "paid_info": {
+          "text": "Promoted",
+          "package_type": "vip_gold",
+          "border": "",
+          "icon": true,
+          "more_photos": false
+        },
+        "price_obj": {
+          "value": 14500,
+          "view": "₦ 14,500",
+          "period": null,
+          "bulk": null,
+          "type": null
+        },
+        "price_title": "₦ 14,500",
+        "region": "Lagos State • Amuwo-Odofin",
+        "region_id": 125,
+        "region_item_text": "Lagos, Amuwo-Odofin",
+        "region_name": "Amuwo-Odofin",
+        "region_parent_name": "Lagos State",
+        "region_slug": "amuwo-odofin",
+        "short_description": "",
+        "slug": "ladies-sets",
+        "status": "active",
+        "title": "Ladies Sets",
+        "title_labels": [],
+        "tops_count": 0,
+        "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-hxAIz6i5jFyEARFN589P98C8.html",
+        "user_id": 1055
+      }
     ],
-    "badge_info": {
-     "label": "2X VIP TOP+",
-     "slug": "booster_vip_multi",
-     "bg_color": "#00B53F",
-     "text_color": "#ffffff",
-     "aside_color": "#229826",
-     "service_type": "boost"
-    },
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 4,
-    "details": "",
-    "guid": "8ZIaiTcmhmzGKrWVZQwToHql",
-    "id": 56019611,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210373067_MzAwLTM2NC0wM2Y1OTk1M2Ez.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210373067_MzAwLTM2NC0wM2Y1OTk1M2Ez.webp",
-      "center": null,
-      "size": [
-       300,
-       364
-      ]
-     },
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210373029_MzAwLTE4NS1mYzIxY2VlMTU1.webp",
-      "center": null,
-      "size": [
-       300,
-       185
-      ]
-     },
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210373094_MzAwLTE4MC1iMjQ1M2IxZmY0.webp",
-      "center": null,
-      "size": [
-       300,
-       180
-      ]
-     },
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210373095_MzAwLTE3OS01ZTNkODlhMWY4.webp",
-      "center": null,
-      "size": [
-       300,
-       179
-      ]
-     }
-    ],
-    "images_count": 4,
-    "is_boost": "vip",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "id_verify",
-      "value": "Verified ID"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "vip",
-     "border": "#FEA03C",
-     "icon": true,
-     "more_photos": true,
-     "package_title": "VIP"
-    },
-    "price_obj": {
-     "value": 3000,
-     "view": "₦ 3,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 3,000",
-    "region": "Lagos State • Ikeja",
-    "region_id": 146,
-    "region_item_text": "Lagos, Ikeja",
-    "region_name": "Ikeja",
-    "region_parent_name": "Lagos State",
-    "region_slug": "ikeja",
-    "short_description": "",
-    "slug": "mini-four-leaf-clover-titanium-steel-bracelet",
-    "status": "active",
-    "title": "Mini Four Leaf Clover Titanium Steel Bracelet",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/ikeja/jewellery-and-watches/mini-four-leaf-clover-titanium-steel-bracelet-8ZIaiTcmhmzGKrWVZQwToHql.html",
-    "user_id": 1024
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 5,
-    "details": "",
-    "guid": "8cmxiFHxi7AUjpKM7JfOXezP",
-    "id": 56014945,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210371633_MzAwLTQwMC1jMmRlY2EzODY2.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210371633_MzAwLTQwMC1jMmRlY2EzODY2.webp",
-      "center": null,
-      "size": [
-       300,
-       400
-      ]
-     }
-    ],
-    "images_count": 5,
-    "is_boost": false,
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [],
-    "message_url": "",
-    "paid_info": {},
-    "price_obj": {
-     "value": 700,
-     "view": "₦ 700",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 700",
-    "region": "Abuja (FCT) • Apo District",
-    "region_id": 445,
-    "region_item_text": "Abuja, Apo District",
-    "region_name": "Apo District",
-    "region_parent_name": "Abuja (FCT)",
-    "region_slug": "apo-district",
-    "short_description": "",
-    "slug": "fashion-jewelry",
-    "status": "active",
-    "title": "Fashion Jewelry",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/apo-district/jewellery-and-watches/fashion-jewelry-8cmxiFHxi7AUjpKM7JfOXezP.html",
-    "user_id": 1046
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 3,
-    "details": "",
-    "guid": "kqkSq5AHBD248YTlycdNdPOP",
-    "id": 56012516,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210370197_MzAwLTUzMy02OGRjOGRkYmMw.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210370197_MzAwLTUzMy02OGRjOGRkYmMw.webp",
-      "center": null,
-      "size": [
-       300,
-       533
-      ]
-     }
-    ],
-    "images_count": 3,
-    "is_boost": false,
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [],
-    "message_url": "",
-    "paid_info": {},
-    "price_obj": {
-     "value": 15000,
-     "view": "₦ 15,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 15,000",
-    "region": "Oyo State • Ibadan",
-    "region_id": 366,
-    "region_item_text": "Oyo, Ibadan",
-    "region_name": "Ibadan",
-    "region_parent_name": "Oyo State",
-    "region_slug": "ibadan",
-    "short_description": "",
-    "slug": "jewelry-set",
-    "status": "active",
-    "title": "Jewelry Set",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/ibadan/jewellery-and-watches/jewelry-set-kqkSq5AHBD248YTlycdNdPOP.html",
-    "user_id": 1047
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Unisex",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 2,
-    "details": "",
-    "guid": "aSYX19SbGgusR8HqwJdOgynh",
-    "id": 56018468,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210368709_MzAwLTI4NC04MjNmZGU1YmQ3.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210368709_MzAwLTI4NC04MjNmZGU1YmQ3.webp",
-      "center": null,
-      "size": [
-       300,
-       284
-      ]
-     }
-    ],
-    "images_count": 2,
-    "is_boost": false,
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [],
-    "message_url": "",
-    "paid_info": {},
-    "price_obj": {
-     "value": 15000,
-     "view": "₦ 15,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 15,000",
-    "region": "Delta State • Uvwie",
-    "region_id": 626,
-    "region_item_text": "Delta, Uvwie",
-    "region_name": "Uvwie",
-    "region_parent_name": "Delta State",
-    "region_slug": "uvwie",
-    "short_description": "",
-    "slug": "unisex-cuban-bracelet-gold-street-chain",
-    "status": "active",
-    "title": "Unisex Cuban Bracelet Gold - Street Chain",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/uvwie/jewellery-and-watches/unisex-cuban-bracelet-gold-street-chain-aSYX19SbGgusR8HqwJdOgynh.html",
-    "user_id": 1048
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "value": "Bulk prices",
-      "unit": null
-     },
-     {
-      "name": "Gender",
-      "value": "Unisex",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 0,
-    "details": "",
-    "guid": "aDnAMOLki2lXwUqX4r2aLjkq",
-    "id": 56018027,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210365789_MzAwLTQwMC1iYTI4NjE5YTdl.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210365789_MzAwLTQwMC1iYTI4NjE5YTdl.webp",
-      "center": null,
-      "size": [
-       300,
-       400
-      ]
-     }
-    ],
-    "images_count": 0,
-    "is_boost": "enterprise",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "id_verify",
-      "value": "Verified ID"
-     },
-     {
-      "type": "age",
-      "value": "3+ years on Jiji"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "enterprise",
-     "border": "",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 5000,
-     "view": "₦ 5,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 5,000",
-    "region": "Lagos State • Mushin",
-    "region_id": 162,
-    "region_item_text": "Lagos, Mushin",
-    "region_name": "Mushin",
-    "region_parent_name": "Lagos State",
-    "region_slug": "mushin",
-    "short_description": "",
-    "slug": "luxury-stainless-steel-screw-nail-clover-bracelets-unisex",
-    "status": "active",
-    "title": "Luxury Stainless Steel Screw, Nail & Clover Bracelets (Unisex)",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/mushin/jewellery-and-watches/luxury-stainless-steel-screw-nail-clover-bracelets-unisex-aDnAMOLki2lXwUqX4r2aLjkq.html",
-    "user_id": 1049
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 5,
-    "details": "",
-    "guid": "ilg5pOFtn3uBUvj40f1MB0c",
-    "id": 56018192,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210366622_MzAwLTQwMC1jYWMxMDRhYWM1.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210366622_MzAwLTQwMC1jYWMxMDRhYWM1.webp",
-      "center": null,
-      "size": [
-       300,
-       400
-      ]
-     }
-    ],
-    "images_count": 5,
-    "is_boost": false,
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [],
-    "message_url": "",
-    "paid_info": {},
-    "price_obj": {
-     "value": 14000,
-     "view": "₦ 14,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 14,000",
-    "region": "Lagos State • Abule Egba",
-    "region_id": 1195,
-    "region_item_text": "Lagos, Abule Egba",
-    "region_name": "Abule Egba",
-    "region_parent_name": "Lagos State",
-    "region_slug": "abule-egba",
-    "short_description": "",
-    "slug": "shimmer-set",
-    "status": "active",
-    "title": "Shimmer Set",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/lagos-abule-egba/jewellery-and-watches/shimmer-set-ilg5pOFtn3uBUvj40f1MB0c.html",
-    "user_id": 1050
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 2,
-    "details": "",
-    "guid": "a3SRrcSjQTWcLKCK5eBvXjFw",
-    "id": 56017792,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210365273_MzAwLTQ0OS02YmVjMGYyNTM3.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210365273_MzAwLTQ0OS02YmVjMGYyNTM3.webp",
-      "center": null,
-      "size": [
-       300,
-       449
-      ]
-     }
-    ],
-    "images_count": 2,
-    "is_boost": false,
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [],
-    "message_url": "",
-    "paid_info": {},
-    "price_obj": {
-     "value": 2000,
-     "view": "₦ 2,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 2,000",
-    "region": "Lagos State • Maryland",
-    "region_id": 168,
-    "region_item_text": "Lagos, Maryland",
-    "region_name": "Maryland",
-    "region_parent_name": "Lagos State",
-    "region_slug": "maryland",
-    "short_description": "",
-    "slug": "earings-gold",
-    "status": "active",
-    "title": "Earings Gold",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/maryland/jewellery-and-watches/earings-gold-a3SRrcSjQTWcLKCK5eBvXjFw.html",
-    "user_id": 1051
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 3,
-    "details": "",
-    "guid": "pAbr0pL6qQQEUnT7BO4pcFiO",
-    "id": 56017704,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210364418_MzAwLTMwMC02YjhjM2RjOGE4.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210364418_MzAwLTMwMC02YjhjM2RjOGE4.webp",
-      "center": null,
-      "size": [
-       300,
-       300
-      ]
-     }
-    ],
-    "images_count": 3,
-    "is_boost": "vip_gold",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "id_verify",
-      "value": "Verified ID"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "vip_gold",
-     "border": "",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 12500,
-     "view": "₦ 12,500",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 12,500",
-    "region": "Edo State • Benin City",
-    "region_id": 88,
-    "region_item_text": "Edo, Benin City",
-    "region_name": "Benin City",
-    "region_parent_name": "Edo State",
-    "region_slug": "benin-city",
-    "short_description": "",
-    "slug": "m-c-jewelry",
-    "status": "active",
-    "title": "M.C Jewelry",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/oredo/jewellery-and-watches/m-c-jewelry-pAbr0pL6qQQEUnT7BO4pcFiO.html",
-    "user_id": 1052
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "value": "Bulk prices",
-      "unit": null
-     },
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 9,
-    "details": "",
-    "guid": "ir6ti9icux6OBxYW7DOnY9Sz",
-    "id": 56012356,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210363838_MzAwLTUzNC01ODE5NjBlOTMw.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210363838_MzAwLTUzNC01ODE5NjBlOTMw.webp",
-      "center": null,
-      "size": [
-       300,
-       534
-      ]
-     }
-    ],
-    "images_count": 9,
-    "is_boost": "basic",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "id_verify",
-      "value": "Verified ID"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "basic"
-    },
-    "price_obj": {
-     "value": 34000,
-     "view": "₦ 34,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 34,000",
-    "region": "Delta State • Ethiope East",
-    "region_id": 609,
-    "region_item_text": "Delta, Ethiope East",
-    "region_name": "Ethiope East",
-    "region_parent_name": "Delta State",
-    "region_slug": "ethiope-east",
-    "short_description": "",
-    "slug": "female-jewelry-set",
-    "status": "active",
-    "title": "Female Jewelry Set",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/ethiope-east/jewellery-and-watches/female-jewelry-set-ir6ti9icux6OBxYW7DOnY9Sz.html",
-    "user_id": 1053
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "value": "Bulk prices",
-      "unit": null
-     },
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 19,
-    "details": "",
-    "guid": "pOm0XK1MRlp4I6baJDAWNmlu",
-    "id": 56017217,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210363069_MzAwLTM3NS01OGI3ZGRmYjYw.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210363069_MzAwLTM3NS01OGI3ZGRmYjYw.webp",
-      "center": null,
-      "size": [
-       300,
-       375
-      ]
-     }
-    ],
-    "images_count": 19,
-    "is_boost": false,
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [],
-    "message_url": "",
-    "paid_info": {},
-    "price_obj": {
-     "value": 5000,
-     "view": "₦ 5,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 5,000",
-    "region": "Lagos State • Alimosho",
-    "region_id": 124,
-    "region_item_text": "Lagos, Alimosho",
-    "region_name": "Alimosho",
-    "region_parent_name": "Lagos State",
-    "region_slug": "alimosho",
-    "short_description": "",
-    "slug": "midey-empire",
-    "status": "active",
-    "title": "Midey Empire",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/alimosho/jewellery-and-watches/midey-empire-pOm0XK1MRlp4I6baJDAWNmlu.html",
-    "user_id": 1054
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "value": "Bulk prices",
-      "unit": null
-     },
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 2,
-    "details": "",
-    "guid": "zqjwDKhfH0eZt9HjGCmINfc8",
-    "id": 56006068,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210311322_MzAwLTMwMC1hMWI5MDg4Mjk5.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210311322_MzAwLTMwMC1hMWI5MDg4Mjk5.webp",
-      "center": null,
-      "size": [
-       300,
-       300
-      ]
-     }
-    ],
-    "images_count": 2,
-    "is_boost": false,
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [],
-    "message_url": "",
-    "paid_info": {},
-    "price_obj": {
-     "value": 4000,
-     "view": "₦ 4,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 4,000",
-    "region": "Lagos State • Ipaja",
-    "region_id": 128,
-    "region_item_text": "Lagos, Ipaja",
-    "region_name": "Ipaja",
-    "region_parent_name": "Lagos State",
-    "region_slug": "ipaja",
-    "short_description": "",
-    "slug": "midey-empire",
-    "status": "active",
-    "title": "Midey Empire",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/ayobo-ipaja/jewellery-and-watches/midey-empire-zqjwDKhfH0eZt9HjGCmINfc8.html",
-    "user_id": 1054
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {
-     "label": "VIP TOP+",
-     "slug": "booster_vip",
-     "bg_color": "#00B53F",
-     "text_color": "#ffffff",
-     "aside_color": "#229826",
-     "service_type": "boost"
-    },
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 3,
-    "details": "",
-    "guid": "iSjgJrxEPMqMdIZ2qfSFOmhx",
-    "id": 56016510,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210363038_MzAwLTMwMC1mZTMxNzRlMTVh.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210363038_MzAwLTMwMC1mZTMxNzRlMTVh.webp",
-      "center": null,
-      "size": [
-       300,
-       300
-      ]
-     }
-    ],
-    "images_count": 3,
-    "is_boost": "vip_gold",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "id_verify",
-      "value": "Verified ID"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "vip_gold",
-     "border": "#FEA03C",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 10500,
-     "view": "₦ 10,500",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 10,500",
-    "region": "Edo State • Benin City",
-    "region_id": 88,
-    "region_item_text": "Edo, Benin City",
-    "region_name": "Benin City",
-    "region_parent_name": "Edo State",
-    "region_slug": "benin-city",
-    "short_description": "",
-    "slug": "m-c-jewelry-store",
-    "status": "active",
-    "title": "M C Jewelry Store",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/oredo/jewellery-and-watches/m-c-jewelry-store-iSjgJrxEPMqMdIZ2qfSFOmhx.html",
-    "user_id": 1052
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 0,
-    "details": "",
-    "guid": "C5gfKGf2zQpPq9mhGbaCyuzX",
-    "id": 56016490,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210359114_MzAwLTQwMC03Y2VkNTg3YTkw.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210359114_MzAwLTQwMC03Y2VkNTg3YTkw.webp",
-      "center": null,
-      "size": [
-       300,
-       400
-      ]
-     }
-    ],
-    "images_count": 0,
-    "is_boost": "enterprise",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "id_verify",
-      "value": "Verified ID"
-     },
-     {
-      "type": "age",
-      "value": "3+ years on Jiji"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "enterprise",
-     "border": "",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 270000,
-     "view": "₦ 270,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 270,000",
-    "region": "Lagos State • Mushin",
-    "region_id": 162,
-    "region_item_text": "Lagos, Mushin",
-    "region_name": "Mushin",
-    "region_parent_name": "Lagos State",
-    "region_slug": "mushin",
-    "short_description": "",
-    "slug": "vvs1-moissanite-pear-halo-necklace-earring-set-925-silver",
-    "status": "active",
-    "title": "VVS1 Moissanite Pear-Halo Necklace & Earring Set (925 Silver)",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/mushin/jewellery-and-watches/vvs1-moissanite-pear-halo-necklace-earring-set-925-silver-C5gfKGf2zQpPq9mhGbaCyuzX.html",
-    "user_id": 1049
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 3,
-    "details": "",
-    "guid": "cNJ5EVkMN29zLrMExxmEahyw",
-    "id": 56015930,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210356408_MzAwLTM4Mi0wMmMzZWVlNDVm.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210356408_MzAwLTM4Mi0wMmMzZWVlNDVm.webp",
-      "center": null,
-      "size": [
-       300,
-       382
-      ]
-     }
-    ],
-    "images_count": 3,
-    "is_boost": "vip_gold",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "age",
-      "value": "3+ years on Jiji"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "vip_gold",
-     "border": "",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 165000,
-     "view": "₦ 165,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 165,000",
-    "region": "Lagos State • Amuwo-Odofin",
-    "region_id": 125,
-    "region_item_text": "Lagos, Amuwo-Odofin",
-    "region_name": "Amuwo-Odofin",
-    "region_parent_name": "Lagos State",
-    "region_slug": "amuwo-odofin",
-    "short_description": "",
-    "slug": "ladies-sets",
-    "status": "active",
-    "title": "Ladies Sets",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-cNJ5EVkMN29zLrMExxmEahyw.html",
-    "user_id": 1055
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Unisex",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 2,
-    "details": "",
-    "guid": "5JtJwuKIgJImapcqeaIaGUAa",
-    "id": 56015873,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210356381_MzAwLTMwMC02NjkzZTdlNTE1.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210356381_MzAwLTMwMC02NjkzZTdlNTE1.webp",
-      "center": null,
-      "size": [
-       300,
-       300
-      ]
-     }
-    ],
-    "images_count": 2,
-    "is_boost": "enterprise",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "id_verify",
-      "value": "Verified ID"
-     },
-     {
-      "type": "age",
-      "value": "5+ years on Jiji"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "enterprise",
-     "border": "",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 11000,
-     "view": "₦ 11,000",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 11,000",
-    "region": "Lagos State • Lagos Island (Eko)",
-    "region_id": 158,
-    "region_item_text": "Lagos, Lagos Island (Eko)",
-    "region_name": "Lagos Island (Eko)",
-    "region_parent_name": "Lagos State",
-    "region_slug": "lagos-island-eko",
-    "short_description": "",
-    "slug": "3in1-gift-box-set",
-    "status": "active",
-    "title": "3in1 Gift Box Set",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/lagos-island-west/jewellery-and-watches/3in1-gift-box-set-5JtJwuKIgJImapcqeaIaGUAa.html",
-    "user_id": 1056,
-    "seller": {
-     "user_name": "Seller 1056",
-     "user_avatar_url": "",
-     "user_rating": 4.8
-    }
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 3,
-    "details": "",
-    "guid": "mhIIHKXNjh3flTUHxuRiJ7aE",
-    "id": 56015885,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210356163_MzAwLTQwOS0wMmY3MDAwY2Yy.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210356163_MzAwLTQwOS0wMmY3MDAwY2Yy.webp",
-      "center": null,
-      "size": [
-       300,
-       409
-      ]
-     }
-    ],
-    "images_count": 3,
-    "is_boost": "vip_gold",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "age",
-      "value": "3+ years on Jiji"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "vip_gold",
-     "border": "",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 87500,
-     "view": "₦ 87,500",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 87,500",
-    "region": "Lagos State • Amuwo-Odofin",
-    "region_id": 125,
-    "region_item_text": "Lagos, Amuwo-Odofin",
-    "region_name": "Amuwo-Odofin",
-    "region_parent_name": "Lagos State",
-    "region_slug": "amuwo-odofin",
-    "short_description": "",
-    "slug": "ladies-sets",
-    "status": "active",
-    "title": "Ladies Sets",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-mhIIHKXNjh3flTUHxuRiJ7aE.html",
-    "user_id": 1055
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 5,
-    "details": "",
-    "guid": "z4CQRZ2Eahn9TKu6uqAphDPL",
-    "id": 56015832,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210355870_MzAwLTQwNS0wNWE5OWJjMTQ1.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210355870_MzAwLTQwNS0wNWE5OWJjMTQ1.webp",
-      "center": null,
-      "size": [
-       300,
-       405
-      ]
-     }
-    ],
-    "images_count": 5,
-    "is_boost": "vip_gold",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "age",
-      "value": "3+ years on Jiji"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "vip_gold",
-     "border": "",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 48500,
-     "view": "₦ 48,500",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 48,500",
-    "region": "Lagos State • Amuwo-Odofin",
-    "region_id": 125,
-    "region_item_text": "Lagos, Amuwo-Odofin",
-    "region_name": "Amuwo-Odofin",
-    "region_parent_name": "Lagos State",
-    "region_slug": "amuwo-odofin",
-    "short_description": "",
-    "slug": "ladies-sets",
-    "status": "active",
-    "title": "Ladies Sets",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-z4CQRZ2Eahn9TKu6uqAphDPL.html",
-    "user_id": 1055
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 4,
-    "details": "",
-    "guid": "CjQHMQGDMQJ4x15nx4o5tSMf",
-    "id": 56015765,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210355506_MzAwLTM4NC04ZjFiZGI3YTkz.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210355506_MzAwLTM4NC04ZjFiZGI3YTkz.webp",
-      "center": null,
-      "size": [
-       300,
-       384
-      ]
-     }
-    ],
-    "images_count": 4,
-    "is_boost": "vip_gold",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "age",
-      "value": "3+ years on Jiji"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "vip_gold",
-     "border": "",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 68500,
-     "view": "₦ 68,500",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 68,500",
-    "region": "Lagos State • Amuwo-Odofin",
-    "region_id": 125,
-    "region_item_text": "Lagos, Amuwo-Odofin",
-    "region_name": "Amuwo-Odofin",
-    "region_parent_name": "Lagos State",
-    "region_slug": "amuwo-odofin",
-    "short_description": "",
-    "slug": "ladies-sets",
-    "status": "active",
-    "title": "Ladies Sets",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-CjQHMQGDMQJ4x15nx4o5tSMf.html",
-    "user_id": 1055
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 4,
-    "details": "",
-    "guid": "tvQGJDqQOtQHJhvNvE40iPer",
-    "id": 56015699,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210355273_MzAwLTM3Ni05ZjliMGNjYTFj.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210355273_MzAwLTM3Ni05ZjliMGNjYTFj.webp",
-      "center": null,
-      "size": [
-       300,
-       376
-      ]
-     }
-    ],
-    "images_count": 4,
-    "is_boost": "vip_gold",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "age",
-      "value": "3+ years on Jiji"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "vip_gold",
-     "border": "",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 135500,
-     "view": "₦ 135,500",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 135,500",
-    "region": "Lagos State • Amuwo-Odofin",
-    "region_id": 125,
-    "region_item_text": "Lagos, Amuwo-Odofin",
-    "region_name": "Amuwo-Odofin",
-    "region_parent_name": "Lagos State",
-    "region_slug": "amuwo-odofin",
-    "short_description": "",
-    "slug": "ladies-sets",
-    "status": "active",
-    "title": "Ladies Sets",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-tvQGJDqQOtQHJhvNvE40iPer.html",
-    "user_id": 1055
-   },
-   {
-    "admin_info": {},
-    "as_top": false,
-    "attrs": [
-     {
-      "name": "Gender",
-      "value": "Women's",
-      "unit": null
-     }
-    ],
-    "badge_info": {},
-    "category_id": 26,
-    "category_name": "Jewelry",
-    "category_slug": "jewellery-and-watches",
-    "count_images": 6,
-    "details": "",
-    "guid": "hxAIz6i5jFyEARFN589P98C8",
-    "id": 56015045,
-    "image_obj": {
-     "url": "https://pictures-nigeria.jijistatic.net/210352159_MzAwLTQwMC00MDY0ODVhYTRl.webp",
-     "center": null
-    },
-    "images": [
-     {
-      "url": "https://pictures-nigeria.jijistatic.net/210352159_MzAwLTQwMC00MDY0ODVhYTRl.webp",
-      "center": null,
-      "size": [
-       300,
-       400
-      ]
-     }
-    ],
-    "images_count": 6,
-    "is_boost": "vip_gold",
-    "is_cv": false,
-    "is_inspected": false,
-    "is_job": false,
-    "is_owner": false,
-    "is_top": false,
-    "labels": [
-     {
-      "type": "age",
-      "value": "3+ years on Jiji"
-     }
-    ],
-    "message_url": "",
-    "paid_info": {
-     "text": "Promoted",
-     "package_type": "vip_gold",
-     "border": "",
-     "icon": true,
-     "more_photos": false
-    },
-    "price_obj": {
-     "value": 14500,
-     "view": "₦ 14,500",
-     "period": null,
-     "bulk": null,
-     "type": null
-    },
-    "price_title": "₦ 14,500",
-    "region": "Lagos State • Amuwo-Odofin",
-    "region_id": 125,
-    "region_item_text": "Lagos, Amuwo-Odofin",
-    "region_name": "Amuwo-Odofin",
-    "region_parent_name": "Lagos State",
-    "region_slug": "amuwo-odofin",
-    "short_description": "",
-    "slug": "ladies-sets",
-    "status": "active",
-    "title": "Ladies Sets",
-    "title_labels": [],
-    "tops_count": 0,
-    "url": "/amuwo-odofin/jewellery-and-watches/ladies-sets-hxAIz6i5jFyEARFN589P98C8.html",
-    "user_id": 1055
-   }
-  ],
-  "per_page": 20,
-  "total_pages": 251,
-  "tops_exist": true,
-  "in_day_count": 70,
-  "in_hour_count": 1
- },
- "next_url": "https://jiji.ng/api_web/v1/listing?slug=jewellery-and-watches&sort=new&webp=true&page=2&lsmid=1794495576160",
- "status": "ok"
+    "per_page": 20,
+    "total_pages": 251,
+    "tops_exist": true,
+    "in_day_count": 70,
+    "in_hour_count": 1
+  },
+  "next_url": "https://jiji.ng/api_web/v1/listing?slug=jewellery-and-watches&sort=new&webp=true&page=2&lsmid=1794495576160",
+  "status": "ok"
 }

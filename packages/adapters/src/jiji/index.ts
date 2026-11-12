@@ -3,28 +3,10 @@
  * docs/sources/jiji.md.
  */
 import type { JsonValue, ProductRef, SourceAdapter } from '../types.js';
-import { JIJI_MAX_PAGES, lastPage, parseJiji } from './parse.js';
+import { CATEGORIES } from './categories.js';
+import { JIJI_MAX_PAGES, lastPage, parseJiji, parseJijiSearch } from './parse.js';
 
-/**
- * Categories to sweep, women's fashion and beauty first (03 §3.4, 13 §13.8), with the
- * breadcrumb Jiji shows above them. Counts on 2026-11-12: ~6,000 pages, ~120,000 ads;
- * Jiji serves 1,000 pages (20,000 ads) per category at most, newest first.
- * Vehicles and property: never.
- */
-export const CATEGORIES: readonly { slug: string; path: readonly string[] }[] = [
-  { slug: 'clothing', path: ['Fashion', "Women's Fashion", "Women's Clothing"] },
-  { slug: 'shoes', path: ['Fashion', "Women's Fashion", "Women's Shoes"] },
-  { slug: 'bags', path: ['Fashion', "Women's Fashion", "Women's Bags"] },
-  { slug: 'accessories', path: ['Fashion', "Women's Fashion", 'Clothing Accessories'] },
-  { slug: 'wedding-wear', path: ['Fashion', "Women's Fashion", 'Wedding Wear & Accessories'] },
-  { slug: 'jewellery-and-watches', path: ['Fashion', 'Jewelry'] },
-  { slug: 'watches', path: ['Fashion', 'Watches'] },
-  { slug: 'hair-beauty', path: ['Beauty & Personal Care', 'Hair'] },
-  { slug: 'makeup', path: ['Beauty & Personal Care', 'Make-Up'] },
-  { slug: 'skin-care', path: ['Beauty & Personal Care', 'Skin Care'] },
-  { slug: 'fragrance', path: ['Beauty & Personal Care', 'Fragrance'] },
-  { slug: 'bath-body', path: ['Beauty & Personal Care', 'Body Care'] },
-];
+export { CATEGORIES } from './categories.js';
 
 /** The listing API the category pages call; robots.txt allows it for every agent. */
 export function listingUrl(origin: string, slug: string, page: number): string {
@@ -34,6 +16,14 @@ export function listingUrl(origin: string, slug: string, page: number): string {
   url.searchParams.set('sort', 'new');
   url.searchParams.set('webp', 'true');
   if (page > 1) url.searchParams.set('page', String(page));
+  return url.toString();
+}
+
+/** Jiji's own search, through the same listing API (robots.txt allows `query` for all agents). */
+export function searchUrl(origin: string, query: string): string {
+  const url = new URL('/api_web/v1/listing', origin);
+  url.searchParams.set('query', query);
+  url.searchParams.set('webp', 'true');
   return url.toString();
 }
 
@@ -72,4 +62,22 @@ export const jijiAdapter: SourceAdapter = {
   },
 
   parse: parseJiji,
+
+  /**
+   * Query-time search for low-confidence results (03 §3.6): one request, Jiji's relevance
+   * order, only ads in categories we sweep. The caller caps calls and caches results.
+   */
+  async liveSearch(ctx, store, query, limit) {
+    const url = searchUrl(`https://${store.domain}`, query);
+    const res = await ctx.http.get(url, { accept: 'json', signal: ctx.signal });
+    const body = JSON.parse(res.body) as JsonValue;
+    const raw = {
+      ref: { kind: 'page' as const, url },
+      url: res.url,
+      fetchedAt: new Date().toISOString(),
+      format: 'json' as const,
+      body,
+    };
+    return parseJijiSearch(raw).slice(0, limit);
+  },
 };
