@@ -120,25 +120,5 @@ export async function applyDecision(tx: Tx, l: MatchListing, decision: MatchDeci
   return productId;
 }
 
-/**
- * Denormalised price range and listing count (04 §4.2), over in-stock listings; the image
- * comes from the first listing that has one. An emptied product keeps its row.
- */
-export async function refreshProduct(db: Db, productId: string): Promise<void> {
-  await db.execute(sql`
-    update ${canonicalProducts} p set
-      min_price_kobo = agg.min_price,
-      max_price_kobo = agg.max_price,
-      listing_count = agg.n,
-      rep_image_url = coalesce(p.rep_image_url, agg.image),
-      updated_at = now()
-    from (
-      select
-        min(price_kobo) filter (where in_stock) as min_price,
-        max(coalesce(price_max_kobo, price_kobo)) filter (where in_stock) as max_price,
-        count(*)::int as n,
-        (array_agg(image_url order by first_seen_at) filter (where image_url is not null))[1] as image
-      from ${listings} where canonical_product_id = ${productId}
-    ) agg
-    where p.id = ${productId}`);
-}
+/** Kept here for callers that already import it from this module. */
+export { refreshCanonicalProduct as refreshProduct } from '@cheapa/db/catalog';

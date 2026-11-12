@@ -115,20 +115,21 @@ Motion: spinner and the lime scan line on Searching are the only looping animati
 | # | Screen | Design file | Expo route | Notes |
 | --- | --- | --- | --- | --- |
 | 01 | Welcome | `Welcome.dc.html` | `/onboarding` (step 1) | Dark ink screen; accent default lime |
-| 02 | Share from any app | `Onboarding2.dc.html` | `/onboarding` (step 2) | Mock post + share sheet illustration |
-| 03 | Your city | `Onboarding3.dc.html` | `/onboarding` (step 3) | Single-select city grid, CTA text includes city |
-| 04 | Home | `Home.dc.html` | `/` | Greeting, delivery city, Snap hero, text search, Recent, Real price drops |
-| 05 | Camera | `Camera.dc.html` | `/camera` | Product / Screenshot mode, lime corner frame, shutter = search |
-| 06 | Searching | `Searching.dc.html` | `/search/[requestId]` (loading state) | Detected product + store checklist + running cheapest |
-| 07 | Results | `Results.dc.html` | `/search/[requestId]` | Detected card, price summary, All/New/Used filter, listings, watch CTA, disclosure |
-| 08 | Confirm variant | `Confirm.dc.html` | sheet on `/search/[requestId]` | Shown when `needsConfirmation` is returned |
-| 09 | Product | `Product.dc.html` | `/product/[slug]` | Deal-check banner, price chart, store table, Buy + Watch bar |
-| 10 | Watch price | `WatchSheet.dc.html` | sheet on `/product/[slug]` | Target stepper, −5/−10/−15/Any, channel toggles, plan limit |
-| 11 | Watches | `Watches.dc.html` | `/watches` | Target-hit banner, watch cards with progress |
-| 12 | History | `History.dc.html` | `/history` | Grouped by day, source icon, privacy note |
-| 13 | Not found yet | `NotFound.dc.html` | `/search/[requestId]` (empty state) | Retype query, "where did you see it", notify-me |
-| 14 | Profile & settings | `Profile.dc.html` | `/settings` | Premium upsell, toggles, privacy, money disclosure, sign out |
-| 15 | Sign in | `SignIn.dc.html` | `/sign-in` (modal) | Phone (+234) OTP first, Google second, "Not now" |
+| 02 | Share from any app | `Onboarding2.dc.html` | `/onboarding` (step 2, last) | Mock post + share sheet illustration; CTA "Get started" goes Home |
+| 03 | Home | `Home.dc.html` | `/` | Greeting, Snap hero, text search, Recent, Real price drops |
+| 04 | Camera | `Camera.dc.html` | `/camera` | Product / Screenshot mode, lime corner frame, shutter = search |
+| 05 | Searching | `Searching.dc.html` | `/search/[requestId]` (loading state) | Detected product + store checklist + running cheapest |
+| 06 | Results | `Results.dc.html` | `/search/[requestId]` | Detected card, price summary, All/New/Used filter, listings, watch CTA, disclosure |
+| 07 | Confirm variant | `Confirm.dc.html` | sheet on `/search/[requestId]` | Shown when `needsConfirmation` is returned |
+| 08 | Product | `Product.dc.html` | `/product/[slug]` | Deal-check banner, price chart, store table, Buy + Watch bar |
+| 09 | Watch price | `WatchSheet.dc.html` | sheet on `/product/[slug]` | Target stepper, −5/−10/−15/Any, channel toggles, plan limit |
+| 10 | Watches | `Watches.dc.html` | `/watches` | Target-hit banner, watch cards with progress |
+| 11 | History | `History.dc.html` | `/history` | Grouped by day, source icon, privacy note |
+| 12 | Not found yet | `NotFound.dc.html` | `/search/[requestId]` (empty state) | Retype query, "where did you see it", notify-me |
+| 13 | Profile & settings | `Profile.dc.html` | `/settings` | Premium upsell, toggles, privacy, money disclosure, sign out |
+| 14 | Sign in | `SignIn.dc.html` | `/sign-in` (modal) | Phone (+234) OTP first, Google second, "Not now" |
+
+No delivery city or address anywhere: Cheapa sends shoppers to the store and never delivers (owner decision 2026-11-12).
 
 Tab bar order: Home · Watches · [Snap] · History · Me. The route list in `06-mobile-app.md` §6.1 follows this map (`/history` added).
 

@@ -50,7 +50,7 @@ Catalog references (`productId`, `listingId`, `storeId`) are plain `uuid` column
 
 ```ts
 users: id (uuid), clerkId (unique), email (nullable), phone (nullable, E.164),
-  city (nullable), whatsappOptIn (bool, default false), plan ('free'|'premium'),
+  whatsappOptIn (bool, default false), plan ('free'|'premium'),
   role ('user'|'admin'), createdAt, updatedAt
 
 devices: id (uuid), anonId (uuid, unique), userId (nullable -> users, on delete set null),
@@ -95,7 +95,7 @@ Endpoints (all zod-validated):
 
 | Method + path | Auth | Purpose |
 | --- | --- | --- |
-| `GET /me` · `PATCH /me` | user | Profile, city, WhatsApp opt-in |
+| `GET /me` · `PATCH /me` | user | Profile, WhatsApp opt-in |
 | `DELETE /me` | user | Delete account and data (8.10) |
 | `POST /me/link-device` | user + device | Merge anonymous history |
 | `POST /me/push-tokens` · `DELETE /me/push-tokens/:token` | user | Register / remove Expo push token |

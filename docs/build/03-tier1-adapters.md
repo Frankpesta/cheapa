@@ -86,7 +86,7 @@ Jiji is different: user ads, mixed new and used, haggle prices, many duplicates.
 
 What to investigate:
 - Listing API used by category and search pages (JSON with ad id, title, price, region, condition, images).
-- Region/location fields (important: show buyer's city first).
+- Region/location fields: stored as a store fact and shown on the listing row ("Lagos, Ikeja"). No buyer-location sorting: Cheapa doesn't collect a city (owner decision 2026-11-12).
 
 Special handling:
 - `condition` from the ad ("Brand New", "Foreign Used" = `uk_used`, "Local Used" = `used`).

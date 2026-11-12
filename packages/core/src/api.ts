@@ -161,7 +161,6 @@ export type PriceHistoryResponse = z.infer<typeof PriceHistoryResponse>;
 export const MeUser = z.object({
   id: z.uuid(),
   email: z.string().nullable(),
-  city: z.string().nullable(),
   whatsappOptIn: z.boolean(),
   plan: z.enum(['free', 'premium']),
   role: z.enum(['user', 'admin']),
@@ -193,3 +192,67 @@ export const PLATFORM_HEADER = 'x-cheapa-platform';
 /** Optional: app version string, recorded on the device row. */
 export const APP_VERSION_HEADER = 'x-cheapa-app-version';
 export const REQUEST_ID_HEADER = 'x-request-id';
+
+// ---------------------------------------------------------------------------
+// Admin: match review queue (04 §4.4)
+// ---------------------------------------------------------------------------
+
+/** The listing under review, as the store shows it. */
+export const ReviewListing = z.object({
+  listingId: z.uuid(),
+  title: z.string(),
+  brand: z.string().nullable(),
+  department: Department,
+  category: z.string().nullable(),
+  condition: Condition,
+  variant: Variant,
+  priceKobo: Kobo,
+  imageUrl: z.string().nullable(),
+  storeName: z.string(),
+  /** The store's page, so the reviewer can check the real item. */
+  sourceUrl: z.string(),
+});
+
+/** The canonical product the matcher attached it to provisionally. */
+export const ReviewCandidate = z.object({
+  productId: z.uuid(),
+  slug: z.string(),
+  title: z.string(),
+  brand: z.string().nullable(),
+  department: Department,
+  category: z.string().nullable(),
+  variant: Variant,
+  repImageUrl: z.string().nullable(),
+  listingCount: z.number().int().nonnegative(),
+  minPriceKobo: Kobo.nullable(),
+});
+
+export const ReviewItem = z.object({
+  reviewId: z.uuid(),
+  score: z.number(),
+  createdAt: z.iso.datetime(),
+  listing: ReviewListing,
+  candidate: ReviewCandidate,
+});
+export type ReviewItem = z.infer<typeof ReviewItem>;
+
+export const ReviewQueueQuery = z.object({ limit: z.coerce.number().int().min(1).max(100).default(20) });
+
+export const ReviewQueueResponse = z.object({
+  items: z.array(ReviewItem),
+  /** All undecided reviews, not just this page. */
+  pending: z.number().int().nonnegative(),
+});
+export type ReviewQueueResponse = z.infer<typeof ReviewQueueResponse>;
+
+/** Merge: same product. Split: a different product. Skip: decide later. */
+export const ReviewDecisionRequest = z.object({ decision: z.enum(['merge', 'split', 'skip']) });
+export type ReviewDecisionRequest = z.infer<typeof ReviewDecisionRequest>;
+
+export const ReviewDecisionResponse = z.object({
+  reviewId: z.uuid(),
+  decision: z.enum(['merge', 'split', 'skip']),
+  /** The product the listing belongs to after the decision. */
+  productId: z.uuid(),
+});
+export type ReviewDecisionResponse = z.infer<typeof ReviewDecisionResponse>;

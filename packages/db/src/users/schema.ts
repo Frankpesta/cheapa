@@ -28,7 +28,6 @@ export const users = pgTable(
     email: text('email'),
     /** E.164 (+234...). Collected only with explicit opt-in (11-compliance-and-ops.md 11.2). */
     phone: text('phone'),
-    city: text('city'),
     whatsappOptIn: boolean('whatsapp_opt_in').notNull().default(false),
     plan: plan('plan').notNull().default('free'),
     role: userRole('role').notNull().default('user'),

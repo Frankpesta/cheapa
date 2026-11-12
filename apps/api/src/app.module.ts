@@ -7,6 +7,7 @@ import { ConfigModule } from './config/config.module.js';
 import type { ApiEnv } from './config/env.js';
 import { DatabaseModule } from './infra/database.module.js';
 import { RedisModule } from './infra/redis.module.js';
+import { AdminModule } from './modules/admin/admin.module.js';
 import { AnalyticsModule } from './modules/analytics/analytics.module.js';
 import { AuthModule } from './modules/auth/auth.module.js';
 import { HealthModule } from './modules/health/health.module.js';
@@ -34,6 +35,7 @@ export class AppModule {
         SearchModule,
         ProductsModule,
         UsersModule,
+        AdminModule,
         ...extraModules,
       ],
       // Reports unexpected (5xx) errors to Sentry; HttpExceptions pass through untouched.

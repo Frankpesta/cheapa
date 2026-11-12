@@ -1,6 +1,6 @@
 import { and, asc, cosineDistance, eq, gte, sql } from 'drizzle-orm';
 import type { CatalogDb } from './client.js';
-import { listingEmbeddings, listings } from './schema.js';
+import { canonicalProducts, listingEmbeddings, listings } from './schema.js';
 
 export interface NearestListing {
   listingId: string;
@@ -37,4 +37,31 @@ export async function nearestByImage(
       .limit(options.limit ?? 60);
     return rows.map(({ distance: d, ...row }) => ({ ...row, similarity: 1 - d }));
   });
+}
+
+/**
+ * Denormalised price range and listing count (04 §4.2), over in-stock listings; the image
+ * comes from the first listing that has one. An emptied product keeps its row. Runs on
+ * the connection or inside a transaction (worker match job, API review decisions).
+ */
+export async function refreshCanonicalProduct(
+  db: Pick<CatalogDb, 'execute'>,
+  productId: string,
+): Promise<void> {
+  await db.execute(sql`
+    update ${canonicalProducts} p set
+      min_price_kobo = agg.min_price,
+      max_price_kobo = agg.max_price,
+      listing_count = agg.n,
+      rep_image_url = coalesce(p.rep_image_url, agg.image),
+      updated_at = now()
+    from (
+      select
+        min(price_kobo) filter (where in_stock) as min_price,
+        max(coalesce(price_max_kobo, price_kobo)) filter (where in_stock) as max_price,
+        count(*)::int as n,
+        (array_agg(image_url order by first_seen_at) filter (where image_url is not null))[1] as image
+      from ${listings} where canonical_product_id = ${productId}
+    ) agg
+    where p.id = ${productId}`);
 }

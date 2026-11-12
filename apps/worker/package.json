@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests",
-    "crawl:report": "tsx --conditions=@cheapa/source --env-file-if-exists=../../.env src/scripts/crawl-report.ts"
+    "crawl:report": "tsx --conditions=@cheapa/source --env-file-if-exists=../../.env src/scripts/crawl-report.ts",
+    "export:pairs": "tsx --conditions=@cheapa/source --env-file-if-exists=../../.env src/scripts/export-pairs.ts"
   },
   "dependencies": {
     "@cheapa/adapters": "workspace:*",

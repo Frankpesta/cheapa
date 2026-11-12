@@ -19,7 +19,6 @@ export class UsersController {
       user: user && {
         id: user.id,
         email: user.email,
-        city: user.city,
         whatsappOptIn: user.whatsappOptIn,
         plan: user.plan,
         role: user.role,

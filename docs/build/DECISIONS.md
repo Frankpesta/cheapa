@@ -42,6 +42,8 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-12 | Until image embeddings exist (phase 05), clothing, shoes, bags and hair merge only on exact keys (GTIN, brand + model number, phash); beauty and electronics merge on title-token similarity + attributes | 13 §13.4: a wrong fashion merge is worse than a missed one, and text alone can't tell two satin dresses apart. Lookalikes (phase 05) cover the gap |
 | 2026-11-12 | Electronics: same brand + model + storage is an exact key (`brand_model`) | 04 §4.2 defines the canonical product that way; title tokens alone left identical phones in review |
 | 2026-11-12 | Matcher candidates = exact-key products + top 20 same-category titles by pg_trgm similarity; matching serialised per department+category with a transaction advisory lock | Vectors replace the title retrieval in phase 05; the lock stops two concurrent jobs founding the same product twice |
+| 2026-11-12 | No delivery city or address anywhere (onboarding step 3, Home "Delivering to" line, Profile row and `users.city` removed) | Owner: Cheapa never delivers; shoppers buy from the store. Listing regions (Jiji "Lagos, Ikeja") stay as store facts on the row |
+| 2026-11-12 | Review queue ships as an admin API now (`GET/POST /admin/reviews`, `@Roles('admin')`); the `/admin/review` page comes with the web app (phase 07) | `apps/web` isn't scaffolded yet; the API and `pnpm export:pairs` (decisions -> `scripts/data/pairs-labelled.jsonl`) are what tuning needs. The page has no design: compose from DESIGN.md components and flag for review |
 
 ## Deferred
 
