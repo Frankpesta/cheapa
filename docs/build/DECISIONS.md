@@ -31,6 +31,9 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-12 | `gen:adapter` never registers the adapter; a guard test fails any adapter folder without fixtures | A half-built adapter must not reach the scheduler; rule 5 enforced by the build, not by memory |
 | 2026-11-12 | Jumia: parse the embedded `window.__STORE__` JSON on category pages, not the HTML cards; no `liveSearch` | The JSON carries SKU, brand, category path, per-size price and stock. robots.txt disallows site search (`/*q=`), so 03 §3.6's Jumia live search is not allowed |
 | 2026-11-12 | A multi-size price counts only sizes still in stock (`from` when they differ) | A "From ₦X" whose cheapest size sold out is not a price anyone can pay (13 §13.2) |
+| 2026-11-12 | Konga is blocked: partnership track, no adapter | Cloudflare answers CheapaBot with 403 "you have been blocked", even on robots.txt. Rule 3: no other UA, browser, proxy or search-backend route around it (docs/sources/konga.md) |
+| 2026-11-12 | Jiji via its listing API (`/api_web/v1/listing`), `sort=new`, ≤1,000 pages per category | robots.txt allows it; JSON is ~40 KB a page. Jiji serves only 1,000 pages, so newest-first gives each sweep a stable window of the freshest 20,000 ads per category |
+| 2026-11-12 | Jiji fixtures are anonymised (seller names, user ids, free text) | Private sellers; descriptions can carry phone numbers. Ad facts stay verbatim |
 
 ## Deferred
 

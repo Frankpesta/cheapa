@@ -82,12 +82,16 @@ export function extractAudience(title: string, categoryPath: readonly string[]):
   return undefined;
 }
 
-const INCHES = /(?<![\d.])(\d{1,2}(?:\.\d)?)\s*(?:"|”|''|inch(?:es)?\b|in\b)/i;
+/** 20", 20 inches, 20-Inch, 20in. */
+const INCHES = /(?<![\d.])(\d{1,2}(?:\.\d)?)\s*(?:"|”|''|-?\s*inch(?:es)?\b|in\b)/i;
 const INCHES_ALL = new RegExp(INCHES.source, 'gi');
 
-/** "13 x 4" -> "13x4", "HD lace" -> "HD", "transparent lace" -> "transparent", "t part" -> "T-part". */
+/** "13 x 4" / "13by4" -> "13x4", "HD lace" / "Hdlace" -> "HD", "transparent lace" -> "transparent", "t part" -> "T-part". */
 function laceLabel(raw: string): string {
-  const compact = raw.toLowerCase().replace(/[\s-]+/g, '');
+  const compact = raw
+    .toLowerCase()
+    .replace(/[\s-]+/g, '')
+    .replace(/^(\d+)by(\d+)$/, '$1x$2');
   if (/^\d+x\d+$|^360$/.test(compact)) return compact;
   if (compact === 'hdlace') return 'HD';
   if (compact === 'transparentlace') return 'transparent';
@@ -105,7 +109,7 @@ function extractHair(title: string): HairSpec | undefined {
   const density = /\b(1[2-9]0|2\d0|300)\s*%/.exec(title);
   if (density) spec.densityPct = Number(density[1]);
   const lace =
-    /\b(13\s*x\s*[46]|[2456]\s*x\s*[456]|360|full lace|hd lace|transparent lace|t[- ]?part|headband)\b/i.exec(
+    /\b(13\s*(?:x|by)\s*[46]|[2456]\s*(?:x|by)\s*[456]|360|full lace|hd ?lace|transparent lace|t[- ]?part|headband)\b/i.exec(
       title,
     );
   if (lace) spec.lace = laceLabel(lace[1]!);

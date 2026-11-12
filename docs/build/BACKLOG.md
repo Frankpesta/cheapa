@@ -15,3 +15,6 @@ TODOs allowed in shipped paths must be logged here with file path and reason.
 | 2026-11-12 | `apps/worker/src/jobs/process.ts` | Enqueue `match` for new/changed listings | Matcher lands in phase 04 §4.3 |
 | 2026-11-12 | ops (11.3) | Sentry issue alerts routed to the Telegram ops chat (Sentry → Alerts → Telegram/webhook integration) | Needs the Sentry org, which the owner hasn't created yet |
 | 2026-11-12 | `apps/worker/src/crawl/report.ts` | Admin page with the crawl report table | 02 §2.5 "admin page later"; `pnpm crawl:report` prints it for now |
+| 2026-11-12 | Konga (03 §3.3) | Ask Konga for a product feed or an allow-listed crawler; then run discovery and `pnpm gen:adapter konga` | Blocked by Cloudflare; partnership only (docs/sources/konga.md) |
+| 2026-11-12 | `packages/adapters/src/jiji/parse.ts` | Cross-page / cross-day repost dedupe: add the image phash to `attributes.repostKey` and collapse same-key listings in search | Needs phash from phase 05; same-page reposts already collapse |
+| 2026-11-12 | `packages/adapters/src/jiji/` | `liveSearch` for Jiji: verify whether the listing API takes a query | 03 §3.6 makes Jiji optional; Jumia search is robots-disallowed and Konga is blocked, so this is the only live-search candidate among tier 1 |

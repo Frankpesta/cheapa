@@ -1,0 +1,334 @@
+{
+ "_comment": "DERIVED, not a capture: ads 1-2 of clothing-p1.json, plus a repost of ad 1 by the same seller (new id, same title and price) and a copy of ad 2 with no price.",
+ "adverts_list": {
+  "mode_default": "gallery",
+  "count": 30935,
+  "adverts": [
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "M",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "54CjMWtS6DQKLIT5IqOxPxaG",
+    "id": 56019439,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210372588_MzAwLTQwMC1kMmUwZmFiN2Yw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210372588_MzAwLTQwMC1kMmUwZmFiN2Yw.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 10000,
+     "view": "₦ 10,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 10,000",
+    "region": "Abia State • Umuahia",
+    "region_id": 233,
+    "region_item_text": "Abia, Umuahia",
+    "region_name": "Umuahia",
+    "region_parent_name": "Abia State",
+    "region_slug": "umuahia",
+    "short_description": "",
+    "slug": "lily-fashion",
+    "status": "active",
+    "title": "Lily Fashion",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/umuahia/clothing/lily-fashion-54CjMWtS6DQKLIT5IqOxPxaG.html",
+    "user_id": 1000
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Men's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "M, L, XL, XXL, 3XL, 4XL, 5XL, 6XL, 7XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "rUWz6JnZHH6U2FiLN8sZ53yM",
+    "id": 56020152,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210375272_MzAwLTMwMC05NDAxYWYzNWRk.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210375272_MzAwLTMwMC05NDAxYWYzNWRk.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 45000,
+     "view": "₦ 45,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 45,000",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "brown-premium-senator-outfit-for-men",
+    "status": "active",
+    "title": "Brown Premium Senator Outfit for Men",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/clothing/brown-premium-senator-outfit-for-men-rUWz6JnZHH6U2FiLN8sZ53yM.html",
+    "user_id": 1001
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "M",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "54CjMWtS6DQKLIT5IqOxPxaGR",
+    "id": 56919439,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210372588_MzAwLTQwMC1kMmUwZmFiN2Yw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210372588_MzAwLTQwMC1kMmUwZmFiN2Yw.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 10000,
+     "view": "₦ 10,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 10,000",
+    "region": "Abia State • Umuahia",
+    "region_id": 233,
+    "region_item_text": "Abia, Umuahia",
+    "region_name": "Umuahia",
+    "region_parent_name": "Abia State",
+    "region_slug": "umuahia",
+    "short_description": "",
+    "slug": "lily-fashion",
+    "status": "active",
+    "title": "Lily Fashion",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/umuahia/clothing/lily-fashion-54CjMWtS6DQKLIT5IqOxPxaGR.html",
+    "user_id": 1000
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Men's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "M, L, XL, XXL, 3XL, 4XL, 5XL, 6XL, 7XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "rUWz6JnZHH6U2FiLN8sZ53yM",
+    "id": 56920152,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210375272_MzAwLTMwMC05NDAxYWYzNWRk.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210375272_MzAwLTMwMC05NDAxYWYzNWRk.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": null,
+     "view": "Contact for price",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "Contact for price",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "brown-premium-senator-outfit-for-men",
+    "status": "active",
+    "title": "Brown Premium Senator Outfit for Men",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/clothing/brown-premium-senator-outfit-for-men-rUWz6JnZHH6U2FiLN8sZ53yM.html",
+    "user_id": 1001
+   }
+  ],
+  "per_page": 20,
+  "total_pages": 1547,
+  "tops_exist": true,
+  "in_day_count": 292,
+  "in_hour_count": 10
+ },
+ "next_url": "https://jiji.ng/api_web/v1/listing?slug=clothing&sort=new&webp=true&page=2&lsmid=1794495568768",
+ "status": "ok"
+}
