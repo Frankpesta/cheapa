@@ -15,6 +15,13 @@
       "when": 1793564338006,
       "tag": "0001_price_history_partitioned",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794488488248,
+      "tag": "0002_crawl_job_progress",
+      "breakpoints": true
     }
   ]
 }

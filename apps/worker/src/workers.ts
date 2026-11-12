@@ -4,6 +4,7 @@ import type { Redis } from 'ioredis';
 import { CrawlOutcome, type WorkerDeps } from './jobs/deps.js';
 import { runDiscover } from './jobs/discover.js';
 import { runFetch } from './jobs/fetch.js';
+import { fetchFinished } from './jobs/health.js';
 import { runProcess } from './jobs/process.js';
 import { runPartitions, runTick } from './jobs/tick.js';
 import {
@@ -49,7 +50,15 @@ export function startWorkers(
       1,
     ),
     make<DiscoverJob>(QUEUES.discover, (job) => runDiscover(deps, job), concurrency.discover),
-    make<FetchJob>(QUEUES.fetch, (job) => runFetch(deps, job), concurrency.fetch),
+    make<FetchJob>(
+      QUEUES.fetch,
+      async (job) => {
+        const result = await runFetch(deps, job);
+        await fetchFinished(deps, job.data.crawlJobId, false);
+        return result;
+      },
+      concurrency.fetch,
+    ),
     make<ProcessJob>(QUEUES.process, (job) => runProcess(deps, job), concurrency.process),
   ];
 }
@@ -70,7 +79,17 @@ export async function upsertSchedules(queues: Queues): Promise<void> {
  */
 export function reportFailure(deps: WorkerDeps, queue: string, job: Job | undefined, err: Error): void {
   const storeId = (job?.data as { storeId?: string } | undefined)?.storeId;
-  const final = err instanceof CrawlOutcome || !job || job.attemptsMade >= (job.opts.attempts ?? 1);
+  const final = isFinalFailure(job, err);
+  // A fetch that failed for good still counts toward its run's completion and error rate.
+  if (final && queue === QUEUES.fetch && job) {
+    const { crawlJobId } = job.data as { crawlJobId: string };
+    fetchFinished(deps, crawlJobId, true).catch((e: unknown) =>
+      deps.log.error(
+        { err: e instanceof Error ? e.message : String(e), crawlJobId },
+        'fetch accounting failed',
+      ),
+    );
+  }
   deps.log.warn(
     { queue, jobId: job?.id, storeId, attempt: job?.attemptsMade, final, err: err.message },
     'job failed',
@@ -80,4 +99,9 @@ export function reportFailure(deps: WorkerDeps, queue: string, job: Job | undefi
     scope.setTags({ queue, jobId: job?.id ?? 'unknown', ...(storeId ? { storeId } : {}) });
     Sentry.captureException(err);
   });
+}
+
+/** No retries left (or an expected outcome that is never retried). */
+export function isFinalFailure(job: Job | undefined, err: Error): boolean {
+  return err instanceof CrawlOutcome || !job || job.attemptsMade >= (job.opts.attempts ?? 1);
 }
