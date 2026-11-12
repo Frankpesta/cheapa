@@ -1,0 +1,53 @@
+/**
+ * {{name}} adapter ({{kindLabel}}). Source notes, endpoints and field mapping:
+ * docs/sources/{{folder}}.md. Not live until it is added to `allAdapters` in ../all.ts.
+ */
+{{typeImports}}
+import { lastPage, parse{{pascal}} } from './parse.js';
+
+/** Listing pages to sweep (category or search paths), from the source doc's "Best list source". */
+export const START_PATHS: readonly string[] = [{{startPath}}];
+/** Query parameter that selects the page number. */
+const PAGE_PARAM = 'page';
+/** Hard cap per start path, whatever the store's pagination claims. */
+const MAX_PAGES = 50;
+
+function pageUrl(origin: string, path: string, page: number): string {
+  const url = new URL(path, origin);
+  if (page > 1) url.searchParams.set(PAGE_PARAM, String(page));
+  return url.toString();
+}
+
+export const {{camel}}Adapter: SourceAdapter = {
+  id: '{{adapterId}}',
+  kind: '{{kind}}',
+{{target}}
+  needsBrowser: false,
+
+  /** One request per start path to read the page count, then one ref per page. */
+  async *discover(ctx, store) {
+    const origin = `https://${store.domain}`;
+    for (const path of START_PATHS) {
+      const first = await ctx.http.get(pageUrl(origin, path, 1), { accept: '{{format}}', signal: ctx.signal });
+      const pages = Math.min(lastPage({{firstBody}}), MAX_PAGES);
+      for (let page = 1; page <= pages && !ctx.signal.aborted; page += 1) {
+        const ref: ProductRef = { kind: 'page', url: pageUrl(origin, path, page), meta: { page } };
+        yield ref;
+      }
+    }
+  },
+
+  async fetch(ctx, ref) {
+    const res = await ctx.http.get(ref.url, { accept: '{{format}}', signal: ctx.signal });
+    return {
+      ref,
+      url: res.url,
+      fetchedAt: new Date().toISOString(),
+      format: '{{format}}',
+      body: {{fetchBody}},
+    };
+  },
+
+  parse: parse{{pascal}},
+};
+

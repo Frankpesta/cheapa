@@ -26,7 +26,8 @@
     "test:down": "node scripts/test-down.mjs",
     "db:seed": "turbo run db:seed",
     "infra:up:app": "docker compose -f infra/docker-compose.yml --env-file .env --profile app up -d --build --wait",
-    "crawl:report": "pnpm --filter @cheapa/worker crawl:report"
+    "crawl:report": "pnpm --filter @cheapa/worker crawl:report",
+    "gen:adapter": "pnpm --filter @cheapa/adapters gen:adapter"
   },
   "prettier": "@cheapa/config/prettier",
   "devDependencies": {

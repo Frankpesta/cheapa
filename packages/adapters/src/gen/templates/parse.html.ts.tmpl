@@ -1,0 +1,71 @@
+/**
+ * {{name}} listing-page parser. Pure: no I/O, no clock, so it runs unchanged against
+ * __fixtures__/. Selectors come from docs/sources/{{folder}}.md; when the store
+ * redesigns, the "no product cards" ParseError fires and the crawl alerts.
+ */
+import { parsePrice } from '@cheapa/core';
+import { load } from 'cheerio';
+import { ParseError } from '../errors.js';
+import type { RawListingInput, RawPayload, StoreRef } from '../types.js';
+
+const ADAPTER_ID = '{{adapterId}}';
+
+/** CSS selectors on a listing page. `card` is one product; the rest are inside a card. */
+export const SELECTORS = {
+  card: '',
+  /** Attribute on the card holding the store's product id; the URL is used when absent. */
+  idAttr: 'data-id',
+  link: 'a[href]',
+  title: '',
+  price: '',
+  oldPrice: '',
+  image: 'img',
+  /** Present on a card when it is sold out. */
+  soldOut: '',
+  /** Pagination links; the largest number among them is the last page. */
+  pageLinks: '',
+};
+
+/** Highest page number in the pagination; 1 when there is none. */
+export function lastPage(html: string): number {
+  if (!SELECTORS.pageLinks) return 1;
+  const $ = load(html);
+  const numbers = $(SELECTORS.pageLinks)
+    .map((_, el) => Number($(el).text().trim()))
+    .get()
+    .filter((n: number) => Number.isInteger(n) && n > 0);
+  return numbers.length > 0 ? Math.max(...numbers) : 1;
+}
+
+export function parse{{pascal}}(raw: RawPayload, _store: StoreRef): RawListingInput[] {
+  if (raw.format !== 'html') throw new ParseError(ADAPTER_ID, `expected html, got ${raw.format}`);
+  if (!SELECTORS.card) throw new ParseError(ADAPTER_ID, 'SELECTORS.card is not set (see docs/sources/{{folder}}.md)');
+  const $ = load(raw.body);
+  const cards = $(SELECTORS.card);
+  if (cards.length === 0) throw new ParseError(ADAPTER_ID, 'no product cards on the page: selectors out of date?');
+
+  const listings: RawListingInput[] = [];
+  cards.each((_, el) => {
+    const card = $(el);
+    const href = card.find(SELECTORS.link).first().attr('href');
+    const price = parsePrice(card.find(SELECTORS.price).first().text());
+    // Cards without a link or a price ("call for price") can't be compared.
+    if (!href || !price) return;
+    const sourceUrl = new URL(href, raw.url).toString();
+    const old = SELECTORS.oldPrice ? parsePrice(card.find(SELECTORS.oldPrice).first().text()) : null;
+    const img = card.find(SELECTORS.image).first();
+    const src = img.attr('data-src') ?? img.attr('src');
+    listings.push({
+      externalId: card.attr(SELECTORS.idAttr) ?? sourceUrl,
+      sourceUrl,
+      title: card.find(SELECTORS.title).first().text().trim(),
+      priceKobo: price.minKobo,
+      priceKind: price.kind,
+      ...(price.kind === 'range' && price.maxKobo ? { priceMaxKobo: price.maxKobo } : {}),
+      ...(old ? { oldPriceKobo: old.minKobo } : {}),
+      inStock: !(SELECTORS.soldOut && card.find(SELECTORS.soldOut).length > 0),
+      ...(src && !src.startsWith('data:') ? { imageUrl: new URL(src, raw.url).toString() } : {}),
+    });
+  });
+  return listings;
+}
