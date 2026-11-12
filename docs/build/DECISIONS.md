@@ -44,6 +44,7 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-12 | Matcher candidates = exact-key products + top 20 same-category titles by pg_trgm similarity; matching serialised per department+category with a transaction advisory lock | Vectors replace the title retrieval in phase 05; the lock stops two concurrent jobs founding the same product twice |
 | 2026-11-12 | No delivery city or address anywhere (onboarding step 3, Home "Delivering to" line, Profile row and `users.city` removed) | Owner: Cheapa never delivers; shoppers buy from the store. Listing regions (Jiji "Lagos, Ikeja") stay as store facts on the row |
 | 2026-11-12 | Review queue ships as an admin API now (`GET/POST /admin/reviews`, `@Roles('admin')`); the `/admin/review` page comes with the web app (phase 07) | `apps/web` isn't scaffolded yet; the API and `pnpm export:pairs` (decisions -> `scripts/data/pairs-labelled.jsonl`) are what tuning needs. The page has no design: compose from DESIGN.md components and flag for review |
+| 2026-11-12 | Trust flags (04 §4.5): "check seller" = in stock and under half the median of its condition group (new vs used) with ≥ 3 prices; headline prices are cheapest new and cheapest used, and unknown condition counts as new | A thrift item isn't a scam for being cheap, and a median of two prices means nothing. Most fashion stores don't state condition; thrift/UK-used/refurbished do |
 
 ## Deferred
 

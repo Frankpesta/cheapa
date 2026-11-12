@@ -25,6 +25,8 @@ export class ProductsService {
       repImageUrl: row.repImageUrl,
       minPriceKobo: row.minPriceKobo,
       maxPriceKobo: row.maxPriceKobo,
+      cheapestNewKobo: row.cheapestNewKobo,
+      cheapestUsedKobo: row.cheapestUsedKobo,
       listingCount: row.listingCount,
       updatedAt: row.updatedAt.toISOString(),
     };
