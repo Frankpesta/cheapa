@@ -6,6 +6,8 @@ import { existsSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
+import { allAdapters } from './all.js';
+import { AdapterRegistry } from './registry.js';
 
 const SRC = fileURLToPath(new URL('./', import.meta.url));
 /** Engine folders, not adapters. zz-gen-check-* is gen-adapter.test.ts's scratch adapter. */
@@ -33,5 +35,15 @@ export function fixtureProblems(folder: string, src = SRC): string[] {
 describe('adapter fixtures', () => {
   it('every adapter folder ships a parse test and at least one fixture', () => {
     expect(adapterFolders().flatMap((f) => fixtureProblems(f))).toEqual([]);
+  });
+});
+
+describe('registered adapters', () => {
+  it('build a registry, and each custom adapter lives in its own tested folder', () => {
+    expect(() => new AdapterRegistry(allAdapters)).not.toThrow();
+    const folders = adapterFolders();
+    for (const adapter of allAdapters.filter((a) => a.kind === 'custom')) {
+      expect(folders).toContain(adapter.id);
+    }
   });
 });

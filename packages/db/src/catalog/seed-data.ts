@@ -12,10 +12,39 @@ import { IMAGE_VEC_DIMS, listingEmbeddings, listings, stores } from './schema.js
 
 export const SEED_MODEL_VERSION = 'seed-synthetic-v1';
 
+/**
+ * Tier-1 stores. `robotsOk` is true only once robots.txt and terms were reviewed and the
+ * adapter exists (docs/sources/<store>.md); the scheduler crawls nothing else.
+ */
 const SEED_STORES = [
-  { key: 'jumia', name: 'Jumia', domain: 'www.jumia.com.ng', platform: 'custom', tier: 1 },
-  { key: 'konga', name: 'Konga', domain: 'www.konga.com', platform: 'custom', tier: 1 },
-  { key: 'jiji', name: 'Jiji', domain: 'jiji.ng', platform: 'custom', tier: 1 },
+  {
+    key: 'jumia',
+    name: 'Jumia',
+    domain: 'www.jumia.com.ng',
+    platform: 'custom',
+    tier: 1,
+    crawlPolicy: {
+      robotsOk: true,
+      maxRps: 2,
+      notes: 'robots.txt 2026-11-12: identified bots allowed under 200 rpm; docs/sources/jumia.md',
+    },
+  },
+  {
+    key: 'konga',
+    name: 'Konga',
+    domain: 'www.konga.com',
+    platform: 'custom',
+    tier: 1,
+    crawlPolicy: { robotsOk: false, maxRps: 1, notes: 'not reviewed yet (03 §3.3)' },
+  },
+  {
+    key: 'jiji',
+    name: 'Jiji',
+    domain: 'jiji.ng',
+    platform: 'custom',
+    tier: 1,
+    crawlPolicy: { robotsOk: false, maxRps: 1, notes: 'not reviewed yet (03 §3.4)' },
+  },
 ] as const;
 
 type StoreKey = (typeof SEED_STORES)[number]['key'];
@@ -154,13 +183,17 @@ export async function seedCatalog(db: CatalogDb): Promise<{ stores: number; list
     const storeRows = await tx
       .insert(stores)
       .values(
-        SEED_STORES.map(({ key: _key, ...s }) => ({
+        SEED_STORES.map(({ key: _key, crawlPolicy, ...s }) => ({
           ...s,
           status: 'active' as const,
-          crawlPolicy: { robotsOk: true, maxRps: 1, notes: 'seed' },
+          crawlPolicy: { ...crawlPolicy },
         })),
       )
-      .onConflictDoUpdate({ target: stores.domain, set: { name: sql`excluded.name` } })
+      // The reviewed policy is the source of truth for these stores: re-seeding applies it.
+      .onConflictDoUpdate({
+        target: stores.domain,
+        set: { name: sql`excluded.name`, crawlPolicy: sql`excluded.crawl_policy` },
+      })
       .returning({ id: stores.id, domain: stores.domain });
     const storeId = (key: StoreKey) => {
       const domain = SEED_STORES.find((s) => s.key === key)?.domain;

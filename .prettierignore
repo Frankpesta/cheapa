@@ -5,3 +5,6 @@ coverage/
 # Hand-authored plan and design docs: never auto-format
 docs/
 CLAUDE.md
+# Saved store responses must stay byte-for-byte (CLAUDE.md rule 5)
+**/__fixtures__/
+**/__snapshots__/
