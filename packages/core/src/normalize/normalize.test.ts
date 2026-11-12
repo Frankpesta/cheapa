@@ -197,3 +197,17 @@ describe('normalizeListing', () => {
     expect(normalizeListing(raw('Tecno Camon 30 8/256 Black')).variant).toEqual({ ramGb: 8, storageGb: 256 });
   });
 });
+
+describe('Nigerian hair spellings (Jiji)', () => {
+  it('reads one-word textures and "5by5" lace', () => {
+    const n = normalizeListing(raw('12 Inches 5by5 SDD Vietnam Bonestraight Wig'));
+    expect(normalizeListing(raw('Luxury 30-Inch Body Wave Human Hair Wig')).variant.hair).toMatchObject({
+      lengthInches: 30,
+    });
+    expect(n.variant.hair).toMatchObject({ lengthInches: 12, texture: 'Bone Straight', lace: '5x5' });
+    expect(normalizeListing(raw('Deepwave 13by4 Hdlace Frontal Wig')).variant.hair).toMatchObject({
+      texture: 'Deep Wave',
+      lace: '13x4',
+    });
+  });
+});

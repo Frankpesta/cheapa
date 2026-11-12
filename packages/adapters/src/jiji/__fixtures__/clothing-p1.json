@@ -1,0 +1,1500 @@
+{
+ "adverts_list": {
+  "mode_default": "gallery",
+  "count": 30935,
+  "adverts": [
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "M",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "54CjMWtS6DQKLIT5IqOxPxaG",
+    "id": 56019439,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210372588_MzAwLTQwMC1kMmUwZmFiN2Yw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210372588_MzAwLTQwMC1kMmUwZmFiN2Yw.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 10000,
+     "view": "₦ 10,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 10,000",
+    "region": "Abia State • Umuahia",
+    "region_id": 233,
+    "region_item_text": "Abia, Umuahia",
+    "region_name": "Umuahia",
+    "region_parent_name": "Abia State",
+    "region_slug": "umuahia",
+    "short_description": "",
+    "slug": "lily-fashion",
+    "status": "active",
+    "title": "Lily Fashion",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/umuahia/clothing/lily-fashion-54CjMWtS6DQKLIT5IqOxPxaG.html",
+    "user_id": 1000
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Men's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "M, L, XL, XXL, 3XL, 4XL, 5XL, 6XL, 7XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "rUWz6JnZHH6U2FiLN8sZ53yM",
+    "id": 56020152,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210375272_MzAwLTMwMC05NDAxYWYzNWRk.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210375272_MzAwLTMwMC05NDAxYWYzNWRk.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 45000,
+     "view": "₦ 45,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 45,000",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "brown-premium-senator-outfit-for-men",
+    "status": "active",
+    "title": "Brown Premium Senator Outfit for Men",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/clothing/brown-premium-senator-outfit-for-men-rUWz6JnZHH6U2FiLN8sZ53yM.html",
+    "user_id": 1001
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Men's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "3XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "ARGwss4nj7UA5pxcEfXytRv6",
+    "id": 56015590,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210372123_MzAwLTQwMC01YTZhZjJlYjVi.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210372123_MzAwLTQwMC01YTZhZjJlYjVi.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 25000,
+     "view": "₦ 25,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 25,000",
+    "region": "Ondo State • Akure",
+    "region_id": 62,
+    "region_item_text": "Ondo, Akure",
+    "region_name": "Akure",
+    "region_parent_name": "Ondo State",
+    "region_slug": "akure",
+    "short_description": "",
+    "slug": "white-t-shirt-with-v-shaped-collar-zip-thick-material",
+    "status": "active",
+    "title": "White T-Shirt With v-Shaped Collar Zip, Thick Material",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/akure-south/clothing/white-t-shirt-with-v-shaped-collar-zip-thick-material-ARGwss4nj7UA5pxcEfXytRv6.html",
+    "user_id": 1002
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 16,
+    "details": "",
+    "guid": "xa9FhEP1ayZpjQDXByE8QfJL",
+    "id": 55998119,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210375002_MzAwLTMyNC1lODAwMzc4MTkw.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210375002_MzAwLTMyNC1lODAwMzc4MTkw.webp",
+      "center": null,
+      "size": [
+       300,
+       324
+      ]
+     }
+    ],
+    "images_count": 16,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 13000,
+     "view": "₦ 13,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 13,000",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "unisex-body-hug-bodycon-outfit-for-men-women",
+    "status": "active",
+    "title": "Unisex Body Hug - Bodycon Outfit for Men & Women",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/clothing/unisex-body-hug-bodycon-outfit-for-men-women-xa9FhEP1ayZpjQDXByE8QfJL.html",
+    "user_id": 1003
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Men's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "M, L, XL, XXL, 3XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 4,
+    "details": "",
+    "guid": "jF9q9f87e1adPW0Mky8po2lY",
+    "id": 56020012,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210374615_MzAwLTM4Mi03NTIzMzQwMThj.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210374615_MzAwLTM4Mi03NTIzMzQwMThj.webp",
+      "center": null,
+      "size": [
+       300,
+       382
+      ]
+     }
+    ],
+    "images_count": 4,
+    "is_boost": "vip",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 10000,
+     "view": "₦ 10,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 10,000",
+    "region": "Lagos State • Ojo",
+    "region_id": 164,
+    "region_item_text": "Lagos, Ojo",
+    "region_name": "Ojo",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ojo",
+    "short_description": "",
+    "slug": "t-shirt-for-classic-men",
+    "status": "active",
+    "title": "T Shirt for Classic Men",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ojo/clothing/t-shirt-for-classic-men-jF9q9f87e1adPW0Mky8po2lY.html",
+    "user_id": 1004
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "S, M, L, XL, XXL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 4,
+    "details": "",
+    "guid": "3UBBwF6hhhVP1dX8xyrNEhbI",
+    "id": 56013964,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210348464_MzAwLTM0My0xNzYxZWE4MWQ2.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210348464_MzAwLTM0My0xNzYxZWE4MWQ2.webp",
+      "center": null,
+      "size": [
+       300,
+       343
+      ]
+     }
+    ],
+    "images_count": 4,
+    "is_boost": "diamond",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "diamond",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 15000,
+     "view": "₦ 15,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 15,000",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "womens-sexy-jumpsuit-lingerie",
+    "status": "active",
+    "title": "Women’s Sexy Jumpsuit Lingerie",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/clothing/womens-sexy-jumpsuit-lingerie-3UBBwF6hhhVP1dX8xyrNEhbI.html",
+    "user_id": 1005,
+    "seller": {
+     "user_name": "Seller 1005",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "S, M, L, XL, XXL, 3XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "4VL1BkFmfbW40kVvqGOo4gcV",
+    "id": 56014409,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210349244_MzAwLTQ1MC1kMzlkMmNmNjFi.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210349244_MzAwLTQ1MC1kMzlkMmNmNjFi.webp",
+      "center": null,
+      "size": [
+       300,
+       450
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "diamond",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     },
+     {
+      "type": "age",
+      "value": "5+ years on Jiji"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "diamond",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 13500,
+     "view": "₦ 13,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 13,500",
+    "region": "Lagos State • Lagos Island (Eko)",
+    "region_id": 158,
+    "region_item_text": "Lagos, Lagos Island (Eko)",
+    "region_name": "Lagos Island (Eko)",
+    "region_parent_name": "Lagos State",
+    "region_slug": "lagos-island-eko",
+    "short_description": "",
+    "slug": "romantic-rhinestone-lingerie-romper",
+    "status": "active",
+    "title": "Romantic Rhinestone Lingerie Romper",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/lagos-island-west/clothing/romantic-rhinestone-lingerie-romper-4VL1BkFmfbW40kVvqGOo4gcV.html",
+    "user_id": 1005,
+    "seller": {
+     "user_name": "Seller 1005",
+     "user_avatar_url": "",
+     "user_rating": 5
+    }
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Men's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "yyA4qWv39KkV63kOM6BViSsx",
+    "id": 56016641,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210359935_MzAwLTQ1MS1hZTRhNDZmZmY3.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210359935_MzAwLTQ1MS1hZTRhNDZmZmY3.webp",
+      "center": null,
+      "size": [
+       300,
+       451
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 45000,
+     "view": "₦ 45,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 45,000",
+    "region": "Plateau State • Bokkos",
+    "region_id": 392,
+    "region_item_text": "Plateau, Bokkos",
+    "region_name": "Bokkos",
+    "region_parent_name": "Plateau State",
+    "region_slug": "bokkos",
+    "short_description": "",
+    "slug": "mrs-yatep-yilret-charles",
+    "status": "active",
+    "title": "Mrs.yatep Yilret Charles",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/bokkos/clothing/mrs-yatep-yilret-charles-yyA4qWv39KkV63kOM6BViSsx.html",
+    "user_id": 1006
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "XL, XXL, 3XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 4,
+    "details": "",
+    "guid": "k0CIGQwwdpJBkY0RIBQP8EK7",
+    "id": 56019766,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210373838_MzAwLTMwMC0zMWNlNzdkYWUz.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210373838_MzAwLTMwMC0zMWNlNzdkYWUz.webp",
+      "center": null,
+      "size": [
+       300,
+       300
+      ]
+     }
+    ],
+    "images_count": 4,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 18000,
+     "view": "₦ 18,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 18,000",
+    "region": "Anambra State • Awka",
+    "region_id": 313,
+    "region_item_text": "Anambra, Awka",
+    "region_name": "Awka",
+    "region_parent_name": "Anambra State",
+    "region_slug": "awka",
+    "short_description": "",
+    "slug": "good-material-shirt-zara-brand-best-quality",
+    "status": "active",
+    "title": "Good Material Shirt Zara Brand Best Quality",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/awka-south/clothing/good-material-shirt-zara-brand-best-quality-k0CIGQwwdpJBkY0RIBQP8EK7.html",
+    "user_id": 1007
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "XL, XXL, 3XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 4,
+    "details": "",
+    "guid": "pzTbqrgEw7v6Bd4ZJbg4xnDY",
+    "id": 56019477,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210373163_MzAwLTI3Mi1kZGQwMzgwMDA2.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210373163_MzAwLTI3Mi1kZGQwMzgwMDA2.webp",
+      "center": null,
+      "size": [
+       300,
+       272
+      ]
+     }
+    ],
+    "images_count": 4,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 18000,
+     "view": "₦ 18,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 18,000",
+    "region": "Anambra State • Awka",
+    "region_id": 313,
+    "region_item_text": "Anambra, Awka",
+    "region_name": "Awka",
+    "region_parent_name": "Anambra State",
+    "region_slug": "awka",
+    "short_description": "",
+    "slug": "quality-luis-vuitton-shirt-best-material-both-men-and-women-can-wear",
+    "status": "active",
+    "title": "Quality Luis Vuitton Shirt Best Material Both Men and Women Can Wear",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/awka-south/clothing/quality-luis-vuitton-shirt-best-material-both-men-and-women-can-wear-pzTbqrgEw7v6Bd4ZJbg4xnDY.html",
+    "user_id": 1007
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "XL, XXL, 3XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "TOP",
+     "slug": "top",
+     "bg_color": "#ffaf45",
+     "text_color": "#ffffff",
+     "aside_color": "#C8822C",
+     "service_type": "top"
+    },
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 5,
+    "details": "",
+    "guid": "mgUCQNQI2RPiMgAnCyvaUIxo",
+    "id": 56019018,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210371720_MzAwLTMyOC1hYWViOGMzM2E1.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210371720_MzAwLTMyOC1hYWViOGMzM2E1.webp",
+      "center": null,
+      "size": [
+       300,
+       328
+      ]
+     }
+    ],
+    "images_count": 5,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": true,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {
+     "bg": "#FFF4B8"
+    },
+    "price_obj": {
+     "value": 18000,
+     "view": "₦ 18,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 18,000",
+    "region": "Anambra State • Awka",
+    "region_id": 313,
+    "region_item_text": "Anambra, Awka",
+    "region_name": "Awka",
+    "region_parent_name": "Anambra State",
+    "region_slug": "awka",
+    "short_description": "",
+    "slug": "quality-debit-brand-shirts-new-design-best-quality",
+    "status": "active",
+    "title": "Quality Debit Brand Shirts New Design Best Quality",
+    "title_labels": [],
+    "tops_count": 1,
+    "url": "/awka-south/clothing/quality-debit-brand-shirts-new-design-best-quality-mgUCQNQI2RPiMgAnCyvaUIxo.html",
+    "user_id": 1007
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "XL, XXL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "Bhf3EPOYqwvYSELtVjJE0Qzy",
+    "id": 56019182,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210371188_MzAwLTM5OS04ZDRlYzhiNTQ0.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210371188_MzAwLTM5OS04ZDRlYzhiNTQ0.webp",
+      "center": null,
+      "size": [
+       300,
+       399
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": "vip_gold",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "vip_gold",
+     "border": "",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 25000,
+     "view": "₦ 25,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 25,000",
+    "region": "Abuja (FCT) • Jabi",
+    "region_id": 423,
+    "region_item_text": "Abuja, Jabi",
+    "region_name": "Jabi",
+    "region_parent_name": "Abuja (FCT)",
+    "region_slug": "jabi",
+    "short_description": "",
+    "slug": "airot-craft",
+    "status": "active",
+    "title": "Airot Craft",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/jabi/clothing/airot-craft-Bhf3EPOYqwvYSELtVjJE0Qzy.html",
+    "user_id": 1008
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "One Size",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 7,
+    "details": "",
+    "guid": "Dru8X7QiRLWAe2MJfKQAHAz",
+    "id": 56019161,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210370928_MzAwLTM1MS00ZTEwMzQwOWRk.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210370928_MzAwLTM1MS00ZTEwMzQwOWRk.webp",
+      "center": null,
+      "size": [
+       300,
+       351
+      ]
+     }
+    ],
+    "images_count": 7,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 30000,
+     "view": "₦ 30,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 30,000",
+    "region": "Ondo State • Akure",
+    "region_id": 62,
+    "region_item_text": "Ondo, Akure",
+    "region_name": "Akure",
+    "region_parent_name": "Ondo State",
+    "region_slug": "akure",
+    "short_description": "",
+    "slug": "premium-quality-cargo-jackets",
+    "status": "active",
+    "title": "Premium Quality Cargo Jackets",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/akure-south/clothing/premium-quality-cargo-jackets-Dru8X7QiRLWAe2MJfKQAHAz.html",
+    "user_id": 1009
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 3,
+    "details": "",
+    "guid": "fkOmEkqRxeO4t4faSAesgrEG",
+    "id": 56011953,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210338185_MzAwLTUzMy0zYjJiODA3NzZj.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210338185_MzAwLTUzMy0zYjJiODA3NzZj.webp",
+      "center": null,
+      "size": [
+       300,
+       533
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 60000,
+     "view": "₦ 60,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 60,000",
+    "region": "Abuja (FCT) • Central Business District",
+    "region_id": 407,
+    "region_item_text": "Abuja, Central Business District",
+    "region_name": "Central Business District",
+    "region_parent_name": "Abuja (FCT)",
+    "region_slug": "central-business-district",
+    "short_description": "",
+    "slug": "senator-wears",
+    "status": "active",
+    "title": "Senator Wears",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/central-business-district/clothing/senator-wears-fkOmEkqRxeO4t4faSAesgrEG.html",
+    "user_id": 1010
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "XL, XXL, 3XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 5,
+    "details": "",
+    "guid": "itu3oGQDYi4M201Pa14AvVBW",
+    "id": 56018844,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210369438_MzAwLTQ1MC1lZjQ1OWEyMDk0.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210369438_MzAwLTQ1MC1lZjQ1OWEyMDk0.webp",
+      "center": null,
+      "size": [
+       300,
+       450
+      ]
+     }
+    ],
+    "images_count": 5,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 18000,
+     "view": "₦ 18,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 18,000",
+    "region": "Anambra State • Awka",
+    "region_id": 313,
+    "region_item_text": "Anambra, Awka",
+    "region_name": "Awka",
+    "region_parent_name": "Anambra State",
+    "region_slug": "awka",
+    "short_description": "",
+    "slug": "quality-luis-vuitton-shirt",
+    "status": "active",
+    "title": "Quality Luis Vuitton Shirt",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/awka-south/clothing/quality-luis-vuitton-shirt-itu3oGQDYi4M201Pa14AvVBW.html",
+    "user_id": 1007
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "value": "Bulk prices",
+      "unit": null
+     },
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 3,
+    "details": "",
+    "guid": "sbPN0U5Ll3BgT59QT4n5zHon",
+    "id": 56018571,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210369604_MzAwLTMyNS03MWE4MmU4ZmY4.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210369604_MzAwLTMyNS03MWE4MmU4ZmY4.webp",
+      "center": null,
+      "size": [
+       300,
+       325
+      ]
+     }
+    ],
+    "images_count": 3,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 15000,
+     "view": "₦ 15,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 15,000",
+    "region": "Ogun State • Ikenne",
+    "region_id": 557,
+    "region_item_text": "Ogun, Ikenne",
+    "region_name": "Ikenne",
+    "region_parent_name": "Ogun State",
+    "region_slug": "ikenne",
+    "short_description": "",
+    "slug": "teniola-home-of-luxury",
+    "status": "active",
+    "title": "Teniola Home of Luxury",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ikenne/clothing/teniola-home-of-luxury-sbPN0U5Ll3BgT59QT4n5zHon.html",
+    "user_id": 1011
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "wnHKLUDzGSBcoQcvhWZJ5Dz1",
+    "id": 56018153,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210369218_MzAwLTQwMC1jMzE2NTZkMDEz.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210369218_MzAwLTQwMC1jMzE2NTZkMDEz.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 22000,
+     "view": "₦ 22,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 22,000",
+    "region": "Lagos State • Ajah",
+    "region_id": 137,
+    "region_item_text": "Lagos, Ajah",
+    "region_name": "Ajah",
+    "region_parent_name": "Lagos State",
+    "region_slug": "ajah",
+    "short_description": "",
+    "slug": "quality-ankara-fabric",
+    "status": "active",
+    "title": "Quality Ankara Fabric",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/ajah/clothing/quality-ankara-fabric-wnHKLUDzGSBcoQcvhWZJ5Dz1.html",
+    "user_id": 1012
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Men's",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "L, XL, XXL, 3XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 2,
+    "details": "",
+    "guid": "7upHHoJeAkSYvZyUdzZQwiYo",
+    "id": 56018524,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210368115_MzAwLTQwMC1lZTM2MzFlN2Ew.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210368115_MzAwLTQwMC1lZTM2MzFlN2Ew.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 2,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 16000,
+     "view": "₦ 16,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 16,000",
+    "region": "Anambra State • Idemili",
+    "region_id": 318,
+    "region_item_text": "Anambra, Idemili",
+    "region_name": "Idemili",
+    "region_parent_name": "Anambra State",
+    "region_slug": "idemili",
+    "short_description": "",
+    "slug": "quality-standard-jogger-pant",
+    "status": "active",
+    "title": "Quality Standard Jogger Pant",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/idemili/clothing/quality-standard-jogger-pant-7upHHoJeAkSYvZyUdzZQwiYo.html",
+    "user_id": 1013
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Unisex",
+      "unit": null
+     },
+     {
+      "name": "Size",
+      "value": "L, XL, XXL, 3XL, 4XL",
+      "unit": null
+     }
+    ],
+    "badge_info": {
+     "label": "TOP+",
+     "slug": "booster",
+     "bg_color": "#00B53F",
+     "text_color": "#ffffff",
+     "aside_color": "#229826",
+     "service_type": "boost"
+    },
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 4,
+    "details": "",
+    "guid": "raF0RPo8JCWSnFesxzvfDQZw",
+    "id": 56018495,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210368064_MzAwLTQwMC01YjljNGZkODZm.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210368064_MzAwLTQwMC01YjljNGZkODZm.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 4,
+    "is_boost": "premium",
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [
+     {
+      "type": "id_verify",
+      "value": "Verified ID"
+     }
+    ],
+    "message_url": "",
+    "paid_info": {
+     "text": "Promoted",
+     "package_type": "premium",
+     "border": "#FEA03C",
+     "icon": true,
+     "more_photos": false
+    },
+    "price_obj": {
+     "value": 15000,
+     "view": "₦ 15,000",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 15,000",
+    "region": "Rivers State • Oyigbo",
+    "region_id": 116,
+    "region_item_text": "Rivers, Oyigbo",
+    "region_name": "Oyigbo",
+    "region_parent_name": "Rivers State",
+    "region_slug": "oyigbo",
+    "short_description": "",
+    "slug": "knitted-tshirt",
+    "status": "active",
+    "title": "Knitted Tshirt",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/oyigbo/clothing/knitted-tshirt-raF0RPo8JCWSnFesxzvfDQZw.html",
+    "user_id": 1014
+   },
+   {
+    "admin_info": {},
+    "as_top": false,
+    "attrs": [
+     {
+      "name": "Gender",
+      "value": "Women's",
+      "unit": null
+     }
+    ],
+    "badge_info": {},
+    "category_id": 25,
+    "category_name": "Clothing",
+    "category_slug": "clothing",
+    "count_images": 7,
+    "details": "",
+    "guid": "7p5JWhNWkik50iCD1uF9B5D2",
+    "id": 56016735,
+    "image_obj": {
+     "url": "https://pictures-nigeria.jijistatic.net/210361683_MzAwLTQwMC0wNGYzY2NkNWU2.webp",
+     "center": null
+    },
+    "images": [
+     {
+      "url": "https://pictures-nigeria.jijistatic.net/210361683_MzAwLTQwMC0wNGYzY2NkNWU2.webp",
+      "center": null,
+      "size": [
+       300,
+       400
+      ]
+     }
+    ],
+    "images_count": 7,
+    "is_boost": false,
+    "is_cv": false,
+    "is_inspected": false,
+    "is_job": false,
+    "is_owner": false,
+    "is_top": false,
+    "labels": [],
+    "message_url": "",
+    "paid_info": {},
+    "price_obj": {
+     "value": 19500,
+     "view": "₦ 19,500",
+     "period": null,
+     "bulk": null,
+     "type": null
+    },
+    "price_title": "₦ 19,500",
+    "region": "Kano State • Fagge",
+    "region_id": 735,
+    "region_item_text": "Kano, Fagge",
+    "region_name": "Fagge",
+    "region_parent_name": "Kano State",
+    "region_slug": "fagge",
+    "short_description": "",
+    "slug": "original-atamfa-different-colors-available",
+    "status": "active",
+    "title": "Original Atamfa - Different Colors Available",
+    "title_labels": [],
+    "tops_count": 0,
+    "url": "/fagge/clothing/original-atamfa-different-colors-available-7p5JWhNWkik50iCD1uF9B5D2.html",
+    "user_id": 1015
+   }
+  ],
+  "per_page": 20,
+  "total_pages": 1547,
+  "tops_exist": true,
+  "in_day_count": 292,
+  "in_hour_count": 10
+ },
+ "next_url": "https://jiji.ng/api_web/v1/listing?slug=clothing&sort=new&webp=true&page=2&lsmid=1794495568768",
+ "status": "ok"
+}

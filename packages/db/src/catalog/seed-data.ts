@@ -23,6 +23,7 @@ const SEED_STORES = [
     domain: 'www.jumia.com.ng',
     platform: 'custom',
     tier: 1,
+    status: 'active',
     crawlPolicy: {
       robotsOk: true,
       maxRps: 2,
@@ -35,7 +36,13 @@ const SEED_STORES = [
     domain: 'www.konga.com',
     platform: 'custom',
     tier: 1,
-    crawlPolicy: { robotsOk: false, maxRps: 1, notes: 'not reviewed yet (03 §3.3)' },
+    // Cloudflare blocks CheapaBot (403, even robots.txt): partnership track, never crawled.
+    status: 'blocked',
+    crawlPolicy: {
+      robotsOk: false,
+      maxRps: 1,
+      notes: 'blocked by Cloudflare 2026-11-12; docs/sources/konga.md',
+    },
   },
   {
     key: 'jiji',
@@ -43,7 +50,12 @@ const SEED_STORES = [
     domain: 'jiji.ng',
     platform: 'custom',
     tier: 1,
-    crawlPolicy: { robotsOk: false, maxRps: 1, notes: 'not reviewed yet (03 §3.4)' },
+    status: 'active',
+    crawlPolicy: {
+      robotsOk: true,
+      maxRps: 1,
+      notes: 'robots.txt 2026-11-12 allows /api_web/ for all agents; docs/sources/jiji.md',
+    },
   },
 ] as const;
 
@@ -185,14 +197,17 @@ export async function seedCatalog(db: CatalogDb): Promise<{ stores: number; list
       .values(
         SEED_STORES.map(({ key: _key, crawlPolicy, ...s }) => ({
           ...s,
-          status: 'active' as const,
           crawlPolicy: { ...crawlPolicy },
         })),
       )
       // The reviewed policy is the source of truth for these stores: re-seeding applies it.
       .onConflictDoUpdate({
         target: stores.domain,
-        set: { name: sql`excluded.name`, crawlPolicy: sql`excluded.crawl_policy` },
+        set: {
+          name: sql`excluded.name`,
+          status: sql`excluded.status`,
+          crawlPolicy: sql`excluded.crawl_policy`,
+        },
       })
       .returning({ id: stores.id, domain: stores.domain });
     const storeId = (key: StoreKey) => {

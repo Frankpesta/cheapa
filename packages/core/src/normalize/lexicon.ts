@@ -210,6 +210,14 @@ export const HAIR_TEXTURES: Lexicon = [
   ),
   ['silky straight', 'Straight'],
   ['pixie curls', 'Pixie Curl'],
+  // As Nigerian sellers write them (Jiji, Instagram): one word, no space.
+  ['bonestraight', 'Bone Straight'],
+  ['bone-straight', 'Bone Straight'],
+  ['bodywave', 'Body Wave'],
+  ['deepwave', 'Deep Wave'],
+  ['waterwave', 'Water Wave'],
+  ['kinkycurly', 'Kinky Curly'],
+  ['pixiecurl', 'Pixie Curl'],
 ];
 
 /** Escape for use inside a RegExp source. */
