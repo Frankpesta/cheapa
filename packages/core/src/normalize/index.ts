@@ -8,6 +8,8 @@
  */
 import type { Department, NormalizedListing, RawListing, Variant } from '../types.js';
 import { classify } from './taxonomy.js';
+import { brandDepartments, brandFromTitle, canonicalBrand } from './brands.js';
+import { extractModel } from './electronics.js';
 import { cleanBrand, cleanTitle, detectCondition } from './title.js';
 import { extractVariant } from './variant.js';
 
@@ -15,6 +17,8 @@ export { classify, TAXONOMY, titleHead, type Classification, type TaxonomyLeaf }
 export { cleanBrand, cleanTitle, detectCondition } from './title.js';
 export { extractAudience, extractNetContent, extractPackCount, extractVariant } from './variant.js';
 export { extractSizes, letterSize } from './sizes.js';
+export { extractMemory, extractModel } from './electronics.js';
+export { BRANDS, brandFromTitle, canonicalBrand, isKnownBrand, type BrandEntry } from './brands.js';
 
 /** Below this, phase 04 may ask the TextExtractor (LLM) for help. */
 export const LOW_CONFIDENCE = 0.6;
@@ -53,14 +57,24 @@ function confidence(
 
 export function normalizeListing(raw: RawListing): NormalizedListing {
   const title = cleanTitle(raw.title);
-  const { department, category, source } = classify(raw.categoryPath, title);
-  const brand = cleanBrand(raw.brand);
+  const classified = classify(raw.categoryPath, title);
+  const { category, source } = classified;
+  // The store's own brand field wins (in our spelling); otherwise the earliest brand named
+  // in the title. Fashion often has none: null beats a guess.
+  const given = cleanBrand(raw.brand);
+  const brand = given ? canonicalBrand(given) : brandFromTitle(title, classified.department);
+  // "Maybelline Dream Radiant Liquid": a brand that sells in one department settles it.
+  const brandDepts = brand ? brandDepartments(brand) : [];
+  const department =
+    classified.department === 'other' && brandDepts.length === 1 ? brandDepts[0]! : classified.department;
   const variant = extractVariant(title, department, category, raw.categoryPath, raw.variant);
   const attributes = title === raw.title ? raw.attributes : { ...raw.attributes, rawTitle: raw.title };
+  const model = raw.model ?? (department === 'electronics' ? extractModel(title, brand) : undefined);
   return {
     ...raw,
     title,
     brand,
+    model,
     attributes,
     department,
     category,

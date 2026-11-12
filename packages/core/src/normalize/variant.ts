@@ -14,6 +14,7 @@ import {
   MATERIALS,
   PATTERNS,
 } from './lexicon.js';
+import { extractMemory } from './electronics.js';
 import { extractSizes } from './sizes.js';
 
 /** Built once: lexicons are compiled and cached by identity. */
@@ -147,19 +148,6 @@ function extractShade(title: string): string | undefined {
   return /\bshade\s*[:\-#]?\s*([A-Za-z0-9][\w'-]*(?:\s(?!SPF\b)[A-Z][a-z][\w'-]*)?)/i.exec(title)?.[1];
 }
 
-function extractElectronics(title: string, variant: Variant): void {
-  const pair = /\b(\d{1,2})\s*(?:GB)?\s*\/\s*(\d{2,4})\s*(?:GB)?\b/i.exec(title);
-  if (pair) {
-    variant.ramGb = Number(pair[1]);
-    variant.storageGb = Number(pair[2]);
-    return;
-  }
-  const ram = /\b(\d{1,2})\s*GB\s*RAM\b/i.exec(title);
-  if (ram) variant.ramGb = Number(ram[1]);
-  const storage = /\b(\d{2,4})\s*GB\b(?!\s*RAM)|\b([12])\s*TB\b/i.exec(title);
-  if (storage) variant.storageGb = storage[1] ? Number(storage[1]) : Number(storage[2]) * 1024;
-}
-
 /** Heel height in cm: "10cm heels", "4 inch heels", '3" block heel'. */
 function extractHeel(title: string): number | undefined {
   const cm = /\b(\d{1,2}(?:\.\d)?)\s*cm\b/i.exec(title);
@@ -204,7 +192,7 @@ const PACKS: Partial<Record<Department, Pack>> = {
     const spf = /\bSPF\s?(\d{1,3})\b/i.exec(title);
     if (spf) v.extra = { spf: spf[1]! };
   },
-  electronics: (title, v) => extractElectronics(title, v),
+  electronics: (title, v) => Object.assign(v, extractMemory(title)),
 };
 
 /** Parses a cleaned title into variant attributes; `given` (from the store) wins per field. */

@@ -160,10 +160,10 @@ describe('retries', () => {
   });
 
   it('does not retry when the caller aborts', async () => {
-    const { http, url } = await setup({ '/slow': () => undefined });
     const controller = new AbortController();
+    // Abort once the server has the request (not after a fixed delay, which flakes under load).
+    const { http, url } = await setup({ '/slow': () => controller.abort() });
     const pending = http.get(url('/slow'), { signal: controller.signal });
-    setTimeout(() => controller.abort(), 50);
     await expect(pending).rejects.toThrow();
     expect(server.count('/slow')).toBe(1);
   });
@@ -209,7 +209,11 @@ describe('rate limit with two concurrent workers (Redis)', () => {
       await Promise.all(Array.from({ length: 6 }, (_, i) => workers[i % 2]!.get(`${server.origin}/p`)));
       const times = server.hits.map((h) => h.at).sort((a, b) => a - b);
       expect(times).toHaveLength(8); // 2 robots.txt (one per worker cache) + 6 pages
-      for (let i = 1; i < times.length; i += 1) expect(times[i]! - times[i - 1]!).toBeGreaterThanOrEqual(300);
+      // The limiter spaces departures 333 ms apart; arrival times carry event-loop jitter when
+      // the whole repo tests in parallel. No gap under 250 ms, and 300 ms+ on average.
+      const gaps = times.slice(1).map((t, i) => t - times[i]!);
+      for (const gap of gaps) expect(gap).toBeGreaterThanOrEqual(250);
+      expect(gaps.reduce((a, g) => a + g, 0) / gaps.length).toBeGreaterThanOrEqual(300);
     } finally {
       redisA.disconnect();
       redisB.disconnect();

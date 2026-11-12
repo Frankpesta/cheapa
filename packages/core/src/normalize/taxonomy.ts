@@ -25,6 +25,8 @@ const leaf = (id: string, department: Department, words: string, broad = false):
 });
 
 export const TAXONOMY: readonly TaxonomyLeaf[] = [
+  // "Headband wig" is a wig, not a headband.
+  leaf('wigs', 'hair', 'headband wigs?|wigs? with headband'),
   // Hair accessories and tools first: they mention hair but are not hair.
   leaf(
     'hair-accessories',
@@ -34,21 +36,34 @@ export const TAXONOMY: readonly TaxonomyLeaf[] = [
   leaf(
     'beauty-tools',
     'beauty',
-    'hair ?dryers?|blow ?dryers?|straighteners?|flat irons?|curling (?:irons?|wands?)|makeup brush(?:es)?|beauty blenders?',
+    'hair ?dryers?|blow ?dryers?|straighteners?|flat irons?|curling (?:irons?|wands?)|makeup brush(?:es)?|beauty blenders?|' +
+      'brush sets?|makeup mirrors?|led (?:makeup )?mirrors?|vanity mirrors?|handheld mirrors?|dappen dish(?:es)?|' +
+      'acrylic (?:brush(?:es)?|powder|liquid)',
   ),
 
   // Hair
   leaf('wigs', 'hair', 'wigs?|lace front|frontal wig|closure wig|bob wig|pixie wig|glueless'),
   leaf('closures-frontals', 'hair', 'closures?|frontals?'),
   leaf('bundles', 'hair', 'bundles?|weaves?|hair extensions?|weft|virgin hair|human hair'),
-  leaf('braids', 'hair', 'braids?|braiding hair|attachments?|crochet hair|locs|twists?|expression'),
+  leaf(
+    'braids',
+    'hair',
+    'braids?|braiding (?:hair|extensions?)|attachments?|crochet hair|locs|(?:passion|senegalese|kinky|marley|spring) twists?|expression',
+  ),
+  // Sold by texture alone ("10inch Vietnam Bonestraight", "Pixie Curl"): still hair.
+  leaf(
+    'bundles',
+    'hair',
+    'bone ?straight|pixie curls?|deep ?wave|body ?wave|water ?wave|loose ?wave|kinky curly|jerry curls?|sdd|ddd|raw hair|vietnam(?:ese)? hair',
+  ),
 
   // Beauty
   leaf(
     'perfume',
     'beauty',
     // Scent notes ("Woody & Musky 10ml", "Oud Mood") mean fragrance in Nigerian beauty titles.
-    'perfumes?|eau de (?:parfum|toilette)|edp|edt|fragrances?|body mists?|cologne|oil perfume|musk|musky|oud',
+    'perfumes?|eau de (?:parfum|toilette)|edp|edt|fragrances?|body mists?|cologne|oil perfume|musk|musky|oud|' +
+      'pour homme|pour femme|for him|for her',
   ),
   leaf(
     'nails',
@@ -64,26 +79,40 @@ export const TAXONOMY: readonly TaxonomyLeaf[] = [
   leaf(
     'eye-makeup',
     'beauty',
-    'mascaras?|eyeliners?|eye ?shadows?|eyeshadow palette|brow (?:pencil|gel)|eyebrow pencil|lashes|false eyelashes',
+    'mascaras?|eyeliners?|eye ?shadows?|eyeshadow palette|brow (?:pencil|gel)|eyebrow pencil|lashes|eye ?lashes|false eyelashes',
   ),
   leaf(
     'skincare',
     'beauty',
-    'serums?|moisturi[sz]ers?|cleansers?|toners?|sunscreen|sun ?block|spf ?\\d+|face wash|face masks?|retinol|niacinamide|toning|glow oil',
+    'serums?|moisturi[sz]ers?|cleansers?|toners?|sunscreen|sun ?block|spf ?\\d+|face wash|face masks?|sheet masks?|retinol|niacinamide|toning|glow oil|' +
+      'anti[- ]?age|anti[- ]?ageing|anti[- ]?aging|eye (?:cream|care|serum|gel)|face (?:cream|mist)|day creams?|night creams?|' +
+      'peel(?:ing)?|exfoliat\\w*|cleansing (?:foam|fluid|oil|balm|water|gel)|micellar|essence|ampoules?|masks?',
   ),
   leaf(
     'body-care',
     'beauty',
     'body lotions?|body butter|body oil|shower gel|body wash|body scrub|deodorants?|roll[- ]on|lotion',
   ),
-  leaf('hair-care', 'beauty', 'shampoo|conditioner|hair oil|hair cream|edge control|leave[- ]in|hair growth'),
+  leaf(
+    'hair-care',
+    'beauty',
+    'shampoo|conditioner|hair oil|hair cream|hair butter|edge control|leave[- ]in|hair growth|hair treatment',
+  ),
+  // Catch-alls after the specific beauty leaves: "High Performance Cream", "Hydra Boost Concentrate".
+  leaf('skincare', 'beauty', 'creams?|concentrates?|gel to oil|facial', true),
+  leaf(
+    'body-care',
+    'beauty',
+    'sanitizers?|sanitisers?|bleaching|milk bath|bath (?:gel|milk|oil|salts?)',
+    true,
+  ),
   leaf('makeup', 'beauty', 'makeup|make[- ]up|cosmetics?', true),
 
   // Jewellery and accessories
-  leaf('watches', 'bags_accessories', 'watch(?:es)?|smart ?watch'),
+  leaf('watches', 'bags_accessories', 'watch(?:es)?|smart ?watch|wrist ?watch(?:es)?'),
   leaf('sunglasses', 'bags_accessories', 'sunglass(?:es)?|shades|eyeglasses|spectacles'),
   leaf('jewellery-sets', 'bags_accessories', 'jewe?l(?:le)?ry sets?|necklace (?:and|&) earrings?'),
-  leaf('earrings', 'bags_accessories', 'earrings?|ear ?studs?|ear cuffs?|hoops'),
+  leaf('earrings', 'bags_accessories', 'earrings?|earings?|ear ?studs?|ear cuffs?|hoops'),
   leaf('necklaces', 'bags_accessories', 'necklaces?|chokers?|pendants?|chain necklaces?'),
   leaf('bracelets', 'bags_accessories', 'bracelets?|bangles?|cuff bracelets?'),
   leaf('anklets', 'bags_accessories', 'anklets?|ankle chains?'),
@@ -92,14 +121,25 @@ export const TAXONOMY: readonly TaxonomyLeaf[] = [
   leaf('belts', 'bags_accessories', 'belts?'),
   leaf('scarves', 'bags_accessories', 'scarf|scarves|hijabs?|gele|head ?wraps?|turbans?'),
   leaf('wallets', 'bags_accessories', 'wallets?|purses?|card holders?'),
+  leaf('hats', 'bags_accessories', 'hats?|caps?|berets?|fascinators?|bucket hats?|face caps?'),
 
   // Shoes before bags and clothing ("shoe bag" is rare; "dress shoes" is common).
   leaf('heels', 'shoes', 'heels?|stilettos?|pumps|wedges?|block heels?'),
-  leaf('sneakers', 'shoes', 'sneakers?|trainers?|canvas shoes?|running shoes?|airforce|air force'),
+  leaf(
+    'sneakers',
+    'shoes',
+    'sneakers?|trainers?|canvas shoes?|running shoes?|airforce|air force|dunks?|jordans?',
+  ),
   leaf('slippers', 'shoes', 'slippers?|slides?|flip[- ]?flops?|palms?|crocs'),
   leaf('sandals', 'shoes', 'sandals?|gladiators?'),
-  leaf('boots', 'shoes', 'boots?|booties'),
-  leaf('flats', 'shoes', 'flats|flat shoes?|ballerinas?|loafers?|mules|moccasins?|shoes?', true),
+  // "Boot cut trouser" is trousers.
+  leaf('boots', 'shoes', 'boots?(?![- ]?cut)|booties'),
+  leaf(
+    'flats',
+    'shoes',
+    'flats|flat shoes?|ballerinas?|loafers?|mules|moccasins?|shoes?|foot ?wears?|footwears?',
+    true,
+  ),
 
   // Bags
   leaf('backpacks', 'bags_accessories', 'backpacks?|school bags?'),
@@ -107,7 +147,7 @@ export const TAXONOMY: readonly TaxonomyLeaf[] = [
   leaf(
     'handbags',
     'bags_accessories',
-    'handbags?|hand bags?|shoulder bags?|tote bags?|totes?|crossbody|cross[- ]body|sling bags?|mini bags?|bags?',
+    'handbags?|hand bags?|shoulder bags?|tote bags?|totes?|crossbody|cross[- ]body|cross ?bags?|sling bags?|mini bags?|bags?',
     true,
   ),
 
@@ -120,16 +160,20 @@ export const TAXONOMY: readonly TaxonomyLeaf[] = [
   leaf(
     'native-wear',
     'clothing',
-    'ankara|adire|aso[- ]?ebi|kaftan|caftan|boubou|bubu|iro and buba|native wear|kampala|george wrapper|wrappers?',
+    'ankara|adire|aso[- ]?ebi|kaftan|caftan|boubou|bubu|iro and buba|native wear|kampala|george wrapper|wrappers?|' +
+      'senator|atamfa|agbada|buba|dashiki',
   ),
   leaf('abaya', 'clothing', 'abayas?|jalabiyas?|jallabiyas?|jilbab'),
-  leaf('jumpsuits', 'clothing', 'jumpsuits?|playsuits?|rompers?|overalls|dungarees'),
+  leaf('jumpsuits', 'clothing', 'jumpsuits?|playsuits?|rompers?|overalls|dungarees|catsuits?|unitards?'),
+  // Shapewear before lingerie: "underwear body shaper" is shapewear.
+  leaf('shapewear', 'clothing', 'shapewear|body shapers?|waist trainers?|corsets?|tummy control'),
+  // Nigerian usage: "pant" and "nika" are panties, "tight" is a short legging worn underneath.
   leaf(
     'lingerie',
     'clothing',
-    'lingerie|bras?|bralettes?|panties|pants set|underwear|thongs?|briefs|boy ?shorts',
+    'lingerie|bras?|bralettes?|panties|pants set|underwear|thongs?|briefs|boy ?shorts|' +
+      'nikas?|tights?|(?:cotton|lace|ladies|women) pant|pants? \\d+ ?(?:pcs|pieces)|\\d+ ?(?:pcs|pieces) (?:of )?pants?',
   ),
-  leaf('shapewear', 'clothing', 'shapewear|body shapers?|waist trainers?|corsets?|tummy control'),
   leaf(
     'nightwear',
     'clothing',
@@ -154,7 +198,8 @@ export const TAXONOMY: readonly TaxonomyLeaf[] = [
   leaf(
     'tops',
     'clothing',
-    'tops?|blouses?|shirts?|t-?shirts?|tees?|tank tops?|camis?|camisoles?|crop tops?|bodysuits?|corset tops?|polos?',
+    'tops?|blouses?|shirts?|t-?shirts?|tees?|tank tops?|camis?|camisoles?|crop tops?|bodysuits?|corset tops?|polos?|' +
+      'jerseys?|singlets?|round ?necks?|tshirts?',
   ),
 
   // Electronics (secondary)
@@ -164,7 +209,11 @@ export const TAXONOMY: readonly TaxonomyLeaf[] = [
     'iphone|smartphones?|mobile phones?|galaxy [asz]\\d+|tecno|infinix|itel|redmi',
   ),
   leaf('tablets', 'electronics', 'ipad|tablets?|galaxy tab'),
-  leaf('laptops', 'electronics', 'laptops?|notebooks?|macbook|chromebook'),
+  leaf(
+    'laptops',
+    'electronics',
+    'laptops?|notebooks?|macbook|chromebook|elitebook|probook|latitude|inspiron|vivobook|zenbook|ideapad|thinkpad|pavilion|aspire',
+  ),
   leaf(
     'tv-audio',
     'electronics',
@@ -201,9 +250,32 @@ function findLeaf(text: string): TaxonomyLeaf | undefined {
   return text ? TAXONOMY.find((l) => l.pattern.test(text)) : undefined;
 }
 
-/** "Satin Dress With Belt" -> "Satin Dress": the item is named before add-ons. */
+/**
+ * "Satin Dress With Belt" -> "Satin Dress": the item is named before add-ons, and
+ * parenthesised asides ("(no Belt, no broach)") never name it.
+ */
 export function titleHead(title: string): string {
-  return title.split(/\s+(?:with|\+|&\s*free|plus free|and free|\|)\s+/i)[0] ?? title;
+  const head = title.split(/\s+(?:with|\+|&\s*free|plus free|and free|\|)\s+/i)[0] ?? title;
+  return head.replace(/\([^)]*\)/g, ' ');
+}
+
+/**
+ * Spec words only electronics carry: "8GB RAM", "256GB ROM", "512GB SSD", "5000mAh",
+ * "Android 15", "Intel Core i5". They beat every fashion word ("...WIN 11 PRO+BAG").
+ */
+const ELECTRONICS_SIGNAL =
+  /\b\d{1,4}\s*GB\s*(?:RAM|ROM|SSD|EMMC)|\b\d{3,4}\s*(?:SSD|HDD)\b|\b\d{3,5}\s*mAh\b|\bandroid\s*\d|\bintel\b|\bcore\s*i[3579]\b|\bryzen\b|\bsnapdragon\b|\bceleron\b/i;
+const LAPTOP_SIGNAL =
+  /\b(?:ssd|hdd|emmc|intel|core\s*i[3579]|ryzen|celeron|windows|win\s*1[01]|freedos|keyboard)\b/i;
+
+/** Words that say "clothes" without naming the item (Nigerian "wears", "outfit"). */
+const CLOTHING_WORDS = /\b(?:wears|outfits?|clothes|clothing)\b/i;
+
+function electronicsLeaf(title: string): TaxonomyLeaf | undefined {
+  if (!ELECTRONICS_SIGNAL.test(title)) return undefined;
+  const leaf = findLeaf(title);
+  if (leaf?.department === 'electronics') return leaf;
+  return TAXONOMY.find((l) => l.id === (LAPTOP_SIGNAL.test(title) ? 'laptops' : 'phones'));
 }
 
 /**
@@ -225,12 +297,13 @@ export function classify(categoryPath: readonly string[], title: string): Classi
     const chosen = titleFits ? fromTitle : hit;
     return { department: chosen.department, category: chosen.id, source: 'path' };
   }
-  const fromTitle = findLeaf(titleHead(title)) ?? findLeaf(title);
+  const fromTitle = electronicsLeaf(title) ?? findLeaf(titleHead(title)) ?? findLeaf(title);
   const pathText = categoryPath.join(' / ');
   const hinted = DEPARTMENT_HINTS.find((h) => h.pattern.test(pathText))?.department;
   if (fromTitle && (!hinted || hinted === fromTitle.department || hinted === 'clothing')) {
     return { department: fromTitle.department, category: fromTitle.id, source: 'title' };
   }
   if (hinted) return { department: hinted, category: null, source: 'path' };
+  if (CLOTHING_WORDS.test(title)) return { department: 'clothing', category: null, source: 'title' };
   return { department: 'other', category: null, source: 'none' };
 }
