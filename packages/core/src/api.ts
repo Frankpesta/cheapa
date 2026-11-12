@@ -139,6 +139,9 @@ export const ProductResponse = z.object({
   repImageUrl: z.string().nullable(),
   minPriceKobo: Kobo.nullable(),
   maxPriceKobo: Kobo.nullable(),
+  /** Headline prices (04 §4.5): never one "cheapest" across new and used. */
+  cheapestNewKobo: Kobo.nullable(),
+  cheapestUsedKobo: Kobo.nullable(),
   listingCount: z.number().int().nonnegative(),
   updatedAt: z.iso.datetime(),
 });

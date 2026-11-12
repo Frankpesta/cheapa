@@ -1,6 +1,7 @@
 export * from './api.js';
 export * from './env.js';
 export * from './events.js';
+export * from './flags.js';
 export * from './money.js';
 export * from './privacy.js';
 export * from './types.js';

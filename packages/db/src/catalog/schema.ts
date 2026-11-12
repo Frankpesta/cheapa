@@ -89,6 +89,9 @@ export const canonicalProducts = pgTable(
     repImageUrl: text('rep_image_url'),
     minPriceKobo: kobo('min_price_kobo'),
     maxPriceKobo: kobo('max_price_kobo'),
+    /** Headline prices (04 §4.5): new and used are never compared in one "cheapest". */
+    cheapestNewKobo: kobo('cheapest_new_kobo'),
+    cheapestUsedKobo: kobo('cheapest_used_kobo'),
     listingCount: integer('listing_count').notNull().default(0),
     createdAt: createdAt(),
     updatedAt: updatedAt(),
@@ -137,6 +140,8 @@ export const listings = pgTable(
     sellerName: text('seller_name'),
     region: text('region'),
     sponsored: boolean('sponsored').notNull().default(false),
+    /** Under half its product's median price, same condition (04 §4.5 "check seller"). */
+    suspectLow: boolean('suspect_low').notNull().default(false),
     canonicalProductId: uuid('canonical_product_id').references(() => canonicalProducts.id, {
       onDelete: 'set null',
     }),
