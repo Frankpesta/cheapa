@@ -2,6 +2,7 @@ import { ensurePartitions, listCrawlableStores } from '../crawl/stores.js';
 import { jobId } from '../queues.js';
 import { isDue, jitterMs, watParts } from '../schedule.js';
 import type { WorkerDeps } from './deps.js';
+import { checkPartitions } from './health.js';
 
 /**
  * Runs every 15 min: enqueues a discover job, jittered, for each store that is due.
@@ -28,5 +29,6 @@ export async function runTick(deps: WorkerDeps): Promise<{ enqueued: number }> {
 /** Daily: keep price_history partitions three months ahead. */
 export async function runPartitions(deps: WorkerDeps): Promise<void> {
   await ensurePartitions(deps.db, 3);
+  await checkPartitions(deps);
   deps.log.info('price_history partitions ensured');
 }

@@ -11,7 +11,7 @@ import {
 import { createCatalogDb } from '@cheapa/db/catalog';
 import * as Sentry from '@sentry/node';
 import { Redis } from 'ioredis';
-import { LogAlerter } from './alerts.js';
+import { OpsAlerter, RedisAlertThrottle } from './alerts.js';
 import { loadWorkerEnv } from './config/env.js';
 import { RedisPriceEvents } from './events.js';
 import type { WorkerDeps } from './jobs/deps.js';
@@ -35,7 +35,14 @@ const deps: WorkerDeps = {
   registry: new AdapterRegistry(allAdapters),
   httpFor: (store, storeLog) =>
     new PoliteHttp({ limiter, robots, maxRps: store.crawlPolicy.maxRps, log: storeLog }),
-  alerter: new LogAlerter(log),
+  alerter: new OpsAlerter({
+    log,
+    throttle: new RedisAlertThrottle(redis),
+    throttleSeconds: env.ALERT_THROTTLE_MINUTES * 60,
+    ...(env.ALERT_TELEGRAM_BOT_TOKEN && env.ALERT_TELEGRAM_CHAT_ID
+      ? { telegram: { botToken: env.ALERT_TELEGRAM_BOT_TOKEN, chatId: env.ALERT_TELEGRAM_CHAT_ID } }
+      : {}),
+  }),
   events: new RedisPriceEvents(redis),
   log,
   signal: shutdown.signal,
@@ -47,7 +54,10 @@ const workers = startWorkers(deps, redis, {
   fetch: env.WORKER_CONCURRENCY_FETCH,
   process: env.WORKER_CONCURRENCY_PROCESS,
 });
-log.info({ adapters: deps.registry.list().map((a) => a.id) }, 'worker started');
+log.info(
+  { adapters: deps.registry.list().map((a) => a.id), telegramAlerts: Boolean(env.ALERT_TELEGRAM_BOT_TOKEN) },
+  'worker started',
+);
 
 let stopping = false;
 async function stop(signal: string): Promise<void> {

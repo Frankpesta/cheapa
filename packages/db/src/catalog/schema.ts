@@ -217,6 +217,13 @@ export const crawlJobs = pgTable(
     finishedAt: timestamp('finished_at', { withTimezone: true }),
     itemsFound: integer('items_found').notNull().default(0),
     itemsChanged: integer('items_changed').notNull().default(0),
+    /** Fetch refs discover enqueued; null while discover is still running. */
+    refsTotal: integer('refs_total'),
+    /** Fetches finished (including skipped refs) and fetches that failed for good. */
+    fetchesDone: integer('fetches_done').notNull().default(0),
+    fetchesFailed: integer('fetches_failed').notNull().default(0),
+    /** Set once when the run is complete and its health rules ran (02-crawler-core.md 2.5). */
+    healthCheckedAt: timestamp('health_checked_at', { withTimezone: true }),
     errors: jsonb('errors').$type<unknown[]>().notNull().default([]),
     createdAt: createdAt(),
   },

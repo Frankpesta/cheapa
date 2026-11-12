@@ -10,7 +10,8 @@
     "start": "node --import ./dist/instrument.js dist/main.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "vitest run --passWithNoTests"
+    "test": "vitest run --passWithNoTests",
+    "crawl:report": "tsx --conditions=@cheapa/source --env-file-if-exists=../../.env src/scripts/crawl-report.ts"
   },
   "dependencies": {
     "@cheapa/adapters": "workspace:*",
