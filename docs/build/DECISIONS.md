@@ -29,6 +29,8 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-12 | `events:price` is at-least-once: entries are added inside the upsert transaction, before commit | A Redis failure rolls the upsert back and the job retries; a lost event would never be re-detected. Consumers dedupe on (listingId, observedAt) |
 | 2026-11-12 | Unseen 7 days → `inStock=false` after a successful sweep (with history + event); unseen 30 days → hidden at query time (`LISTING_HIDDEN_DAYS`) | 02 §2.4. 04 §4.5's "7 days → hidden" read as: out-of-stock listings drop out of default results |
 | 2026-11-12 | `gen:adapter` never registers the adapter; a guard test fails any adapter folder without fixtures | A half-built adapter must not reach the scheduler; rule 5 enforced by the build, not by memory |
+| 2026-11-12 | Jumia: parse the embedded `window.__STORE__` JSON on category pages, not the HTML cards; no `liveSearch` | The JSON carries SKU, brand, category path, per-size price and stock. robots.txt disallows site search (`/*q=`), so 03 §3.6's Jumia live search is not allowed |
+| 2026-11-12 | A multi-size price counts only sizes still in stock (`from` when they differ) | A "From ₦X" whose cheapest size sold out is not a price anyone can pay (13 §13.2) |
 
 ## Deferred
 
