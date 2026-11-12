@@ -96,6 +96,8 @@ export const canonicalProducts = pgTable(
   (t) => [
     index('canonical_products_department_category_idx').on(t.department, t.category),
     index('canonical_products_gtin_idx').on(t.gtin),
+    // Matcher candidate retrieval by title similarity (04 §4.3) until vectors exist.
+    index('canonical_products_title_trgm_idx').using('gin', sql`${t.title} gin_trgm_ops`),
   ],
 );
 

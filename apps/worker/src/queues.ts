@@ -58,6 +58,10 @@ export const EmbedJob = z.object({
 });
 export type EmbedJob = z.infer<typeof EmbedJob>;
 
+/** A listing with no canonical product yet (04 §4.3). */
+export const MatchJob = z.object({ listingId: z.uuid() });
+export type MatchJob = z.infer<typeof MatchJob>;
+
 /**
  * Retries with backoff for unexpected errors. Blocked / robots / parse errors throw
  * UnrecoverableError and are never retried. Finished jobs are trimmed so Redis stays small.

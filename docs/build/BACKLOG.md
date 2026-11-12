@@ -7,11 +7,10 @@ TODOs allowed in shipped paths must be logged here with file path and reason.
 | 2026-11-01 | `pnpm-workspace.yaml` catalog | Upgrade TypeScript 6.0 → 7.x | typescript-eslint 8.72 supports TypeScript < 6.1 only; bump both when typescript-eslint adds 7.x support |
 | 2026-11-01 | `infra/` | VPS provisioning README (Ubuntu 24.04, ufw 22/80/443, fail2ban), Caddy service, `backup.sh` (both DBs, users dump encrypted, R2/B2 upload) | Hosting and deploy deferred by owner; local compose done in 1.3 |
 | 2026-11-02 | deploy pipeline | Deploy the `main` build whose source maps CI uploaded (debug ids are injected into `dist/` by `scripts/ci/sentry-release.sh`) and set `APP_VERSION=<commit sha>` on `api`, `api-jobs` and `worker` | Hosting and deploy deferred; the Docker image builds its own `dist/` without debug ids |
-| 2026-11-02 | `apps/worker/src/workers.ts` | `embed` and `match` consumers (queues already named in `queues.ts`) | Phases 05 and 04 |
+| 2026-11-02 | `apps/worker/src/workers.ts` | `embed` consumer (queue already named in `queues.ts`) | Phase 05 |
 | 2026-11-02 | `apps/worker/src/jobs/discover.ts` | Playwright pool (max 2 browsers) + `fetch-browser` route for `needsBrowser` adapters; until then they fail with a clear error | No adapter needs a browser yet; build with the first one (phase 03) |
 | 2026-11-02 | `apps/worker/src/schedule.ts` | Tier-1 hot products every 6 h (products with recent searches or watches) | Needs a search/watch signal from the API (users DB) published to redis-queue; phase 08 |
 | 2026-11-12 | search (phase 05/06) | Filter out listings with `last_seen_at` older than `LISTING_HIDDEN_DAYS` (30) and show `flags.stale` after 48 h | No listing search query exists yet |
-| 2026-11-12 | `apps/worker/src/jobs/process.ts` | Enqueue `match` for new/changed listings | Matcher lands in phase 04 §4.3 |
 | 2026-11-12 | ops (11.3) | Sentry issue alerts routed to the Telegram ops chat (Sentry → Alerts → Telegram/webhook integration) | Needs the Sentry org, which the owner hasn't created yet |
 | 2026-11-12 | `apps/worker/src/crawl/report.ts` | Admin page with the crawl report table | 02 §2.5 "admin page later"; `pnpm crawl:report` prints it for now |
 | 2026-11-12 | Konga (03 §3.3) | Ask Konga for a product feed or an allow-listed crawler; then run discovery and `pnpm gen:adapter konga` | Blocked by Cloudflare; partnership only (docs/sources/konga.md) |
@@ -25,3 +24,7 @@ TODOs allowed in shipped paths must be logged here with file path and reason.
 | 2026-11-12 | `packages/ml` + `packages/core/src/normalize/` | `TextExtractor` LLM fallback for listings below `LOW_CONFIDENCE` (04 §4.1 step 7): strict JSON, cached by title hash, `LLM_EXTRACT_DAILY_CAP` | Needs the provider layer in `@cheapa/ml` (vendor SDKs only there, rule 6) and an API key decision |
 | 2026-11-12 | `scripts/data/titles-labelled.jsonl` | Add 100+ fresh, held-out phone/laptop titles: today's 76 hand labels were also used to tune the extractor, so its 100% is optimistic | Needs a fresh crawl sample |
 | 2026-11-12 | normalizer | Store-level default department (a wig-only store like Mesh Hairline names products "Miss Excel"): use the store's own category, which crawled listings carry | Title-only eval shows it; crawled listings already pass `categoryPath` |
+| 2026-11-12 | `apps/worker/src/crawl/products.ts` (phase 05) | Candidate retrieval by image and text vectors (top 20 each, 04 §4.3) and real `imageSim`/`textSim` into `decideMatch` | Embeddings don't exist yet; titles (pg_trgm) stand in |
+| 2026-11-12 | matcher (04 §4.4) | Labelled pairs set (1,000, ≥60% fashion/beauty incl. supplier-photo duplicates and near misses) and a precision/recall eval; tune `MATCH_*_THRESHOLD` on it | Needs the review tool's decisions and image vectors for fashion pairs |
+| 2026-11-12 | `canonical_products` (04 §4.5) | Cheapest new vs cheapest used shown separately; suspect-low and stale flags | 4.5 |
+| 2026-11-12 | matcher | Re-match when a listing's hard attributes change (a seller edits "64GB" to "128GB" on the same ad) | Rare; today a listing keeps its first product |

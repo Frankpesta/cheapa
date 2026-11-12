@@ -29,6 +29,10 @@ export interface UpsertResult {
   outdated: number;
   events: PriceChangedEvent[];
   embeds: EmbedRequest[];
+  /** Listings with no canonical product yet: the `match` queue's work (04 §4.3). */
+  toMatch: string[];
+  /** Products whose listings changed price or stock: their min/max need a refresh. */
+  touchedProducts: string[];
 }
 
 /** Last one wins when a payload repeats an externalId (one row per key per statement). */
@@ -134,6 +138,8 @@ export async function upsertListings(
       outdated: rows.length - written.length,
       events: [],
       embeds: [],
+      toMatch: [],
+      touchedProducts: [],
     };
     const byExternal = new Map(rows.map((r) => [r.externalId, r]));
     const history: (typeof priceHistory.$inferInsert)[] = [];
@@ -142,11 +148,13 @@ export async function upsertListings(
       const before = previous.get(w.externalId);
       if (w.inserted) result.inserted += 1;
       else result.updated += 1;
+      if (!before?.canonicalProductId) result.toMatch.push(w.id);
       // A row inserted by a concurrent job between our lock and our insert has no
       // `before`; that job already recorded its history.
       const changed =
         w.inserted || (before && (before.priceKobo !== now.priceKobo || before.inStock !== now.inStock));
       if (changed) {
+        if (before?.canonicalProductId) result.touchedProducts.push(before.canonicalProductId);
         history.push({
           listingId: w.id,
           priceKobo: now.priceKobo,

@@ -1,0 +1,1 @@
+CREATE INDEX "canonical_products_title_trgm_idx" ON "canonical_products" USING gin ("title" gin_trgm_ops);

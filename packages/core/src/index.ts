@@ -5,3 +5,4 @@ export * from './money.js';
 export * from './privacy.js';
 export * from './types.js';
 export * from './normalize/index.js';
+export * from './match/index.js';

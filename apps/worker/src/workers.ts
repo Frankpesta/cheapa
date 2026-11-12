@@ -5,6 +5,7 @@ import { CrawlOutcome, type WorkerDeps } from './jobs/deps.js';
 import { runDiscover } from './jobs/discover.js';
 import { runFetch } from './jobs/fetch.js';
 import { fetchFinished } from './jobs/health.js';
+import { runMatch } from './jobs/match.js';
 import { runProcess } from './jobs/process.js';
 import { runPartitions, runTick } from './jobs/tick.js';
 import {
@@ -12,6 +13,7 @@ import {
   QUEUES,
   type DiscoverJob,
   type FetchJob,
+  type MatchJob,
   type ProcessJob,
   type Queues,
 } from './queues.js';
@@ -21,11 +23,12 @@ export interface Concurrency {
   discover: number;
   fetch: number;
   process: number;
+  match: number;
 }
 
 /**
- * Consumers for schedule, discover, fetch and process. `embed` and `match` land with
- * phases 05 and 04 (BACKLOG.md).
+ * Consumers for schedule, discover, fetch, process and match. `embed` lands with
+ * phase 05 (BACKLOG.md).
  */
 export function startWorkers(
   deps: WorkerDeps,
@@ -60,6 +63,7 @@ export function startWorkers(
       concurrency.fetch,
     ),
     make<ProcessJob>(QUEUES.process, (job) => runProcess(deps, job), concurrency.process),
+    make<MatchJob>(QUEUES.match, (job) => runMatch(deps, job), concurrency.match),
   ];
 }
 
