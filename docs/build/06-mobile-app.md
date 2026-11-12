@@ -24,7 +24,7 @@ First session for this phase: "Read `CLAUDE.md` and `docs/design/DESIGN.md`. Cre
 
 | Route | Design file | Purpose |
 | --- | --- | --- |
-| `/onboarding` | `Welcome`, `Onboarding2`, `Onboarding3` | Snap pitch, share-from-any-app, choose delivery city |
+| `/onboarding` | `Welcome`, `Onboarding2` | Snap pitch, share-from-any-app (two steps; no city: Cheapa doesn't deliver) |
 | `/` (Home) | `Home` | Snap hero + gallery, text search, recent searches, real price drops |
 | `/camera` | `Camera` | Full-screen camera, Product/Screenshot mode, shutter → search |
 | `/search/[requestId]` | `Searching`, `Results`, `Confirm` (sheet), `NotFound` (empty) | Loading checklist, results, variant confirmation, not-found state |

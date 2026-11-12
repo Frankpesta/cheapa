@@ -36,7 +36,7 @@ Rendering: json (listing API), no browser needed
 | sizes | `attrs[name=Size].value` | "XL, XXL, 3XL", "One Size / No Size", shoes "39, 40.5" (EU) |
 | audience | `attrs[name=Gender].value` | Women's / Men's / Unisex; `/clothing` mixes all three |
 | sellerName | `seller.user_name` | present for shops only; display name only, never phone or address |
-| region | `region_item_text` | "Lagos, Ikeja" (show the buyer's city first, 03 §3.4) |
+| region | `region_item_text` | "Lagos, Ikeja", shown on the listing row (no buyer-city sorting) |
 | sponsored | `is_top` / `is_boost` / `as_top` | paid placements: labelled, never change the order (rule 7) |
 | attributes | `user_id` → `sellerId`, `labels[type=id_verify]` → `verifiedSeller`, "Bulk prices" attr → `bulkPrices`, `repostKey` | |
 

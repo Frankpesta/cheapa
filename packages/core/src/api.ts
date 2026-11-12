@@ -161,7 +161,6 @@ export type PriceHistoryResponse = z.infer<typeof PriceHistoryResponse>;
 export const MeUser = z.object({
   id: z.uuid(),
   email: z.string().nullable(),
-  city: z.string().nullable(),
   whatsappOptIn: z.boolean(),
   plan: z.enum(['free', 'premium']),
   role: z.enum(['user', 'admin']),
