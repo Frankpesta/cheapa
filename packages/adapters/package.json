@@ -28,10 +28,12 @@
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "vitest run --passWithNoTests"
+    "test": "vitest run --passWithNoTests",
+    "gen:adapter": "tsx --conditions=@cheapa/source scripts/gen-adapter.ts"
   },
   "dependencies": {
     "@cheapa/core": "workspace:*",
+    "cheerio": "catalog:",
     "ioredis": "catalog:",
     "robots-parser": "3.0.1",
     "zod": "catalog:"
@@ -41,6 +43,7 @@
     "@types/node": "catalog:",
     "eslint": "catalog:",
     "testcontainers": "catalog:",
+    "tsx": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   }

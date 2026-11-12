@@ -1,0 +1,45 @@
+# {{name}} source notes
+
+Adapter: `{{adapterId}}` (`packages/adapters/src/{{folder}}/`)
+Store: https://{{domain}}/
+Verified: {{date}} by <name>
+robots.txt: <allowed paths / disallowed paths>
+Terms note: <one line>
+Departments: <clothing / shoes / bags & accessories / hair / beauty / electronics>
+Rendering: {{format}}, no browser needed <or: needs JS, flag here and set `needsBrowser`>
+
+## Best list source
+- Endpoint: <METHOD URL>
+- Params: <name: meaning>
+- Pagination: <how> (adapter: `PAGE_PARAM`, `lastPage()`)
+- Items per page: <n>
+- Required headers: <only those actually required>
+
+## Product detail source
+- <structured data / endpoint>
+
+## Field mapping
+| Cheapa field | Source path | Notes |
+| --- | --- | --- |
+| externalId | ... | |
+| title | ... | |
+| priceKobo | ... | parse with `parsePrice`; "From ₦X" = `priceKind: 'from'` |
+| oldPriceKobo | ... | strike-through price |
+| inStock | ... | |
+| imageUrl | ... | largest stable URL; never re-hosted |
+| condition | ... | thrift / okrika = used |
+| brand / model / specs | ... | |
+| sizes / colours | ... | store options, if listed on the card |
+
+## Live search (for query time)
+- <endpoint or "not suitable">
+
+## Gotchas
+- <variants, multipacks, sponsored items, seller vs store, currency quirks>
+
+## Adapter checklist
+- [ ] robots.txt and terms reviewed; `stores.crawl_policy.robotsOk` set
+- [ ] Fixture saved signed-out in `__fixtures__/` (no cookies, no personal data)
+- [ ] `START_PATHS` and selectors / field paths filled in
+- [ ] `pnpm --filter @cheapa/adapters test` passes and the snapshot was reviewed
+- [ ] Added to `allAdapters` in `packages/adapters/src/all.ts`

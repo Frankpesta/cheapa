@@ -1,0 +1,65 @@
+/**
+ * {{name}} listing-page parser (JSON API). Pure: no I/O, no clock, so it runs unchanged
+ * against __fixtures__/. Field paths come from docs/sources/{{folder}}.md; a response
+ * without the expected product array throws ParseError and the crawl alerts.
+ */
+import { parsePrice } from '@cheapa/core';
+import { ParseError } from '../errors.js';
+import type { JsonValue, RawListingInput, RawPayload, StoreRef } from '../types.js';
+
+const ADAPTER_ID = '{{adapterId}}';
+
+/** One product as the store's API returns it. Rename fields to match the source doc. */
+interface {{pascal}}Item {
+  id: string | number;
+  name: string;
+  url: string;
+  /** As shown: "₦ 12,500" or a number of naira. */
+  price: string | number;
+  oldPrice?: string | number;
+  inStock?: boolean;
+  image?: string;
+  brand?: string;
+}
+
+interface {{pascal}}Page {
+  products?: {{pascal}}Item[];
+  totalPages?: number;
+}
+
+const asPage = (body: JsonValue) => body as unknown as {{pascal}}Page;
+const price = (value: string | number | undefined) =>
+  value === undefined ? null : parsePrice(typeof value === 'number' ? `₦${value}` : value);
+
+/** Page count from the API; 1 when absent. */
+export function lastPage(body: JsonValue): number {
+  const total = asPage(body).totalPages;
+  return typeof total === 'number' && total > 0 ? Math.floor(total) : 1;
+}
+
+export function parse{{pascal}}(raw: RawPayload, _store: StoreRef): RawListingInput[] {
+  if (raw.format !== 'json') throw new ParseError(ADAPTER_ID, `expected json, got ${raw.format}`);
+  const items = asPage(raw.body).products;
+  if (!Array.isArray(items)) throw new ParseError(ADAPTER_ID, 'no products array: API shape changed?');
+
+  const listings: RawListingInput[] = [];
+  for (const item of items) {
+    const now = price(item.price);
+    // Items without a price ("call for price") can't be compared.
+    if (!now) continue;
+    const old = price(item.oldPrice);
+    listings.push({
+      externalId: String(item.id),
+      sourceUrl: new URL(item.url, raw.url).toString(),
+      title: item.name,
+      priceKobo: now.minKobo,
+      priceKind: now.kind,
+      ...(now.kind === 'range' && now.maxKobo ? { priceMaxKobo: now.maxKobo } : {}),
+      ...(old ? { oldPriceKobo: old.minKobo } : {}),
+      inStock: item.inStock ?? true,
+      ...(item.image ? { imageUrl: new URL(item.image, raw.url).toString() } : {}),
+      ...(item.brand ? { brand: item.brand } : {}),
+    });
+  }
+  return listings;
+}

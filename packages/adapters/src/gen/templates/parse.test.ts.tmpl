@@ -1,0 +1,39 @@
+/**
+ * {{name}} fixture tests (CLAUDE.md rule 5). Save a real, signed-out listing page as
+ * __fixtures__/{{fixture}} first (see docs/sources/{{folder}}.md), then review the
+ * snapshot this writes: it is the adapter's expected output.
+ */
+import { fileURLToPath } from 'node:url';
+import { describe, expect, it } from 'vitest';
+import { ParseError } from '../errors.js';
+import { loadFixture, testStore } from '../testing.js';
+import { parseListings } from '../validate.js';
+import { {{camel}}Adapter } from './index.js';
+import { lastPage } from './parse.js';
+
+const FIXTURES = fileURLToPath(new URL('./__fixtures__/', import.meta.url));
+const store = testStore({ name: '{{name}}', domain: '{{domain}}', platform: '{{platform}}' });
+/** The page the fixture was saved from. */
+const FIXTURE_URL = 'https://{{domain}}/';
+const page = () => loadFixture(FIXTURES, '{{fixture}}', FIXTURE_URL);
+
+describe('{{adapterId}} parse', () => {
+  it('turns every product on a listing page into a valid listing', () => {
+    const { listings, rejected } = parseListings({{camel}}Adapter, page(), store);
+    expect(rejected).toEqual([]);
+    expect(listings.length).toBeGreaterThan(0);
+    for (const listing of listings) {
+      expect(listing.title.length).toBeGreaterThan(0);
+      expect(new URL(listing.sourceUrl).host).toBe('{{domain}}');
+    }
+    expect(listings).toMatchSnapshot();
+  });
+
+  it('reads the page count', () => {
+    expect(lastPage({{lastPageArg}})).toBeGreaterThanOrEqual(1);
+  });
+
+  it('fails loudly when the page shape changes', () => {
+    expect(() => {{camel}}Adapter.parse({ ...page(), {{brokenBody}} }, store)).toThrow(ParseError);
+  });
+});

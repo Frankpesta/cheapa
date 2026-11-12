@@ -91,3 +91,5 @@ packages/adapters/src/<id>/__fixtures__/
 packages/adapters/src/<id>/parse.test.ts
 docs/sources/<id>.md   (from template in 03-tier1-adapters.md)
 ```
+
+Options: `--domain <host>` (one store) or `--platform <name>` (WooCommerce, Shopify...), `--name "Store Name"`, `--format html|json` (default html, parsed with cheerio). The generated test fails until a real signed-out page is saved in `__fixtures__/` and the selectors are set; the adapter goes live only when added to `allAdapters`. `src/fixtures-guard.test.ts` fails the build for any adapter folder without fixtures and a parse test (CLAUDE.md rule 5).
