@@ -1,5 +1,6 @@
 import { Blocked, ParseError, RobotsDisallowed, type AdapterRegistry } from '@cheapa/adapters';
 import type { AdapterContext, PoliteHttpClient, StoreRef } from '@cheapa/adapters/types';
+import type { MatchThresholds } from '@cheapa/core';
 import type { CatalogDb } from '@cheapa/db/catalog';
 import { UnrecoverableError } from 'bullmq';
 import type { Alerter } from '../alerts.js';
@@ -21,6 +22,8 @@ export interface WorkerDeps {
   log: Logger;
   /** Aborted on shutdown; adapters stop paging and in-flight requests are cancelled. */
   signal: AbortSignal;
+  /** Merge/review thresholds (04 §4.3); defaults from @cheapa/core when absent. */
+  matchThresholds?: MatchThresholds;
   now?: () => Date;
   random?: () => number;
 }

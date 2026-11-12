@@ -22,6 +22,13 @@
       "when": 1794488488248,
       "tag": "0002_crawl_job_progress",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794512709287,
+      "tag": "0003_canonical_title_trgm",
+      "breakpoints": true
     }
   ]
 }

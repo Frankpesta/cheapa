@@ -32,7 +32,8 @@ afterEach(async () => {
   await h.stop();
 });
 
-const run = () => (workers = startWorkers(h.deps, h.redis, { discover: 1, fetch: 2, process: 1 }, h.prefix));
+const run = () =>
+  (workers = startWorkers(h.deps, h.redis, { discover: 1, fetch: 2, process: 1, match: 1 }, h.prefix));
 const crawlJob = async (storeId: string) =>
   (await h.catalog.db.select().from(crawlJobs).where(eq(crawlJobs.storeId, storeId)))[0];
 const store = async (id: string) => (await h.catalog.db.select().from(stores).where(eq(stores.id, id)))[0]!;

@@ -8,7 +8,8 @@ import {
 import type { Job } from 'bullmq';
 import { markUnseenOutOfStock, upsertListings, type EmbedRequest } from '../crawl/listings.js';
 import { getStore } from '../crawl/stores.js';
-import { jobId, ProcessJob, shortHash, type EmbedJob } from '../queues.js';
+import { refreshProduct } from '../crawl/products.js';
+import { jobId, ProcessJob, shortHash, type EmbedJob, type MatchJob } from '../queues.js';
 import type { WorkerDeps } from './deps.js';
 
 export interface ProcessResult {
@@ -59,6 +60,10 @@ export async function runProcess(deps: WorkerDeps, job: Job<ProcessJob>): Promis
       await enqueueEmbeds(deps, embeds);
     },
   );
+  // After commit: the match job must see the listing; a lost enqueue heals on the next
+  // crawl, which re-queues anything still without a product.
+  await enqueueMatches(deps, result.toMatch);
+  for (const productId of new Set(result.touchedProducts)) await refreshProduct(deps.db, productId);
   const summary = {
     inserted: result.inserted,
     updated: result.updated,
@@ -68,6 +73,18 @@ export async function runProcess(deps: WorkerDeps, job: Job<ProcessJob>): Promis
   };
   log.info(summary, 'listings processed');
   return summary;
+}
+
+/** One pending match per listing (job id), however many crawls see it unmatched. */
+async function enqueueMatches(deps: WorkerDeps, listingIds: readonly string[]): Promise<void> {
+  if (listingIds.length === 0) return;
+  await deps.queues.match.addBulk(
+    listingIds.map((listingId) => ({
+      name: 'match',
+      data: { listingId } satisfies MatchJob,
+      opts: { jobId: jobId('match', listingId) },
+    })),
+  );
 }
 
 /** Job id per listing + image, so the same image is never embedded twice. */
@@ -88,13 +105,19 @@ async function enqueueEmbeds(deps: WorkerDeps, embeds: readonly EmbedRequest[]):
  */
 export async function markStoreStale(deps: WorkerDeps, store: { id: string; name: string }): Promise<number> {
   const now = deps.now?.() ?? new Date();
+  const products = new Set<string>();
   const count = await markUnseenOutOfStock(
     deps.db,
     store,
     daysBefore(now, LISTING_OUT_OF_STOCK_DAYS),
     now,
-    (events) => deps.events.publish(events),
+    async (events) => {
+      for (const e of events) if (e.productId) products.add(e.productId);
+      await deps.events.publish(events);
+    },
   );
+  // Out-of-stock listings leave their products' price range.
+  for (const productId of products) await refreshProduct(deps.db, productId);
   if (count > 0) deps.log.info({ storeId: store.id, count }, 'unseen listings marked out of stock');
   return count;
 }

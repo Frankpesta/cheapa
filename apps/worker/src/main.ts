@@ -46,6 +46,7 @@ const deps: WorkerDeps = {
   events: new RedisPriceEvents(redis),
   log,
   signal: shutdown.signal,
+  matchThresholds: { merge: env.MATCH_MERGE_THRESHOLD, review: env.MATCH_REVIEW_THRESHOLD },
 };
 
 await upsertSchedules(queues);
@@ -53,6 +54,7 @@ const workers = startWorkers(deps, redis, {
   discover: env.WORKER_CONCURRENCY_DISCOVER,
   fetch: env.WORKER_CONCURRENCY_FETCH,
   process: env.WORKER_CONCURRENCY_PROCESS,
+  match: env.WORKER_CONCURRENCY_MATCH,
 });
 log.info(
   { adapters: deps.registry.list().map((a) => a.id), telegramAlerts: Boolean(env.ALERT_TELEGRAM_BOT_TOKEN) },

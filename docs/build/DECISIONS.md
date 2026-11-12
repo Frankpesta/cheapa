@@ -39,6 +39,9 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-12 | Live search (03 §3.6) is Jiji only; Jumia's search is robots-disallowed and Konga is blocked | `runLiveSearch` (adapters) + `LiveSearchService` (API): tier-1, active, robots-reviewed stores with a `liveSearch`; 1 call/store/search, 30-min redis-cache, 4 s budget, 1-h backoff after a block; never throws; query text never logged |
 | 2026-11-12 | The labelled title set is labelled from the stores' own data (category path, brand field), not by Cheapa's normalizer; phones/laptops by hand | So the eval can't grade the normalizer against itself. Rules live in `scripts/data/label-titles.mjs`; known store-label noise (Jumia files slippers under Pumps, Kuddy files SPF foundation under Sunscreen) is documented there |
 | 2026-11-12 | Brand dictionary is TypeScript (`normalize/brands.ts`), ~370 brands, fashion/hair/beauty first; a title brand only counts in a department it sells in | Ordinary-word brands (Simple, Next, Coach, Dove) otherwise fire on adjectives in Title Case titles |
+| 2026-11-12 | Until image embeddings exist (phase 05), clothing, shoes, bags and hair merge only on exact keys (GTIN, brand + model number, phash); beauty and electronics merge on title-token similarity + attributes | 13 §13.4: a wrong fashion merge is worse than a missed one, and text alone can't tell two satin dresses apart. Lookalikes (phase 05) cover the gap |
+| 2026-11-12 | Electronics: same brand + model + storage is an exact key (`brand_model`) | 04 §4.2 defines the canonical product that way; title tokens alone left identical phones in review |
+| 2026-11-12 | Matcher candidates = exact-key products + top 20 same-category titles by pg_trgm similarity; matching serialised per department+category with a transaction advisory lock | Vectors replace the title retrieval in phase 05; the lock stops two concurrent jobs founding the same product twice |
 
 ## Deferred
 
