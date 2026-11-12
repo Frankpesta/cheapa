@@ -4,5 +4,6 @@
     "rootDir": ".",
     "noEmit": true
   },
-  "include": ["src", "scripts", "*.config.ts"]
+  "include": ["src", "scripts", "*.config.ts"],
+  "exclude": ["src/zz-gen-check-*"]
 }

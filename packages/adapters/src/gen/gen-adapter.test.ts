@@ -154,5 +154,6 @@ describe('generated adapter runs', () => {
     }
     expect(refs).toEqual(['https://www.trial.ng/', 'https://www.trial.ng/?page=2']);
     expect(readdirSync(dir).sort()).toEqual(['__fixtures__', 'index.ts', 'parse.ts']);
-  });
+    // Compiles the generated TypeScript on the fly: slow when the whole repo tests in parallel.
+  }, 30_000);
 });

@@ -10,7 +10,6 @@ TODOs allowed in shipped paths must be logged here with file path and reason.
 | 2026-11-02 | `apps/worker/src/workers.ts` | `embed` and `match` consumers (queues already named in `queues.ts`) | Phases 05 and 04 |
 | 2026-11-02 | `apps/worker/src/jobs/discover.ts` | Playwright pool (max 2 browsers) + `fetch-browser` route for `needsBrowser` adapters; until then they fail with a clear error | No adapter needs a browser yet; build with the first one (phase 03) |
 | 2026-11-02 | `apps/worker/src/schedule.ts` | Tier-1 hot products every 6 h (products with recent searches or watches) | Needs a search/watch signal from the API (users DB) published to redis-queue; phase 08 |
-| 2026-11-12 | `packages/core/src/normalize/` | Brand dictionary (`brands.json`, fashion/hair/beauty + phone brands, aliases), electronics model packs, `TextExtractor` LLM fallback below `LOW_CONFIDENCE`, 500-title labelled set | Phase 04 §4.1; v1 here is fashion-first rules only |
 | 2026-11-12 | search (phase 05/06) | Filter out listings with `last_seen_at` older than `LISTING_HIDDEN_DAYS` (30) and show `flags.stale` after 48 h | No listing search query exists yet |
 | 2026-11-12 | `apps/worker/src/jobs/process.ts` | Enqueue `match` for new/changed listings | Matcher lands in phase 04 §4.3 |
 | 2026-11-12 | ops (11.3) | Sentry issue alerts routed to the Telegram ops chat (Sentry → Alerts → Telegram/webhook integration) | Needs the Sentry org, which the owner hasn't created yet |
@@ -23,3 +22,6 @@ TODOs allowed in shipped paths must be logged here with file path and reason.
 | 2026-11-12 | platform: Bumpa | `platform:bumpa` adapter (bawsty.com and many Instagram-first vendors) | Needs its own discovery; 09 §9.1 |
 | 2026-11-12 | 09 §9.2 | Discovery pipeline (fingerprint, classify, score) to reach 50 stores per platform | 7 tier-2 stores verified by hand (docs/sources/tier2-stores.md) |
 | 2026-11-12 | `apps/api/src/modules/search/` (phase 05) | Call `LiveSearchService` on low-confidence searches, upsert live listings into the catalog (they need ids for `/go/:listingId`), and return them with `flags.live` | The search pipeline (5.3) isn't built yet; the hook is ready and tested |
+| 2026-11-12 | `packages/ml` + `packages/core/src/normalize/` | `TextExtractor` LLM fallback for listings below `LOW_CONFIDENCE` (04 §4.1 step 7): strict JSON, cached by title hash, `LLM_EXTRACT_DAILY_CAP` | Needs the provider layer in `@cheapa/ml` (vendor SDKs only there, rule 6) and an API key decision |
+| 2026-11-12 | `scripts/data/titles-labelled.jsonl` | Add 100+ fresh, held-out phone/laptop titles: today's 76 hand labels were also used to tune the extractor, so its 100% is optimistic | Needs a fresh crawl sample |
+| 2026-11-12 | normalizer | Store-level default department (a wig-only store like Mesh Hairline names products "Miss Excel"): use the store's own category, which crawled listings carry | Title-only eval shows it; crawled listings already pass `categoryPath` |

@@ -15,6 +15,8 @@ const PROMO = [
   /\bnew\s+(?:arrivals?|in|launch)\b/gi,
   /\b(?:top|high)\s+quality\b/gi,
   /\bpay\s+on\s+delivery\b/gi,
+  // Also keeps "Next Day Delivery" from reading as the brand Next.
+  /\b(?:next|same)[-\s]+day\s+(?:delivery|shipping|dispatch)\b/gi,
   /\b(?:on\s+)?promo\b/gi,
   /\b(?:20\d\d)\s+(?:new|latest|trendy)\b/gi,
   /\b(?:trendy|latest|classy|stylish|fashionable|elegant|sexy)\b/gi,

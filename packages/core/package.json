@@ -18,7 +18,8 @@
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "vitest run --passWithNoTests"
+    "test": "vitest run --passWithNoTests",
+    "eval:titles": "tsx --conditions=@cheapa/source scripts/eval-titles.ts"
   },
   "dependencies": {
     "zod": "catalog:"
@@ -27,6 +28,7 @@
     "@cheapa/config": "workspace:*",
     "@types/node": "catalog:",
     "eslint": "catalog:",
+    "tsx": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   }

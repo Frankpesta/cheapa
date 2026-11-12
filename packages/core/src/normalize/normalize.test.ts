@@ -219,3 +219,50 @@ describe('Nigerian hair spellings (Jiji)', () => {
     });
   });
 });
+
+describe('brands', () => {
+  it('finds the brand named in the title and spells it our way', () => {
+    expect(normalizeListing(raw('FENTY BEAUTY Gloss Bomb Lip Luminizer 9ml')).brand).toBe('Fenty Beauty');
+    expect(normalizeListing(raw('Cerave Hydrating Cleanser 236ml')).brand).toBe('CeraVe');
+    expect(normalizeListing(raw('Satin Slip Dress', { brand: 'TRENDYOL' })).brand).toBe('Trendyol');
+  });
+
+  it('never invents a brand from an ordinary word', () => {
+    expect(normalizeListing(raw('Simple Twisted Gold Hoop Earrings')).brand).toBeUndefined();
+    expect(normalizeListing(raw('Next Day Delivery Bodycon Dress')).brand).toBeUndefined();
+    expect(normalizeListing(raw('Off-White Block Heel Sandals')).brand).toBeUndefined();
+    expect(normalizeListing(raw('UK 10 – Next Black Bustier Top')).brand).toBe('Next');
+  });
+
+  it('a one-department brand settles the department of a vague title', () => {
+    expect(normalizeListing(raw('Maybelline Dream Radiant Liquid'))).toMatchObject({
+      department: 'beauty',
+      brand: 'Maybelline',
+    });
+  });
+});
+
+describe('electronics', () => {
+  it.each([
+    ['Samsung Galaxy A07 6.7" 4GB RAM/128GBGB ROM - Black', 'Galaxy A07', 128, 4],
+    ['vivo V70 FE 6.83" 120hz 256/8gb 7000mAh 90w Fast charge - Blue', 'V70 FE', 256, 8],
+    ['REDMI 15C 4+128 BLACK (Renewed)', 'Redmi 15C', 128, 4],
+    ['OUKITEL C66 Smartphone,16GB(4+12)RAM+128GB ROM,6.73"HD', 'C66', 128, 4],
+    [
+      'Hp EliteBook 840 G6 Intel Core I7-32GB RAM/1TB SSD/Backlit Keyboard 11 Pro+BAG',
+      'EliteBook 840 G6',
+      1024,
+      32,
+    ],
+    ['Hp EliteBook 840 G8 Touchscreen Intel Core I5 512 SSD/8gbRam', 'EliteBook 840 G8', 512, 8],
+  ])('%s', (title, model, storageGb, ramGb) => {
+    const n = normalizeListing(raw(title));
+    expect(n).toMatchObject({ department: 'electronics', model, variant: { storageGb, ramGb } });
+  });
+
+  it('a laptop sold "+BAG" is a laptop, not a bag', () => {
+    expect(
+      normalizeListing(raw('DELL Latitude 7490 Intel Core I5- 16GB RAM/256GB SSD/WIN 11 PRO+BAG')).category,
+    ).toBe('laptops');
+  });
+});
