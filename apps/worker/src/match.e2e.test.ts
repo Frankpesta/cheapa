@@ -8,6 +8,7 @@ import { canonicalProducts, listings, matchReviews } from '@cheapa/db/catalog';
 import type { Job } from 'bullmq';
 import { eq, sql } from 'drizzle-orm';
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from 'vitest';
+import { decidedPairs, toJsonl } from './crawl/pairs.js';
 import { runMatch } from './jobs/match.js';
 import { runProcess } from './jobs/process.js';
 import type { MatchJob, ProcessJob } from './queues.js';
@@ -156,5 +157,31 @@ describe('match: products stay current', () => {
     const [job] = (await h.queues.match.getJobs(['waiting'])) as Job<MatchJob>[];
     await runMatch(h.deps, job!);
     expect(await runMatch(h.deps, job!)).toEqual({ skipped: 'already_matched' });
+  });
+});
+
+describe('labelled pairs export (04 §4.4)', () => {
+  it('turns decided reviews into same/different pairs, store facts only', async () => {
+    await crawl(jumia, [listing('B1', 'Fenty Beauty Gloss Bomb Universal Lip Luminizer 9ml', 2_400_000)]);
+    await drainMatches();
+    await crawl(jiji, [listing('B2', 'Fenty Beauty Lip Oil Cherry 9ml', 1_900_000)]);
+    await drainMatches();
+    expect(await decidedPairs(h.catalog.db)).toEqual([]);
+
+    await h.catalog.db
+      .update(matchReviews)
+      .set({ decision: 'split', reviewer: 'user_admin', decidedAt: new Date('2026-11-13T10:00:00Z') });
+    const pairs = await decidedPairs(h.catalog.db);
+    expect(pairs).toMatchObject([
+      {
+        label: 'different',
+        decidedAt: '2026-11-13T10:00:00.000Z',
+        listing: { title: 'Fenty Beauty Lip Oil Cherry 9ml', store: 'Jiji', brand: 'Fenty Beauty' },
+        product: { title: 'Fenty Beauty Gloss Bomb Universal Lip Luminizer 9ml', category: 'lips' },
+      },
+    ]);
+    const line = toJsonl(pairs);
+    expect(line.endsWith('\n')).toBe(true);
+    expect(line).not.toContain('user_admin');
   });
 });
