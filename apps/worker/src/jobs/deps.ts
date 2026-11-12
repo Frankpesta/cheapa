@@ -3,6 +3,7 @@ import type { AdapterContext, PoliteHttpClient, StoreRef } from '@cheapa/adapter
 import type { CatalogDb } from '@cheapa/db/catalog';
 import { UnrecoverableError } from 'bullmq';
 import type { Alerter } from '../alerts.js';
+import type { PriceEventSink } from '../events.js';
 import { finishCrawlJob, markStoreBlocked, recordCrawlError } from '../crawl/stores.js';
 import type { Logger } from '../logger.js';
 import type { Queues } from '../queues.js';
@@ -15,6 +16,8 @@ export interface WorkerDeps {
   /** A PoliteHttp bound to this store's crawl policy (shared limiter + robots cache). */
   httpFor(store: StoreRef, log: Logger): PoliteHttpClient;
   alerter: Alerter;
+  /** `events:price` on redis-queue. */
+  events: PriceEventSink;
   log: Logger;
   /** Aborted on shutdown; adapters stop paging and in-flight requests are cancelled. */
   signal: AbortSignal;

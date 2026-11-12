@@ -4,18 +4,27 @@ import type { Redis } from 'ioredis';
 import { CrawlOutcome, type WorkerDeps } from './jobs/deps.js';
 import { runDiscover } from './jobs/discover.js';
 import { runFetch } from './jobs/fetch.js';
+import { runProcess } from './jobs/process.js';
 import { runPartitions, runTick } from './jobs/tick.js';
-import { QUEUE_PREFIX, QUEUES, type DiscoverJob, type FetchJob, type Queues } from './queues.js';
+import {
+  QUEUE_PREFIX,
+  QUEUES,
+  type DiscoverJob,
+  type FetchJob,
+  type ProcessJob,
+  type Queues,
+} from './queues.js';
 import { TICK_EVERY_MS } from './schedule.js';
 
 export interface Concurrency {
   discover: number;
   fetch: number;
+  process: number;
 }
 
 /**
- * Consumers for schedule, discover and fetch. `process` lands in 2.4; `embed` and
- * `match` with phases 05 and 04 (BACKLOG.md).
+ * Consumers for schedule, discover, fetch and process. `embed` and `match` land with
+ * phases 05 and 04 (BACKLOG.md).
  */
 export function startWorkers(
   deps: WorkerDeps,
@@ -41,6 +50,7 @@ export function startWorkers(
     ),
     make<DiscoverJob>(QUEUES.discover, (job) => runDiscover(deps, job), concurrency.discover),
     make<FetchJob>(QUEUES.fetch, (job) => runFetch(deps, job), concurrency.fetch),
+    make<ProcessJob>(QUEUES.process, (job) => runProcess(deps, job), concurrency.process),
   ];
 }
 

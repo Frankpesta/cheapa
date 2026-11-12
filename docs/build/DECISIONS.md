@@ -25,6 +25,9 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-02 | Crawl rate limit = per-domain slot reservation in redis-queue (token bucket of capacity 1) | Exact 1/maxRps spacing across all workers, no bursts, no polling |
 | 2026-11-02 | robots.txt: 404/other 4xx = allow all; 5xx/unreachable = disallow all for 1 h; 403/429 or a challenge page on robots.txt = `Blocked` | RFC 9309 for the first two; a refused robots.txt is treated as a block, never crawled through |
 | 2026-11-02 | Redirects followed by hand; every hop rate limited and robots-checked | A redirect must not skip another host's limits or rules |
+| 2026-11-12 | Taxonomy and word lists are TypeScript (`packages/core/src/normalize/taxonomy.ts`, `lexicon.ts`), not `taxonomy.json` | Ordered regex leaves need comments and type checks; first match wins, specific before broad |
+| 2026-11-12 | `events:price` is at-least-once: entries are added inside the upsert transaction, before commit | A Redis failure rolls the upsert back and the job retries; a lost event would never be re-detected. Consumers dedupe on (listingId, observedAt) |
+| 2026-11-12 | Unseen 7 days → `inStock=false` after a successful sweep (with history + event); unseen 30 days → hidden at query time (`LISTING_HIDDEN_DAYS`) | 02 §2.4. 04 §4.5's "7 days → hidden" read as: out-of-stock listings drop out of default results |
 
 ## Deferred
 

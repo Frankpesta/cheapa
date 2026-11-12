@@ -13,6 +13,7 @@ import * as Sentry from '@sentry/node';
 import { Redis } from 'ioredis';
 import { LogAlerter } from './alerts.js';
 import { loadWorkerEnv } from './config/env.js';
+import { RedisPriceEvents } from './events.js';
 import type { WorkerDeps } from './jobs/deps.js';
 import { createLogger } from './logger.js';
 import { closeQueues, createQueues } from './queues.js';
@@ -35,6 +36,7 @@ const deps: WorkerDeps = {
   httpFor: (store, storeLog) =>
     new PoliteHttp({ limiter, robots, maxRps: store.crawlPolicy.maxRps, log: storeLog }),
   alerter: new LogAlerter(log),
+  events: new RedisPriceEvents(redis),
   log,
   signal: shutdown.signal,
 };
@@ -43,6 +45,7 @@ await upsertSchedules(queues);
 const workers = startWorkers(deps, redis, {
   discover: env.WORKER_CONCURRENCY_DISCOVER,
   fetch: env.WORKER_CONCURRENCY_FETCH,
+  process: env.WORKER_CONCURRENCY_PROCESS,
 });
 log.info({ adapters: deps.registry.list().map((a) => a.id) }, 'worker started');
 

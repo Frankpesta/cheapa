@@ -1,0 +1,62 @@
+{
+  "note": "One fetched page of women's fashion and beauty, shaped like adapter output (RawListing). Used by process.e2e.test.ts.",
+  "fetchedAt": "2026-11-10T09:00:00.000Z",
+  "listings": [
+    {
+      "externalId": "DR-1001",
+      "sourceUrl": "https://shop.example.ng/p/dr-1001",
+      "title": "🔥 Ladies Satin Bodycon Midi Dress - Wine | Sizes S-XL",
+      "priceKobo": 1250000,
+      "priceKind": "from",
+      "oldPriceKobo": 1800000,
+      "inStock": true,
+      "imageUrl": "https://img.example.ng/dr-1001.jpg",
+      "brand": "Fashion",
+      "categoryPath": ["Women's Fashion", "Clothing", "Dresses"]
+    },
+    {
+      "externalId": "HL-2002",
+      "sourceUrl": "https://shop.example.ng/p/hl-2002",
+      "title": "Pointed Toe Stiletto Heels 10cm Nude 37-41",
+      "priceKobo": 2100000,
+      "inStock": true,
+      "imageUrl": "https://img.example.ng/hl-2002.jpg",
+      "categoryPath": ["Women's Fashion", "Shoes", "Heels"]
+    },
+    {
+      "externalId": "WG-3003",
+      "sourceUrl": "https://shop.example.ng/p/wg-3003",
+      "title": "22\" Body Wave 13x4 HD Lace Frontal Wig 180% Human Hair",
+      "priceKobo": 18500000,
+      "inStock": true,
+      "imageUrl": "https://img.example.ng/wg-3003.jpg",
+      "categoryPath": ["Hair", "Wigs"]
+    },
+    {
+      "externalId": "ER-4004",
+      "sourceUrl": "https://shop.example.ng/p/er-4004",
+      "title": "18K Gold Plated Chunky Hoop Earrings 2 Pairs",
+      "priceKobo": 450000,
+      "inStock": false,
+      "imageUrl": "https://img.example.ng/er-4004.jpg",
+      "categoryPath": ["Jewellery"]
+    },
+    {
+      "externalId": "BT-5005",
+      "sourceUrl": "https://shop.example.ng/p/bt-5005",
+      "title": "Fenty Beauty Gloss Bomb Lip Luminizer 9ml",
+      "priceKobo": 2400000,
+      "inStock": true,
+      "brand": "Fenty Beauty",
+      "categoryPath": ["Health & Beauty", "Makeup", "Lips"]
+    },
+    {
+      "externalId": "BT-6006",
+      "sourceUrl": "https://shop.example.ng/p/bt-6006",
+      "title": "Used Lipstick Ruby Woo",
+      "priceKobo": 300000,
+      "inStock": true,
+      "categoryPath": ["Health & Beauty"]
+    }
+  ]
+}

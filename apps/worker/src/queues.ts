@@ -51,6 +51,13 @@ export const ProcessJob = z.object({
 });
 export type ProcessJob = z.input<typeof ProcessJob>;
 
+/** A listing whose image is new or changed; the consumer (phase 05) writes listing_embeddings. */
+export const EmbedJob = z.object({
+  listingId: z.uuid(),
+  imageUrl: z.url(),
+});
+export type EmbedJob = z.infer<typeof EmbedJob>;
+
 /**
  * Retries with backoff for unexpected errors. Blocked / robots / parse errors throw
  * UnrecoverableError and are never retried. Finished jobs are trimmed so Redis stays small.

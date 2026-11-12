@@ -2,6 +2,7 @@ import type { Job } from 'bullmq';
 import { canCrawl, finishCrawlJob, getStore, startCrawlJob } from '../crawl/stores.js';
 import { DiscoverJob, jobId, type FetchJob } from '../queues.js';
 import { adapterContext, CrawlOutcome, handleCrawlError, type WorkerDeps } from './deps.js';
+import { markStoreStale } from './process.js';
 
 export interface DiscoverResult {
   skipped?: 'missing' | 'not_crawlable';
@@ -10,7 +11,8 @@ export interface DiscoverResult {
 }
 
 /**
- * Runs adapter.discover for one store and enqueues a fetch job per ref. One crawl_jobs
+ * Runs adapter.discover for one store, enqueues a fetch job per ref, then marks listings
+ * unseen for 7 days out of stock. One crawl_jobs
  * row per run; a retry of the same BullMQ job reuses it (id kept in job data).
  */
 export async function runDiscover(
@@ -46,6 +48,8 @@ export async function runDiscover(
     await handleCrawlError(deps, store, crawlJobId, err, 'discover');
   }
   await finishCrawlJob(deps.db, crawlJobId, 'succeeded');
+  // Only a sweep that reached the end may declare listings gone.
+  await markStoreStale(deps, store);
   log.info({ refs }, 'discover finished');
   return { crawlJobId, refs };
 }

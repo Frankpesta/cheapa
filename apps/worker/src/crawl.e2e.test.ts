@@ -1,11 +1,11 @@
 import { send } from '@cheapa/adapters/testing';
-import { crawlJobs, stores } from '@cheapa/db/catalog';
+import { crawlJobs, listings, priceHistory, stores } from '@cheapa/db/catalog';
 import type { Job, Worker } from 'bullmq';
 import { eq, sql } from 'drizzle-orm';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { runFetch } from './jobs/fetch.js';
 import { runPartitions, runTick } from './jobs/tick.js';
-import type { FetchJob, ProcessJob } from './queues.js';
+import type { FetchJob } from './queues.js';
 import { json, startHarness, waitFor, type Harness } from './test/harness.js';
 import { startWorkers, upsertSchedules } from './workers.js';
 
@@ -32,7 +32,7 @@ afterEach(async () => {
   await h.stop();
 });
 
-const run = () => (workers = startWorkers(h.deps, h.redis, { discover: 1, fetch: 2 }, h.prefix));
+const run = () => (workers = startWorkers(h.deps, h.redis, { discover: 1, fetch: 2, process: 1 }, h.prefix));
 const crawlJob = async (storeId: string) =>
   (await h.catalog.db.select().from(crawlJobs).where(eq(crawlJobs.storeId, storeId)))[0];
 const store = async (id: string) => (await h.catalog.db.select().from(stores).where(eq(stores.id, id)))[0]!;
@@ -69,19 +69,33 @@ describe('schedule tick', () => {
 });
 
 describe('discover -> fetch -> process', () => {
-  it('crawls every page and hands validated listings to process', async () => {
+  it('crawls every page and stores normalized listings with their first price', async () => {
     const storeId = await h.addStore();
     run();
     await h.queues.discover.add('discover', { storeId });
-    await waitFor(async () => (await h.queues.process.getJobCounts('waiting')).waiting === 2);
+    await waitFor(async () => (await crawlJob(storeId))?.itemsChanged === 3);
 
-    const processJobs = (await h.queues.process.getJobs(['waiting'])) as Job<ProcessJob>[];
-    const skus = processJobs.flatMap((j) => j.data.listings.map((l) => l.externalId)).sort();
-    expect(skus).toEqual(['B1', 'D1', 'W1']);
-    expect(processJobs[0]!.data.listings[0]).toMatchObject({ currency: 'NGN', priceKind: 'exact' });
-
-    await waitFor(async () => (await crawlJob(storeId))?.itemsFound === 3);
-    expect(await crawlJob(storeId)).toMatchObject({ adapter: 'fake', status: 'succeeded', errors: [] });
+    const rows = await h.catalog.db
+      .select({
+        externalId: listings.externalId,
+        department: listings.department,
+        category: listings.category,
+        variant: listings.variant,
+      })
+      .from(listings)
+      .orderBy(listings.externalId);
+    expect(rows).toMatchObject([
+      { externalId: 'B1', department: 'bags_accessories', category: 'handbags' },
+      { externalId: 'D1', department: 'clothing', category: 'dresses', variant: { colours: ['Wine'] } },
+      { externalId: 'W1', department: 'hair', category: 'wigs', variant: { hair: { lengthInches: 20 } } },
+    ]);
+    expect(await h.catalog.db.$count(priceHistory)).toBe(3);
+    expect(await crawlJob(storeId)).toMatchObject({
+      adapter: 'fake',
+      status: 'succeeded',
+      itemsFound: 3,
+      errors: [],
+    });
     expect((await store(storeId)).lastCrawledAt).toBeInstanceOf(Date);
   });
 

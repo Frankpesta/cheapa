@@ -14,6 +14,7 @@ import pg from 'pg';
 import { pino } from 'pino';
 import { inject } from 'vitest';
 import type { Alert, Alerter } from '../alerts.js';
+import { RedisPriceEvents } from '../events.js';
 import type { WorkerDeps } from '../jobs/deps.js';
 import { closeQueues, createQueues, type Queues } from '../queues.js';
 import { CATALOG_TEMPLATE } from './global-setup.js';
@@ -36,6 +37,8 @@ interface Product {
   sku: string;
   name: string;
   price: number;
+  image?: string;
+  category?: string[];
 }
 
 /** Fake store API: /list -> { pages: [paths] }, each page -> { products: [...] }. */
@@ -71,6 +74,8 @@ export function fakeAdapter(domain: string): SourceAdapter {
         title: p.name,
         priceKobo: p.price,
         inStock: true,
+        imageUrl: p.image,
+        categoryPath: p.category,
       }));
     },
   };
@@ -104,6 +109,7 @@ export async function startHarness(routes: Record<string, Route> = {}): Promise<
     httpFor: (store) =>
       new PoliteHttp({ limiter: noLimit, maxRps: store.crawlPolicy.maxRps, backoffBaseMs: 1 }),
     alerter,
+    events: new RedisPriceEvents(redis, `${prefix}:events:price`),
     log: pino({ level: 'silent' }),
     signal: new AbortController().signal,
     random: () => 0,
