@@ -3,8 +3,9 @@
  * cards as JSON in `window.__STORE__`; we read that instead of the HTML cards. Pure: no
  * I/O, no clock, so it runs unchanged against __fixtures__/.
  */
-import { letterSize, parsePrice, type ParsedPrice, type Size } from '@cheapa/core';
+import { parsePrice, type ParsedPrice, type Size } from '@cheapa/core';
 import { ParseError } from '../errors.js';
+import { optionSizes } from '../options.js';
 import type { JsonValue, RawListingInput, RawPayload, StoreRef } from '../types.js';
 
 const ADAPTER_ID = 'jumia';
@@ -59,25 +60,7 @@ export function lastPage(html: string): number {
   return page ? Number(page) : 1;
 }
 
-/**
- * One size option as Jumia sellers name it: "EU 38", "US 8.5", "EU L", "CH XL", "M/L",
- * "ONE SIZE FITS ALL", "34". Colours, lengths and junk ("Black", "12 inches") are not sizes.
- */
-export function optionSizes(name: string, shoes: boolean): Size[] {
-  const n = name.trim();
-  if (/^one[\s-]?size/i.test(n)) return [{ system: 'letter', value: 'One Size' }];
-  const system = /^(EU|UK|US)\s*(\d{1,2}(?:\.5)?)$/i.exec(n);
-  if (system) return [{ system: system[1]!.toUpperCase() as 'EU' | 'UK' | 'US', value: system[2]! }];
-  const letters = n
-    .replace(/^(?:EU|CH|UK|US)\s+/i, '')
-    .split('/')
-    .map((part) => letterSize(part.trim()));
-  if (letters.length > 0 && letters.every(Boolean)) {
-    return letters.map((value) => ({ system: 'letter' as const, value: value! }));
-  }
-  if (/^\d{2}$/.test(n)) return [{ system: shoes && Number(n) >= 30 ? 'EU' : 'numeric', value: n }];
-  return [];
-}
+export { optionSizes } from '../options.js';
 
 function sizesOf(product: JumiaProduct): { sizes: Size[]; soldOut: string[] } {
   const shoes = (product.categories ?? []).some((c) => /shoes|footwear|heels|sandals|sneakers/i.test(c));

@@ -57,6 +57,105 @@ const SEED_STORES = [
       notes: 'robots.txt 2026-11-12 allows /api_web/ for all agents; docs/sources/jiji.md',
     },
   },
+  // Tier 2 (03 §3.5): verified 2026-11-12, crawled by the platform adapters.
+  {
+    key: 'brandlistry',
+    name: 'Brandlistry Nigeria',
+    domain: 'www.brandlistry.ng',
+    platform: 'shopify',
+    tier: 2,
+    status: 'active',
+    crawlPolicy: {
+      robotsOk: true,
+      maxRps: 1,
+      notes:
+        'beauty marketplace, ~19,600 products; shopify endpoint allowed by robots.txt 2026-11-12; docs/sources/tier2-stores.md',
+    },
+  },
+  {
+    key: 'kuddy',
+    name: 'Kuddy Cosmetics',
+    domain: 'kuddycosmetics.com',
+    platform: 'shopify',
+    tier: 2,
+    status: 'active',
+    crawlPolicy: {
+      robotsOk: true,
+      maxRps: 1,
+      notes:
+        'beauty, ~1,300 products; shopify endpoint allowed by robots.txt 2026-11-12; docs/sources/tier2-stores.md',
+    },
+  },
+  {
+    key: 'garmisland',
+    name: 'Garm Island',
+    domain: 'garmisland.com',
+    platform: 'shopify',
+    tier: 2,
+    status: 'active',
+    crawlPolicy: {
+      robotsOk: true,
+      maxRps: 1,
+      notes:
+        'fashion, ~8,500 products; shopify endpoint allowed by robots.txt 2026-11-12; docs/sources/tier2-stores.md',
+    },
+  },
+  {
+    key: 'shopmaju',
+    name: 'Shop Maju',
+    domain: 'shopmaju.com',
+    platform: 'shopify',
+    tier: 2,
+    status: 'active',
+    crawlPolicy: {
+      robotsOk: true,
+      maxRps: 1,
+      notes:
+        "women's fashion brand, ~265 products; shopify endpoint allowed by robots.txt 2026-11-12; docs/sources/tier2-stores.md",
+    },
+  },
+  {
+    key: 'okriks',
+    name: 'Okriks',
+    domain: 'okriks.com',
+    platform: 'woocommerce',
+    tier: 2,
+    status: 'active',
+    crawlPolicy: {
+      robotsOk: true,
+      maxRps: 1,
+      notes:
+        "thrift women's wear, ~2,800 products; woocommerce endpoint allowed by robots.txt 2026-11-12; docs/sources/tier2-stores.md",
+    },
+  },
+  {
+    key: 'meshhairline',
+    name: 'Mesh Hairline',
+    domain: 'www.meshhairline.com',
+    platform: 'woocommerce',
+    tier: 2,
+    status: 'active',
+    crawlPolicy: {
+      robotsOk: true,
+      maxRps: 1,
+      notes:
+        'wigs and frontals, ~66 products; woocommerce endpoint allowed by robots.txt 2026-11-12; docs/sources/tier2-stores.md',
+    },
+  },
+  {
+    key: 'essentialshub',
+    name: 'Essentials Hub',
+    domain: 'essentialshub.com',
+    platform: 'woocommerce',
+    tier: 2,
+    status: 'active',
+    crawlPolicy: {
+      robotsOk: true,
+      maxRps: 1,
+      notes:
+        'skincare and beauty, ~990 products; woocommerce endpoint allowed by robots.txt 2026-11-12; docs/sources/tier2-stores.md',
+    },
+  },
 ] as const;
 
 type StoreKey = (typeof SEED_STORES)[number]['key'];

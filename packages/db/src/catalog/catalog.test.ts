@@ -106,12 +106,12 @@ describe('migrations', () => {
 });
 
 describe('seed', () => {
-  it('inserts 3 stores and 10 listings with one history row each', async () => {
-    await expect(seedCatalog(conn.db)).resolves.toEqual({ stores: 3, listings: 10 });
+  it('inserts 10 stores and 10 listings with one history row each', async () => {
+    await expect(seedCatalog(conn.db)).resolves.toEqual({ stores: 10, listings: 10 });
     const [s] = await conn.db.select({ n: count() }).from(stores);
     const [l] = await conn.db.select({ n: count() }).from(listings);
     const [h] = await conn.db.select({ n: count() }).from(priceHistory);
-    expect([s?.n, l?.n, h?.n]).toEqual([3, 10, 10]);
+    expect([s?.n, l?.n, h?.n]).toEqual([10, 10, 10]);
   });
 
   it('re-seeding adds no rows and no history (insert only on change)', async () => {

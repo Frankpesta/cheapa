@@ -1,0 +1,648 @@
+{
+ "products": [
+  {
+   "id": 7412516061346,
+   "title": "KIM DRESS",
+   "handle": "kim-dress-1",
+   "published_at": "2022-03-21T15:57:13+01:00",
+   "created_at": "2022-03-21T15:57:12+01:00",
+   "updated_at": "2026-11-12T16:36:54+01:00",
+   "vendor": "Shop Maju",
+   "product_type": "Dress",
+   "tags": [],
+   "variants": [
+    {
+     "id": 41921987051682,
+     "title": "long / SMALL",
+     "option1": "long",
+     "option2": "SMALL",
+     "option3": null,
+     "sku": "1",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "14500.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 7412516061346,
+     "created_at": "2022-03-21T15:57:12+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    },
+    {
+     "id": 41922107310242,
+     "title": "long / MEDIUM",
+     "option1": "long",
+     "option2": "MEDIUM",
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "14500.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 7412516061346,
+     "created_at": "2022-03-21T16:48:46+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    },
+    {
+     "id": 41922107343010,
+     "title": "long / LARGE",
+     "option1": "long",
+     "option2": "LARGE",
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "14500.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 3,
+     "product_id": 7412516061346,
+     "created_at": "2022-03-21T16:48:46+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 32713272295586,
+     "created_at": "2022-03-21T15:57:12+01:00",
+     "position": 1,
+     "updated_at": "2022-03-21T15:57:14+01:00",
+     "product_id": 7412516061346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/ce8dcb52-5a33-4c3b-834c-20b6dac21f83.jpg?v=1647874634",
+     "width": 810,
+     "height": 1080
+    },
+    {
+     "id": 32713272328354,
+     "created_at": "2022-03-21T15:57:12+01:00",
+     "position": 2,
+     "updated_at": "2022-03-21T15:57:14+01:00",
+     "product_id": 7412516061346,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/516e3fc4-44e7-4ce3-bda1-b21b63ec2186.jpg?v=1647874634",
+     "width": 768,
+     "height": 1024
+    }
+   ],
+   "options": [
+    {
+     "name": "Length",
+     "position": 1,
+     "values": [
+      "long"
+     ]
+    },
+    {
+     "name": "Size",
+     "position": 2,
+     "values": [
+      "SMALL",
+      "MEDIUM",
+      "LARGE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7412480835746,
+   "title": "KIM DRESS",
+   "handle": "kim-dress",
+   "published_at": "2022-03-21T14:44:52+01:00",
+   "created_at": "2022-03-21T14:44:51+01:00",
+   "updated_at": "2026-11-12T16:36:54+01:00",
+   "vendor": "Shop Maju",
+   "product_type": "Dress",
+   "tags": [],
+   "variants": [
+    {
+     "id": 41921565687970,
+     "title": "Short / SMALL",
+     "option1": "Short",
+     "option2": "SMALL",
+     "option3": null,
+     "sku": "2",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "10500.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 7412480835746,
+     "created_at": "2022-03-21T14:44:51+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    },
+    {
+     "id": 41922105540770,
+     "title": "Short / MEDIUM",
+     "option1": "Short",
+     "option2": "MEDIUM",
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "10500.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 7412480835746,
+     "created_at": "2022-03-21T16:47:46+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    },
+    {
+     "id": 41922105573538,
+     "title": "Short / LARGE",
+     "option1": "Short",
+     "option2": "LARGE",
+     "option3": null,
+     "sku": "",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "10500.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 3,
+     "product_id": 7412480835746,
+     "created_at": "2022-03-21T16:47:46+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 32712772124834,
+     "created_at": "2022-03-21T14:44:51+01:00",
+     "position": 1,
+     "updated_at": "2022-03-21T14:44:53+01:00",
+     "product_id": 7412480835746,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/4f06c71f-359d-4d2f-a528-5fb868520dbc.jpg?v=1647870293",
+     "width": 768,
+     "height": 1024
+    }
+   ],
+   "options": [
+    {
+     "name": "Length",
+     "position": 1,
+     "values": [
+      "Short"
+     ]
+    },
+    {
+     "name": "Size",
+     "position": 2,
+     "values": [
+      "SMALL",
+      "MEDIUM",
+      "LARGE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7650648621218,
+   "title": "Raven set",
+   "handle": "raven-set",
+   "published_at": "2022-09-08T13:39:24+01:00",
+   "created_at": "2022-09-08T13:39:22+01:00",
+   "updated_at": "2026-11-12T16:36:54+01:00",
+   "vendor": "Shop Maju",
+   "product_type": "",
+   "tags": [
+    "SET"
+   ],
+   "variants": [
+    {
+     "id": 42580466401442,
+     "title": "Small / Green and pink",
+     "option1": "Small",
+     "option2": "Green and pink",
+     "option3": null,
+     "sku": "SK012",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "16800.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 7650648621218,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    },
+    {
+     "id": 42580466434210,
+     "title": "Small / Blue and pink",
+     "option1": "Small",
+     "option2": "Blue and pink",
+     "option3": null,
+     "sku": "SK013",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "16800.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 7650648621218,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    },
+    {
+     "id": 42580466466978,
+     "title": "Medium / Green and pink",
+     "option1": "Medium",
+     "option2": "Green and pink",
+     "option3": null,
+     "sku": "SK014",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "16800.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 3,
+     "product_id": 7650648621218,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    },
+    {
+     "id": 42580466499746,
+     "title": "Medium / Blue and pink",
+     "option1": "Medium",
+     "option2": "Blue and pink",
+     "option3": null,
+     "sku": "SK015",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "16800.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 4,
+     "product_id": 7650648621218,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    },
+    {
+     "id": 42580466532514,
+     "title": "Large / Green and pink",
+     "option1": "Large",
+     "option2": "Green and pink",
+     "option3": null,
+     "sku": "SK016",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "16800.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 5,
+     "product_id": 7650648621218,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    },
+    {
+     "id": 42580466565282,
+     "title": "Large / Blue and pink",
+     "option1": "Large",
+     "option2": "Blue and pink",
+     "option3": null,
+     "sku": "SK017",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "16800.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 6,
+     "product_id": 7650648621218,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 33933388873890,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "position": 1,
+     "updated_at": "2022-09-08T13:39:26+01:00",
+     "product_id": 7650648621218,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/ACC54E5D-CF5B-4CF8-8959-A8AD1BD75178.jpg?v=1662640766",
+     "width": 3024,
+     "height": 4032
+    },
+    {
+     "id": 33933388742818,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "position": 2,
+     "updated_at": "2022-09-08T13:39:26+01:00",
+     "product_id": 7650648621218,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/74B30B05-1B03-4F9D-AB61-81611D4C7B8B.jpg?v=1662640766",
+     "width": 3024,
+     "height": 4032
+    },
+    {
+     "id": 33933388841122,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "position": 3,
+     "updated_at": "2022-09-08T13:39:26+01:00",
+     "product_id": 7650648621218,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/8E3B81DE-4B0C-46B8-82A8-6D66B57CDDBE.jpg?v=1662640766",
+     "width": 3024,
+     "height": 4032
+    },
+    {
+     "id": 33933388906658,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "position": 4,
+     "updated_at": "2022-09-08T13:39:27+01:00",
+     "product_id": 7650648621218,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/4D378D7F-4DDC-4A7F-9DEB-EABD2088B699.jpg?v=1662640767",
+     "width": 3024,
+     "height": 4032
+    },
+    {
+     "id": 33933388775586,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "position": 5,
+     "updated_at": "2022-09-08T13:39:26+01:00",
+     "product_id": 7650648621218,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/C77D7399-5029-448A-83B4-070A42DCA86A.jpg?v=1662640766",
+     "width": 3024,
+     "height": 4032
+    },
+    {
+     "id": 33933388677282,
+     "created_at": "2022-09-08T13:39:22+01:00",
+     "position": 6,
+     "updated_at": "2022-09-08T13:39:25+01:00",
+     "product_id": 7650648621218,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/D2247B8C-B2EE-4C0F-880A-B0829508EA58.jpg?v=1662640765",
+     "width": 3024,
+     "height": 4032
+    }
+   ],
+   "options": [
+    {
+     "name": "Size",
+     "position": 1,
+     "values": [
+      "Small",
+      "Medium",
+      "Large"
+     ]
+    },
+    {
+     "name": "Color",
+     "position": 2,
+     "values": [
+      "Green and pink",
+      "Blue and pink"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7606322987170,
+   "title": "TIFAH BOUBOU",
+   "handle": "tifah-boubou",
+   "published_at": "2022-08-08T17:18:31+01:00",
+   "created_at": "2022-08-08T17:18:30+01:00",
+   "updated_at": "2026-11-12T16:36:54+01:00",
+   "vendor": "Shop Maju",
+   "product_type": "Dress",
+   "tags": [],
+   "variants": [
+    {
+     "id": 42456072290466,
+     "title": "pink and black",
+     "option1": "pink and black",
+     "option2": null,
+     "option3": null,
+     "sku": "02",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": true,
+     "price": "19800.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 7606322987170,
+     "created_at": "2022-08-08T17:18:30+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    },
+    {
+     "id": 42456072323234,
+     "title": "green and black",
+     "option1": "green and black",
+     "option2": null,
+     "option3": null,
+     "sku": "03",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": false,
+     "price": "19800.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 2,
+     "product_id": 7606322987170,
+     "created_at": "2022-08-08T17:18:30+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 33742664204450,
+     "created_at": "2022-08-08T17:18:30+01:00",
+     "position": 1,
+     "updated_at": "2022-08-08T17:18:32+01:00",
+     "product_id": 7606322987170,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/WhatsAppImage2022-08-08at5.13.23PM.jpg?v=1659975512",
+     "width": 768,
+     "height": 1024
+    },
+    {
+     "id": 33742664171682,
+     "created_at": "2022-08-08T17:18:30+01:00",
+     "position": 2,
+     "updated_at": "2022-08-08T17:18:32+01:00",
+     "product_id": 7606322987170,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/WhatsAppImage2022-08-08at5.13.23PM_1.jpg?v=1659975512",
+     "width": 768,
+     "height": 1024
+    }
+   ],
+   "options": [
+    {
+     "name": "Color",
+     "position": 1,
+     "values": [
+      "pink and black",
+      "green and black"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7512519311522,
+   "title": "THE RIO BOUBOU",
+   "handle": "the-rio-boubou",
+   "published_at": "2022-05-20T15:55:02+01:00",
+   "created_at": "2022-05-20T15:54:59+01:00",
+   "updated_at": "2026-11-12T16:36:54+01:00",
+   "vendor": "Shop Maju",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 42193504698530,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "1",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": false,
+     "price": "18900.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 7512519311522,
+     "created_at": "2022-05-20T15:54:59+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 33226502013090,
+     "created_at": "2022-05-20T15:54:59+01:00",
+     "position": 1,
+     "updated_at": "2022-05-20T15:55:01+01:00",
+     "product_id": 7512519311522,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/dde4b2b1-7ba1-4513-bd1c-b68acaff2ea5.jpg?v=1653058501",
+     "width": 810,
+     "height": 1080
+    },
+    {
+     "id": 33226501882018,
+     "created_at": "2022-05-20T15:54:59+01:00",
+     "position": 2,
+     "updated_at": "2022-05-20T15:55:00+01:00",
+     "product_id": 7512519311522,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/607ee8e1-5082-41a0-9c00-89ebb6fdbe69.jpg?v=1653058500",
+     "width": 810,
+     "height": 1080
+    },
+    {
+     "id": 33226501914786,
+     "created_at": "2022-05-20T15:54:59+01:00",
+     "position": 3,
+     "updated_at": "2022-05-20T15:55:00+01:00",
+     "product_id": 7512519311522,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/c3a467a8-d13b-410c-b8b7-927d60327754.jpg?v=1653058500",
+     "width": 810,
+     "height": 1080
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7737391579298,
+   "title": "Yudee Dress",
+   "handle": "halima-dress",
+   "published_at": "2022-11-22T16:07:05+01:00",
+   "created_at": "2022-11-22T16:07:04+01:00",
+   "updated_at": "2026-11-12T16:36:54+01:00",
+   "vendor": "Shop Maju",
+   "product_type": "",
+   "tags": [],
+   "variants": [
+    {
+     "id": 42842833158306,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "SK02",
+     "requires_shipping": true,
+     "taxable": false,
+     "featured_image": null,
+     "available": true,
+     "price": "10000.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 7737391579298,
+     "created_at": "2022-11-22T16:07:04+01:00",
+     "updated_at": "2026-11-12T16:36:54+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 34434652766370,
+     "created_at": "2022-11-22T16:07:36+01:00",
+     "position": 1,
+     "updated_at": "2022-11-22T16:07:37+01:00",
+     "product_id": 7737391579298,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0069/7978/0660/products/EDFABDE8-80F2-4B6F-8111-2560BA7F2A4D.jpg?v=1669129657",
+     "width": 958,
+     "height": 1280
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ]
+}

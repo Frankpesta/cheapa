@@ -62,6 +62,14 @@ describe('classify', () => {
     expect(classify(['Shoes'], 'Wine Satin Dress')).toMatchObject({ department: 'shoes', category: 'flats' });
   });
 
+  it('lets the title settle a combined store category ("Tops and Jackets")', () => {
+    expect(classify(['Tops and Jackets', 'Women'], 'UK 12 Dynasty Wine Bustier Top')).toMatchObject({
+      category: 'tops',
+    });
+    expect(classify(['Tops and Jackets'], 'Cropped Denim Jacket')).toMatchObject({ category: 'jackets' });
+    expect(classify(['Tops and Jackets'], 'Vintage Find')).toMatchObject({ category: 'jackets' });
+  });
+
   it('keeps the department from a path when the title is unclear', () => {
     expect(classify(['Health & Beauty'], 'Glow Kit by Tolu')).toEqual({
       department: 'beauty',

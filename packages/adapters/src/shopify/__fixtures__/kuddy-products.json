@@ -1,0 +1,147 @@
+{
+ "products": [
+  {
+   "id": 8052462583856,
+   "title": "Etlee Woody & Musky 10ml (EPM13)",
+   "handle": "etlee-woody-musky-10ml-epm13",
+   "published_at": "2026-11-11T13:10:27+01:00",
+   "created_at": "2026-08-18T04:01:59+01:00",
+   "updated_at": "2026-11-12T16:38:50+01:00",
+   "vendor": "Etlee",
+   "product_type": "",
+   "tags": [
+    "nigerian-brand"
+   ],
+   "variants": [
+    {
+     "id": 43501012746288,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "26018",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "11932.50",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 8052462583856,
+     "created_at": "2026-08-18T04:01:59+01:00",
+     "updated_at": "2026-11-12T16:38:50+01:00"
+    }
+   ],
+   "images": [
+    {
+     "id": 40842490773552,
+     "created_at": "2026-11-11T23:13:30+01:00",
+     "position": 1,
+     "updated_at": "2026-11-11T23:13:32+01:00",
+     "product_id": 8052462583856,
+     "variant_ids": [],
+     "src": "https://cdn.shopify.com/s/files/1/0631/1650/9232/files/Woody_MuskyPerfumeBox_c0ef613d-a44a-4a30-9d67-bda9c261d899.png?v=1794435212",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7682432991280,
+   "title": "Kuddy Perfect Color Match 4 Complete Looks Eyeshadows",
+   "handle": "kuddy-perfect-color-match-4-complete-looks-eyeshadows",
+   "published_at": "2026-10-28T11:42:47+01:00",
+   "created_at": "2025-05-31T15:11:17+01:00",
+   "updated_at": "2026-11-12T16:38:50+01:00",
+   "vendor": "Kuddy Cosmetics",
+   "product_type": "",
+   "tags": [
+    "nigerian-brand",
+    "store-exclusive"
+   ],
+   "variants": [
+    {
+     "id": 42083844587568,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "5869",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "3100.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 7682432991280,
+     "created_at": "2025-05-31T15:11:17+01:00",
+     "updated_at": "2026-11-12T16:38:50+01:00"
+    }
+   ],
+   "images": [],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7710059495472,
+   "title": "Makari Hair Treatment Oil 3.38.oz.",
+   "handle": "makari-hair-treatment-oil-3-38-oz",
+   "published_at": "2026-11-06T11:38:17+01:00",
+   "created_at": "2025-07-29T10:50:35+01:00",
+   "updated_at": "2026-11-12T16:38:50+01:00",
+   "vendor": "Makari",
+   "product_type": "Hair Treatment",
+   "tags": [],
+   "variants": [
+    {
+     "id": 42214085034032,
+     "title": "Default Title",
+     "option1": "Default Title",
+     "option2": null,
+     "option3": null,
+     "sku": "21906",
+     "requires_shipping": true,
+     "taxable": true,
+     "featured_image": null,
+     "available": true,
+     "price": "5600.00",
+     "grams": 0,
+     "compare_at_price": null,
+     "position": 1,
+     "product_id": 7710059495472,
+     "created_at": "2025-07-29T10:50:36+01:00",
+     "updated_at": "2026-11-12T16:38:50+01:00"
+    }
+   ],
+   "images": [],
+   "options": [
+    {
+     "name": "Title",
+     "position": 1,
+     "values": [
+      "Default Title"
+     ]
+    }
+   ]
+  }
+ ]
+}

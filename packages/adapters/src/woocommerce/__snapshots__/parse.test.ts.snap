@@ -1,0 +1,385 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`woocommerce parse: every naira fixture > matches the reviewed snapshot 1`] = `
+[
+  {
+    "listings": [
+      {
+        "attributes": {
+          "options": {
+            "Size": [
+              "40D",
+            ],
+          },
+        },
+        "categoryPath": [
+          "Light Padded Bras",
+        ],
+        "currency": "NGN",
+        "externalId": "7341679",
+        "imageUrl": "https://i0.wp.com/okriks.com/wp-content/uploads/2026/04/IMG_20260421_134506.jpg?fit=2367%2C2367&ssl=1",
+        "inStock": false,
+        "priceKind": "exact",
+        "priceKobo": 1050000,
+        "sourceUrl": "https://okriks.com/shop/40d-m-and-s-brown-light-padded-bra/",
+        "sponsored": false,
+        "title": "40D- M And S Brown Light Padded Bra",
+      },
+      {
+        "attributes": {},
+        "categoryPath": [
+          "Tops and Jackets",
+          "Women",
+        ],
+        "currency": "NGN",
+        "externalId": "7342578",
+        "imageUrl": "https://i0.wp.com/okriks.com/wp-content/uploads/2026/09/25.png?fit=1080%2C1350&ssl=1",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 200000,
+        "sourceUrl": "https://okriks.com/shop/uk-12-14-dynasty-wine-bustier-top/",
+        "sponsored": false,
+        "title": "UK 12-14 – Dynasty Wine Bustier Top",
+        "variant": {
+          "sizes": [
+            {
+              "system": "UK",
+              "value": "14",
+            },
+          ],
+        },
+      },
+      {
+        "attributes": {},
+        "categoryPath": [
+          "Tops and Jackets",
+          "Women",
+        ],
+        "currency": "NGN",
+        "externalId": "7342579",
+        "imageUrl": "https://i0.wp.com/okriks.com/wp-content/uploads/2026/09/3.png?fit=1080%2C1350&ssl=1",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 200000,
+        "sourceUrl": "https://okriks.com/shop/uk-10-coast-multi-color-bustier-top/",
+        "sponsored": false,
+        "title": "UK 10 – Coast Multi Color  Bustier Top",
+        "variant": {
+          "sizes": [
+            {
+              "system": "UK",
+              "value": "10",
+            },
+          ],
+        },
+      },
+      {
+        "attributes": {
+          "options": {
+            "Size": [
+              "UK 10-12",
+            ],
+          },
+        },
+        "categoryPath": [
+          "Tops and Jackets",
+          "Women",
+        ],
+        "currency": "NGN",
+        "externalId": "7342574",
+        "imageUrl": "https://i0.wp.com/okriks.com/wp-content/uploads/2026/09/23-1.png?fit=1080%2C1350&ssl=1",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 180000,
+        "sourceUrl": "https://okriks.com/shop/uk-10-12-new-look-black-bustier-top/",
+        "sponsored": false,
+        "title": "UK 10-12 – New Look Black Bustier Top",
+      },
+      {
+        "attributes": {},
+        "categoryPath": [
+          "Tops and Jackets",
+          "Women",
+        ],
+        "currency": "NGN",
+        "externalId": "7342575",
+        "imageUrl": "https://i0.wp.com/okriks.com/wp-content/uploads/2026/09/19.png?fit=1080%2C1350&ssl=1",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 180000,
+        "sourceUrl": "https://okriks.com/shop/uk-8-10-preloved-black-bustier-top/",
+        "sponsored": false,
+        "title": "UK 8-10 – Preloved Grey Bustier Top",
+        "variant": {
+          "sizes": [
+            {
+              "system": "UK",
+              "value": "8",
+            },
+          ],
+        },
+      },
+      {
+        "attributes": {},
+        "categoryPath": [
+          "Tops and Jackets",
+          "Women",
+        ],
+        "currency": "NGN",
+        "externalId": "7342573",
+        "imageUrl": "https://i0.wp.com/okriks.com/wp-content/uploads/2026/09/17-1.png?fit=1080%2C1350&ssl=1",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 220000,
+        "sourceUrl": "https://okriks.com/shop/uk-10-12-next-black-bustier-top/",
+        "sponsored": false,
+        "title": "UK 10-12 – Next Black Bustier Top",
+        "variant": {
+          "sizes": [
+            {
+              "system": "UK",
+              "value": "10",
+            },
+          ],
+        },
+      },
+    ],
+    "shop": "okriks",
+  },
+  {
+    "listings": [
+      {
+        "attributes": {
+          "options": {
+            "Available Lengths": [
+              "24 inches",
+            ],
+            "Frontal Type": [
+              "11 x 6",
+              "12 x 6",
+              "13x6",
+            ],
+          },
+        },
+        "categoryPath": [
+          "Frontals",
+          "Frontals & Closures",
+        ],
+        "currency": "NGN",
+        "externalId": "7560",
+        "imageUrl": "https://www.meshhairline.com/wp-content/uploads/2026/03/Diamond-Lux-Custom-made-Frontal-1.jpg",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 145000000,
+        "sourceUrl": "https://www.meshhairline.com/product/diamond-lux-custom-made-frontal/",
+        "sponsored": false,
+        "title": "Diamond Lux Custom Made Frontal",
+      },
+      {
+        "attributes": {
+          "options": {
+            "Available Lengths": [
+              "34 inches",
+            ],
+            "Cap Size": [
+              "Large 23-24 circumference",
+              "Medium 22-22.5 circumference",
+              "Small 20 - 21.5 circumference",
+            ],
+          },
+        },
+        "categoryPath": [],
+        "currency": "NGN",
+        "externalId": "7553",
+        "imageUrl": "https://www.meshhairline.com/wp-content/uploads/2026/03/Mesh-Hermes6.jpg",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 790000000,
+        "sourceUrl": "https://www.meshhairline.com/product/mesh-hermes/",
+        "sponsored": false,
+        "title": "Mesh Hermes",
+      },
+      {
+        "attributes": {
+          "options": {
+            "Available Lengths": [
+              "24 inches",
+            ],
+            "Frontal Type": [
+              "12 x 6",
+            ],
+          },
+        },
+        "categoryPath": [
+          "Frontals",
+          "Frontals & Closures",
+        ],
+        "currency": "NGN",
+        "externalId": "7535",
+        "imageUrl": "https://www.meshhairline.com/wp-content/uploads/2026/03/birkin-natural-frontal4.jpg",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 135000000,
+        "sourceUrl": "https://www.meshhairline.com/product/birkin-natural-black-frontal/",
+        "sponsored": false,
+        "title": "The Birkin Natural black Custom Made Frontal",
+      },
+      {
+        "attributes": {
+          "options": {
+            "Available Lengths": [
+              "12 inches",
+              "14 inches",
+              "16 inches",
+              "18 inches",
+              "20 inches",
+              "22 inches",
+              "24 inches",
+              "26 inches",
+              "28 inches",
+              "30 inches",
+              "32 inches",
+              "34 inches",
+              "36 inches",
+            ],
+            "Weight": [
+              "300g — 3 Bundles",
+              "400g — 4 Bundles",
+            ],
+          },
+        },
+        "categoryPath": [
+          "Raw Curly Collection",
+        ],
+        "currency": "NGN",
+        "externalId": "7497",
+        "imageUrl": "https://www.meshhairline.com/wp-content/uploads/2026/03/hermes-curly-dorlly-curl2.jpg",
+        "inStock": true,
+        "priceKind": "from",
+        "priceKobo": 260000000,
+        "sourceUrl": "https://www.meshhairline.com/product/hermes-dolly-curls/",
+        "sponsored": false,
+        "title": "Hermes Curly (Dolly Curl)",
+      },
+      {
+        "attributes": {
+          "options": {
+            "Available Lengths": [
+              "22 inches",
+            ],
+            "Cap Size": [
+              "Large 23-24 circumference",
+              "Medium 22-22.5 circumference",
+              "Small 20 - 21.5 circumference",
+            ],
+          },
+        },
+        "categoryPath": [],
+        "currency": "NGN",
+        "externalId": "7484",
+        "imageUrl": "https://www.meshhairline.com/wp-content/uploads/2026/03/mesh-dolly-curls3.jpg",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 550000000,
+        "sourceUrl": "https://www.meshhairline.com/product/mesh-dolly-curls/",
+        "sponsored": false,
+        "title": "Mesh Dolly Curls",
+      },
+    ],
+    "shop": "meshhairline",
+  },
+  {
+    "listings": [
+      {
+        "attributes": {},
+        "categoryPath": [
+          "Glowing Skin",
+          "Face",
+          "Face Essence",
+          "Face Toners & Mists",
+          "Moisturisers & Serums",
+        ],
+        "currency": "NGN",
+        "externalId": "38778",
+        "imageUrl": "https://essentialshub.com/wp-content/uploads/2026/11/Anua-1.webp",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 2700000,
+        "sourceUrl": "https://essentialshub.com/product/anua-pdrn-hyaluronic-acid-hydrating-capsule-mist-100ml/",
+        "sponsored": false,
+        "title": "Anua PDRN Hyaluronic Acid Hydrating Capsule Mist 100ml",
+      },
+      {
+        "attributes": {},
+        "categoryPath": [
+          "Face",
+          "Face Moisturizer",
+          "Glowing Skin",
+          "Korean Skincare",
+          "Moisturisers & Serums",
+        ],
+        "currency": "NGN",
+        "externalId": "38777",
+        "imageUrl": "https://essentialshub.com/wp-content/uploads/2026/11/XXL_p0225135737178814184282755c180d5db56.webp",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 1900000,
+        "sourceUrl": "https://essentialshub.com/product/anua-kdh-barrier-reboot-intense-cream-50ml/",
+        "sponsored": false,
+        "title": "Anua Barrier Reboot Intense Cream 50ml",
+      },
+      {
+        "attributes": {},
+        "categoryPath": [
+          "Face",
+          "Korean Skincare",
+        ],
+        "currency": "NGN",
+        "externalId": "38776",
+        "imageUrl": "https://essentialshub.com/wp-content/uploads/2026/11/Some-1.jpg",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 1800000,
+        "sourceUrl": "https://essentialshub.com/product/some-by-mi-yuja-niacin-brightening-toner/",
+        "sponsored": false,
+        "title": "Some By Mi Yuja Niacin Brightening Toner",
+      },
+      {
+        "attributes": {},
+        "categoryPath": [
+          "Face",
+          "Cleansers, Toners & Mists",
+          "Face Cleansers",
+        ],
+        "currency": "NGN",
+        "externalId": "38775",
+        "imageUrl": "https://essentialshub.com/wp-content/uploads/2026/11/Some-by-mi-1.jpg",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 1700000,
+        "sourceUrl": "https://essentialshub.com/product/some-by-mi-yuja-niacin-brightening-cleanser/",
+        "sponsored": false,
+        "title": "Some By Mi Yuja Niacin Brightening Cleanser",
+      },
+      {
+        "attributes": {},
+        "categoryPath": [
+          "Bath & Body",
+          "Body Care",
+          "Body Wash & Shower Gels",
+        ],
+        "currency": "NGN",
+        "externalId": "38601",
+        "imageUrl": "https://essentialshub.com/wp-content/uploads/2026/11/IMG_2475.jpeg",
+        "inStock": true,
+        "priceKind": "exact",
+        "priceKobo": 2200000,
+        "sourceUrl": "https://essentialshub.com/product/tree-hut-vanilla-foaming-gel-wash-532ml/",
+        "sponsored": false,
+        "title": "Tree Hut Vanilla Foaming Gel Wash 532ml",
+      },
+    ],
+    "shop": "essentialshub",
+  },
+]
+`;
