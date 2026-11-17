@@ -16,7 +16,12 @@ beforeEach(async () => {
     '/page/1': json({ products: [{ sku: 'D1', name: 'Satin Slip Dress - Wine', price: 1_250_000 }] }),
     '/page/2': json({ products: [{ sku: 'E1', name: 'Gold Hoop Earrings', price: 450_000 }] }),
   });
-  workers = startWorkers(h.deps, h.redis, { discover: 1, fetch: 2, process: 1, match: 1 }, h.prefix);
+  workers = startWorkers(
+    h.deps,
+    h.redis,
+    { discover: 1, fetch: 2, process: 1, match: 1, embed: 1 },
+    h.prefix,
+  );
 });
 afterEach(async () => {
   await Promise.all(workers.map((w) => w.close()));

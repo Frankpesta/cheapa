@@ -10,7 +10,7 @@ Lean budget means no GPU. Use `@huggingface/transformers` (transformers.js, ONNX
 
 | Purpose | Default model | Dims | Where it runs |
 | --- | --- | --- | --- |
-| Image | CLIP ViT-B/32 (ONNX, quantized) as baseline; **benchmark FashionCLIP / Marqo-FashionSigLIP first** (`13-fashion-and-beauty.md` 13.6) | 512 (update if the winner differs) | `embed` queue at ingest; API at query time |
+| Image | **Marqo-FashionSigLIP** (ONNX, q8), chosen over CLIP ViT-B/32 and Marqo-FashionCLIP by `pnpm bench:embed` (`DECISIONS.md` 2026-11-17) | 768 | `embed` queue at ingest; API at query time |
 | Text (titles) | all-MiniLM-L6-v2 (ONNX) | 384 | `embed` queue; API for text queries |
 
 - Load models once per process; warm up on boot.

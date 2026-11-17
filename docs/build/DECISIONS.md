@@ -47,9 +47,12 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-12 | Trust flags (04 §4.5): "check seller" = in stock and under half the median of its condition group (new vs used) with ≥ 3 prices; headline prices are cheapest new and cheapest used, and unknown condition counts as new | A thrift item isn't a scam for being cheap, and a median of two prices means nothing. Most fashion stores don't state condition; thrift/UK-used/refurbished do |
 | 2026-11-12 | Vision provider: Anthropic (Claude Haiku) only, behind `VisionProvider` | Owner's choice. 05 §5.2 asks for two providers benchmarked; the benchmark runs on Haiku alone, and the layer keeps others one adapter away |
 | 2026-11-12 | Vision benchmark screenshots: collected by the owner later into `scripts/data/screenshots/` | Instagram/WhatsApp/TikTok are login-walled, so they can't be crawled (rule 3) |
+| 2026-11-17 | Image embeddings: Marqo-FashionSigLIP (q8 ONNX, 768 dims; `listing_embeddings.image_vec` migrated to `halfvec(768)`). Text stays MiniLM-L6 (384) | `pnpm bench:embed` on 360 Jiji multi-photo ads / 928 photos ([report](reports/embed-bench-20261117.md)): recall@5 91.4% vs FashionCLIP 84.4% and CLIP 81.4%; zero-shot category 93.1% vs 84.7% / 79.2%; p50 284 ms per image on CPU (budget 500 ms), same speed as FashionCLIP. Makeup and fragrance gain most (+15 points) |
+| 2026-11-17 | PoliteHttp honours robots.txt `Crawl-delay` per host; long waits become delayed jobs holding a reserved slot (`RateDeferred`) | Owner: honour it, including `ng.jumia.is`'s `Crawl-delay: 150` (~576 Jumia images a day) until Jumia confirms its "200 rpm" comment by email |
+| 2026-11-17 | 401/403 on robots.txt itself = no rules (RFC 9309); 429 or a challenge there is still `Blocked` | Owner: Jiji's S3 image host answers 403 for the missing robots.txt while its images return 200 |
+| 2026-11-17 | Image 403 → job not retried + `image_forbidden` alert, store not paused; image 429/challenge → store marked blocked + alert (as for pages) | S3-style image hosts answer 403 for deleted files, so one dead image shouldn't stop a store's crawl. Owner to review |
 
 ## Deferred
 
 - Hosting provider/region, deploy pipeline, staging (decide before first VPS deploy).
 - Price-history backups: nightly `pg_dump` vs WAL archiving (PITR) to R2/B2.
-- Image embedding model: CLIP vs FashionCLIP vs Marqo-FashionSigLIP (benchmark per `13-fashion-and-beauty.md` 13.6).

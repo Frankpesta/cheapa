@@ -1,7 +1,9 @@
 import { Blocked, ParseError, RobotsDisallowed, type AdapterRegistry } from '@cheapa/adapters';
+import type { BytesRequest, BytesResponse } from '@cheapa/adapters';
 import type { AdapterContext, PoliteHttpClient, StoreRef } from '@cheapa/adapters/types';
 import type { MatchThresholds } from '@cheapa/core';
 import type { CatalogDb } from '@cheapa/db/catalog';
+import type { EmbedService } from '@cheapa/ml';
 import { UnrecoverableError } from 'bullmq';
 import type { Alerter } from '../alerts.js';
 import type { PriceEventSink } from '../events.js';
@@ -16,6 +18,10 @@ export interface WorkerDeps {
   registry: AdapterRegistry;
   /** A PoliteHttp bound to this store's crawl policy (shared limiter + robots cache). */
   httpFor(store: StoreRef, log: Logger): PoliteHttpClient;
+  /** The same politeness for listing images (bytes stay in memory). */
+  imagesFor(this: void, store: StoreRef, log: Logger): ImageFetcher;
+  /** Embedding models (05 §5.1); the `embed` consumer runs only when set. */
+  embed?: EmbedService;
   alerter: Alerter;
   /** `events:price` on redis-queue. */
   events: PriceEventSink;
@@ -26,6 +32,10 @@ export interface WorkerDeps {
   matchThresholds?: MatchThresholds;
   now?: () => Date;
   random?: () => number;
+}
+
+export interface ImageFetcher {
+  getBytes(url: string, init?: BytesRequest): Promise<BytesResponse>;
 }
 
 export function adapterContext(deps: WorkerDeps, store: StoreRef, log: Logger): AdapterContext {

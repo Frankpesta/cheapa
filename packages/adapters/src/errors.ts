@@ -59,3 +59,17 @@ export class HttpError extends AdapterError {
     super(message);
   }
 }
+
+/**
+ * The domain's next free request slot (rate limit or robots.txt Crawl-delay) is further
+ * away than the caller will wait. The slot at `slotAt` (epoch ms) is reserved for the
+ * caller: re-run the request then with `{ slotAt }` instead of holding a worker asleep.
+ */
+export class RateDeferred extends AdapterError {
+  constructor(
+    readonly domain: string,
+    readonly slotAt: number,
+  ) {
+    super(`next request slot for ${domain} is at ${new Date(slotAt).toISOString()}`);
+  }
+}

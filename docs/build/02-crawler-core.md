@@ -36,6 +36,8 @@ Rules:
 
 - Per-domain token bucket in `redis-queue`. Default 1 request/second, overridable from `store.crawlPolicy.maxRps` (never above 3).
 - robots.txt fetched and cached for 24 h per domain; disallowed paths throw `RobotsDisallowed`.
+- `Crawl-delay` is honoured per host: the rate is the slower of the store's `maxRps` and one request per Crawl-delay seconds. Callers that can't wait (embed jobs) pass `maxSlotWaitMs`; the limiter still reserves the slot and throws `RateDeferred`, and the job comes back at that time with `slotAt` (owner decision 2026-11-17).
+- A 401/403 on robots.txt itself means "no rules" (RFC 9309; S3-style image hosts answer 403 for a missing file). 429 or a challenge page on robots.txt is still `Blocked`.
 - Fixed user agent: `CheapaBot/1.0 (+https://cheapa.ng/bot)`.
 - Retries: 2 on network errors and 5xx with jittered exponential backoff.
 - On 403, 429, or a detected challenge page (Cloudflare/Akamai interstitial markers): **no retry**. Throw `Blocked`; the engine sets store status `blocked` and alerts.

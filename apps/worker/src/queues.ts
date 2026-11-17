@@ -9,8 +9,7 @@ import { z } from 'zod';
 export const QUEUE_PREFIX = 'cheapa';
 
 /**
- * Queues (02-crawler-core.md 2.3). `embed` (05) and `match` (04) are named here so
- * producers can target them; their consumers land with those phases (BACKLOG.md).
+ * Queues (02-crawler-core.md 2.3); `embed` (05 §5.1) and `match` (04 §4.3) included.
  */
 export const QUEUES = {
   schedule: 'schedule',
@@ -51,10 +50,12 @@ export const ProcessJob = z.object({
 });
 export type ProcessJob = z.input<typeof ProcessJob>;
 
-/** A listing whose image is new or changed; the consumer (phase 05) writes listing_embeddings. */
+/** A listing whose image is new or changed; the consumer writes listing_embeddings (05 §5.1). */
 export const EmbedJob = z.object({
   listingId: z.uuid(),
   imageUrl: z.url(),
+  /** Request slot reserved on the image host (robots.txt Crawl-delay); set when deferred. */
+  slotAt: z.number().int().optional(),
 });
 export type EmbedJob = z.infer<typeof EmbedJob>;
 

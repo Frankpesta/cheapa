@@ -126,8 +126,18 @@ describe('blocks: stop, never retry', () => {
     expect(server.count('/a')).toBe(1);
   });
 
-  it('throws Blocked when robots.txt itself is 403', async () => {
-    const { http, url } = await setup({ '/robots.txt': (res) => send(res, 403), '/p': ok() });
+  it('treats 401/403 on robots.txt as no rules (RFC 9309), but 403 on a page as blocked', async () => {
+    const { http, url } = await setup({
+      '/robots.txt': (res) => send(res, 403, '<Error><Code>AccessDenied</Code></Error>'),
+      '/p': ok(),
+      '/private': (res) => send(res, 403),
+    });
+    await expect(http.get(url('/p'))).resolves.toMatchObject({ status: 200 });
+    await expect(http.get(url('/private'))).rejects.toBeInstanceOf(Blocked);
+  });
+
+  it('throws Blocked when robots.txt itself is 429', async () => {
+    const { http, url } = await setup({ '/robots.txt': (res) => send(res, 429), '/p': ok() });
     await expect(http.get(url('/p'))).rejects.toBeInstanceOf(Blocked);
   });
 });
@@ -192,6 +202,83 @@ describe('size cap', () => {
       { maxBytes: 1024 },
     );
     await expect(http.get(url('/stream'))).rejects.toBeInstanceOf(ResponseTooLarge);
+  });
+});
+
+describe('robots.txt Crawl-delay', () => {
+  /** Records the rps each request was limited at. */
+  const recordingLimiter = (calls: { domain: string; rps: number; maxWaitMs?: number }[]): RateLimiter => ({
+    acquire: (domain, rps, _signal, maxWaitMs) => {
+      calls.push({ domain, rps, ...(maxWaitMs !== undefined ? { maxWaitMs } : {}) });
+      return Promise.resolve();
+    },
+  });
+
+  it('limits the host to one request per Crawl-delay seconds', async () => {
+    const calls: { domain: string; rps: number }[] = [];
+    server = await startServer({
+      '/robots.txt': robots('User-agent: *\nCrawl-delay: 150\n'),
+      '/img.jpg': ok('x'),
+    });
+    const http = new PoliteHttp({ limiter: recordingLimiter(calls), maxRps: 2 });
+    await http.getBytes(server.origin + '/img.jpg');
+    expect(calls.map((c) => c.rps)).toEqual([2, 1 / 150]);
+  });
+
+  it('passes maxSlotWaitMs through and skips the limiter when holding a reserved slot', async () => {
+    const calls: { domain: string; rps: number; maxWaitMs?: number }[] = [];
+    server = await startServer({ '/robots.txt': robots('User-agent: *\nAllow: /\n'), '/img.jpg': ok('x') });
+    const http = new PoliteHttp({ limiter: recordingLimiter(calls) });
+    await http.getBytes(server.origin + '/img.jpg', { maxSlotWaitMs: 5000 });
+    expect(calls.at(-1)).toMatchObject({ maxWaitMs: 5000 });
+    const before = calls.length;
+    await http.getBytes(server.origin + '/img.jpg', { maxSlotWaitMs: 5000, slotAt: Date.now() });
+    expect(calls.length).toBe(before);
+    expect(server.count('/img.jpg')).toBe(2);
+  });
+});
+
+describe('getBytes (listing images)', () => {
+  const png = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0xff, 0x00]);
+  const image: Route = (res) => {
+    res.writeHead(200, { 'content-type': 'image/png', 'content-length': String(png.length) });
+    res.end(png);
+  };
+
+  it('returns the bytes untouched with an image Accept header', async () => {
+    let accept = '';
+    const { http, url } = await setup({
+      '/img.png': (res, hit, n) => {
+        accept = String(hit.headers['accept'] ?? '');
+        image(res, hit, n);
+      },
+    });
+    const res = await http.getBytes(url('/img.png'));
+    expect(Buffer.from(res.bytes).equals(png)).toBe(true);
+    expect(accept).toMatch(/^image\//);
+  });
+
+  it('applies the per-request size cap', async () => {
+    const { http, url } = await setup({ '/img.png': image });
+    await expect(http.getBytes(url('/img.png'), { maxBytes: 4 })).rejects.toBeInstanceOf(ResponseTooLarge);
+  });
+
+  it('throws on a 404 and treats 403 as blocked', async () => {
+    const { http, url } = await setup({
+      '/gone.png': (res) => send(res, 404, 'nope'),
+      '/no.png': (res) => send(res, 403, 'no'),
+    });
+    await expect(http.getBytes(url('/gone.png'))).rejects.toBeInstanceOf(HttpError);
+    await expect(http.getBytes(url('/no.png'))).rejects.toBeInstanceOf(Blocked);
+  });
+
+  it('honours robots.txt', async () => {
+    server = await startServer({
+      '/robots.txt': robots('User-agent: *\nDisallow: /img\n'),
+      '/img.png': image,
+    });
+    const http = new PoliteHttp({ limiter: noLimit, backoffBaseMs: 1 });
+    await expect(http.getBytes(server.origin + '/img.png')).rejects.toBeInstanceOf(RobotsDisallowed);
   });
 });
 

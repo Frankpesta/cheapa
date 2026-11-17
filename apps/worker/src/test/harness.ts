@@ -108,6 +108,8 @@ export async function startHarness(routes: Record<string, Route> = {}): Promise<
     registry: new AdapterRegistry([fakeAdapter(domain)]),
     httpFor: (store) =>
       new PoliteHttp({ limiter: noLimit, maxRps: store.crawlPolicy.maxRps, backoffBaseMs: 1 }),
+    imagesFor: (store) =>
+      new PoliteHttp({ limiter: noLimit, maxRps: store.crawlPolicy.maxRps, backoffBaseMs: 1 }),
     alerter,
     events: new RedisPriceEvents(redis, `${prefix}:events:price`),
     log: pino({ level: 'silent' }),

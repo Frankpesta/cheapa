@@ -9,6 +9,8 @@ const robotsParser: ParseRobots =
 /** What the client needs from robots.txt for one origin. */
 export interface RobotsRules {
   isAllowed(url: string): boolean;
+  /** `Crawl-delay` in seconds for our agent (or *), when the file sets one. */
+  crawlDelaySeconds?: number;
 }
 
 /** Fetches the raw robots.txt; the client passes one that is itself rate limited. */
@@ -24,9 +26,11 @@ const DISALLOW_ALL: RobotsRules = { isAllowed: () => false };
 /**
  * robots.txt per origin, cached in process for 24 h (02-crawler-core.md 2.2).
  * - 2xx: parsed; rules for our agent token ("CheapaBot") or "*".
- * - 404/410 and other 4xx: no rules, everything allowed (RFC 9309).
+ * - 404/410 and other 4xx, including 401/403: no rules, everything allowed (RFC 9309
+ *   2.3.1.3). Static hosts such as S3 answer 403 for a robots.txt that doesn't exist.
  * - 5xx or network error: everything disallowed until retried (RFC 9309 2.3.1.4).
- * - 403/429/challenge pages never reach here: the client throws Blocked for them.
+ * - 429 and challenge pages never reach here: the client throws Blocked for them.
+ * - `Crawl-delay` lowers the host's request rate (client.ts).
  */
 export class RobotsCache {
   private readonly cache = new Map<string, { rules: RobotsRules; expires: number }>();
@@ -58,7 +62,11 @@ export class RobotsCache {
       const res = await fetchRobots(robotsUrl);
       if (res.status >= 200 && res.status < 300) {
         const parsed = robotsParser(robotsUrl, res.body);
-        rules = { isAllowed: (u) => parsed.isAllowed(u, this.agent) !== false };
+        const crawlDelaySeconds = parsed.getCrawlDelay(this.agent);
+        rules = {
+          isAllowed: (u) => parsed.isAllowed(u, this.agent) !== false,
+          ...(crawlDelaySeconds ? { crawlDelaySeconds } : {}),
+        };
       } else if (res.status >= 500) {
         rules = DISALLOW_ALL;
         ttl = ROBOTS_ERROR_TTL_MS;

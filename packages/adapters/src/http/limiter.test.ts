@@ -1,7 +1,8 @@
 import { Redis } from 'ioredis';
 import { randomUUID } from 'node:crypto';
 import { afterAll, describe, expect, inject, it } from 'vitest';
-import { clampRps, RedisDomainLimiter } from './limiter.js';
+import { RateDeferred } from '../errors.js';
+import { clampRps, effectiveRps, RedisDomainLimiter } from './limiter.js';
 
 const connections: Redis[] = [];
 const connect = () => {
@@ -41,6 +42,21 @@ describe('RedisDomainLimiter', () => {
     controller.abort(new Error('shutdown'));
     await expect(waiting).rejects.toThrow('shutdown');
   });
+
+  it('reserves a far slot and defers instead of sleeping past maxWaitMs', async () => {
+    const limiter = new RedisDomainLimiter(connect());
+    const domain = `cdn-${randomUUID()}.ng`;
+    await limiter.acquire(domain, 1 / 150, undefined, 1000);
+    const before = Date.now();
+    const err = await limiter.acquire(domain, 1 / 150, undefined, 1000).catch((e: unknown) => e);
+    expect(err).toBeInstanceOf(RateDeferred);
+    const slotAt = (err as RateDeferred).slotAt;
+    expect(slotAt - before).toBeGreaterThan(149_000);
+    expect(slotAt - before).toBeLessThan(151_500);
+    // The deferred caller's slot is taken: the next one waits a further 150 s.
+    const next = await limiter.acquire(domain, 1 / 150, undefined, 1000).catch((e: unknown) => e);
+    expect((next as RateDeferred).slotAt - slotAt).toBeGreaterThan(149_000);
+  });
 });
 
 describe('clampRps', () => {
@@ -50,5 +66,14 @@ describe('clampRps', () => {
     expect(clampRps(Number.NaN)).toBe(1);
     expect(clampRps(0.5)).toBe(0.5);
     expect(clampRps(10)).toBe(3);
+  });
+});
+
+describe('effectiveRps', () => {
+  it('takes the slower of the store rate and Crawl-delay', () => {
+    expect(effectiveRps(2, undefined)).toBe(2);
+    expect(effectiveRps(2, 0)).toBe(2);
+    expect(effectiveRps(2, 10)).toBe(0.1);
+    expect(effectiveRps(0.05, 10)).toBe(0.05);
   });
 });

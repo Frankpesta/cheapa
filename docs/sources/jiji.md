@@ -21,6 +21,8 @@ Rendering: json (listing API), no browser needed
 ## Product detail source
 - Ad pages (`/<region>/<category>/<slug>-<guid>.html`) hold the condition and full description; not fetched (descriptions are never stored, and the list has what we need).
 
+- The embedding benchmark (`pnpm bench:embed`, 05 §5.1) reads ad pages for their photo gallery: the `.qa-carousel-thumbnail` webp sources (300 px thumbnails, the ad's own photos in order). Benchmark only, at 1 req/s; only the URLs are kept (`scripts/out/embed-bench-manifest.json`).
+
 ## Field mapping
 | Cheapa field | Source path (`adverts_list.adverts[]`) | Notes |
 | --- | --- | --- |
@@ -29,7 +31,7 @@ Rendering: json (listing API), no browser needed
 | priceKobo | `price_obj.value` × 100 | naira integer. No value ("Contact for price") or a `period` (rent) = skipped |
 | oldPriceKobo | — | classifieds have none |
 | inStock | always true | an ad on the list is live; unseen ads go out of stock after 7 days |
-| imageUrl | `images[0].url`, else `image_obj.url` | `pictures-nigeria.jijistatic.net` webp; never re-hosted |
+| imageUrl | `images[0].url`, else `image_obj.url` | `pictures-nigeria.jijistatic.net` webp; never re-hosted. That host is an S3 bucket: robots.txt answers 403 AccessDenied (no such file), which RFC 9309 and PoliteHttp treat as "no rules" (owner decision 2026-11-17). Images are fetched in memory for embeddings only |
 | condition | not on the list | the normalizer reads thrift / okrika / "UK used" / "brand new" from titles; used beauty is dropped |
 | brand | — | none on the list |
 | categoryPath | the swept category's breadcrumb (`ref.meta.path`) | e.g. `Fashion > Women's Fashion > Women's Clothing` |

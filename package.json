@@ -28,7 +28,8 @@
     "infra:up:app": "docker compose -f infra/docker-compose.yml --env-file .env --profile app up -d --build --wait",
     "crawl:report": "pnpm --filter @cheapa/worker crawl:report",
     "gen:adapter": "pnpm --filter @cheapa/adapters gen:adapter",
-    "export:pairs": "pnpm --filter @cheapa/worker export:pairs"
+    "export:pairs": "pnpm --filter @cheapa/worker export:pairs",
+    "bench:embed": "pnpm --filter @cheapa/worker bench:embed"
   },
   "prettier": "@cheapa/config/prettier",
   "devDependencies": {
