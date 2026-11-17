@@ -35,8 +35,8 @@ import {
   storeStatus,
 } from './enums.js';
 
-/** Image and text embedding sizes; change together with listing_embeddings.model_version. */
-export const IMAGE_VEC_DIMS = 512;
+/** Image (Marqo-FashionSigLIP, DECISIONS.md 2026-11-17) and text (MiniLM) sizes; change with model_version. */
+export const IMAGE_VEC_DIMS = 768;
 export const TEXT_VEC_DIMS = 384;
 
 const tsvector = customType<{ data: string }>({ dataType: () => 'tsvector' });

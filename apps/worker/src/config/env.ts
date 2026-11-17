@@ -1,4 +1,5 @@
-import { baseEnv, catalogDbEnv, envInt, loadEnv } from '@cheapa/core';
+import { baseEnv, catalogDbEnv, envBoolean, envInt, loadEnv } from '@cheapa/core';
+import { IMAGE_MODEL_IDS } from '@cheapa/ml';
 import { z } from 'zod';
 
 const concurrency = (fallback: number) => envInt.pipe(z.number().int().min(1).max(32)).default(fallback);
@@ -18,6 +19,15 @@ export const workerEnvSchema = baseEnv
     WORKER_CONCURRENCY_PROCESS: concurrency(4),
     // Matching serialises per department+category (advisory lock), so a few is plenty.
     WORKER_CONCURRENCY_MATCH: concurrency(2),
+    // Embeds are batched 16 at a time (05 §5.1); 16 concurrent jobs keep batches full.
+    WORKER_CONCURRENCY_EMBED: concurrency(16),
+    // Embeddings (05 §5.1). Image model chosen by the fashion benchmark (DECISIONS.md).
+    EMBED_ENABLED: envBoolean.default(true),
+    EMBED_IMAGE_MODEL: z.enum(IMAGE_MODEL_IDS).default('marqo-fashionsiglip'),
+    // Model files (~100-300 MB each). Unset = inside node_modules; a volume in production.
+    ML_MODEL_CACHE_DIR: z.string().trim().optional(),
+    // true after the first download: boots never reach Hugging Face.
+    ML_OFFLINE: envBoolean.default(false),
     // 04 §4.3: >= merge auto-merges; review..merge merges provisionally and queues a review.
     MATCH_MERGE_THRESHOLD: z.coerce.number().min(0).max(1).default(0.82),
     MATCH_REVIEW_THRESHOLD: z.coerce.number().min(0).max(1).default(0.65),

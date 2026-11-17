@@ -8,7 +8,8 @@ import {
   RobotsCache,
   ROBOTS_AGENT,
 } from '@cheapa/adapters';
-import { createCatalogDb } from '@cheapa/db/catalog';
+import { createCatalogDb, IMAGE_VEC_DIMS, TEXT_VEC_DIMS } from '@cheapa/db/catalog';
+import { createEmbedService, type EmbedService } from '@cheapa/ml';
 import * as Sentry from '@sentry/node';
 import { Redis } from 'ioredis';
 import { OpsAlerter, RedisAlertThrottle } from './alerts.js';
@@ -28,13 +29,17 @@ const queues = createQueues(redis);
 const limiter = new RedisDomainLimiter(redis);
 const robots = new RobotsCache(ROBOTS_AGENT);
 const shutdown = new AbortController();
+const politeFor = (store: { crawlPolicy: { maxRps?: number } }, storeLog: typeof log) =>
+  new PoliteHttp({ limiter, robots, maxRps: store.crawlPolicy.maxRps, log: storeLog });
+const embed = env.EMBED_ENABLED ? await loadEmbedService() : undefined;
 
 const deps: WorkerDeps = {
   db: catalog.db,
   queues,
   registry: new AdapterRegistry(allAdapters),
-  httpFor: (store, storeLog) =>
-    new PoliteHttp({ limiter, robots, maxRps: store.crawlPolicy.maxRps, log: storeLog }),
+  httpFor: politeFor,
+  imagesFor: politeFor,
+  ...(embed ? { embed } : {}),
   alerter: new OpsAlerter({
     log,
     throttle: new RedisAlertThrottle(redis),
@@ -55,11 +60,36 @@ const workers = startWorkers(deps, redis, {
   fetch: env.WORKER_CONCURRENCY_FETCH,
   process: env.WORKER_CONCURRENCY_PROCESS,
   match: env.WORKER_CONCURRENCY_MATCH,
+  embed: env.WORKER_CONCURRENCY_EMBED,
 });
 log.info(
-  { adapters: deps.registry.list().map((a) => a.id), telegramAlerts: Boolean(env.ALERT_TELEGRAM_BOT_TOKEN) },
+  {
+    adapters: deps.registry.list().map((a) => a.id),
+    telegramAlerts: Boolean(env.ALERT_TELEGRAM_BOT_TOKEN),
+    embedModels: embed?.modelVersion ?? 'disabled',
+  },
   'worker started',
 );
+
+/** Loads and warms the models once per process (05 §5.1); vector sizes must match the schema. */
+async function loadEmbedService(): Promise<EmbedService> {
+  const service = createEmbedService({
+    imageModel: env.EMBED_IMAGE_MODEL,
+    textModel: 'minilm-l6',
+    ...(env.ML_MODEL_CACHE_DIR ? { cacheDir: env.ML_MODEL_CACHE_DIR } : {}),
+    offline: env.ML_OFFLINE,
+  });
+  if (service.imageDims !== IMAGE_VEC_DIMS || service.textDims !== TEXT_VEC_DIMS) {
+    throw new Error(
+      `embedding dims ${service.imageDims}/${service.textDims} != schema ${IMAGE_VEC_DIMS}/${TEXT_VEC_DIMS}; ` +
+        'migrate listing_embeddings before switching models',
+    );
+  }
+  const started = Date.now();
+  await service.warmUp();
+  log.info({ modelVersion: service.modelVersion, ms: Date.now() - started }, 'embedding models ready');
+  return service;
+}
 
 let stopping = false;
 async function stop(signal: string): Promise<void> {

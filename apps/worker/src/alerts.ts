@@ -13,7 +13,8 @@ export interface Alert {
     | 'items_dropped'
     | 'error_rate'
     | 'stale_listings'
-    | 'partition_missing';
+    | 'partition_missing'
+    | 'image_forbidden';
   /** Absent for system-wide alerts (partitions). */
   storeId?: string;
   message: string;

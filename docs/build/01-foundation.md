@@ -67,7 +67,7 @@ listings: id (uuid), storeId -> stores, externalId, sourceUrl, title, brand, mod
   UNIQUE(storeId, externalId); INDEX(canonicalProductId); INDEX(lastSeenAt); INDEX(department, category);
   GIN(search); GIN trigram(title)
 
-listing_embeddings: listingId (pk) -> listings, imageVec halfvec(512), textVec halfvec(384), modelVersion text
+listing_embeddings: listingId (pk) -> listings, imageVec halfvec(768), textVec halfvec(384), modelVersion text
   HNSW indexes on imageVec and textVec (halfvec_cosine_ops)
 
 price_history: id bigserial, listingId, priceKobo (bigint), inStock, observedAt; PK(id, observedAt)
@@ -82,7 +82,7 @@ match_reviews: id, listingId, candidateProductId, score (real), decision ('merge
 crawl_jobs: id, storeId, adapter, kind ('discover'|'fetch'), status, startedAt, finishedAt, itemsFound, itemsChanged, errors (jsonb)
 ```
 
-Money columns are `bigint` kobo read as JS numbers (Postgres `integer` tops out at ₦21.4M). Vectors are `halfvec` (half the memory, negligible recall loss). Vector sizes assume CLIP ViT-B/32 image (512) and MiniLM text (384); the fashion model benchmark (`13-fashion-and-beauty.md` 13.6) may change them. If `05-visual-search.md` changes the model, update dims and `modelVersion`.
+Money columns are `bigint` kobo read as JS numbers (Postgres `integer` tops out at ₦21.4M). Vectors are `halfvec` (half the memory, negligible recall loss). Vector sizes: Marqo-FashionSigLIP image (768, chosen by the 13.6 benchmark on 2026-11-17, `DECISIONS.md`) and MiniLM text (384). If `05-visual-search.md` changes the model, update dims and `modelVersion`.
 
 **Acceptance:** migrations run clean; a seed script inserts 3 stores and 10 fake listings; a cosine query on `imageVec` returns ordered results.
 

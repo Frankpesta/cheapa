@@ -39,6 +39,11 @@ Rendering: html with embedded JSON, no browser needed
 ## Live search (for query time)
 - **Not allowed**: robots.txt disallows `/*q=` (site search). `liveSearch` stays unimplemented for Jumia; query-time freshness comes from the nightly sweep. (03 §3.6 assumed Jumia search would be usable; it isn't.)
 
+## Images (`ng.jumia.is`)
+- The image CDN has its own robots.txt: `User-agent: *` / `Crawl-delay: 150`, while its comments allow identified bots up to 200 requests a minute. Checked 2026-11-17.
+- **Owner decision 2026-11-17: honour the Crawl-delay** (one image every 150 s, ~576 a day) until Jumia confirms the 200-rpm allowance by email (techops at jumia com). PoliteHttp applies Crawl-delay per host; embed jobs reserve the next slot and wait as delayed jobs, so no worker sleeps. Jumia listings stay text-searchable meanwhile.
+- If Jumia confirms in writing, record it here and add a per-host override; don't just raise `maxRps`.
+
 ## Gotchas
 - 50-page cap per category (see above).
 - Pages are ~0.7–1.9 MB of HTML. On a slow link a few hit the 20 s PoliteHttp timeout and succeeded on retry; watch the crawl report's error rate after the first VPS sweep.

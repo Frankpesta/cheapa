@@ -21,7 +21,10 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@cheapa/core": "workspace:*"
+    "@cheapa/core": "workspace:*",
+    "@huggingface/transformers": "4.3.2",
+    "sharp": "0.35.5",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@cheapa/config": "workspace:*",

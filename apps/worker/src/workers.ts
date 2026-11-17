@@ -3,6 +3,7 @@ import { Worker, type Job, type Processor } from 'bullmq';
 import type { Redis } from 'ioredis';
 import { CrawlOutcome, type WorkerDeps } from './jobs/deps.js';
 import { runDiscover } from './jobs/discover.js';
+import { runEmbed } from './jobs/embed.js';
 import { runFetch } from './jobs/fetch.js';
 import { fetchFinished } from './jobs/health.js';
 import { runMatch } from './jobs/match.js';
@@ -12,6 +13,7 @@ import {
   QUEUE_PREFIX,
   QUEUES,
   type DiscoverJob,
+  type EmbedJob,
   type FetchJob,
   type MatchJob,
   type ProcessJob,
@@ -24,12 +26,10 @@ export interface Concurrency {
   fetch: number;
   process: number;
   match: number;
+  embed: number;
 }
 
-/**
- * Consumers for schedule, discover, fetch, process and match. `embed` lands with
- * phase 05 (BACKLOG.md).
- */
+/** Consumers for every queue; `embed` only when the process has an EmbedService. */
 export function startWorkers(
   deps: WorkerDeps,
   connection: Redis,
@@ -64,6 +64,10 @@ export function startWorkers(
     ),
     make<ProcessJob>(QUEUES.process, (job) => runProcess(deps, job), concurrency.process),
     make<MatchJob>(QUEUES.match, (job) => runMatch(deps, job), concurrency.match),
+    // Concurrency fills the 16-image batches; the model itself runs one batch at a time.
+    ...(deps.embed
+      ? [make<EmbedJob>(QUEUES.embed, (job, token) => runEmbed(deps, job, token), concurrency.embed)]
+      : []),
   ];
 }
 
