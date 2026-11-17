@@ -22,6 +22,11 @@ export interface WorkerDeps {
   imagesFor(this: void, store: StoreRef, log: Logger): ImageFetcher;
   /** Embedding models (05 §5.1); the `embed` consumer runs only when set. */
   embed?: EmbedService;
+  /**
+   * Listings with an image are matched only after their embed job (EMBED_ENABLED), so
+   * image similarity and phash take part. Off when nothing embeds.
+   */
+  matchAfterEmbed?: boolean;
   alerter: Alerter;
   /** `events:price` on redis-queue. */
   events: PriceEventSink;

@@ -23,7 +23,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { parseArgs } from 'node:util';
 import { z } from 'zod';
 import { BENCH_CATEGORIES, buildManifest, Manifest } from '../bench/dataset.js';
-import { percentile, recallAtK, zeroShotAccuracy, type Item } from '../bench/metrics.js';
+import { percentile, recallAtK, similarityBands, zeroShotAccuracy, type Item } from '../bench/metrics.js';
 
 const OUT = new URL('../../../../scripts/out/', import.meta.url);
 const MANIFEST = new URL('embed-bench-manifest.json', OUT);
@@ -124,6 +124,7 @@ interface ModelResult {
   perSecond: number;
   queries: number;
   indexSize: number;
+  bands: { positives: number[]; negatives: number[] };
 }
 
 async function runModel(id: ImageModelId, photos: Photo[]): Promise<ModelResult> {
@@ -183,8 +184,12 @@ async function runModel(id: ImageModelId, photos: Photo[]): Promise<ModelResult>
     perSecond,
     queries: queries.length,
     indexSize: index.length,
+    bands: similarityBands(
+      queries.map((q) => ({ ...asItem(q), category: q.category })),
+      items.filter((p) => p.n > 0).map((p) => ({ ...asItem(p), category: p.category })),
+    ),
   };
-  log(JSON.stringify({ ...result, recallByCategory: undefined }));
+  log(JSON.stringify({ ...result, recallByCategory: undefined, bands: undefined }));
   return result;
 }
 
@@ -217,6 +222,21 @@ function report(manifest: Manifest, photos: Photo[], results: ModelResult[]): st
     ...results.map((r) => `| ${r.id} | ${cats.map((c) => pct(r.recallByCategory[c] ?? 0)).join(' | ')} |`),
     '',
     `Queries: ${results[0]?.queries ?? 0}, index: ${results[0]?.indexSize ?? 0} photos.`,
+    '',
+    '## Raw cosine: same product vs hardest other product in the same category',
+    '',
+    'For the matcher (04 §4.3): best cosine from photo 1 to another photo of the same ad, and to the most similar photo of a *different* ad in the same category.',
+    '',
+    '| Model | Kind | p5 | p25 | p50 | p75 | p95 |',
+    '| --- | --- | --- | --- | --- | --- | --- |',
+    ...results.flatMap((r) =>
+      (['positives', 'negatives'] as const).map(
+        (kind) =>
+          `| ${r.id} | ${kind === 'positives' ? 'same product' : 'other product'} | ` +
+          [5, 25, 50, 75, 95].map((p) => percentile(r.bands[kind], p).toFixed(3)).join(' | ') +
+          ' |',
+      ),
+    ),
     '',
   ];
   return lines.join('\n');

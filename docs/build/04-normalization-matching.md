@@ -38,7 +38,7 @@ Denormalised on `canonical_products`: `minPriceKobo`, `maxPriceKobo`, `listingCo
 For each new or changed listing:
 
 1. **Exact keys:** GTIN, or brand + model number → attach directly.
-2. **Candidate retrieval:** top 20 canonical products by text vector (same category), plus top 20 by image vector.
+2. **Candidate retrieval:** top 20 canonical products by text vector (same category), plus top 20 by image vector. Implemented (05 §5.1): nearest listings rolled up to products; image cosine is rescaled with `IMAGE_SIM_RANGE` before scoring, and title vectors only retrieve (text scoring stays title-token similarity until labelled pairs exist). See `DECISIONS.md` 2026-11-17.
 3. **Score** each candidate:
    - +0.45 text similarity (cosine of title embeddings)
    - +0.35 image similarity

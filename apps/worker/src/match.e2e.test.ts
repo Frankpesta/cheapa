@@ -1,7 +1,7 @@
 /**
  * 04 §4.2–4.3 end to end: process -> match queue -> canonical products, against a real
- * catalog database. Image similarity doesn't exist yet (phase 05), so fashion only merges
- * on exact keys; beauty and electronics merge on text and attributes.
+ * catalog database, without embeddings: fashion then only merges on exact keys, beauty and
+ * electronics on text and attributes. Vector matching: match-vectors.e2e.test.ts.
  */
 import type { RawListingInput } from '@cheapa/core';
 import { canonicalProducts, listings, matchReviews } from '@cheapa/db/catalog';
