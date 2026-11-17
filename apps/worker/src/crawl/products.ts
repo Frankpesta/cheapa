@@ -5,7 +5,8 @@
  */
 import { newProduct, type Candidate, type MatchDecision, type MatchItem } from '@cheapa/core';
 import { canonicalProducts, listings, matchReviews, type CatalogDb } from '@cheapa/db/catalog';
-import { and, eq, isNull, or, sql } from 'drizzle-orm';
+import { and, eq, inArray, isNull, or, sql } from 'drizzle-orm';
+import { productSignals, vectorCandidateIds, type ListingVectors } from './candidates.js';
 
 type Tx = Parameters<Parameters<CatalogDb['transaction']>[0]>[0];
 /** A connection or a transaction. */
@@ -17,7 +18,7 @@ export interface MatchListing extends MatchItem {
   imageUrl: string | null;
 }
 
-/** Candidates per strategy (04 §4.3 says top 20 by vector; titles stand in until phase 05). */
+/** Candidates per strategy (exact keys, closest titles; vectors in candidates.ts). */
 const CANDIDATES = 20;
 
 export async function loadMatchListing(db: Db, id: string): Promise<MatchListing | null> {
@@ -54,10 +55,15 @@ const productColumns = {
 };
 
 /**
- * Exact-key products (GTIN, brand + model number, brand + model) plus the closest titles in
- * the same department and category. Vetoes and scoring happen in core.
+ * Exact-key products (GTIN, brand + model number, brand + model), the closest titles, and
+ * the nearest products by image and title vector in the same department and category,
+ * each with its image/text similarity and closest phash. Vetoes and scoring happen in core.
  */
-export async function findCandidates(db: Db, l: MatchListing): Promise<Candidate[]> {
+export async function findCandidates(
+  db: Db,
+  l: MatchListing,
+  vectors: ListingVectors | null = null,
+): Promise<Candidate[]> {
   const exact = or(
     l.gtin ? eq(canonicalProducts.gtin, l.gtin) : undefined,
     l.brand && l.modelNumber
@@ -88,7 +94,23 @@ export async function findCandidates(db: Db, l: MatchListing): Promise<Candidate
     .orderBy(sql`similarity(${canonicalProducts.title}, ${l.title}) desc`)
     .limit(CANDIDATES);
   const seen = new Set<string>();
-  return [...byKey, ...similar].filter((c) => !seen.has(c.productId) && seen.add(c.productId));
+  const products = [...byKey, ...similar].filter((c) => !seen.has(c.productId) && seen.add(c.productId));
+  const extra = (vectors ? await vectorCandidateIds(db, l, vectors) : []).filter((id) => !seen.has(id));
+  if (extra.length > 0) {
+    products.push(
+      ...(await db
+        .select(productColumns)
+        .from(canonicalProducts)
+        .where(inArray(canonicalProducts.id, extra))),
+    );
+  }
+  const signals = await productSignals(
+    db,
+    l,
+    vectors,
+    products.map((p) => p.productId),
+  );
+  return products.map((p) => ({ ...p, ...signals.get(p.productId) }));
 }
 
 /**

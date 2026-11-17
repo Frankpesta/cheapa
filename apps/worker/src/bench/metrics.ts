@@ -62,3 +62,29 @@ export function percentile(values: readonly number[], p: number): number {
   const rank = Math.ceil((p / 100) * sorted.length);
   return sorted[Math.min(sorted.length, Math.max(1, rank)) - 1] ?? Number.NaN;
 }
+
+/**
+ * Raw cosine calibration for the matcher (04 §4.3): per query, the best cosine to another
+ * photo of the same product (positive) and to a different product in the same category
+ * (hardest negative). The gap shows where "same item" starts.
+ */
+export function similarityBands(
+  queries: readonly (Item & { category: string })[],
+  index: readonly (Item & { category: string })[],
+): { positives: number[]; negatives: number[] } {
+  const positives: number[] = [];
+  const negatives: number[] = [];
+  for (const q of queries) {
+    let pos = -Infinity;
+    let neg = -Infinity;
+    for (const item of index) {
+      if (item.category !== q.category) continue;
+      const sim = dot(q.vec, item.vec);
+      if (item.group === q.group) pos = Math.max(pos, sim);
+      else neg = Math.max(neg, sim);
+    }
+    if (pos > -Infinity) positives.push(pos);
+    if (neg > -Infinity) negatives.push(neg);
+  }
+  return { positives, negatives };
+}

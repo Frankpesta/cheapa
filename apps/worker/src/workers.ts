@@ -3,7 +3,7 @@ import { Worker, type Job, type Processor } from 'bullmq';
 import type { Redis } from 'ioredis';
 import { CrawlOutcome, type WorkerDeps } from './jobs/deps.js';
 import { runDiscover } from './jobs/discover.js';
-import { runEmbed } from './jobs/embed.js';
+import { queueMatchAfterEmbed, runEmbed } from './jobs/embed.js';
 import { runFetch } from './jobs/fetch.js';
 import { fetchFinished } from './jobs/health.js';
 import { runMatch } from './jobs/match.js';
@@ -96,6 +96,13 @@ export function reportFailure(deps: WorkerDeps, queue: string, job: Job | undefi
         { err: e instanceof Error ? e.message : String(e), crawlJobId },
         'fetch accounting failed',
       ),
+    );
+  }
+  // An embed that failed for good still lets the listing match (without an image vector).
+  if (final && queue === QUEUES.embed && job) {
+    const { listingId } = job.data as { listingId: string };
+    queueMatchAfterEmbed(deps, listingId).catch((e: unknown) =>
+      deps.log.error({ err: e instanceof Error ? e.message : String(e), listingId }, 'match enqueue failed'),
     );
   }
   deps.log.warn(

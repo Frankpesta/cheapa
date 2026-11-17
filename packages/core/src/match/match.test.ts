@@ -10,7 +10,7 @@ import {
   type MatchItem,
 } from './decide.js';
 import { newProduct } from './canonical.js';
-import { vetoReason } from './rules.js';
+import { IMAGE_SIM_RANGE, imageEvidence, vetoReason } from './rules.js';
 
 /** A listing as the matcher sees it, through the real normalizer. */
 function item(title: string, extra: Partial<RawListingInput> = {}): MatchItem {
@@ -96,23 +96,24 @@ describe('fashion: the photo carries the match (13 §13.4)', () => {
     expect(d).toEqual({ kind: 'new', score: 0, reason: 'no image signal' });
   });
 
-  it('merges a near-identical photo, queues a merely similar one for review', () => {
-    expect(
-      decideMatch(dress, [candidate('p1', 'Satin Slip Midi Dress Wine', { imageSim: 0.97 })]),
-    ).toMatchObject({
-      kind: 'merge',
-    });
-    expect(
-      decideMatch(dress, [candidate('p1', 'Satin Slip Midi Dress Wine', { imageSim: 0.72 })]),
-    ).toMatchObject({
-      kind: 'review',
-    });
-    expect(
-      decideMatch(dress, [candidate('p1', 'Satin Slip Midi Dress Wine', { imageSim: 0.4 })]),
-    ).toMatchObject({
-      kind: 'new',
-      reason: 'below review threshold',
-    });
+  it('merges a near-identical photo, queues a merely similar one for review (raw cosines)', () => {
+    const same = (imageSim: number) =>
+      decideMatch(dress, [candidate('p1', 'Satin Slip Midi Dress Wine', { imageSim })]).kind;
+    // Same title words: merge from ~0.89, review from ~0.81.
+    expect([0.97, 0.9, 0.85, 0.75, 0.4].map(same)).toEqual(['merge', 'merge', 'review', 'new', 'new']);
+    // Different words: the photo has to carry it. 0.85 is the hardest different
+    // product's p95 in the calibration set.
+    const other = (imageSim: number) =>
+      decideMatch(dress, [candidate('p1', 'Bodycon Party Gown', { imageSim })]).kind;
+    expect([0.97, 0.92, 0.85].map(other)).toEqual(['merge', 'review', 'new']);
+  });
+
+  it('rescales raw image cosine between the calibrated bounds', () => {
+    expect(imageEvidence(0.5)).toBe(0);
+    expect(imageEvidence(IMAGE_SIM_RANGE.lo)).toBe(0);
+    expect(imageEvidence(0.825)).toBeCloseTo(0.5);
+    expect(imageEvidence(IMAGE_SIM_RANGE.hi)).toBe(1);
+    expect(imageEvidence(1)).toBe(1);
   });
 
   it('pack count, audience and item type are hard; size and colour are not', () => {

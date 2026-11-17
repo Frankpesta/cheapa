@@ -40,6 +40,7 @@ const deps: WorkerDeps = {
   httpFor: politeFor,
   imagesFor: politeFor,
   ...(embed ? { embed } : {}),
+  matchAfterEmbed: env.EMBED_ENABLED,
   alerter: new OpsAlerter({
     log,
     throttle: new RedisAlertThrottle(redis),

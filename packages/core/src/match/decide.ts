@@ -1,13 +1,14 @@
 /**
  * Matcher decision (04 §4.3, 13 §13.4): exact keys first, then a weighted score over
- * image, text and attribute agreement, with hard vetoes. Similarities are inputs: image
- * and text embeddings arrive with phase 05; until then text falls back to title tokens
- * and image-led departments only merge on exact keys.
+ * image, text and attribute agreement, with hard vetoes. Similarities are inputs from the
+ * listing embeddings (05 §5.1); without them text falls back to title tokens and
+ * image-led departments only merge on exact keys.
  */
 import type { Department, Variant } from '../types.js';
 import {
   DEFAULT_THRESHOLDS,
   IMAGE_LED,
+  imageEvidence,
   PHASH_MAX_DISTANCE,
   vetoReason,
   WEIGHTS,
@@ -23,15 +24,15 @@ export interface MatchItem {
   modelNumber?: string | null | undefined;
   gtin?: string | null | undefined;
   variant: Variant;
-  /** 64-bit perceptual hash of the main image (phase 05). */
+  /** 64-bit perceptual hash of the main image (05 §5.1). */
   phash?: bigint | null | undefined;
 }
 
 export interface Candidate extends MatchItem {
   productId: string;
-  /** Cosine similarity of image embeddings, 0..1, when both have one (phase 05). */
+  /** Raw cosine of image embeddings (best over the product's listings), when both have one. */
   imageSim?: number;
-  /** Cosine similarity of title embeddings, 0..1, when both have one (phase 05). */
+  /** Raw cosine of title embeddings (best over the product's listings), when both have one. */
   textSim?: number;
 }
 
@@ -156,7 +157,7 @@ export function exactKey(a: MatchItem, b: MatchItem): ExactKey | null {
  */
 export function score(listing: MatchItem, candidate: Candidate): number | null {
   const w = WEIGHTS[listing.department];
-  const image = candidate.imageSim;
+  const image = candidate.imageSim === undefined ? undefined : imageEvidence(candidate.imageSim);
   if (image === undefined && IMAGE_LED.has(listing.department)) return null;
   const text = candidate.textSim ?? titleSimilarity(listing.title, candidate.title);
   const attributes = attributeAgreement(listing, candidate);

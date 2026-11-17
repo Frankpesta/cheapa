@@ -2,6 +2,8 @@ export {
   DEFAULT_THRESHOLDS,
   hardVariant,
   IMAGE_LED,
+  IMAGE_SIM_RANGE,
+  imageEvidence,
   PHASH_MAX_DISTANCE,
   vetoReason,
   WEIGHTS,

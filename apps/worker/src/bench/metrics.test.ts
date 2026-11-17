@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { percentile, recallAtK, topK, zeroShotAccuracy } from './metrics.js';
+import { percentile, recallAtK, similarityBands, topK, zeroShotAccuracy } from './metrics.js';
 
 const unit = (...v: number[]) => {
   const n = Math.hypot(...v);
@@ -39,6 +39,20 @@ describe('benchmark metrics', () => {
       { label: 'bag', vec: unit(0.9, 0.2, 0) },
     ];
     expect(zeroShotAccuracy(images, labels)).toBe(0.5);
+  });
+
+  it('collects best same-product and hardest same-category cosines', () => {
+    const idx = [
+      { group: 'a', category: 'dress', vec: unit(1, 0, 0) },
+      { group: 'b', category: 'dress', vec: unit(1, 1, 0) },
+      { group: 'c', category: 'bag', vec: unit(1, 0.01, 0) },
+    ];
+    const { positives, negatives } = similarityBands(
+      [{ group: 'a', category: 'dress', vec: unit(1, 0, 0) }],
+      idx,
+    );
+    expect(positives[0]).toBeCloseTo(1);
+    expect(negatives[0]).toBeCloseTo(Math.SQRT1_2);
   });
 
   it('takes nearest-rank percentiles', () => {

@@ -20,3 +20,11 @@ Latency: one image at a time, q8 ONNX on this machine's CPU (40 samples, after w
 | marqo-fashionsiglip | 91.1% | 100.0% | 93.3% | 93.3% | 86.7% | 84.4% | 97.8% | 84.4% |
 
 Queries: 360, index: 568 photos.
+## Raw cosine: same product vs hardest other product in the same category
+
+For the matcher (04 §4.3): best cosine from photo 1 to another photo of the same ad, and to the most similar photo of a *different* ad in the same category.
+
+| Model | Kind | p5 | p25 | p50 | p75 | p95 |
+| --- | --- | --- | --- | --- | --- | --- |
+| marqo-fashionsiglip | same product | 0.584 | 0.738 | 0.818 | 0.891 | 1.000 |
+| marqo-fashionsiglip | other product | 0.551 | 0.639 | 0.698 | 0.762 | 0.852 |

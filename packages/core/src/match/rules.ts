@@ -40,6 +40,21 @@ export const DEFAULT_THRESHOLDS: MatchThresholds = { merge: 0.82, review: 0.65 }
 export const PHASH_MAX_DISTANCE = 6;
 
 /**
+ * Raw image cosine (Marqo-FashionSigLIP) -> 0..1 evidence for the score. Calibrated
+ * 2026-11-17 on 360 Jiji ads (docs/build/reports/embed-bench-20261117.md): the hardest
+ * *different* product in the same category has median cosine 0.70 (p95 0.85), another
+ * photo of the same product median 0.82. Raw cosines overlap too much to use directly;
+ * with fashion weights this auto-merges from ~0.92 raw and reviews from ~0.86.
+ * Recalibrate whenever the image model changes.
+ */
+export const IMAGE_SIM_RANGE = { lo: 0.7, hi: 0.95 } as const;
+
+export function imageEvidence(rawCosine: number): number {
+  const { lo, hi } = IMAGE_SIM_RANGE;
+  return Math.min(1, Math.max(0, (rawCosine - lo) / (hi - lo)));
+}
+
+/**
  * The hard attributes of a listing, the ones a canonical product stores in `variant`.
  * Sizes, colours and condition are soft and never stored on the product.
  */

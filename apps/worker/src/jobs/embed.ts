@@ -8,7 +8,7 @@ import { ImageDecodeError, MAX_IMAGE_BYTES } from '@cheapa/ml';
 import { DelayedError, UnrecoverableError, type Job } from 'bullmq';
 import { loadEmbedListing, saveEmbedding } from '../crawl/embeddings.js';
 import { getStore, markStoreBlocked } from '../crawl/stores.js';
-import { EmbedJob } from '../queues.js';
+import { EmbedJob, jobId, type MatchJob } from '../queues.js';
 import type { WorkerDeps } from './deps.js';
 
 /** Waits longer than this for the image host's next slot become a delayed job instead. */
@@ -19,7 +19,31 @@ export interface EmbedResult {
   embedded?: boolean;
 }
 
+/**
+ * Embeds, then hands the listing to the matcher (`afterEmbed`) whether or not an image
+ * vector came out of it: a dead or forbidden image must not leave a listing unmatched.
+ */
 export async function runEmbed(deps: WorkerDeps, job: Job<EmbedJob>, token?: string): Promise<EmbedResult> {
+  try {
+    const result = await embedListing(deps, job, token);
+    if (result.skipped !== 'missing' && result.skipped !== 'image_changed') {
+      await queueMatchAfterEmbed(deps, job.data.listingId);
+    }
+    return result;
+  } catch (err) {
+    if (err instanceof UnrecoverableError) await queueMatchAfterEmbed(deps, job.data.listingId);
+    throw err;
+  }
+}
+
+/** One match per listing after its embed; also called when an embed job fails for good. */
+export async function queueMatchAfterEmbed(deps: WorkerDeps, listingId: string): Promise<void> {
+  await deps.queues.match.add('match', { listingId, afterEmbed: true } satisfies MatchJob, {
+    jobId: jobId('match', listingId, 'embed'),
+  });
+}
+
+async function embedListing(deps: WorkerDeps, job: Job<EmbedJob>, token?: string): Promise<EmbedResult> {
   const embed = deps.embed;
   if (!embed) throw new Error('embed consumer started without an EmbedService');
   const data = EmbedJob.parse(job.data);

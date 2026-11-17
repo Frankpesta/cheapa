@@ -46,6 +46,7 @@ beforeAll(async () => {
 afterAll(() => h.stop());
 beforeEach(async () => {
   await h.catalog.db.execute(sql`truncate stores, listings cascade`);
+  await h.queues.match.obliterate({ force: true });
   h.alerts.length = 0;
   storeId = await h.addStore();
 });
@@ -79,6 +80,8 @@ function fakeJob(data: EmbedJob) {
   return { job, calls };
 }
 
+const queuedMatches = async () =>
+  (await h.queues.match.getJobs(['waiting'])).map((j) => j.data as { listingId: string });
 const run = (data: EmbedJob) => runEmbed(h.deps, fakeJob(data).job, 'token');
 const storeStatus = async () =>
   (await h.catalog.db.select({ s: stores.status }).from(stores).where(eq(stores.id, storeId)))[0]?.s;
@@ -102,6 +105,8 @@ describe('embed job', () => {
     // Re-embedding replaces the row.
     await run({ listingId: l.id, imageUrl: l.imageUrl });
     expect(await h.catalog.db.$count(listingEmbeddings)).toBe(1);
+    // ...and the listing goes to the matcher, once.
+    expect(await queuedMatches()).toEqual([{ listingId: l.id, afterEmbed: true }]);
   });
 
   it('skips listings that are gone or whose image changed since the job was queued', async () => {
@@ -112,6 +117,7 @@ describe('embed job', () => {
     await expect(
       run({ listingId: '00000000-0000-4000-8000-000000000000', imageUrl: l.imageUrl }),
     ).resolves.toEqual({ skipped: 'missing' });
+    expect(await queuedMatches()).toEqual([]);
   });
 
   it('skips missing and undecodable images without retrying', async () => {
@@ -124,6 +130,8 @@ describe('embed job', () => {
       skipped: 'bad_image',
     });
     expect(await h.catalog.db.$count(listingEmbeddings)).toBe(0);
+    // Unusable images still let the listing match, on text and attributes.
+    expect((await queuedMatches()).map((m) => m.listingId).sort()).toEqual([gone.id, page.id].sort());
   });
 
   it('alerts on a 403 image without pausing the store', async () => {
@@ -131,6 +139,7 @@ describe('embed job', () => {
     await expect(run({ listingId: l.id, imageUrl: l.imageUrl })).rejects.toBeInstanceOf(UnrecoverableError);
     expect(h.alerts.map((a) => a.kind)).toEqual(['image_forbidden']);
     expect(await storeStatus()).toBe('active');
+    expect(await queuedMatches()).toEqual([{ listingId: l.id, afterEmbed: true }]);
   });
 
   it('marks the store blocked on a 429 image', async () => {
