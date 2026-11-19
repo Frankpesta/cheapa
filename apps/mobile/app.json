@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Cheapa",
+    "slug": "cheapa",
+    "scheme": "cheapa",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F4F5EF",
+    "newArchEnabled": true,
+    "android": {
+      "package": "ng.cheapa.app",
+      "edgeToEdgeEnabled": true
+    },
+    "ios": {
+      "bundleIdentifier": "ng.cheapa.app",
+      "supportsTablet": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": ["expo-router", "expo-font"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

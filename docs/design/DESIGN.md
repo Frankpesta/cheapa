@@ -46,8 +46,18 @@ Put these in `packages/config/tokens.ts` and extend the NativeWind/Tailwind them
 | `liveBg` / `liveFg` | `#EEE6F3` / `#4B2A6B` | "Live result" flag |
 | `premiumBg` / `premiumFg` | `#FFF1C2` / `#6B4A00` | Premium badge |
 | `scrim` | `rgba(14,26,19,0.55)` | Behind bottom sheets |
+| `lineStrong` | `#B9C1B4` | Dashed "add" buttons ("Watch something new") |
+| `track` | `#EEF0EA` | Progress-bar tracks, chart mid gridline, dividers inside settings groups |
+| `handle` | `#C9CFC4` | Sheet grab handle, unselected radio ring |
+| `mutedSoft` | `#5E6A62` | Inactive tab labels, input placeholders |
+| `strike` | `#6B776F` | Struck-through old prices |
+| `inkLine2` | `#3B4D41` | The lighter of the two `inkLine` values (outline buttons and rings on dark) |
+| `onInkFaint` | `#A9B6AD` | Mono labels on ink cards ("USED FROM", "% below today") |
+| `selected` | `#F8FBEE` | Selected `RadioOption` background |
 
-Product thumbnail tints (placeholder tiles until real images load): `#E6EEDB`, `#F3E3D3`, `#DDE6EE`, `#EEE6F3`, `#F3EDD3`.
+The last eight rows were already used in the screen files; they were added here when the components were built (2026-11-19) so every colour has a token name.
+
+Product thumbnail tints and store-initial avatars (placeholder tiles until real images load), background / foreground: `#E6EEDB`/`#2F4A06`, `#F3E3D3`/`#7A4A22`, `#DDE6EE`/`#1E3A66`, `#EEE6F3`/`#5A3A7A`, `#F3EDD3`/`#5C4A0A`, `#FCE7D6`/`#7A3A0E`, `#F1E3F3`/`#5A2A66`. `tintFor(name)` in `packages/config/tokens.ts` picks one stably per name.
 
 ### Typography
 

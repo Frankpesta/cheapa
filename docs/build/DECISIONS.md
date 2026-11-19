@@ -61,6 +61,10 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-19 | `/go` and search history ship on their own branch after 5.3 | They need users DB tables and the api-jobs queue (08 §8.4-8.5); 5.3 already emits `/go/:listingId` URLs |
 | 2026-11-19 | `/go` affiliate template: `linkTemplate` contains `{url}` (encoded listing URL) and optionally `{subId}`; otherwise the click id goes in `subIdParam`. Bad/inactive templates fall back to the plain listing URL. `clicks.productId` is nullable (live-search listings); click rows keep the redirect time | A click must never break; one format covers the known affiliate networks until `AFFILIATES.md` records the real ones |
 | 2026-11-19 | Search history stores the typed query, or the vision read's search phrase for an image (`searches.query`), plus `detected`; the response `requestId` is always a uuid (a non-uuid incoming `x-request-id` gets a fresh one) | It is the history row id and `/go?s=`; the phrase gives image searches a readable history title |
+| 2026-11-19 | Mobile stack: Expo SDK 58 (RN 0.88, React 19.3), Expo Router, NativeWind 4.2 on Tailwind 3.4 (NativeWind 5 is still RC), Lucide icons, @expo-google-fonts | Latest stable SDK; NativeWind's stable line. Fonts register one family per weight (`fonts` in tokens) because Android ignores fontWeight for custom fonts |
+| 2026-11-19 | Components take exact px from tokens via inline styles; NativeWind classes are for screen layout | DESIGN.md asks for 2 px fidelity; Text variants fix family/size/line-height/tracking in one place |
+| 2026-11-19 | `@cheapa/core/client` entry (api, flags, money, types) for apps; mobile lint forbids the `@cheapa/core` root and server packages | The root entry pulls in the matcher's `node:crypto`, which React Native can't bundle |
+| 2026-11-19 | Tailwind `darkMode: 'class'` | The app is light-only; the default `media` makes NativeWind throw on web |
 
 ## Deferred
 
