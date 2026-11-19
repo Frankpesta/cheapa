@@ -26,6 +26,7 @@
     "@nestjs/platform-fastify": "catalog:",
     "@sentry/nestjs": "catalog:",
     "@sentry/node": "catalog:",
+    "bullmq": "catalog:",
     "drizzle-orm": "catalog:",
     "fastify": "catalog:",
     "ioredis": "catalog:",

@@ -111,7 +111,10 @@ export async function buildResponse(requestId: string, r: Ranking): Promise<Sear
     products,
     lookalikes,
   };
-  return { response, meta: { cacheHit: false, visionProvider: null, lowConfidence, liveCount } };
+  return {
+    response,
+    meta: { cacheHit: false, visionProvider: null, lowConfidence, liveCount, query: r.query },
+  };
 }
 
 function shelfOfBestImage(ranked: readonly Ranked[], meta: ReadonlyMap<string, ProductMeta>): Shelf {
