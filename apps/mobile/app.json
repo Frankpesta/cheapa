@@ -20,7 +20,28 @@
       "bundler": "metro",
       "output": "single"
     },
-    "plugins": ["expo-router", "expo-font"],
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-secure-store",
+      "expo-web-browser",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Cheapa uses the camera to photograph products and find the cheapest store. Photos are never saved.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Cheapa reads the photo or screenshot you pick to find the product. Photos are never saved.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ]
+    ],
     "experiments": {
       "typedRoutes": true
     }

@@ -45,7 +45,11 @@ Put these in `packages/config/tokens.ts` and extend the NativeWind/Tailwind them
 | `dropBg` / `dropFg` | `#FFE9DC` / `#9A3412` | Price-drop %, "Check seller" warning, Sign out text |
 | `liveBg` / `liveFg` | `#EEE6F3` / `#4B2A6B` | "Live result" flag |
 | `premiumBg` / `premiumFg` | `#FFF1C2` / `#6B4A00` | Premium badge |
-| `scrim` | `rgba(14,26,19,0.55)` | Behind bottom sheets |
+| `scrim` | `rgba(14,26,19,0.55)` | Behind bottom sheets; camera round buttons and mode switch |
+| `scrimStrong` | `rgba(14,26,19,0.7)` | Camera hint pill |
+| `glass` | `rgba(255,255,255,0.14)` | Camera "Aa" button |
+| `shade` / `shadeDeep` / `shadeClear` | `rgba(10,15,12,0.75)` / `0.92` / `0` | Camera top and bottom fades |
+| `limeGlass` | `rgba(198,244,50,0.35)` | NotFound magnifier lens |
 | `lineStrong` | `#B9C1B4` | Dashed "add" buttons ("Watch something new") |
 | `track` | `#EEF0EA` | Progress-bar tracks, chart mid gridline, dividers inside settings groups |
 | `handle` | `#C9CFC4` | Sheet grab handle, unselected radio ring |

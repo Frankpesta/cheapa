@@ -154,6 +154,9 @@ export class HistoryService {
         slug: canonicalProducts.slug,
         title: canonicalProducts.title,
         repImageUrl: canonicalProducts.repImageUrl,
+        cheapestNewKobo: canonicalProducts.cheapestNewKobo,
+        cheapestUsedKobo: canonicalProducts.cheapestUsedKobo,
+        listingCount: canonicalProducts.listingCount,
       })
       .from(canonicalProducts)
       .where(inArray(canonicalProducts.id, unique));

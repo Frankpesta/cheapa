@@ -16,10 +16,16 @@ export function Thumb({
   radius = 12,
   icon = Package,
   iconSize = 22,
+  height = size,
+  fill = false,
 }: {
   name: string;
   uri?: string | null;
   size: number;
+  /** Defaults to `size` (square); Home "Recent" tiles are 108×76. */
+  height?: number;
+  /** Stretch to the parent's width (lookalike grid); `size` then only sets the icon box. */
+  fill?: boolean;
   radius?: number;
   icon?: LucideIcon;
   iconSize?: number;
@@ -28,8 +34,8 @@ export function Thumb({
   return (
     <View
       style={{
-        width: size,
-        height: size,
+        width: fill ? '100%' : size,
+        height,
         borderRadius: radius,
         backgroundColor: tint.bg,
         alignItems: 'center',
@@ -40,7 +46,7 @@ export function Thumb({
       {uri ? (
         <Image
           source={{ uri }}
-          style={{ width: size, height: size }}
+          style={{ width: fill ? '100%' : size, height }}
           contentFit="cover"
           cachePolicy="memory-disk"
           accessibilityIgnoresInvertColors

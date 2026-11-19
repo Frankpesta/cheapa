@@ -22,7 +22,7 @@ export type Detected = SearchResponse['detected'];
 
 const goUrl = (listingId: string) => `/go/${listingId}`;
 
-function listingCard(l: ListingRow, now: Date): SearchListing {
+export function listingCard(l: ListingRow, now: Date): SearchListing {
   const sizes = l.variant.sizes?.map((s) => s.value);
   return {
     listingId: l.id,
@@ -80,6 +80,7 @@ export function lookalikeCard(
   if (!cheapest) return null;
   return {
     productId: p.id,
+    slug: p.slug,
     title: p.title,
     repImageUrl: p.repImageUrl,
     cheapestKobo: cheapest.priceKobo,

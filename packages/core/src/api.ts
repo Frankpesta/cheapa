@@ -67,6 +67,7 @@ export const SearchListing = z.object({
   url: z.string(),
   flags: ListingFlags,
 });
+export type SearchListing = z.infer<typeof SearchListing>;
 
 export const SearchProduct = z.object({
   productId: z.uuid(),
@@ -83,6 +84,7 @@ export const SearchProduct = z.object({
 
 export const Lookalike = z.object({
   productId: z.uuid(),
+  slug: z.string(),
   title: z.string(),
   repImageUrl: z.string().nullable(),
   cheapestKobo: Kobo,
@@ -146,6 +148,8 @@ export const ProductResponse = z.object({
   cheapestUsedKobo: Kobo.nullable(),
   listingCount: z.number().int().nonnegative(),
   updatedAt: z.iso.datetime(),
+  /** Live listings (seen in the last 7 days, active stores): in stock first, then cheapest. */
+  listings: z.array(SearchListing),
 });
 export type ProductResponse = z.infer<typeof ProductResponse>;
 
@@ -208,7 +212,16 @@ export const SearchHistoryItem = z.object({
   resultCount: z.number().int().nonnegative(),
   /** The best result, for the row's thumbnail and title; null if none or since removed. */
   topProduct: z
-    .object({ productId: z.uuid(), slug: z.string(), title: z.string(), repImageUrl: z.string().nullable() })
+    .object({
+      productId: z.uuid(),
+      slug: z.string(),
+      title: z.string(),
+      repImageUrl: z.string().nullable(),
+      /** Current headline prices, never merged into one figure (DESIGN.md §5 rule 5). */
+      cheapestNewKobo: Kobo.nullable(),
+      cheapestUsedKobo: Kobo.nullable(),
+      listingCount: z.number().int().nonnegative(),
+    })
     .nullable(),
   createdAt: z.iso.datetime(),
 });

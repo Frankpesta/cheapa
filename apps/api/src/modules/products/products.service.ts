@@ -3,10 +3,16 @@ import { canonicalProducts, type CatalogConnection, listings, priceHistory } fro
 import { Inject, Injectable } from '@nestjs/common';
 import { and, asc, eq, gte, sql } from 'drizzle-orm';
 import { CATALOG_DB } from '../../infra/database.module.js';
+import { CatalogSearch, LISTINGS_PER_PRODUCT } from '../search/catalog-search.js';
+import { byStockThenPrice, listingCard } from '../search/results.js';
 
 @Injectable()
 export class ProductsService {
-  constructor(@Inject(CATALOG_DB) private readonly catalog: CatalogConnection) {}
+  private readonly search: CatalogSearch;
+
+  constructor(@Inject(CATALOG_DB) private readonly catalog: CatalogConnection) {
+    this.search = new CatalogSearch(catalog.db);
+  }
 
   async bySlug(slug: string): Promise<ProductResponse | null> {
     const [row] = await this.catalog.db
@@ -15,6 +21,8 @@ export class ProductsService {
       .where(eq(canonicalProducts.slug, slug))
       .limit(1);
     if (!row) return null;
+    const now = new Date();
+    const rows = await this.search.listingsFor([row.id]);
     return {
       productId: row.id,
       slug: row.slug,
@@ -29,6 +37,9 @@ export class ProductsService {
       cheapestUsedKobo: row.cheapestUsedKobo,
       listingCount: row.listingCount,
       updatedAt: row.updatedAt.toISOString(),
+      listings: byStockThenPrice(rows)
+        .slice(0, LISTINGS_PER_PRODUCT)
+        .map((l) => listingCard(l, now)),
     };
   }
 
