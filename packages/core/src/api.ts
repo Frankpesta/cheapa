@@ -38,6 +38,8 @@ export type TextSearchRequest = z.infer<typeof TextSearchRequest>;
 /** Multipart fields sent with the image file on POST /search/image. */
 export const ImageSearchFields = z.object({
   source: SearchSource.exclude(['text']).default('gallery'),
+  /** Re-search one detected item (needsConfirmation kind 'item', its itemIndex). */
+  item: z.coerce.number().int().min(0).max(9).optional(),
 });
 
 export const ListingFlags = z.object({

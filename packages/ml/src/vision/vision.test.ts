@@ -1,6 +1,6 @@
 import sharp from 'sharp';
 import { describe, expect, it, vi } from 'vitest';
-import { prepareVisionImage, VisionImageError } from './image.js';
+import { cropToBox, prepareVisionImage, VisionImageError } from './image.js';
 import { createAnthropicVision } from './providers/anthropic.js';
 import { createVisionService } from './service.js';
 import { lagosDay, memorySpendLedger, redisSpendLedger } from './spend.js';
@@ -192,5 +192,28 @@ describe('prepareVisionImage', () => {
 
   it('rejects bytes that are not an image', async () => {
     await expect(prepareVisionImage(new Uint8Array([1, 2, 3]))).rejects.toBeInstanceOf(VisionImageError);
+  });
+});
+
+describe('cropToBox', () => {
+  const jpeg = async (w: number, h: number): Promise<ImageInput> => ({
+    bytes: new Uint8Array(
+      await sharp({ create: { width: w, height: h, channels: 3, background: '#C6F432' } })
+        .jpeg()
+        .toBuffer(),
+    ),
+    mediaType: 'image/jpeg',
+  });
+
+  it('crops to the item box', async () => {
+    const out = await cropToBox(await jpeg(400, 800), { x: 0.25, y: 0.5, w: 0.5, h: 0.25 });
+    const meta = await sharp(out!.bytes).metadata();
+    expect([meta.width, meta.height]).toEqual([200, 200]);
+  });
+
+  it('skips boxes that are tiny or cover nearly the whole frame', async () => {
+    const img = await jpeg(400, 400);
+    expect(await cropToBox(img, { x: 0, y: 0, w: 0.05, h: 0.05 })).toBeNull();
+    expect(await cropToBox(img, { x: 0, y: 0, w: 0.95, h: 0.95 })).toBeNull();
   });
 });

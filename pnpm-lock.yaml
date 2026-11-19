@@ -307,6 +307,9 @@ importers:
       '@cheapa/db':
         specifier: workspace:*
         version: link:../../packages/db
+      '@cheapa/ml':
+        specifier: workspace:*
+        version: link:../../packages/ml
       '@clerk/backend':
         specifier: 'catalog:'
         version: 3.26.5
