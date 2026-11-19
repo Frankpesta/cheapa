@@ -2,7 +2,7 @@
   "name": "@cheapa/config",
   "version": "0.0.0",
   "private": true,
-  "description": "Shared tsconfig, eslint, prettier and vitest presets",
+  "description": "Shared tsconfig, eslint, prettier, vitest presets and design tokens",
   "type": "module",
   "exports": {
     "./tsconfig.base.json": "./tsconfig.base.json",
@@ -12,7 +12,8 @@
     "./vitest": {
       "types": "./vitest.d.ts",
       "default": "./vitest.js"
-    }
+    },
+    "./tokens": "./tokens.ts"
   },
   "scripts": {
     "lint": "eslint ."
