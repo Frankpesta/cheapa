@@ -13,7 +13,8 @@
     "test": "vitest run --passWithNoTests",
     "crawl:report": "tsx --conditions=@cheapa/source --env-file-if-exists=../../.env src/scripts/crawl-report.ts",
     "export:pairs": "tsx --conditions=@cheapa/source --env-file-if-exists=../../.env src/scripts/export-pairs.ts",
-    "bench:embed": "tsx --conditions=@cheapa/source --env-file-if-exists=../../.env src/scripts/bench-embed.ts"
+    "bench:embed": "tsx --conditions=@cheapa/source --env-file-if-exists=../../.env src/scripts/bench-embed.ts",
+    "bench:vision": "tsx --conditions=@cheapa/source --env-file-if-exists=../../.env src/scripts/bench-vision.ts"
   },
   "dependencies": {
     "@cheapa/adapters": "workspace:*",
