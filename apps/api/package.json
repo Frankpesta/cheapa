@@ -18,6 +18,7 @@
     "@cheapa/adapters": "workspace:*",
     "@cheapa/core": "workspace:*",
     "@cheapa/db": "workspace:*",
+    "@cheapa/ml": "workspace:*",
     "@clerk/backend": "catalog:",
     "@fastify/multipart": "catalog:",
     "@nestjs/common": "catalog:",

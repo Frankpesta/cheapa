@@ -15,6 +15,9 @@ export interface AnalyticsEvents {
     lookalikeCount: number;
     visionProvider: string | null;
     lowConfidence: boolean;
+    /** Listings from live store searches (05 §5.3 step 4). */
+    liveCount: number;
+    needsConfirmation: 'item' | 'variant' | null;
   };
   click_redirected: { storeId: string; affiliate: boolean };
   watch_created: { condition: string; hasTarget: boolean };

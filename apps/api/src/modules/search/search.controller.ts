@@ -1,20 +1,30 @@
 import { ImageSearchFields, type SearchResponse, type SearchSource, TextSearchRequest } from '@cheapa/core';
-import { Body, Controller, HttpCode, Post, Req, UseGuards } from '@nestjs/common';
+import { VisionImageError } from '@cheapa/ml';
+import {
+  Body,
+  Controller,
+  HttpCode,
+  Post,
+  Req,
+  UnprocessableEntityException,
+  UseGuards,
+} from '@nestjs/common';
 import type { FastifyRequest } from 'fastify';
 import { ZodPipe } from '../../common/zod.pipe.js';
 import { AnalyticsService } from '../analytics/analytics.service.js';
 import { CurrentIdentity, type Identity, Public } from '../auth/auth.decorators.js';
 import { RateLimit, RateLimitGuard } from '../rate-limit/rate-limit.guard.js';
 import { readImageUpload } from './image-upload.js';
+import { SearchService, type SearchOutput } from './search.service.js';
 
-/**
- * Search routes (05-visual-search.md 5.3). Phase 0 stub: validates input and
- * returns a typed empty result. The visual/read paths land in phase 05.
- */
+/** Search routes (05-visual-search.md 5.3). */
 @Public()
 @Controller('search')
 export class SearchController {
-  constructor(private readonly analytics: AnalyticsService) {}
+  constructor(
+    private readonly analytics: AnalyticsService,
+    private readonly search: SearchService,
+  ) {}
 
   @Post('image')
   @HttpCode(200)
@@ -27,57 +37,72 @@ export class SearchController {
     const started = performance.now();
     const upload = await readImageUpload(request);
     const fields = new ZodPipe(ImageSearchFields).transform(upload.fields);
-    // Only the hash and derived data survive this function (CLAUDE.md rule 4).
-    request.log.info(
-      { imageSha256: upload.sha256, mime: upload.mime, source: fields.source },
-      'image search',
-    );
-    const result = emptyResult(String(request.id));
-    this.served(identity, request, 'image', fields.source, started, result);
-    return result;
+    let output: SearchOutput;
+    try {
+      output = await this.search.image(upload.sha256, upload.bytes, String(request.id), fields.item);
+    } catch (error) {
+      if (error instanceof VisionImageError)
+        throw new UnprocessableEntityException('Could not read this image');
+      throw error;
+    }
+    // Only the hash and derived data survive this request (CLAUDE.md rule 4).
+    this.served(request, identity, 'image', fields.source, started, output, { imageSha256: upload.sha256 });
+    return output.response;
   }
 
   @Post('text')
   @HttpCode(200)
-  text(
+  async text(
     @Req() request: FastifyRequest,
     @CurrentIdentity() identity: Identity,
     @Body(new ZodPipe(TextSearchRequest)) body: TextSearchRequest,
-  ): SearchResponse {
+  ): Promise<SearchResponse> {
     const started = performance.now();
-    request.log.info({ source: body.source, queryLength: body.query.length }, 'text search');
-    const result = emptyResult(String(request.id));
-    this.served(identity, request, 'text', body.source, started, result);
-    return result;
+    const output = await this.search.text(body.query, String(request.id));
+    this.served(request, identity, 'text', body.source, started, output, { queryLength: body.query.length });
+    return output.response;
   }
 
-  /** search_served: shape and timing only. Never the query text or the image hash. */
+  /** One log line (hash, provider, latency, result ids) and search_served (no query, no hash). */
   private served(
-    identity: Identity,
     request: FastifyRequest,
+    identity: Identity,
     kind: 'image' | 'text',
     source: SearchSource,
     started: number,
-    result: SearchResponse,
+    { response, meta }: SearchOutput,
+    logOnly: Record<string, unknown>,
   ): void {
+    const latencyMs = Math.round(performance.now() - started);
+    request.log.info(
+      {
+        ...logOnly,
+        kind,
+        source,
+        latencyMs,
+        cacheHit: meta.cacheHit,
+        visionProvider: meta.visionProvider,
+        productIds: response.products.map((p) => p.productId),
+        lookalikeIds: response.lookalikes.map((l) => l.productId),
+      },
+      'search served',
+    );
     this.analytics.capture(
       identity,
       'search_served',
       {
         kind,
         source,
-        latencyMs: Math.round(performance.now() - started),
-        cacheHit: false,
-        productCount: result.products.length,
-        lookalikeCount: result.lookalikes.length,
-        visionProvider: null,
-        lowConfidence: result.detected.confidence < 0.6,
+        latencyMs,
+        cacheHit: meta.cacheHit,
+        productCount: response.products.length,
+        lookalikeCount: response.lookalikes.length,
+        visionProvider: meta.visionProvider,
+        lowConfidence: meta.lowConfidence,
+        liveCount: meta.liveCount,
+        needsConfirmation: response.needsConfirmation?.kind ?? null,
       },
       String(request.id),
     );
   }
-}
-
-function emptyResult(requestId: string): SearchResponse {
-  return { requestId, detected: { confidence: 0 }, products: [], lookalikes: [] };
 }

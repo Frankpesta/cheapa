@@ -9,12 +9,14 @@ import {
   redisEnv,
   usersDbEnv,
 } from '@cheapa/core';
+import { IMAGE_MODEL_IDS, visionEnv } from '@cheapa/ml';
 import { z } from 'zod';
 
 export const apiEnvSchema = baseEnv
   .extend(catalogDbEnv.shape)
   .extend(usersDbEnv.shape)
   .extend(redisEnv.shape)
+  .extend(visionEnv.shape)
   .extend({
     API_PORT: envPort.default(8080),
     API_HOST: z.string().default('0.0.0.0'),
@@ -27,6 +29,15 @@ export const apiEnvSchema = baseEnv
     /** Backstop per IP per hour; high because Nigerian carriers share IPs (CGNAT). */
     RATE_LIMIT_IMAGE_PER_IP_HOUR: envInt.pipe(z.number().positive()).default(300),
     APP_VERSION: z.string().default('dev'),
+    // Search (05 §5.3). Query-time embeddings use the worker's models (same vectors).
+    EMBED_ENABLED: envBoolean.default(true),
+    EMBED_IMAGE_MODEL: z.enum(IMAGE_MODEL_IDS).default('marqo-fashionsiglip'),
+    ML_MODEL_CACHE_DIR: z.string().trim().optional(),
+    ML_OFFLINE: envBoolean.default(false),
+    /** Lookalikes need at least this raw image cosine (13 §13.5); tune on labels. */
+    LOOKALIKE_MIN_SIM: z.coerce.number().min(0).max(1).default(0.8),
+    /** Image search results cached by image hash on redis-cache (05 §5.3: 24 h). */
+    SEARCH_CACHE_TTL_S: envInt.pipe(z.number().int().nonnegative()).default(86_400),
     // Clerk (08-user-side.md 8.3). Optional outside production so the API runs before keys exist.
     CLERK_SECRET_KEY: z.string().startsWith('sk_').optional(),
     /** PEM public key for networkless JWT verification; literal "\n" sequences become newlines. */

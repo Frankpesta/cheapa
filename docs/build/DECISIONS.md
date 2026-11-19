@@ -56,6 +56,9 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-17 | Title vectors retrieve candidates but don't score: text similarity stays title-token Dice | MiniLM cosines run high for any two titles in one category and there are no labelled title pairs to calibrate them yet |
 | 2026-11-17 | With embeddings on, a listing with an image is matched only after its embed job (the embed job queues `match` with `afterEmbed`, also when the image is unusable or the job fails for good) | Otherwise image-led listings found products before their image signal exists, and the phash supplier-photo key never fires |
 | 2026-11-19 | Vision model `claude-haiku-5-5` via structured outputs, effort `low`, images downsized to 1568px JPEG (EXIF stripped); spend cap counted per Lagos day in `redis-queue` | Cheapest current Haiku; structured outputs make invalid JSON rare (one retry kept); low effort for the 5 s budget. Revisit with the `pnpm bench:vision` report |
+| 2026-11-19 | Search v1 ranking: exact = raw image cosine >= 0.92 or vision brand+model match; lookalikes = other products on the detected shelf (department, category, audience) with cosine >= `LOOKALIKE_MIN_SIM`; score 0.5 visual (calibrated) + 0.5 text (max of rescaled MiniLM cosine and query token coverage) | Simple, explainable, and tunable once the screenshot test set exists; full-text uses OR of query tokens so long vision queries still hit |
+| 2026-11-19 | Search crops to the chosen item before the image embed (vision runs in parallel with a full-frame embed; the crop adds one ~400 ms embed). Vision results cached by image hash for 24 h, so picking another item costs no LLM call | 13 §13.6; keeps the vision read inside the 5 s budget |
+| 2026-11-19 | `/go` and search history ship on their own branch after 5.3 | They need users DB tables and the api-jobs queue (08 §8.4-8.5); 5.3 already emits `/go/:listingId` URLs |
 
 ## Deferred
 

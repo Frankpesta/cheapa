@@ -51,6 +51,8 @@ export async function startHarness(
     // As it would appear in .env: one line with literal \n sequences.
     CLERK_JWT_KEY: signer.publicKeyPem.replaceAll('\n', '\\n'),
     CLERK_AUTHORIZED_PARTIES: 'http://localhost:3000',
+    // No model downloads in tests: search files inject fakes (SEARCH_ML_OVERRIDE).
+    EMBED_ENABLED: 'false',
     ...overrides,
   });
 
@@ -119,10 +121,10 @@ async function claimRedisDbs(url: string): Promise<[number, number]> {
   }
 }
 
-/** Smallest valid PNG (1x1), optionally padded to an exact byte size. */
+/** A tiny 8x8 PNG that decoders accept, optionally padded to an exact byte size. */
 export function pngBytes(padTo = 0): Buffer {
   const png = Buffer.from(
-    '89504e470d0a1a0a0000000d4948445200000001000000010802000000907753de0000000c4944415478da63f8cfc0000003010100c9fe92ef0000000049454e44ae426082',
+    '89504e470d0a1a0a0000000d49484452000000080000000808020000004b6d29dc0000000970485973000003e8000003e801b57b526b000000114944415408d763e0aab2c28a188696040083d62f8170e676970000000049454e44ae426082',
     'hex',
   );
   return padTo > png.length ? Buffer.concat([png, Buffer.alloc(padTo - png.length)]) : png;
