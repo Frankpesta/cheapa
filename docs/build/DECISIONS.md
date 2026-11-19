@@ -55,6 +55,7 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-17 | Raw image cosine is rescaled to 0..1 between 0.70 and 0.95 before scoring (`IMAGE_SIM_RANGE`) | Calibration on the benchmark set ([report](reports/embed-bench-20261117.md)): same product median 0.82, hardest different product median 0.70 / p95 0.85. With fashion weights a dress auto-merges from ~0.92 raw (~0.89 with identical title words) and is reviewed from ~0.86 (~0.81). Retune on labelled pairs |
 | 2026-11-17 | Title vectors retrieve candidates but don't score: text similarity stays title-token Dice | MiniLM cosines run high for any two titles in one category and there are no labelled title pairs to calibrate them yet |
 | 2026-11-17 | With embeddings on, a listing with an image is matched only after its embed job (the embed job queues `match` with `afterEmbed`, also when the image is unusable or the job fails for good) | Otherwise image-led listings found products before their image signal exists, and the phash supplier-photo key never fires |
+| 2026-11-19 | Vision model `claude-haiku-5-5` via structured outputs, effort `low`, images downsized to 1568px JPEG (EXIF stripped); spend cap counted per Lagos day in `redis-queue` | Cheapest current Haiku; structured outputs make invalid JSON rare (one retry kept); low effort for the 5 s budget. Revisit with the `pnpm bench:vision` report |
 
 ## Deferred
 

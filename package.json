@@ -29,7 +29,8 @@
     "crawl:report": "pnpm --filter @cheapa/worker crawl:report",
     "gen:adapter": "pnpm --filter @cheapa/adapters gen:adapter",
     "export:pairs": "pnpm --filter @cheapa/worker export:pairs",
-    "bench:embed": "pnpm --filter @cheapa/worker bench:embed"
+    "bench:embed": "pnpm --filter @cheapa/worker bench:embed",
+    "bench:vision": "pnpm --filter @cheapa/worker bench:vision"
   },
   "prettier": "@cheapa/config/prettier",
   "devDependencies": {

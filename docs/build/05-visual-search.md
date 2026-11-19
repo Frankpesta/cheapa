@@ -50,7 +50,7 @@ export const VisionResult = z.object({
 
 ### Benchmark script (decides the default provider)
 
-`scripts/bench-vision.ts`:
+`pnpm bench:vision` (`apps/worker/src/scripts/bench-vision.ts`, next to `bench:embed`):
 - Input: `scripts/data/screenshots/` (collect 200 real screenshots: Instagram vendor posts, WhatsApp statuses, TikTok frames, product photos) + `labels.jsonl` (brand, model, variant).
 - Runs every configured provider; records accuracy (brand, model, variant exact), latency p50/p95, cost per 1,000 calls.
 - Writes `scripts/out/vision-bench-YYYYMMDD.md`. Pick the best accuracy-per-naira; re-run monthly.
