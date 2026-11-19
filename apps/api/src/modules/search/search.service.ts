@@ -24,6 +24,8 @@ export interface SearchMeta {
   visionProvider: string | null;
   lowConfidence: boolean;
   liveCount: number;
+  /** The text searched: the typed query, or the phrase read from the photo (history). */
+  query: string | null;
 }
 
 export interface SearchOutput {
@@ -50,7 +52,7 @@ export class SearchService {
 
   /** `raw` is the upload (memory only); `item` picks one of the detected items. */
   async image(sha256: string, raw: Uint8Array, requestId: string, item?: number): Promise<SearchOutput> {
-    const key = `search:img:v1:${sha256}:${item ?? 'auto'}`;
+    const key = `search:img:v2:${sha256}:${item ?? 'auto'}`;
     const hit = await this.cached(key, requestId);
     if (hit) return hit;
 
@@ -77,12 +79,12 @@ export class SearchService {
       itemPicked: item !== undefined,
     });
     output.meta.visionProvider = read?.providerId ?? null;
-    await this.store(key, output.response, this.env.SEARCH_CACHE_TTL_S);
+    await this.store(key, output, this.env.SEARCH_CACHE_TTL_S);
     return output;
   }
 
   async text(query: string, requestId: string): Promise<SearchOutput> {
-    const key = `search:txt:v1:${createHash('sha1').update(normalizeQuery(query)).digest('hex')}`;
+    const key = `search:txt:v2:${createHash('sha1').update(normalizeQuery(query)).digest('hex')}`;
     const hit = await this.cached(key, requestId);
     if (hit) return hit;
     const output = await this.respond(requestId, {
@@ -93,7 +95,7 @@ export class SearchService {
       ...(await this.textHits(query)),
       itemPicked: false,
     });
-    await this.store(key, output.response, TEXT_CACHE_TTL_S);
+    await this.store(key, output, TEXT_CACHE_TTL_S);
     return output;
   }
 
@@ -154,7 +156,8 @@ export class SearchService {
   private async cached(key: string, requestId: string): Promise<SearchOutput | null> {
     const raw = await this.cache.get(key).catch(() => null);
     if (!raw) return null;
-    const response = { ...(JSON.parse(raw) as SearchResponse), requestId };
+    const entry = JSON.parse(raw) as { response: SearchResponse; query: string | null };
+    const response = { ...entry.response, requestId };
     return {
       response,
       meta: {
@@ -162,13 +165,15 @@ export class SearchService {
         visionProvider: null,
         lowConfidence: response.detected.confidence < 0.6,
         liveCount: 0,
+        query: entry.query,
       },
     };
   }
 
-  private async store(key: string, response: SearchResponse, ttl: number): Promise<void> {
+  private async store(key: string, { response, meta }: SearchOutput, ttl: number): Promise<void> {
     if (ttl <= 0) return;
-    await this.cache.set(key, JSON.stringify(response), 'EX', ttl).catch(() => undefined);
+    const entry = JSON.stringify({ response, query: meta.query });
+    await this.cache.set(key, entry, 'EX', ttl).catch(() => undefined);
   }
 
   /** For GET /go/:listingId on live listings (08 §8.4), which aren't in the catalog yet. */

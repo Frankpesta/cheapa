@@ -7,10 +7,11 @@ import type { ApiEnv } from './config/env.js';
 import { DatabaseModule } from './infra/database.module.js';
 import { RedisModule } from './infra/redis.module.js';
 import { AnalyticsModule } from './modules/analytics/analytics.module.js';
+import { ClicksConsumer } from './modules/go/clicks.consumer.js';
 
 /**
  * Background process (main.jobs.ts): price-event consumer, notify/clicks queues,
- * scheduled jobs (08-user-side.md 8.1). Empty until those sections land.
+ * scheduled jobs (08-user-side.md 8.1). Today: the `clicks` consumer (8.4).
  */
 @Module({})
 export class JobsModule {
@@ -25,6 +26,7 @@ export class JobsModule {
         RedisModule,
         AnalyticsModule,
       ],
+      providers: [ClicksConsumer],
     };
   }
 }

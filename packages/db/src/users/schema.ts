@@ -2,15 +2,30 @@
  * cheapa_users schema (08-user-side.md 8.2). Only apps/api may import this
  * (CLAUDE.md rule 2; enforced by the eslint restrictUsersDb option).
  *
- * 1.6 ships users and devices. push_tokens, searches, watches, alerts and clicks
- * arrive with their sections (8.4–8.7).
+ * 1.6 shipped users and devices; 8.4-8.5 add clicks and searches. push_tokens, watches
+ * and alerts arrive with their sections (8.6-8.7).
+ *
+ * Catalog ids (product, listing, store) are plain uuids: no cross-database foreign keys.
  */
 import { sql } from 'drizzle-orm';
-import { boolean, check, index, pgEnum, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
+import {
+  boolean,
+  char,
+  check,
+  index,
+  integer,
+  jsonb,
+  pgEnum,
+  pgTable,
+  text,
+  timestamp,
+  uuid,
+} from 'drizzle-orm/pg-core';
 
 export const plan = pgEnum('plan', ['free', 'premium']);
 export const userRole = pgEnum('user_role', ['user', 'admin']);
 export const devicePlatform = pgEnum('device_platform', ['android', 'ios', 'web']);
+export const searchSource = pgEnum('search_source', ['camera', 'share', 'gallery', 'text', 'link']);
 
 const timestamps = {
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
@@ -49,6 +64,58 @@ export const devices = pgTable(
     lastSeenAt: timestamp('last_seen_at', { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [index('devices_user_idx').on(t.userId), index('devices_last_seen_idx').on(t.lastSeenAt)],
+);
+
+/** One row per served search (08 §8.5); id = the response's requestId. History only. */
+export const searches = pgTable(
+  'searches',
+  {
+    id: uuid('id').primaryKey(),
+    userId: uuid('user_id').references(() => users.id, { onDelete: 'cascade' }),
+    deviceId: uuid('device_id').references(() => devices.id, { onDelete: 'cascade' }),
+    /** sha-256 hex of the upload; the image itself is never stored (CLAUDE.md rule 4). */
+    imageHash: char('image_hash', { length: 64 }),
+    /** The typed query, or the vision read's search phrase for an image. */
+    query: text('query'),
+    /** SearchResponse.detected: brand, category, variant... Never anything about a person. */
+    detected: jsonb('detected').$type<Record<string, unknown>>().notNull().default({}),
+    resultProductIds: uuid('result_product_ids')
+      .array()
+      .notNull()
+      .default(sql`'{}'::uuid[]`),
+    source: searchSource('source').notNull(),
+    latencyMs: integer('latency_ms').notNull(),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index('searches_user_created_idx').on(t.userId, t.createdAt.desc()),
+    index('searches_device_created_idx').on(t.deviceId, t.createdAt.desc()),
+    check('searches_owner', sql`${t.userId} is not null or ${t.deviceId} is not null`),
+  ],
+);
+
+/**
+ * Outbound clicks (08 §8.4); id = the affiliate sub-id. Deleting a user or device only
+ * nulls the link to them (8.10), so affiliate reconciliation still balances.
+ */
+export const clicks = pgTable(
+  'clicks',
+  {
+    id: uuid('id').primaryKey(),
+    userId: uuid('user_id').references(() => users.id, { onDelete: 'set null' }),
+    deviceId: uuid('device_id').references(() => devices.id, { onDelete: 'set null' }),
+    listingId: uuid('listing_id').notNull(),
+    /** Null for live-search listings not matched to a product yet. */
+    productId: uuid('product_id'),
+    storeId: uuid('store_id').notNull(),
+    affiliateNetwork: text('affiliate_network'),
+    searchRequestId: uuid('search_request_id'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index('clicks_store_created_idx').on(t.storeId, t.createdAt),
+    index('clicks_created_idx').on(t.createdAt),
+  ],
 );
 
 export type UserRow = typeof users.$inferSelect;

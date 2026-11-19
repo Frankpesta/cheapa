@@ -10,9 +10,11 @@ import { RedisModule } from './infra/redis.module.js';
 import { AdminModule } from './modules/admin/admin.module.js';
 import { AnalyticsModule } from './modules/analytics/analytics.module.js';
 import { AuthModule } from './modules/auth/auth.module.js';
+import { GoModule } from './modules/go/go.module.js';
 import { HealthModule } from './modules/health/health.module.js';
 import { ProductsModule } from './modules/products/products.module.js';
 import { SearchModule } from './modules/search/search.module.js';
+import { SearchesModule } from './modules/searches/searches.module.js';
 import { UsersModule } from './modules/users/users.module.js';
 
 /** HTTP process (main.ts). */
@@ -33,6 +35,8 @@ export class AppModule {
         AuthModule,
         HealthModule,
         SearchModule,
+        SearchesModule,
+        GoModule,
         ProductsModule,
         UsersModule,
         AdminModule,

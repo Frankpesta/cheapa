@@ -3,12 +3,14 @@ import { BadRequestException, Controller, Get, HttpCode, Post } from '@nestjs/co
 import { CurrentIdentity, DeviceOrUser, type Identity } from '../auth/auth.decorators.js';
 import { AnalyticsService } from '../analytics/analytics.service.js';
 import { IdentityService } from '../auth/identity.service.js';
+import { HistoryService } from '../searches/history.service.js';
 
 @Controller('me')
 export class UsersController {
   constructor(
     private readonly identities: IdentityService,
     private readonly analytics: AnalyticsService,
+    private readonly history: HistoryService,
   ) {}
 
   /** The signed-in user (if any) and the calling device (if sent). */
@@ -32,13 +34,14 @@ export class UsersController {
     };
   }
 
-  /** After sign-in: attach this device (and, from 8.5, its history) to the user. */
+  /** After sign-in: attach this device and its anonymous search history to the user. */
   @Post('link-device')
   @HttpCode(200)
   async linkDevice(@CurrentIdentity() { user, device }: Identity): Promise<LinkDeviceResponse> {
     if (!user) throw new BadRequestException('Sign in first');
     if (!device) throw new BadRequestException('Send X-Cheapa-Device');
     await this.identities.linkDevice(device.id, user.id);
+    await this.history.moveToUser(device.id, user.id);
     this.analytics.alias(user.id, device.id);
     return { deviceId: device.id, userId: user.id };
   }

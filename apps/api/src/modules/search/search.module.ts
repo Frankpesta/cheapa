@@ -3,6 +3,7 @@ import type { Redis } from 'ioredis';
 import { API_ENV, type ApiEnv } from '../../config/env.js';
 import { REDIS_QUEUE } from '../../infra/redis.module.js';
 import { RateLimitGuard } from '../rate-limit/rate-limit.guard.js';
+import { SearchesModule } from '../searches/searches.module.js';
 import { LiveSearchService } from './live-search.service.js';
 import { SearchController } from './search.controller.js';
 import { createSearchMl, SEARCH_ML, type SearchMl } from './search-ml.js';
@@ -12,6 +13,7 @@ import { SearchService } from './search.service.js';
 export const SEARCH_ML_OVERRIDE = Symbol('SEARCH_ML_OVERRIDE');
 
 @Module({
+  imports: [SearchesModule],
   controllers: [SearchController],
   providers: [
     RateLimitGuard,

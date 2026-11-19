@@ -15,6 +15,13 @@
       "when": 1794515322004,
       "tag": "0001_drop_city",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1795081347474,
+      "tag": "0002_searches_clicks",
+      "breakpoints": true
     }
   ]
 }

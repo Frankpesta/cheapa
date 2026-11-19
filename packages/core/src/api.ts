@@ -187,6 +187,45 @@ export const LinkDeviceResponse = z.object({ deviceId: z.uuid(), userId: z.uuid(
 export type LinkDeviceResponse = z.infer<typeof LinkDeviceResponse>;
 
 // ---------------------------------------------------------------------------
+// Search history (08-user-side.md 8.5) and outbound clicks (8.4)
+// ---------------------------------------------------------------------------
+
+export const SearchHistoryQuery = z.object({
+  /** nextCursor from the previous page. */
+  cursor: z.string().max(200).optional(),
+  limit: z.coerce.number().int().min(1).max(50).default(20),
+});
+export type SearchHistoryQuery = z.infer<typeof SearchHistoryQuery>;
+
+export const SearchHistoryItem = z.object({
+  /** The search's requestId. */
+  id: z.uuid(),
+  source: SearchSource,
+  /** The typed query, or the phrase read from the photo. */
+  query: z.string().nullable(),
+  imageSearch: z.boolean(),
+  detected: SearchResponse.shape.detected.partial(),
+  resultCount: z.number().int().nonnegative(),
+  /** The best result, for the row's thumbnail and title; null if none or since removed. */
+  topProduct: z
+    .object({ productId: z.uuid(), slug: z.string(), title: z.string(), repImageUrl: z.string().nullable() })
+    .nullable(),
+  createdAt: z.iso.datetime(),
+});
+export type SearchHistoryItem = z.infer<typeof SearchHistoryItem>;
+
+/** Newest first; the app groups rows by day (WAT). */
+export const SearchHistoryResponse = z.object({
+  items: z.array(SearchHistoryItem),
+  nextCursor: z.string().nullable(),
+});
+export type SearchHistoryResponse = z.infer<typeof SearchHistoryResponse>;
+
+/** GET /go/:listingId?s=<search requestId> */
+export const GoQuery = z.object({ s: z.uuid().optional().catch(undefined) });
+export type GoQuery = z.infer<typeof GoQuery>;
+
+// ---------------------------------------------------------------------------
 // Headers
 // ---------------------------------------------------------------------------
 

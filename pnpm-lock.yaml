@@ -331,6 +331,9 @@ importers:
       '@sentry/node':
         specifier: 'catalog:'
         version: 11.10.0
+      bullmq:
+        specifier: 'catalog:'
+        version: 6.3.19(ioredis@6.0.0(supports-color@8.1.1))(pg@8.23.1)
       drizzle-orm:
         specifier: 'catalog:'
         version: 0.45.4(@opentelemetry/api@1.10.0)(@types/pg@8.23.1)(pg@8.23.1)
