@@ -6,7 +6,7 @@ import type { SearchSource } from '@cheapa/core/client';
 import * as ImagePicker from 'expo-image-picker';
 import { router } from 'expo-router';
 import { useCallback, useState } from 'react';
-import { prepareImage } from './image';
+import { discardFile, prepareImage } from './image';
 import { getPrefs } from './prefs';
 import { startSearch } from './search-session';
 
@@ -26,19 +26,22 @@ export function useStartSearch() {
     async (
       photo: { uri: string; width?: number; height?: number },
       source: Exclude<SearchSource, 'text'>,
-      opts: { replace?: boolean } = {},
+      opts: { replace?: boolean; discardOriginal?: boolean } = {},
     ) => {
       setBusy(true);
       try {
         const prepared = await prepareImage(photo, getPrefs().dataSaver);
+        // A shared image is our own copy: show the downscaled one, delete the original below.
+        const thumb = opts.discardOriginal ? prepared.uri : photo.uri;
         const id = startSearch({ kind: 'image', image: prepared, source });
         const href = {
           pathname: '/search/[requestId]',
-          params: { requestId: id, thumb: photo.uri },
+          params: { requestId: id, thumb },
         } as const;
         if (opts.replace) router.replace(href);
         else router.push(href);
       } finally {
+        if (opts.discardOriginal) discardFile(photo.uri);
         setBusy(false);
       }
     },
