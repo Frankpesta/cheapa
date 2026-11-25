@@ -11,7 +11,8 @@ import {
 } from '@expo-google-fonts/geist';
 import { GeistMono_500Medium } from '@expo-google-fonts/geist-mono';
 import { colors } from '@cheapa/config/tokens';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient } from '@tanstack/react-query';
+import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
 import { useFonts } from 'expo-font';
 import { ShareIntentProvider } from 'expo-share-intent';
 import { Stack } from 'expo-router';
@@ -21,8 +22,11 @@ import { useEffect, useState } from 'react';
 import { Platform } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { OfflineBanner } from '../features/OfflineBanner';
 import { ShareHandler } from '../features/share/ShareHandler';
+import { wireOnlineManager } from '../lib/network';
 import { loadPrefs } from '../lib/prefs';
+import { CACHE_MAX_AGE_MS, cacheBuster, queryPersister, shouldPersist } from '../lib/query-cache';
 
 void SplashScreen.preventAutoHideAsync();
 
@@ -37,9 +41,21 @@ const FONTS = {
   GeistMono_500Medium,
 };
 
+wireOnlineManager();
+
+// gcTime matches the saved cache's age so restored answers aren't dropped before use.
 const queryClient = new QueryClient({
-  defaultOptions: { queries: { staleTime: 60_000, retry: 1, refetchOnWindowFocus: false } },
+  defaultOptions: {
+    queries: { staleTime: 60_000, gcTime: CACHE_MAX_AGE_MS, retry: 1, refetchOnWindowFocus: false },
+  },
 });
+
+const persistOptions = {
+  persister: queryPersister,
+  maxAge: CACHE_MAX_AGE_MS,
+  buster: cacheBuster(),
+  dehydrateOptions: { shouldDehydrateQuery: shouldPersist },
+};
 
 /**
  * The share-intent provider sits outside everything (expo-share-intent asks for that) so a
@@ -67,7 +83,7 @@ function App() {
   // A font that fails to load falls back to the system face rather than blocking the app.
   if (!ready) return null;
   return (
-    <QueryClientProvider client={queryClient}>
+    <PersistQueryClientProvider client={queryClient} persistOptions={persistOptions}>
       <GestureHandlerRootView style={{ flex: 1, backgroundColor: colors.ground }}>
         <SafeAreaProvider>
           <StatusBar style="dark" />
@@ -77,8 +93,9 @@ function App() {
             <Stack.Screen name="shared" options={{ animation: 'fade' }} />
           </Stack>
           <ShareHandler />
+          <OfflineBanner />
         </SafeAreaProvider>
       </GestureHandlerRootView>
-    </QueryClientProvider>
+    </PersistQueryClientProvider>
   );
 }

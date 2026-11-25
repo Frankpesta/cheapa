@@ -32,7 +32,11 @@ export default function History() {
   });
   const clear = useMutation({
     mutationFn: api.clearSearches,
-    onSuccess: () => void client.invalidateQueries({ queryKey: ['searches'] }),
+    onSuccess: () => {
+      // Saved answers go too, so a cleared history leaves nothing on the phone (06 §6.4).
+      client.removeQueries({ queryKey: ['search'] });
+      void client.invalidateQueries({ queryKey: ['searches'] });
+    },
   });
   // "Clear all" asks twice instead of a dialog (Alert is a no-op on web).
   const [arming, setArming] = useState(false);

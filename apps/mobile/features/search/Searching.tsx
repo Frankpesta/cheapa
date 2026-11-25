@@ -28,15 +28,19 @@ const SOURCE_LABEL = {
  * Searching.dc.html while POST /search/* is in flight. The API answers in one response, so
  * the checklist walks the pipeline's phases on a timer and the last one stays active until
  * the answer lands. Per-store counts and the running cheapest need a streaming API
- * (BACKLOG), so those parts of the design are left out for now.
+ * (BACKLOG), so those parts of the design are left out for now. While offline (`waiting`)
+ * the search is queued: the checklist holds at the first step and says so (06 §6.4).
  */
 export function Searching({
   input,
   thumb,
+  waiting = false,
   onCancel,
 }: {
   input: SearchInput;
   thumb?: string | undefined;
+  /** Offline: queued until the connection returns. */
+  waiting?: boolean;
   onCancel: () => void;
 }) {
   const phases =
@@ -45,16 +49,20 @@ export function Searching({
       : ['Finding the product', 'Checking stores', 'Sorting cheapest first'];
   const [active, setActive] = useState(0);
   useEffect(() => {
+    if (waiting) {
+      setActive(0);
+      return;
+    }
     if (active >= phases.length - 1) return;
     const t = setTimeout(() => setActive((a) => a + 1), 1300);
     return () => clearTimeout(t);
-  }, [active, phases.length]);
+  }, [active, phases.length, waiting]);
 
   const steps: ChecklistStep[] = phases.map((label, i) => ({
     key: label,
     label,
     status: i < active ? 'done' : i === active ? 'active' : 'pending',
-    ...(i === active ? { note: 'checking…' } : {}),
+    ...(i === active ? { note: waiting ? 'waiting for network' : 'checking…' } : {}),
   }));
 
   return (
@@ -92,8 +100,13 @@ export function Searching({
 
         <View style={{ marginTop: 30 }}>
           <Text variant="displayS" accessibilityRole="header" style={{ marginBottom: 6 }}>
-            Checking stores
+            {waiting ? 'Waiting for connection' : 'Checking stores'}
           </Text>
+          {waiting ? (
+            <Text variant="body" style={{ color: colors.body2, marginBottom: 10 }}>
+              You're offline. We'll search as soon as you're back; keep this screen open.
+            </Text>
+          ) : null}
           <View
             accessibilityRole="progressbar"
             accessibilityValue={{ min: 0, max: phases.length, now: active }}

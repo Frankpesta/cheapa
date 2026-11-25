@@ -2,12 +2,13 @@ import { tintFor } from '@cheapa/config/tokens';
 import { Image } from 'expo-image';
 import { Package, type LucideIcon } from 'lucide-react-native';
 import { View } from 'react-native';
+import { thumbUrl } from '../lib/images';
 import { Icon } from './Icon';
 import { Text } from './Text';
 
 /**
- * Product thumbnail: the store's image when there is one (thumbnails only, ≤ 300 px,
- * DESIGN 6.4), else a tinted placeholder tile with an icon. Tint is stable per `name`.
+ * Product thumbnail: the store's image when there is one (a ≤ 300 px rendition where
+ * the store's CDN can resize, 06 §6.4), else a tinted placeholder tile with an icon. Tint is stable per `name`.
  */
 export function Thumb({
   name,
@@ -45,7 +46,7 @@ export function Thumb({
     >
       {uri ? (
         <Image
-          source={{ uri }}
+          source={{ uri: thumbUrl(uri) ?? uri }}
           style={{ width: fill ? '100%' : size, height }}
           contentFit="cover"
           cachePolicy="memory-disk"

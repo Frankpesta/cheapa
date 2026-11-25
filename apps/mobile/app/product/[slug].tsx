@@ -22,6 +22,8 @@ import { openListing } from '../../features/search/Results';
 import { NotFound } from '../../features/search/NotFound';
 import { api, errorMessage } from '../../lib/api';
 import { ago, formatNaira } from '../../lib/format';
+import { thumbUrl } from '../../lib/images';
+import { usePrefs } from '../../lib/prefs';
 import { cheapest, listingViews } from '../../lib/results';
 import { useStartSearch } from '../../lib/use-start-search';
 
@@ -63,6 +65,9 @@ export default function ProductScreen() {
 
 function ProductView({ p, onBack }: { p: ProductResponse; onBack: () => void }) {
   const insets = useSafeAreaInsets();
+  // The hero is the one large image in the app: 600 px, or a 300 px thumbnail on data saver.
+  const { dataSaver } = usePrefs();
+  const hero = thumbUrl(p.repImageUrl, dataSaver ? 300 : 600);
   const [range, setRange] = useState<Range>('30');
   const history = useQuery({
     queryKey: ['product-history', p.productId, range],
@@ -97,9 +102,9 @@ function ProductView({ p, onBack }: { p: ProductResponse; onBack: () => void }) 
             justifyContent: 'center',
           }}
         >
-          {p.repImageUrl ? (
+          {hero ? (
             <Image
-              source={{ uri: p.repImageUrl }}
+              source={{ uri: hero }}
               style={{ width: '70%', height: 190, marginTop: insets.top + 30 }}
               contentFit="contain"
               cachePolicy="memory-disk"
