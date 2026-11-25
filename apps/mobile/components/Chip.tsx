@@ -36,7 +36,7 @@ export function Chip({
         borderWidth: 1.5,
         borderColor: selected ? colors.ink : colors.lineDashed,
         backgroundColor: selected ? colors.ink : colors.card,
-        paddingHorizontal: label ? 14 : 0,
+        paddingHorizontal: label || count !== undefined ? 14 : 0,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',

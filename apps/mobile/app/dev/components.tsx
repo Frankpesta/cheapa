@@ -31,7 +31,9 @@ import {
   type TabKey,
 } from '../../components';
 import { formatNaira } from '../../lib/format';
-import { chart30, confirmOptions, listings } from '../../dev/samples';
+import { chart30, confirmOptions, fashionListings, listings } from '../../dev/samples';
+import { FilterSheet } from '../../features/search/FilterSheet';
+import { applyFilters, listingViews, noFilters, sheetFilterCount } from '../../lib/results';
 
 /** Every DESIGN.md §2 component with design sample data (06 §6.0). Dev builds only. */
 export default function ComponentGallery() {
@@ -42,6 +44,8 @@ export default function ComponentGallery() {
   const [email, setEmail] = useState(false);
   const [variant, setVariant] = useState('256');
   const [sheet, setSheet] = useState(false);
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [filters, setFilters] = useState(() => noFilters());
   const [tab, setTab] = useState<TabKey>('home');
   if (!__DEV__) return <Redirect href="/" />;
 
@@ -163,6 +167,41 @@ export default function ComponentGallery() {
               best={l.best ?? false}
             />
           ))}
+        </Section>
+
+        <Section title="ListingRow · From / range / pack / sold out + FilterSheet">
+          <Chip
+            icon={ListFilter}
+            {...(sheetFilterCount(filters) ? { count: sheetFilterCount(filters) } : {})}
+            selected={sheetFilterCount(filters) > 0}
+            accessibilityLabel="Filters"
+            onPress={() => setFilterOpen(true)}
+          />
+          {applyFilters(listingViews(fashionListings), filters).map(({ listing: l, flag, best }) => (
+            <ListingRow
+              key={l.listingId}
+              storeName={l.storeName}
+              condition={l.condition}
+              priceKobo={l.priceKobo}
+              priceKind={l.priceKind}
+              priceMaxKobo={l.priceMaxKobo}
+              packCount={l.packCount}
+              inStock={l.inStock}
+              lastSeenAt={l.lastSeenAt}
+              {...(flag ? { flag } : {})}
+              best={best}
+            />
+          ))}
+          <FilterSheet
+            visible={filterOpen}
+            listings={fashionListings}
+            filters={filters}
+            onApply={(next) => {
+              setFilters(next);
+              setFilterOpen(false);
+            }}
+            onClose={() => setFilterOpen(false)}
+          />
         </Section>
 
         <Section title="ProductRowCompact / WatchCard">

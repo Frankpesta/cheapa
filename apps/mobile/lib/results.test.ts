@@ -5,7 +5,12 @@ import {
   conditionCounts,
   countsLine,
   detectedName,
-  filterListings,
+  applyFilters,
+  filteredConditionCounts,
+  filterOptions,
+  noFilters,
+  priceText,
+  sheetFilterCount,
   isEmpty,
   listingViews,
   primaryProduct,
@@ -77,7 +82,7 @@ describe('cheapest and summaries', () => {
     expect(conditionCounts(rows)).toEqual({ all: 3, new: 2, used: 1 });
     expect(countsLine(rows)).toBe('3 listings · 3 stores');
     expect(countsLine([rows[0]!])).toBe('1 listing · 1 store');
-    expect(filterListings(listingViews(rows), 'used')).toHaveLength(1);
+    expect(applyFilters(listingViews(rows), noFilters('used'))).toHaveLength(1);
   });
 });
 
@@ -115,5 +120,75 @@ describe('primaryProduct', () => {
     expect(primaryProduct(res, 'zzz')?.productId).toBe('a');
     expect(isEmpty(res)).toBe(false);
     expect(isEmpty({ ...res, products: [] })).toBe(true);
+  });
+});
+
+describe('filters', () => {
+  const rows = [
+    listing({ storeName: 'Jumia', sizes: ['L', 'M'], colours: ['Black'] }),
+    listing({ storeName: 'Jiji', sizes: ['XS', 'M'], colours: ['black', 'Wine'], condition: 'used' }),
+    listing({ storeName: 'Jumia', sizes: ['EU 40', 'EU 38'], inStock: false }),
+    listing({ storeName: 'Slot' }),
+  ];
+
+  it('offers only what the listings have, sizes in wearing order, colours case-blind', () => {
+    const o = filterOptions(rows);
+    expect(o.sizes.map((s) => s.value)).toEqual(['XS', 'M', 'L', 'EU 38', 'EU 40']);
+    expect(o.sizes.find((s) => s.value === 'M')?.count).toBe(2);
+    expect(o.colours).toEqual([
+      { value: 'Black', count: 2 },
+      { value: 'Wine', count: 1 },
+    ]);
+    expect(o.stores[0]).toEqual({ value: 'Jumia', count: 2 });
+    expect(o.outOfStock).toBe(1);
+  });
+
+  it('ORs within a group and ANDs across groups', () => {
+    const views = listingViews(rows);
+    const pick = (f: Partial<ReturnType<typeof noFilters>>) =>
+      applyFilters(views, { ...noFilters(), ...f }).map((v) => v.listing.storeName);
+    expect(pick({ sizes: ['L', 'XS'] })).toEqual(['Jumia', 'Jiji']);
+    expect(pick({ sizes: ['M'], colours: ['BLACK'], condition: 'new' })).toEqual(['Jumia']);
+    expect(pick({ stores: ['Jumia'], inStockOnly: true })).toEqual(['Jumia']);
+    expect(pick({ colours: ['Wine'], stores: ['Slot'] })).toEqual([]);
+  });
+
+  it('counts sheet filters and keeps chip counts in step with them', () => {
+    const f = { ...noFilters('new'), sizes: ['M'], inStockOnly: true };
+    expect(sheetFilterCount(f)).toBe(2);
+    expect(filteredConditionCounts(rows, f)).toEqual({ all: 2, new: 1, used: 1 });
+  });
+});
+
+describe('priceText', () => {
+  const naira = (k: number) => `N${k / 100}`;
+
+  it('leaves exact prices alone', () => {
+    expect(priceText({ priceKind: 'exact', priceKobo: 500_000 }, naira)).toEqual({
+      prefix: null,
+      upTo: null,
+      perItem: null,
+    });
+  });
+
+  it('keeps From, shows both ends of a range', () => {
+    expect(priceText({ priceKind: 'from', priceKobo: 500_000 }, naira).prefix).toBe('From');
+    expect(priceText({ priceKind: 'range', priceKobo: 500_000, priceMaxKobo: 900_000 }, naira)).toEqual({
+      prefix: null,
+      upTo: 900_000,
+      perItem: null,
+    });
+    // A range without a usable top end reads as a from-price.
+    expect(priceText({ priceKind: 'range', priceKobo: 500_000 }, naira).prefix).toBe('From');
+  });
+
+  it('prices each item in a pack, in whole kobo', () => {
+    expect(priceText({ priceKind: 'exact', priceKobo: 735_200, packCount: 2 }, naira).perItem).toBe(
+      '2-pack, N3676 each',
+    );
+    expect(priceText({ priceKind: 'exact', priceKobo: 1_000, packCount: 3 }, naira).perItem).toBe(
+      '3-pack, N3.33 each',
+    );
+    expect(priceText({ priceKind: 'exact', priceKobo: 1_000, packCount: 1 }, naira).perItem).toBeNull();
   });
 });
