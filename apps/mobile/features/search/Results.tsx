@@ -2,8 +2,8 @@ import { colors } from '@cheapa/config/tokens';
 import type { SearchResponse } from '@cheapa/core/client';
 import { router } from 'expo-router';
 import * as WebBrowser from 'expo-web-browser';
-import { ArrowLeft, Share2 } from 'lucide-react-native';
-import { useMemo, useState } from 'react';
+import { ArrowLeft, ListFilter, Share2 } from 'lucide-react-native';
+import { useEffect, useMemo, useState } from 'react';
 import { ScrollView, Share, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import {
@@ -18,15 +18,19 @@ import {
 import { goUrl } from '../../lib/api';
 import { formatNaira } from '../../lib/format';
 import {
-  conditionCounts,
+  applyFilters,
   countsLine,
-  filterListings,
+  filteredConditionCounts,
+  filterOptions,
   isLiveOnly,
   listingViews,
+  noFilters,
+  sheetFilterCount,
   summaryNotes,
   variantLine,
   type ConditionFilter,
 } from '../../lib/results';
+import { FilterSheet } from './FilterSheet';
 import { Lookalikes } from './Lookalikes';
 
 type Product = SearchResponse['products'][number];
@@ -63,11 +67,27 @@ export function Results({
   onPickItem: (itemIndex: number) => void;
   onBack: () => void;
 }) {
-  const [filter, setFilter] = useState<ConditionFilter>(newOnly ? 'new' : 'all');
+  const [filters, setFilters] = useState(() => noFilters(newOnly ? 'new' : 'all'));
+  const [sheetOpen, setSheetOpen] = useState(false);
   const listings = useMemo(() => product?.listings ?? [], [product]);
   const views = useMemo(() => listingViews(listings), [listings]);
-  const counts = conditionCounts(listings);
-  const shown = filterListings(views, filter);
+  const options = useMemo(() => filterOptions(listings), [listings]);
+  const counts = filteredConditionCounts(listings, filters);
+  const shown = applyFilters(views, filters);
+  const active = sheetFilterCount(filters);
+  const filterable =
+    options.sizes.length > 1 ||
+    options.colours.length > 1 ||
+    options.stores.length > 1 ||
+    options.outOfStock > 0;
+  const filter = filters.condition;
+  const setFilter = (condition: ConditionFilter) => setFilters((f) => ({ ...f, condition }));
+
+  // Another product picked (Confirm sheet, item chips): its sizes and stores differ.
+  const productId = product?.productId;
+  useEffect(() => {
+    setFilters((f) => noFilters(f.condition));
+  }, [productId]);
   const summary = summaryNotes(listings);
   const items = response.needsConfirmation?.kind === 'item' ? response.needsConfirmation.options : [];
   const others = response.products.flatMap((p) => {
@@ -159,6 +179,16 @@ export function Results({
                 selected={filter === 'used'}
                 onPress={() => setFilter('used')}
               />
+              <View style={{ flex: 1 }} />
+              {filterable ? (
+                <Chip
+                  icon={ListFilter}
+                  {...(active ? { count: active } : {})}
+                  selected={active > 0}
+                  accessibilityLabel={active ? `Filters, ${active} on` : 'Filters'}
+                  onPress={() => setSheetOpen(true)}
+                />
+              ) : null}
             </View>
 
             <View style={{ gap: 8, marginTop: 12 }}>
@@ -168,7 +198,11 @@ export function Results({
                   storeName={l.storeName}
                   condition={l.condition}
                   priceKobo={l.priceKobo}
+                  priceKind={l.priceKind}
+                  priceMaxKobo={l.priceMaxKobo}
+                  packCount={l.packCount}
                   oldPriceKobo={l.oldPriceKobo ?? null}
+                  inStock={l.inStock}
                   lastSeenAt={l.lastSeenAt}
                   live={l.flags.live === true}
                   {...(flag ? { flag } : {})}
@@ -178,7 +212,17 @@ export function Results({
               ))}
               {shown.length === 0 ? (
                 <Text variant="smallRegular" style={{ color: colors.muted, paddingVertical: 12 }}>
-                  No {filter} listings for this one.
+                  {active ? 'No listings match these filters. ' : `No ${filter} listings for this one.`}
+                  {active ? (
+                    <Text
+                      variant="smallRegular"
+                      accessibilityRole="button"
+                      onPress={() => setFilters(noFilters(filter))}
+                      style={{ color: colors.green }}
+                    >
+                      Clear filters
+                    </Text>
+                  ) : null}
                 </Text>
               ) : null}
             </View>
@@ -216,6 +260,17 @@ export function Results({
           Sorted by price; flagged listings sit last. We may earn a commission, never at the cost of order.
         </Text>
       </ScrollView>
+
+      <FilterSheet
+        visible={sheetOpen}
+        listings={listings}
+        filters={filters}
+        onApply={(next) => {
+          setFilters(next);
+          setSheetOpen(false);
+        }}
+        onClose={() => setSheetOpen(false)}
+      />
     </SafeAreaView>
   );
 }

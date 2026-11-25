@@ -61,6 +61,8 @@ export const SearchListing = z.object({
   inStock: z.boolean(),
   /** Sizes this listing offers (fashion), for the size filter. */
   sizes: z.array(z.string()).optional(),
+  /** Colours as the store sells them ("Black", "Wine"), for the colour filter. */
+  colours: z.array(z.string()).optional(),
   packCount: z.number().int().positive().optional(),
   lastSeenAt: z.iso.datetime(),
   /** Always the /go/:listingId redirect, never the store URL directly. */

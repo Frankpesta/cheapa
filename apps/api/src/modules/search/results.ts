@@ -35,6 +35,7 @@ export function listingCard(l: ListingRow, now: Date): SearchListing {
     condition: l.condition,
     inStock: l.inStock,
     ...(sizes?.length ? { sizes } : {}),
+    ...(l.variant.colours?.length ? { colours: l.variant.colours } : {}),
     ...(l.variant.packCount ? { packCount: l.variant.packCount } : {}),
     lastSeenAt: l.lastSeenAt.toISOString(),
     url: goUrl(l.id),
