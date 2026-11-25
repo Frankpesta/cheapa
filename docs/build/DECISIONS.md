@@ -65,6 +65,10 @@ Append-only. Newest at the bottom. Seeded from `12-roadmap-and-launch.md` 12.4.
 | 2026-11-19 | Components take exact px from tokens via inline styles; NativeWind classes are for screen layout | DESIGN.md asks for 2 px fidelity; Text variants fix family/size/line-height/tracking in one place |
 | 2026-11-19 | `@cheapa/core/client` entry (api, flags, money, types) for apps; mobile lint forbids the `@cheapa/core` root and server packages | The root entry pulls in the matcher's `node:crypto`, which React Native can't bundle |
 | 2026-11-19 | Tailwind `darkMode: 'class'` | The app is light-only; the default `media` makes NativeWind throw on web |
+| 2026-11-19 | Mobile search sessions: the app mints the request id, sends it as `x-request-id` (the API reuses it as the search id) and routes to `/search/[id]` at once; the picked photo stays in memory only | Searching shows instantly and history ids match; rule 4 (never persist images) |
+| 2026-11-19 | `GET /products/:slug` returns `listings` (same cards as search); history `topProduct` and lookalikes gain prices/slug | Product store table, Home "Recent" and History prices, lookalike → product page |
+| 2026-11-19 | Live-only search products (no catalog row) open the store directly; no product page link | They have no slug in the catalog until live listings are ingested (BACKLOG) |
+| 2026-11-19 | Camera/NotFound overlay colours added as tokens (`scrimStrong`, `glass`, `shade*`, `limeGlass`) | DESIGN.md rule 2; values copied from the design files |
 
 ## Deferred
 

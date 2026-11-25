@@ -240,7 +240,15 @@ describe('products', () => {
 
     const res = await inject({ method: 'GET', url: '/products/black-satin-slip-dress' });
     expect(res.statusCode).toBe(200);
-    expect(ProductResponse.parse(res.json()).productId).toBe(product!.id);
+    const body0 = ProductResponse.parse(res.json());
+    expect(body0.productId).toBe(product!.id);
+    expect(body0.listings).toHaveLength(1);
+    expect(body0.listings[0]).toMatchObject({
+      listingId: listing!.id,
+      storeName: 'Jumia',
+      priceKobo: 1_850_000,
+      url: `/go/${listing!.id}`,
+    });
 
     const hist = await inject({ method: 'GET', url: `/products/${product!.id}/history?days=7` });
     expect(hist.statusCode).toBe(200);

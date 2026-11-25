@@ -43,6 +43,14 @@ export const colors = {
   premiumBg: '#FFF1C2',
   premiumFg: '#6B4A00',
   scrim: 'rgba(14,26,19,0.55)',
+  /** Camera overlays (Camera.dc.html): hint pill, "Aa" glass button, top/bottom fades. */
+  scrimStrong: 'rgba(14,26,19,0.7)',
+  glass: 'rgba(255,255,255,0.14)',
+  shade: 'rgba(10,15,12,0.75)',
+  shadeDeep: 'rgba(10,15,12,0.92)',
+  shadeClear: 'rgba(10,15,12,0)',
+  /** NotFound magnifier lens. */
+  limeGlass: 'rgba(198,244,50,0.35)',
 } as const;
 
 export type ColorToken = keyof typeof colors;
