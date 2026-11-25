@@ -52,7 +52,10 @@ export default function SearchScreen() {
     );
   }
 
-  if (query.isPending && input) return <Searching input={input} thumb={thumb} onCancel={back} />;
+  // Offline: the query is paused (lib/network.ts) and runs by itself when the connection returns.
+  if (query.isPending && input) {
+    return <Searching input={input} thumb={thumb} waiting={query.fetchStatus === 'paused'} onCancel={back} />;
+  }
 
   if (query.isError || !res) {
     return <Failed message={errorMessage(query.error)} onRetry={() => void query.refetch()} onBack={back} />;

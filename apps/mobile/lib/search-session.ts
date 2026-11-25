@@ -9,6 +9,7 @@ import type { SearchResponse, SearchSource } from '@cheapa/core/client';
 import { useQuery } from '@tanstack/react-query';
 import * as Crypto from 'expo-crypto';
 import { api, type UploadImage } from './api';
+import { CACHE_MAX_AGE_MS } from './cache-rules';
 
 export type SearchInput =
   | { kind: 'image'; image: UploadImage; source: Exclude<SearchSource, 'text'>; item?: number }
@@ -44,7 +45,8 @@ export function useSearch(id: string) {
     enabled: input !== undefined,
     // A search is a snapshot: back-navigation shows the same answer, no refetch.
     staleTime: Infinity,
-    gcTime: 30 * 60_000,
+    // Kept (and saved to disk) for a day so history and offline can reopen it.
+    gcTime: CACHE_MAX_AGE_MS,
     retry: 1,
   });
 }
